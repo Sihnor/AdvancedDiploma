@@ -1,0 +1,41 @@
+[gd_scene load_steps=7 format=3 uid="uid://dv1amstg8r2l5"]
+
+[ext_resource type="PackedScene" uid="uid://8hgyycna6a7g" path="res://scenes/crate.tscn" id="1_8okoj"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_18yuk"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_subqu"]
+sky_material = SubResource("ProceduralSkyMaterial_18yuk")
+
+[sub_resource type="Environment" id="Environment_fma5p"]
+background_mode = 2
+sky = SubResource("Sky_subqu")
+tonemap_mode = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rmdyd"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_17xjt"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_fma5p")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 4.27634, -1.73537)
+shadow_enabled = true
+
+[node name="Crate" parent="." instance=ExtResource("1_8okoj")]
+
+[node name="Plane" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+mesh = SubResource("PlaneMesh_rmdyd")
+
+[node name="box" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 1)
+mesh = SubResource("BoxMesh_17xjt")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.45697, 2, 0)
