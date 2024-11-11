@@ -1,0 +1,23 @@
+[gd_scene load_steps=7 format=3 uid="uid://8hgyycna6a7g"]
+
+[ext_resource type="PackedScene" uid="uid://cd3rxu61epd3p" path="res://Assets/Art/Crate/Crate.fbx" id="1_0ncm3"]
+[ext_resource type="Texture2D" uid="uid://ca35bl2yx3jn4" path="res://Assets/Art/Crate/Textures/Crate_albedo.png" id="2_v685b"]
+[ext_resource type="Texture2D" uid="uid://816rdp5aecy8" path="res://Assets/Art/Crate/Textures/Crate_ao.png" id="3_5udbd"]
+[ext_resource type="Texture2D" uid="uid://d1jdwqb83g3ef" path="res://Assets/Art/Crate/Textures/Crate_normal.png" id="4_8t4jp"]
+[ext_resource type="AudioStream" uid="uid://bp1auupcnyvxd" path="res://Assets/Audio/SFX/Möven.mp3" id="5_16aow"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_263px"]
+albedo_texture = ExtResource("2_v685b")
+normal_enabled = true
+normal_texture = ExtResource("4_8t4jp")
+ao_enabled = true
+ao_texture = ExtResource("3_5udbd")
+
+[node name="Crate" instance=ExtResource("1_0ncm3")]
+
+[node name="SM_Crate_low" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_263px")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="1"]
+stream = ExtResource("5_16aow")
+autoplay = true
