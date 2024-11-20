@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbu0l40uitgwg"]
+
+[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/icon.svg" id="1_g01ax"]
+[ext_resource type="Script" path="res://scripts/MainUI.gd" id="1_xw3nc"]
+
+[node name="MainUI" type="Control"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -129.0
+offset_bottom = 126.0
+grow_horizontal = 0
+script = ExtResource("1_xw3nc")
+
+[node name="TopBar" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = -1023.0
+offset_right = 128.0
+offset_bottom = 128.0
+alignment = 2
+
+[node name="TopBarIcon" type="TextureButton" parent="TopBar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture_normal = ExtResource("1_g01ax")
+
+[connection signal="pressed" from="TopBar/TopBarIcon" to="." method="_on_top_bar_icon_pressed"]

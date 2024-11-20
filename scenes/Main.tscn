@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://dv1amstg8r2l5"]
+[gd_scene load_steps=10 format=3 uid="uid://dv1amstg8r2l5"]
 
 [ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/icon.svg" id="2_1pe1t"]
 [ext_resource type="PackedScene" uid="uid://bm63haxmbj0d4" path="res://scenes/DialogueSystem.tscn" id="2_ekkl0"]
 [ext_resource type="PackedScene" uid="uid://c5pgqlg128lek" path="res://scenes/InventorySystem.tscn" id="3_a7jd3"]
 [ext_resource type="PackedScene" uid="uid://b51vq3wsky7ww" path="res://scenes/PickupItem3D.tscn" id="4_ky10d"]
+[ext_resource type="PackedScene" uid="uid://dbu0l40uitgwg" path="res://scenes/MainUI.tscn" id="5_w13wt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_18yuk"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -32,6 +33,9 @@ shadow_enabled = true
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
 mesh = SubResource("PlaneMesh_rmdyd")
 
+[node name="MainCamera" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.47959, 2, 0)
+
 [node name="PickupItem3D" parent="." node_paths=PackedStringArray("main_camera") instance=ExtResource("4_ky10d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.03912, 2.13658, -1.79366)
 main_camera = NodePath("../MainCamera")
@@ -44,13 +48,14 @@ main_camera = NodePath("../MainCamera")
 item_name = "chess"
 item_icon = ExtResource("2_1pe1t")
 
-[node name="MainCamera" type="Camera3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.47959, 2, 0)
-
 [node name="InventorySystem" parent="." instance=ExtResource("3_a7jd3")]
 
-[node name="DialogueSystem" parent="." instance=ExtResource("2_ekkl0")]
+[node name="DialogueSystem" parent="." node_paths=PackedStringArray("mainUI") instance=ExtResource("2_ekkl0")]
 offset_left = -1.0
 offset_top = -1.0
 offset_right = -0.999878
 offset_bottom = -1.0
+mainUI = NodePath("../MainUI")
+
+[node name="MainUI" parent="." node_paths=PackedStringArray("inventorySystem") instance=ExtResource("5_w13wt")]
+inventorySystem = NodePath("../InventorySystem")

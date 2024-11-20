@@ -6,6 +6,13 @@ var inventory = []
 # Nodes
 @onready var itemSlotsRef = $Background/ItemSlots
 
+func _ready():
+	# Ensure the UI doesn't block mouse input
+	self.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	# Connect all PickupItems in the "pickup_items" group
+	for pickup_item in get_tree().get_nodes_in_group("pickup_items"):
+		pickup_item.connect("itemPickedUp", Callable(self, "_on_item_picked_up"))
+
 # Method to add an item to the inventory
 func addItem(itemName: String, itemIcon: Texture2D):
 	inventory.append({"name": itemName, "icon": itemIcon})
@@ -27,16 +34,7 @@ func clearChildren(container: Node):
 	for child in container.get_children():
 		child.queue_free()
 
-func _ready():
-	# Ensure the UI doesn't block mouse input
-	self.mouse_filter = Control.MOUSE_FILTER_IGNORE
-
-	# Connect all PickupItems in the "pickup_items" group
-	for pickup_item in get_tree().get_nodes_in_group("pickup_items"):
-		pickup_item.connect("itemPickedUp", Callable(self, "_on_item_picked_up"))
-
 func _on_item_picked_up(itemName: String, itemIcon: Texture2D):
-	print(itemName + " got picked up")  # Debugging line
 	addItem(itemName, itemIcon)  # Add item to inventory
 
 # Enable or disable inventory interaction dynamically

@@ -19,7 +19,6 @@ func _ready():
 	add_to_group("pickup_items")
 
 func _on_area_3d_input_event(viewport, event, event_position, normal, shape_idx):
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		print("3D object clicked!")
+	if Input.is_action_pressed("uiClick"):
 		emit_signal("itemPickedUp", item_name, item_icon)  # Emit the signal locally
 		queue_free()  # Remove the pickup item from the scene after it's picked up

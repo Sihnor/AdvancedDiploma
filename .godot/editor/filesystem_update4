@@ -1,8 +1,8 @@
-res://scenes/DialogueSystem.tscn
-res://scripts/DialogueSystem.gd
 res://scenes/Main.tscn
-res://scenes/inventorySystem.tscn
-res://scenes/InventorySystem.tscn
+res://scenes/DialogueSystem.tscn
 res://scripts/InventorySystem.gd
-res://scenes/PickupItem3D.tscn
+res://scripts/DialogueSystem.gd
 res://scripts/PickupItem3D.gd
+res://scenes/mainUI.tscn
+res://scripts/MainUI.gd
+res://scenes/MainUI.tscn
