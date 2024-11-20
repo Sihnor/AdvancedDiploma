@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b51vq3wsky7ww"]
+
+[ext_resource type="Script" path="res://scripts/PickupItem3D.gd" id="1_vkhxp"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_r0pkw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6vptb"]
+
+[node name="PickupItem3D" type="Node3D"]
+script = ExtResource("1_vkhxp")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D"]
+mesh = SubResource("BoxMesh_r0pkw")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("BoxShape3D_6vptb")
+
+[connection signal="input_event" from="Area3D" to="." method="_on_area_3d_input_event"]
