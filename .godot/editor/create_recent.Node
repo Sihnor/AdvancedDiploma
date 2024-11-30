@@ -1,3 +1,6 @@
+SubViewport
+TextureRect
+Node2D
 TextureButton
 HBoxContainer
 Control
@@ -8,8 +11,5 @@ MeshInstance3D
 Node3D
 Sprite3D
 Area2D
-TextureRect
 GridContainer
 Panel
-Button
-RichTextLabel

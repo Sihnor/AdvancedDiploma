@@ -13,7 +13,7 @@ config_version=5
 config/name="AdvancedDiplomaProject"
 run/main_scene="res://scenes/Main.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://Assets/Art/icon.svg"
+config/icon="res://Assets/Art/UI/icon.svg"
 
 [input]
 

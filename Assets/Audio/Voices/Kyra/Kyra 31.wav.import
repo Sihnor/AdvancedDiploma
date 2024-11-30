@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://o80ravqx84fl"
+path="res://.godot/imported/Kyra 31.wav-84433789b5b1e492b4e6e00a0604b990.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Voices/Kyra/Kyra 31.wav"
+dest_files=["res://.godot/imported/Kyra 31.wav-84433789b5b1e492b4e6e00a0604b990.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

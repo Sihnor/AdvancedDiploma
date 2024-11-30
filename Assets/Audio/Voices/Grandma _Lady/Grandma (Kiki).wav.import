@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://h0btyqieh14e"
+path="res://.godot/imported/Grandma (Kiki).wav-cc7a14e930317524ea33b0a0a8d56f8b.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Voices/Grandma _Lady/Grandma (Kiki).wav"
+dest_files=["res://.godot/imported/Grandma (Kiki).wav-cc7a14e930317524ea33b0a0a8d56f8b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
