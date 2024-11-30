@@ -2,21 +2,23 @@
 
 [ext_resource type="Script" path="res://scripts/PickupItem3D.gd" id="1_vkhxp"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_r0pkw"]
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_6vptb"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_l681x"]
 
 [node name="PickupItem3D" type="Node3D"]
 script = ExtResource("1_vkhxp")
 
 [node name="Area3D" type="Area3D" parent="."]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D"]
-mesh = SubResource("BoxMesh_r0pkw")
-skeleton = NodePath("../..")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
 shape = SubResource("BoxShape3D_6vptb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+gi_mode = 0
+mesh = SubResource("BoxMesh_l681x")
+skeleton = NodePath("../..")
 
 [connection signal="input_event" from="Area3D" to="." method="_on_area_3d_input_event"]

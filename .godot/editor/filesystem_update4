@@ -1,3 +1,10 @@
 res://scenes/Main.tscn
+res://scripts/PickupItem3D.gd
 res://scenes/DialogueSystem.tscn
 res://scenes/MainUI.tscn
+res://scenes/3DViewport.tscn
+res://scenes/PickupItem3D.tscn
+res://scripts/main.gd
+res://scripts/camera3D.gd
+res://scenes/InventorySystem.tscn
+res://scenes/test.tscn

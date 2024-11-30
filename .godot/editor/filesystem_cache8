@@ -3,6 +3,7 @@ ea4bc82a6ad023ab7ee23ee620429895
 README.md::TextFile::-1::1730840850::0::1::::<><>::
 ::res://Assets/::1732039766
 ::res://Assets/Art/::1732039766
+te.jpg::CompressedTexture2D::7306625985720538211::1733005772::1733005772::1::::<><>::
 ::res://Assets/Art/Crate/::1732039766
 Crate.fbx::PackedScene::5042284837094015627::1732039768::1732039910::1::::<><>::
 ::res://Assets/Art/Crate/Textures/::1732039766
@@ -12,7 +13,7 @@ Crate_normal.png::CompressedTexture2D::9002973667354351693::1732039768::17320399
 ::res://Assets/Art/Placeholder/::1732993616
 ::res://Assets/Art/Placeholder/Scenes/::1732993616
 ::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/::1732993616
-main.png::CompressedTexture2D::2567905473719608573::1732993618::1732993618::1::::<><>::
+main.png::CompressedTexture2D::2567905473719608573::1732993618::1732998008::1::::<><>::
 ::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/Interaction/::1732993616
 globusOpen.png::CompressedTexture2D::3470411204478124823::1732993618::1732993618::1::::<><>::
 globusZoom.png::CompressedTexture2D::8104772085513175877::1732993618::1732993618::1::::<><>::
@@ -98,14 +99,16 @@ Radio Sidney.wav::AudioStreamWAV::4580949973251856037::1732993590::1732993590::1
 Tom (Jonas)-01.wav::AudioStreamWAV::7562414040141148227::1732993590::1732993590::1::::<><>::
 Tom (Jonas).wav::AudioStreamWAV::4977634009047071533::1732993590::1732993590::1::::<><>::
 ::res://scenes/::1732039766
+3DViewport.tscn::PackedScene::1435262317156502667::1733005704::0::1::::<><>::res://scripts/3DViewport.gd<>uid://bct6a7lt8dc6p::::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/main.png<>uid://clpvoqsm1htw4::::res://Assets/Art/UI/icon.svg<>uid://b51vq3wsky7ww::::res://scenes/PickupItem3D.tscn
 crate.tscn::PackedScene::2331090909585695710::1732039768::0::1::::<><>::uid://cd3rxu61epd3p::::res://Assets/Art/Crate/Crate.fbx<>uid://ca35bl2yx3jn4::::res://Assets/Art/Crate/Textures/Crate_albedo.png<>uid://816rdp5aecy8::::res://Assets/Art/Crate/Textures/Crate_ao.png<>uid://d1jdwqb83g3ef::::res://Assets/Art/Crate/Textures/Crate_normal.png<>uid://bp1auupcnyvxd::::res://Assets/Audio/SFX/Möven.mp3
-DialogueSystem.tscn::PackedScene::3294395130157583743::1732993484::0::1::::<><>::res://scripts/DialogueSystem.gd
+DialogueSystem.tscn::PackedScene::3294395130157583743::1733005704::0::1::::<><>::res://scripts/DialogueSystem.gd
 InventorySystem.tscn::PackedScene::6909865805741537462::1732993438::0::1::::<><>::res://scripts/InventorySystem.gd
-Main.tscn::PackedScene::8686923993699394072::1732993554::0::1::::<><>::uid://clpvoqsm1htw4::::res://Assets/Art/UI/icon.svg<>uid://bm63haxmbj0d4::::res://scenes/DialogueSystem.tscn<>uid://c5pgqlg128lek::::res://scenes/InventorySystem.tscn<>uid://b51vq3wsky7ww::::res://scenes/PickupItem3D.tscn<>uid://dbu0l40uitgwg::::res://scenes/MainUI.tscn
-MainUI.tscn::PackedScene::7272277581068064738::1732993554::0::1::::<><>::uid://clpvoqsm1htw4::::res://Assets/Art/UI/icon.svg<>res://scripts/MainUI.gd
-PickupItem3D.tscn::PackedScene::4547064949461884066::1732059756::0::1::::<><>::res://scripts/PickupItem3D.gd
+Main.tscn::PackedScene::8686923993699394072::1733005704::0::1::::<><>::uid://bm63haxmbj0d4::::res://scenes/DialogueSystem.tscn<>uid://c5pgqlg128lek::::res://scenes/InventorySystem.tscn<>uid://upitceslesjb::::res://scenes/3DViewport.tscn<>uid://dbu0l40uitgwg::::res://scenes/MainUI.tscn
+MainUI.tscn::PackedScene::7272277581068064738::1733005704::0::1::::<><>::uid://clpvoqsm1htw4::::res://Assets/Art/UI/icon.svg<>res://scripts/MainUI.gd
+PickupItem3D.tscn::PackedScene::4547064949461884066::1733005704::0::1::::<><>::res://scripts/PickupItem3D.gd
 ::res://scripts/::1727804414
+3DViewport.gd::GDScript::-1::1732993964::0::1::::<>TextureRect<>::
 DialogueSystem.gd::GDScript::-1::1732990228::0::1::::<>Control<>::
 InventorySystem.gd::GDScript::-1::1732131848::0::1::::<>Control<>::
 MainUI.gd::GDScript::-1::1732138992::0::1::::<>Control<>::
-PickupItem3D.gd::GDScript::-1::1732134406::0::1::::<>Node3D<>::
+PickupItem3D.gd::GDScript::-1::1732996624::0::1::::<>Node3D<>::
