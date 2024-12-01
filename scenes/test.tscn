@@ -1,70 +1,40 @@
-[gd_scene load_steps=8 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=5 format=3 uid="uid://b1snkc6h5h532"]
 
-[ext_resource type="Texture2D" uid="uid://dcdncehppprax" path="res://Assets/Art/te.jpg" id="1_gqvd4"]
+[ext_resource type="PackedScene" uid="uid://upitceslesjb" path="res://scenes/3DViewport.tscn" id="1_o11bi"]
+[ext_resource type="Texture2D" uid="uid://bct6a7lt8dc6p" path="res://Assets/Art/Placeholder/Scenes/CaptainsRoom/main.png" id="2_p2kpv"]
 [ext_resource type="Script" path="res://scripts/3DViewport.gd" id="2_re2ky"]
-[ext_resource type="PackedScene" uid="uid://b51vq3wsky7ww" path="res://scenes/PickupItem3D.tscn" id="3_j2acv"]
 [ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/UI/icon.svg" id="4_vs5hq"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_6wvy8"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-
-[sub_resource type="Sky" id="Sky_acgrj"]
-sky_material = SubResource("ProceduralSkyMaterial_6wvy8")
-
-[sub_resource type="Environment" id="Environment_qkw65"]
-background_mode = 2
-sky = SubResource("Sky_acgrj")
-tonemap_mode = 2
 
 [node name="Node2D" type="Node2D"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-clip_children = 2
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_gqvd4")
-metadata/_edit_use_anchors_ = true
+[node name="Control" parent="." instance=ExtResource("1_o11bi")]
 
-[node name="TextureRect2" type="TextureRect" parent="." node_paths=PackedStringArray("viewport")]
+[node name="Panel2" type="Panel" parent="Control"]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_gqvd4")
+
+[node name="TextureRect" type="TextureRect" parent="Control/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_p2kpv")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Control/Panel2" node_paths=PackedStringArray("viewport")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_vs5hq")
+expand_mode = 1
 script = ExtResource("2_re2ky")
-viewport = NodePath("../SubViewport2")
-metadata/_edit_use_anchors_ = true
-
-[node name="SubViewport2" type="SubViewport" parent="."]
-transparent_bg = true
-size = Vector2i(1920, 1080)
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport2"]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 4.27634, -1.73537)
-shadow_enabled = true
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport2"]
-environment = SubResource("Environment_qkw65")
-
-[node name="Camera3D" type="Camera3D" parent="SubViewport2"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5, 0)
-
-[node name="PickupItem3D" parent="SubViewport2" node_paths=PackedStringArray("main_camera") instance=ExtResource("3_j2acv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1.5)
-main_camera = NodePath("../../Camera3D")
-item_name = "se"
-item_icon = ExtResource("4_vs5hq")
-
-[node name="PickupItem3D2" parent="SubViewport2" node_paths=PackedStringArray("main_camera") instance=ExtResource("3_j2acv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -1.5)
-main_camera = NodePath("../../Camera3D")
-item_name = "re"
-item_icon = ExtResource("4_vs5hq")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-2.31634e-08, 0, 0.529916, 0, 0.529916, 0, -0.529916, 0, -2.31634e-08, 5, 1.5, 0)
+viewport = NodePath("")
