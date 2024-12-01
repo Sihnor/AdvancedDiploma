@@ -8,12 +8,12 @@
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
 
-[sub_resource type="Sky" id="Sky_xcnih"]
+[sub_resource type="Sky" id="Sky_68xwx"]
 sky_material = SubResource("ProceduralSkyMaterial_pm4up")
 
 [sub_resource type="Environment" id="Environment_8jvuw"]
 background_mode = 2
-sky = SubResource("Sky_xcnih")
+sky = SubResource("Sky_68xwx")
 tonemap_mode = 2
 
 [sub_resource type="BoxMesh" id="BoxMesh_v5kvh"]
@@ -27,6 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Panel" type="Panel" parent="."]
+show_behind_parent = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -45,6 +46,7 @@ texture = ExtResource("1_n87f1")
 expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="Panel" node_paths=PackedStringArray("viewport")]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
