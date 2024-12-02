@@ -1,1 +1,10 @@
-res://scenes/test.tscn
+res://scenes/Main.tscn
+res://scenes/Gameplay.tscn
+res://scenes/DialogueSystem.tscn
+res://scenes/MainUI.tscn
+res://scenes/PickupItem3D.tscn
+res://scenes/Background.tscn
+res://scenes/PickupItem2D.tscn
+res://scenes/SwapScene.tscn
+res://scripts/MainTest.gd
+res://scripts/PickupItem3D.gd

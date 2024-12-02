@@ -1,0 +1,82 @@
+[gd_scene load_steps=8 format=3 uid="uid://b1snkc6h5h532"]
+
+[ext_resource type="Script" path="res://scripts/MainTest.gd" id="1_0kk8k"]
+[ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
+[ext_resource type="PackedScene" uid="uid://bm63haxmbj0d4" path="res://scenes/DialogueSystem.tscn" id="2_ekkl0"]
+[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/UI/icon.svg" id="3_7aqtp"]
+[ext_resource type="PackedScene" uid="uid://c5pgqlg128lek" path="res://scenes/InventorySystem.tscn" id="3_a7jd3"]
+[ext_resource type="PackedScene" uid="uid://dbu0l40uitgwg" path="res://scenes/MainUI.tscn" id="5_w13wt"]
+[ext_resource type="PackedScene" uid="uid://b51vq3wsky7ww" path="res://scenes/PickupItem3D.tscn" id="13_moyxb"]
+
+[node name="MainScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 1
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+script = ExtResource("1_0kk8k")
+
+[node name="Background" parent="SubViewportContainer/SubViewport" instance=ExtResource("1_jadi2")]
+mouse_filter = 2
+
+[node name="SubViewportContainer2" type="SubViewportContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer2"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+script = ExtResource("1_0kk8k")
+
+[node name="DialogueSystem" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("mainUI") instance=ExtResource("2_ekkl0")]
+mouse_filter = 1
+mainUI = NodePath("../MainUI")
+
+[node name="MainUI" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("5_w13wt")]
+mouse_filter = 1
+inventorySystem = NodePath("../InventorySystem")
+
+[node name="InventorySystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_a7jd3")]
+mouse_filter = 1
+
+[node name="PickupItem3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("main_camera", "inventorySystem") instance=ExtResource("13_moyxb")]
+main_camera = NodePath("../Camera3D")
+item_name = "se"
+item_icon = ExtResource("3_7aqtp")
+inventorySystem = NodePath("../InventorySystem")
+
+[node name="PickupItem3D2" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("main_camera", "inventorySystem") instance=ExtResource("13_moyxb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19497, 0, 2.94726)
+main_camera = NodePath("../Camera3D")
+item_name = "ku"
+item_icon = ExtResource("3_7aqtp")
+inventorySystem = NodePath("../InventorySystem")
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer2/SubViewport"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5, 0)

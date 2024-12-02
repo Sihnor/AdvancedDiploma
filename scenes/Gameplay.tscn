@@ -1,0 +1,57 @@
+[gd_scene load_steps=10 format=3 uid="uid://dv1amstg8r2l5"]
+
+[ext_resource type="PackedScene" uid="uid://bm63haxmbj0d4" path="res://scenes/DialogueSystem.tscn" id="1_voppm"]
+[ext_resource type="PackedScene" uid="uid://dbu0l40uitgwg" path="res://scenes/MainUI.tscn" id="2_1s854"]
+[ext_resource type="PackedScene" uid="uid://c5pgqlg128lek" path="res://scenes/InventorySystem.tscn" id="3_6gr57"]
+[ext_resource type="PackedScene" uid="uid://b51vq3wsky7ww" path="res://scenes/PickupItem3D.tscn" id="4_ygphj"]
+[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/UI/icon.svg" id="5_o6klu"]
+[ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="6_i7t4b"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mymws"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_xcnih"]
+sky_material = SubResource("ProceduralSkyMaterial_mymws")
+
+[sub_resource type="Environment" id="Environment_5q1b1"]
+background_mode = 2
+sky = SubResource("Sky_xcnih")
+tonemap_mode = 2
+
+[node name="Gameplay" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 4.27634, -1.73537)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_5q1b1")
+
+[node name="PickupItem3D" parent="." node_paths=PackedStringArray("inventorySystem") instance=ExtResource("4_ygphj")]
+item_name = "se"
+item_icon = ExtResource("5_o6klu")
+inventorySystem = NodePath("../InventorySystem")
+
+[node name="PickupItem3D2" parent="." node_paths=PackedStringArray("inventorySystem") instance=ExtResource("4_ygphj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19497, 0, 2.94726)
+item_name = "ku"
+item_icon = ExtResource("5_o6klu")
+inventorySystem = NodePath("../InventorySystem")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5, 0)
+
+[node name="Background" parent="." instance=ExtResource("6_i7t4b")]
+visible = false
+
+[node name="DialogueSystem" parent="." node_paths=PackedStringArray("mainUI") instance=ExtResource("1_voppm")]
+mouse_filter = 1
+mainUI = NodePath("../MainUI")
+
+[node name="MainUI" parent="." node_paths=PackedStringArray("inventorySystem") instance=ExtResource("2_1s854")]
+mouse_filter = 1
+inventorySystem = NodePath("../InventorySystem")
+
+[node name="InventorySystem" parent="." instance=ExtResource("3_6gr57")]
+mouse_filter = 1

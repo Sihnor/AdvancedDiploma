@@ -1,5 +1,5 @@
 extends Control
-
+class_name InventorySystem
 # Inventory data
 var inventory = []
 
