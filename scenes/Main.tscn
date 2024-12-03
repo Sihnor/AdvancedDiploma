@@ -1,15 +1,28 @@
-[gd_scene load_steps=11 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=21 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
 [ext_resource type="PackedScene" uid="uid://cwj6bpg3u3b8w" path="res://scenes/MainNav.tscn" id="2_cdd04"]
 [ext_resource type="PackedScene" uid="uid://p5ahydkjisqy" path="res://scenes/TopLeftRadioNav.tscn" id="2_ij6ai"]
 [ext_resource type="PackedScene" uid="uid://yxu6nudywmn5" path="res://scenes/TopLeftMapNav.tscn" id="3_1xnhc"]
+[ext_resource type="PackedScene" uid="uid://dn4l1mgm34vg7" path="res://scenes/RightDoorNav.tscn" id="3_2noqw"]
 [ext_resource type="PackedScene" uid="uid://cetnyk2nihqe8" path="res://scenes/RightNav.tscn" id="3_5k288"]
+[ext_resource type="PackedScene" uid="uid://b3nlrfc4y8aml" path="res://scenes/TopRightGlobusNav.tscn" id="3_8wmc8"]
 [ext_resource type="PackedScene" uid="uid://bxbos0gxepw15" path="res://scenes/TopLeftBookNav.tscn" id="3_k06il"]
+[ext_resource type="PackedScene" uid="uid://b2o4sghcmtr32" path="res://scenes/LeftWindowNav.tscn" id="3_otgd4"]
 [ext_resource type="PackedScene" uid="uid://d2ykc31xty202" path="res://scenes/LeftNav.tscn" id="3_s2r7w"]
 [ext_resource type="PackedScene" uid="uid://o2s547vsoxmj" path="res://scenes/TopRightNav.tscn" id="3_wt7dn"]
-[ext_resource type="PackedScene" uid="uid://dv1amstg8r2l5" path="res://scenes/Gameplay.tscn" id="4_2msxa"]
 [ext_resource type="PackedScene" uid="uid://bg3ruliyhrcr5" path="res://scenes/TopLeftNav.tscn" id="4_dryyg"]
+[ext_resource type="PackedScene" uid="uid://c3x8vutkwn5vy" path="res://scenes/TopLeftDrawerNav.tscn" id="14_8vtqr"]
+[ext_resource type="PackedScene" uid="uid://btrvd3iljyob2" path="res://scenes/RightDoorOpenNav.tscn" id="15_jiwka"]
+[ext_resource type="PackedScene" uid="uid://b51vq3wsky7ww" path="res://scenes/PickupItem3D.tscn" id="17_lw812"]
+[ext_resource type="PackedScene" uid="uid://bm63haxmbj0d4" path="res://scenes/DialogueSystem.tscn" id="17_mnevp"]
+[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/UI/icon.svg" id="18_76w6a"]
+[ext_resource type="PackedScene" uid="uid://dbu0l40uitgwg" path="res://scenes/MainUI.tscn" id="18_es0gl"]
+[ext_resource type="PackedScene" uid="uid://c5pgqlg128lek" path="res://scenes/InventorySystem.tscn" id="19_qp1ry"]
+
+[sub_resource type="Environment" id="Environment_s72p6"]
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
 
 [node name="MainScene" type="Control"]
 layout_mode = 3
@@ -57,26 +70,67 @@ render_target_update_mode = 4
 
 [node name="MainNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("2_cdd04")]
 
+[node name="TopLeftDrawerNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("14_8vtqr")]
+visible = false
+
+[node name="TopRightGlobusNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_8wmc8")]
+visible = false
+
 [node name="LeftNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_s2r7w")]
 visible = false
 
-[node name="TopRightNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_wt7dn")]
-visible = false
-
-[node name="RightNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_5k288")]
-visible = false
-
-[node name="TopLeftMapNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_1xnhc")]
-visible = false
-
-[node name="TopLeftBookNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_k06il")]
-visible = false
-
-[node name="TopLeftRadioNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("2_ij6ai")]
+[node name="LeftWindowNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_otgd4")]
 visible = false
 
 [node name="TopLeftNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("4_dryyg")]
 visible = false
 
-[node name="Gameplay" parent="SubViewportContainer2/SubViewport" instance=ExtResource("4_2msxa")]
+[node name="TopLeftRadioNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("2_ij6ai")]
 visible = false
+
+[node name="TopLeftBookNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_k06il")]
+visible = false
+
+[node name="TopLeftMapNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_1xnhc")]
+visible = false
+
+[node name="RightNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_5k288")]
+visible = false
+
+[node name="RightDoorNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_2noqw")]
+visible = false
+
+[node name="TopRightNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_wt7dn")]
+visible = false
+
+[node name="RightDoorOpenNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("15_jiwka")]
+visible = false
+
+[node name="MainUI" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("18_es0gl")]
+inventorySystem = NodePath("../InventorySystem")
+metadata/_edit_use_anchors_ = true
+
+[node name="InventorySystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("19_qp1ry")]
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogueSystem" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("mainUI") instance=ExtResource("17_mnevp")]
+mainUI = NodePath("../MainUI")
+metadata/_edit_use_anchors_ = true
+
+[node name="Notebook3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 5.15)
+visible = false
+item_name = "Notebook"
+item_icon = ExtResource("18_76w6a")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/LeftNav/Panel/PillowMove"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer2/SubViewport"]
+environment = SubResource("Environment_s72p6")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer2/SubViewport"]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 4.27634, -1.73537)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer2/SubViewport"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5, 0)

@@ -61,3 +61,21 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_left_interaction_windowZoom"
 sceneID = 8
+
+[node name="PillowMove" parent="Panel" instance=ExtResource("1_72ioy")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 90.0
+offset_top = 51.0
+offset_right = 184.0
+offset_bottom = 147.0
+grow_vertical = 2
+scale = Vector2(1.5, 1)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+sceneName = "captain_left_interaction_pillowMove"
+sceneID = 7

@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://b51vq3wsky7ww"]
+[gd_scene load_steps=6 format=3 uid="uid://b51vq3wsky7ww"]
 
 [ext_resource type="Script" path="res://scripts/PickupItem3D.gd" id="1_vkhxp"]
+[ext_resource type="Script" path="res://scripts/RotateItemAnimationj.gd" id="2_sqt26"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6vptb"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_l681x"]
+
+[sub_resource type="Skin" id="Skin_ggd4g"]
 
 [node name="PickupItem3D" type="Node3D"]
 script = ExtResource("1_vkhxp")
@@ -17,8 +20,9 @@ shape = SubResource("BoxShape3D_6vptb")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D/CollisionShape3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-gi_mode = 0
 mesh = SubResource("BoxMesh_l681x")
+skin = SubResource("Skin_ggd4g")
 skeleton = NodePath("../..")
+script = ExtResource("2_sqt26")
 
 [connection signal="input_event" from="Area3D" to="." method="_on_area_3d_input_event"]

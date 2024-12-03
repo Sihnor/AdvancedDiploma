@@ -96,7 +96,7 @@ grow_vertical = 2
 scale = Vector2(1.5, 1)
 size_flags_horizontal = 4
 size_flags_vertical = 4
-sceneName = "captain_topLeft_interaction_officeOpenDrawer"
+sceneName = "captain_topLeft_interaction_drawer"
 sceneID = 14
 
 [node name="Back" parent="Panel" instance=ExtResource("1_5myt2")]

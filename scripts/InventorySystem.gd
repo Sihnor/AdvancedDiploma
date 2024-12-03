@@ -40,3 +40,9 @@ func _on_item_picked_up(itemName: String, itemIcon: Texture2D):
 # Enable or disable inventory interaction dynamically
 func setInteractive(isInteractive: bool):
 	self.mouse_filter = Control.MOUSE_FILTER_PASS if isInteractive else Control.MOUSE_FILTER_IGNORE
+
+func findItemInInventory(itemName: String) -> String:
+	for item in inventory:
+		if item["name"] == itemName:
+			return item["name"]  # Return the item name if found
+	return ""  # Return an empty string if not found
