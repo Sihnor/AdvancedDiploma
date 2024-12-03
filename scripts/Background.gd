@@ -1,10 +1,12 @@
 extends Control
-class_name  BackgroundText
+class_name  BackgroundTexture
 
-@onready var textureRect = $PanelContainer/TextureRect
+@export var textureRect: Control  # Exported variable to assign the main camera
 var test = "see"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	#print(textureRect)
+	#textureRect = get_tree().root.get_node("Background/PanelContainer/TextureRect")
 	pass # Replace with function body.
 
 

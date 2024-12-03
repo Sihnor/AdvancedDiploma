@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://cetnyk2nihqe8"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_qm5mc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[node name="RightNav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bgdep")
+
+[node name="Back" parent="Panel" instance=ExtResource("1_qm5mc")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 135.0
+offset_top = -24.0
+offset_right = 229.0
+offset_bottom = 72.0
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_main"
+
+[node name="ExitDoor" parent="Panel" instance=ExtResource("1_qm5mc")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -151.0
+offset_top = -149.0
+offset_right = -57.0
+offset_bottom = -53.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 3)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_right_interaction_exitDoorZoom"
+sceneID = 10

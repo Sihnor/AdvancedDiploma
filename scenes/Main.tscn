@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=11 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
+[ext_resource type="PackedScene" uid="uid://cwj6bpg3u3b8w" path="res://scenes/MainNav.tscn" id="2_cdd04"]
+[ext_resource type="PackedScene" uid="uid://p5ahydkjisqy" path="res://scenes/TopLeftRadioNav.tscn" id="2_ij6ai"]
+[ext_resource type="PackedScene" uid="uid://yxu6nudywmn5" path="res://scenes/TopLeftMapNav.tscn" id="3_1xnhc"]
+[ext_resource type="PackedScene" uid="uid://cetnyk2nihqe8" path="res://scenes/RightNav.tscn" id="3_5k288"]
+[ext_resource type="PackedScene" uid="uid://bxbos0gxepw15" path="res://scenes/TopLeftBookNav.tscn" id="3_k06il"]
+[ext_resource type="PackedScene" uid="uid://d2ykc31xty202" path="res://scenes/LeftNav.tscn" id="3_s2r7w"]
+[ext_resource type="PackedScene" uid="uid://o2s547vsoxmj" path="res://scenes/TopRightNav.tscn" id="3_wt7dn"]
 [ext_resource type="PackedScene" uid="uid://dv1amstg8r2l5" path="res://scenes/Gameplay.tscn" id="4_2msxa"]
+[ext_resource type="PackedScene" uid="uid://bg3ruliyhrcr5" path="res://scenes/TopLeftNav.tscn" id="4_dryyg"]
 
 [node name="MainScene" type="Control"]
 layout_mode = 3
@@ -47,4 +55,28 @@ physics_object_picking = true
 size = Vector2i(1152, 648)
 render_target_update_mode = 4
 
+[node name="MainNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("2_cdd04")]
+
+[node name="LeftNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_s2r7w")]
+visible = false
+
+[node name="TopRightNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_wt7dn")]
+visible = false
+
+[node name="RightNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_5k288")]
+visible = false
+
+[node name="TopLeftMapNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_1xnhc")]
+visible = false
+
+[node name="TopLeftBookNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_k06il")]
+visible = false
+
+[node name="TopLeftRadioNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("2_ij6ai")]
+visible = false
+
+[node name="TopLeftNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("4_dryyg")]
+visible = false
+
 [node name="Gameplay" parent="SubViewportContainer2/SubViewport" instance=ExtResource("4_2msxa")]
+visible = false

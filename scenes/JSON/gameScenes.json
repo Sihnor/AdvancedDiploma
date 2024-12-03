@@ -1,0 +1,21 @@
+{
+	"captain_main": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/main.png",
+	"captain_main_interaction_globusOpen": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/Interaction/globusOpen.png",
+	"captain_main_interaction_globusZoom": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/Interaction/globusZoom.png",
+	"captain_main_interaction_wardrobeOpen": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/Interaction/wardrobeOpen.png",
+	"captain_left": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/left.png",
+	"captain_left_interaction_notebookCode": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/Interaction/notebookCode.png",
+	"captain_left_interaction_notebookCodeOpen": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/Interaction/notebookCodeOpen.png",
+	"captain_left_interaction_pillowMove": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/Interaction/pillowMove.png",
+	"captain_left_interaction_windowZoom": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/Interaction/windowZoom.png",
+	"captain_right": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/right/right.png",
+	"captain_right_interaction_exitDoorZoom": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/right/Interaction/exitDoorZoom.png",
+	"captain_right_interaction_exitDoorZoomKey": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/right/Interaction/exitDoorZoomKey.png",
+	"captain_topLeft": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/topLeft.png",
+	"captain_topLeft_interaction_bookZoom": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/Interaction/bookZoom.png",
+	"captain_topLeft_interaction_drawer": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/Interaction/drawer.png",
+	"captain_topLeft_interaction_mapZoom": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/Interaction/mapZoom.png",
+	"captain_topLeft_interaction_officeOpenDrawer": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/Interaction/officeOpenDrawer.png",
+	"captain_topLeft_interaction_radioZoom": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/Interaction/radioZoom.png",
+	"captain_topRight": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topRight/topRight.png"
+}
