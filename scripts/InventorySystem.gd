@@ -1,48 +1,60 @@
 extends Control
 class_name InventorySystem
-# Inventory data
-var inventory = []
 
-# Nodes
+var inventory = []
+var background : BackgroundTexture
 @onready var itemSlotsRef = $Background/ItemSlots
 
 func _ready():
-	# Ensure the UI doesn't block mouse input
+	background = get_tree().root.get_node("MainScene/SubViewportContainer/SubViewport/Background")
 	self.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	# Connect all PickupItems in the "pickup_items" group
 	for pickup_item in get_tree().get_nodes_in_group("pickup_items"):
 		pickup_item.connect("itemPickedUp", Callable(self, "_on_item_picked_up"))
 
-# Method to add an item to the inventory
 func addItem(itemName: String, itemIcon: Texture2D):
 	inventory.append({"name": itemName, "icon": itemIcon})
 	updateInventoryUI()
 
-# Update the inventory UI with new items
 func updateInventoryUI():
-	# Clear all previous item slots
 	clearChildren(itemSlotsRef)
-	# Populate inventory UI with new items
+
 	for item in inventory:
-		var itemSlot = TextureRect.new()
-		itemSlot.texture = item["icon"]
-		itemSlot.stretch_mode = TextureRect.StretchMode.STRETCH_KEEP_ASPECT
+	
+		var itemSlot: Button  = Button.new()
+		itemSlot.icon = item["icon"]
+		var emptyStyle = StyleBoxEmpty.new()
+		itemSlot.add_theme_stylebox_override("normal", emptyStyle)
+		itemSlot.add_theme_stylebox_override("normal_mirrored", emptyStyle)
+		itemSlot.add_theme_stylebox_override("hover", emptyStyle)
+		itemSlot.add_theme_stylebox_override("hover_mirrored", emptyStyle)
+		itemSlot.add_theme_stylebox_override("hover_pressed", emptyStyle)
+		itemSlot.add_theme_stylebox_override("hover_pressed_mirrored", emptyStyle)
+		itemSlot.add_theme_stylebox_override("pressed", emptyStyle)
+		itemSlot.add_theme_stylebox_override("pressed_mirrored", emptyStyle)
+		itemSlot.add_theme_stylebox_override("disabled", emptyStyle)
+		itemSlot.add_theme_stylebox_override("disabled_mirrored", emptyStyle)
+		itemSlot.add_theme_stylebox_override("focus", emptyStyle)
+		
+		itemSlot.connect("pressed", Callable(self, "_on_item_slot_pressed").bind(item["name"]))
 		itemSlotsRef.add_child(itemSlot)
 
-# Helper to clear all children (used for GridContainer in the UI)
 func clearChildren(container: Node):
 	for child in container.get_children():
 		child.queue_free()
 
 func _on_item_picked_up(itemName: String, itemIcon: Texture2D):
-	addItem(itemName, itemIcon)  # Add item to inventory
+	addItem(itemName, itemIcon)
 
-# Enable or disable inventory interaction dynamically
 func setInteractive(isInteractive: bool):
 	self.mouse_filter = Control.MOUSE_FILTER_PASS if isInteractive else Control.MOUSE_FILTER_IGNORE
 
 func findItemInInventory(itemName: String) -> String:
 	for item in inventory:
 		if item["name"] == itemName:
-			return item["name"]  # Return the item name if found
-	return ""  # Return an empty string if not found
+			return item["name"]
+	return ""
+
+func _on_item_slot_pressed(itemName: String):
+	print("Item pressed:", itemName)
+	if(itemName == "Notebook"):
+		background.swapBackground(GameManager.getSceneTexture("captain_left_interaction_notebookCode"))

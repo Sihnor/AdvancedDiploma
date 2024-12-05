@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=24 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
 [ext_resource type="PackedScene" uid="uid://cwj6bpg3u3b8w" path="res://scenes/MainNav.tscn" id="2_cdd04"]
@@ -12,13 +12,16 @@
 [ext_resource type="PackedScene" uid="uid://d2ykc31xty202" path="res://scenes/LeftNav.tscn" id="3_s2r7w"]
 [ext_resource type="PackedScene" uid="uid://o2s547vsoxmj" path="res://scenes/TopRightNav.tscn" id="3_wt7dn"]
 [ext_resource type="PackedScene" uid="uid://bg3ruliyhrcr5" path="res://scenes/TopLeftNav.tscn" id="4_dryyg"]
+[ext_resource type="PackedScene" uid="uid://cf7xqrrdhc6yi" path="res://scenes/TopRightGlobusOpenNav.tscn" id="5_1srnc"]
 [ext_resource type="PackedScene" uid="uid://c3x8vutkwn5vy" path="res://scenes/TopLeftDrawerNav.tscn" id="14_8vtqr"]
 [ext_resource type="PackedScene" uid="uid://btrvd3iljyob2" path="res://scenes/RightDoorOpenNav.tscn" id="15_jiwka"]
 [ext_resource type="PackedScene" uid="uid://b51vq3wsky7ww" path="res://scenes/PickupItem3D.tscn" id="17_lw812"]
 [ext_resource type="PackedScene" uid="uid://bm63haxmbj0d4" path="res://scenes/DialogueSystem.tscn" id="17_mnevp"]
-[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/UI/icon.svg" id="18_76w6a"]
 [ext_resource type="PackedScene" uid="uid://dbu0l40uitgwg" path="res://scenes/MainUI.tscn" id="18_es0gl"]
 [ext_resource type="PackedScene" uid="uid://c5pgqlg128lek" path="res://scenes/InventorySystem.tscn" id="19_qp1ry"]
+[ext_resource type="Texture2D" uid="uid://bpor3gs4h6fbk" path="res://Assets/Art/UI/Notebook.png" id="20_isdqg"]
+[ext_resource type="Texture2D" uid="uid://dm4i3oaw2qh65" path="res://Assets/Art/UI/Plush.png" id="21_hd3g0"]
+[ext_resource type="Texture2D" uid="uid://c6ug0w0dy0y6n" path="res://Assets/Art/UI/Key.png" id="22_mdjjh"]
 
 [sub_resource type="Environment" id="Environment_s72p6"]
 ambient_light_source = 3
@@ -76,6 +79,9 @@ visible = false
 [node name="TopRightGlobusNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_8wmc8")]
 visible = false
 
+[node name="TopRightGlobusOpenNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("5_1srnc")]
+visible = false
+
 [node name="LeftNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_s2r7w")]
 visible = false
 
@@ -100,17 +106,17 @@ visible = false
 [node name="RightDoorNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_2noqw")]
 visible = false
 
-[node name="TopRightNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_wt7dn")]
-visible = false
-
 [node name="RightDoorOpenNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("15_jiwka")]
 visible = false
 
-[node name="MainUI" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("18_es0gl")]
-inventorySystem = NodePath("../InventorySystem")
-metadata/_edit_use_anchors_ = true
+[node name="TopRightNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_wt7dn")]
+visible = false
 
 [node name="InventorySystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("19_qp1ry")]
+metadata/_edit_use_anchors_ = true
+
+[node name="MainUI" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("18_es0gl")]
+inventorySystem = NodePath("../InventorySystem")
 metadata/_edit_use_anchors_ = true
 
 [node name="DialogueSystem" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("mainUI") instance=ExtResource("17_mnevp")]
@@ -121,9 +127,25 @@ metadata/_edit_use_anchors_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 5.15)
 visible = false
 item_name = "Notebook"
-item_icon = ExtResource("18_76w6a")
+item_icon = ExtResource("20_isdqg")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/LeftNav/Panel/PillowMove"
+
+[node name="Plush3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.15, 2.5)
+visible = false
+item_name = "Plush"
+item_icon = ExtResource("21_hd3g0")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe"
+
+[node name="Key3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -4.25)
+visible = false
+item_name = "Captain Room Key"
+item_icon = ExtResource("22_mdjjh")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "a"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer2/SubViewport"]
 environment = SubResource("Environment_s72p6")

@@ -78,5 +78,6 @@ grow_vertical = 2
 scale = Vector2(4.5, 6.25)
 size_flags_horizontal = 4
 size_flags_vertical = 4
+mouse_filter = 1
 sceneName = "captain_main_interaction_wardrobeOpen"
 sceneID = 3

@@ -1,11 +1,10 @@
 extends Control
 
-@export var inventorySystem: Control  # Exported variable to assign the main camera
+@export var inventorySystem: Control
+@onready var test = $Background/ItemSlots/Item
 
-# Inventory data
 var isInventoryOpen = false
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	if inventorySystem == null:
 		print("Inventory system not assigned!")
