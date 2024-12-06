@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=25 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
 [ext_resource type="PackedScene" uid="uid://cwj6bpg3u3b8w" path="res://scenes/MainNav.tscn" id="2_cdd04"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://o2s547vsoxmj" path="res://scenes/TopRightNav.tscn" id="3_wt7dn"]
 [ext_resource type="PackedScene" uid="uid://bg3ruliyhrcr5" path="res://scenes/TopLeftNav.tscn" id="4_dryyg"]
 [ext_resource type="PackedScene" uid="uid://cf7xqrrdhc6yi" path="res://scenes/TopRightGlobusOpenNav.tscn" id="5_1srnc"]
+[ext_resource type="PackedScene" uid="uid://d0ichgc34176v" path="res://scenes/LeftNotebookCodeNav.tscn" id="7_lgcxy"]
 [ext_resource type="PackedScene" uid="uid://c3x8vutkwn5vy" path="res://scenes/TopLeftDrawerNav.tscn" id="14_8vtqr"]
 [ext_resource type="PackedScene" uid="uid://btrvd3iljyob2" path="res://scenes/RightDoorOpenNav.tscn" id="15_jiwka"]
 [ext_resource type="PackedScene" uid="uid://b51vq3wsky7ww" path="res://scenes/PickupItem3D.tscn" id="17_lw812"]
@@ -83,6 +84,9 @@ visible = false
 visible = false
 
 [node name="LeftNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_s2r7w")]
+visible = false
+
+[node name="LeftNotebookCodeNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("7_lgcxy")]
 visible = false
 
 [node name="LeftWindowNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_otgd4")]

@@ -3,6 +3,7 @@ class_name InventorySystem
 
 var inventory = []
 var background : BackgroundTexture
+var isInventoryUsed = false
 @onready var itemSlotsRef = $Background/ItemSlots
 
 func _ready():
@@ -43,7 +44,8 @@ func clearChildren(container: Node):
 		child.queue_free()
 
 func _on_item_picked_up(itemName: String, itemIcon: Texture2D):
-	addItem(itemName, itemIcon)
+	if findItemInInventory(itemName) == "":
+		addItem(itemName, itemIcon)
 
 func setInteractive(isInteractive: bool):
 	self.mouse_filter = Control.MOUSE_FILTER_PASS if isInteractive else Control.MOUSE_FILTER_IGNORE
@@ -57,4 +59,6 @@ func findItemInInventory(itemName: String) -> String:
 func _on_item_slot_pressed(itemName: String):
 	print("Item pressed:", itemName)
 	if(itemName == "Notebook"):
-		background.swapBackground(GameManager.getSceneTexture("captain_left_interaction_notebookCode"))
+		isInventoryUsed = true
+		SceneManager.switchScene("captain_left_interaction_notebookCode", 5, null)
+		#background.swapBackground(GameManager.getSceneTexture("captain_left_interaction_notebookCode"))
