@@ -28,7 +28,8 @@ func _ready():
 	var texture = getSceneTexture(sceneName)
 	if texture:
 		print("Loaded texture for scene:", sceneName, "Texture:", sceneTextures[sceneName])
-		background.swapBackground(texture)
+		if background != null:
+			background.swapBackground(texture)
 	else:
 		print("No texture found for scene:", sceneName)
 
