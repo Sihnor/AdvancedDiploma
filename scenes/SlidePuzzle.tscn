@@ -1,0 +1,147 @@
+[gd_scene load_steps=21 format=3 uid="uid://bbtd20fe3jpp1"]
+
+[ext_resource type="Script" path="res://scripts/Piece.gd" id="1_81s26"]
+[ext_resource type="Script" path="res://scripts/SlidePuzzle.gd" id="1_fgl5l"]
+[ext_resource type="Texture2D" uid="uid://c6hbuprkhnd37" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/00.png" id="3_uko8e"]
+[ext_resource type="Texture2D" uid="uid://cgsnb2jbrr36r" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/01.png" id="4_i76yv"]
+[ext_resource type="Texture2D" uid="uid://cc3f4rpjrtslb" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/02.png" id="5_cmwt4"]
+[ext_resource type="Texture2D" uid="uid://dcr8myvf0o7hp" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/10.png" id="6_cp8qv"]
+[ext_resource type="Texture2D" uid="uid://kjhmkttf55fu" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/11.png" id="7_f3udt"]
+[ext_resource type="Texture2D" uid="uid://cla5f77iqy28v" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/12.png" id="8_leyw7"]
+[ext_resource type="Texture2D" uid="uid://d081og3kin4kx" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/20.png" id="9_roqop"]
+[ext_resource type="Texture2D" uid="uid://bm1kw58y05vm" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/21.png" id="10_w1kl2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0t5a5"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e70jw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ms68n"]
+albedo_texture = ExtResource("3_uko8e")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dlqqw"]
+albedo_texture = ExtResource("6_cp8qv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7twt"]
+albedo_texture = ExtResource("9_roqop")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ogyf"]
+albedo_texture = ExtResource("4_i76yv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ikj0"]
+albedo_texture = ExtResource("7_f3udt")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p5rlp"]
+albedo_texture = ExtResource("10_w1kl2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_07pf8"]
+albedo_texture = ExtResource("5_cmwt4")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_er72e"]
+albedo_texture = ExtResource("8_leyw7")
+
+[node name="PuzzleRoot" type="Node3D"]
+script = ExtResource("1_fgl5l")
+
+[node name="Piece1" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece1"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece1/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+surface_material_override/0 = SubResource("StandardMaterial3D_ms68n")
+
+[node name="Piece2" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece2"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece2/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+surface_material_override/0 = SubResource("StandardMaterial3D_dlqqw")
+
+[node name="Piece3" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(2, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece3"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece3/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+surface_material_override/0 = SubResource("StandardMaterial3D_w7twt")
+
+[node name="Piece4" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(0, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece4"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece4/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+surface_material_override/0 = SubResource("StandardMaterial3D_1ogyf")
+
+[node name="Piece5" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(1, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece5"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece5/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+surface_material_override/0 = SubResource("StandardMaterial3D_8ikj0")
+
+[node name="Piece6" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(2, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece6"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece6/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+surface_material_override/0 = SubResource("StandardMaterial3D_p5rlp")
+
+[node name="Piece7" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(0, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece7"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece7/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+surface_material_override/0 = SubResource("StandardMaterial3D_07pf8")
+
+[node name="Piece8" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece8"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece8/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+surface_material_override/0 = SubResource("StandardMaterial3D_er72e")
+
+[connection signal="input_event" from="Piece1" to="Piece1" method="_on_input_event"]
+[connection signal="input_event" from="Piece2" to="Piece2" method="_on_input_event"]
+[connection signal="input_event" from="Piece3" to="Piece3" method="_on_input_event"]
+[connection signal="input_event" from="Piece4" to="Piece4" method="_on_input_event"]
+[connection signal="input_event" from="Piece5" to="Piece5" method="_on_input_event"]
+[connection signal="input_event" from="Piece6" to="Piece6" method="_on_input_event"]
+[connection signal="input_event" from="Piece7" to="Piece7" method="_on_input_event"]
+[connection signal="input_event" from="Piece8" to="Piece8" method="_on_input_event"]

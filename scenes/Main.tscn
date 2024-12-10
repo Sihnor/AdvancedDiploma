@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=27 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
 [ext_resource type="PackedScene" uid="uid://cwj6bpg3u3b8w" path="res://scenes/MainNav.tscn" id="2_cdd04"]
@@ -20,9 +20,11 @@
 [ext_resource type="PackedScene" uid="uid://bm63haxmbj0d4" path="res://scenes/DialogueSystem.tscn" id="17_mnevp"]
 [ext_resource type="PackedScene" uid="uid://dbu0l40uitgwg" path="res://scenes/MainUI.tscn" id="18_es0gl"]
 [ext_resource type="PackedScene" uid="uid://c5pgqlg128lek" path="res://scenes/InventorySystem.tscn" id="19_qp1ry"]
-[ext_resource type="Texture2D" uid="uid://bpor3gs4h6fbk" path="res://Assets/Art/UI/Notebook.png" id="20_isdqg"]
-[ext_resource type="Texture2D" uid="uid://dm4i3oaw2qh65" path="res://Assets/Art/UI/Plush.png" id="21_hd3g0"]
-[ext_resource type="Texture2D" uid="uid://c6ug0w0dy0y6n" path="res://Assets/Art/UI/Key.png" id="22_mdjjh"]
+[ext_resource type="Texture2D" uid="uid://bpor3gs4h6fbk" path="res://Assets/Art/Placeholder/UI/Notebook.png" id="20_isdqg"]
+[ext_resource type="Texture2D" uid="uid://dm4i3oaw2qh65" path="res://Assets/Art/Placeholder/UI/Plush.png" id="21_hd3g0"]
+[ext_resource type="Texture2D" uid="uid://c6ug0w0dy0y6n" path="res://Assets/Art/Placeholder/UI/Key.png" id="22_mdjjh"]
+[ext_resource type="PackedScene" uid="uid://b2w2de81naqf" path="res://scenes/CodeRiddle.tscn" id="24_6w61k"]
+[ext_resource type="PackedScene" uid="uid://bbtd20fe3jpp1" path="res://scenes/SlidePuzzle.tscn" id="25_rqhjm"]
 
 [sub_resource type="Environment" id="Environment_s72p6"]
 ambient_light_source = 3
@@ -73,6 +75,7 @@ size = Vector2i(1152, 648)
 render_target_update_mode = 4
 
 [node name="MainNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("2_cdd04")]
+visible = false
 
 [node name="TopLeftDrawerNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("14_8vtqr")]
 visible = false
@@ -150,6 +153,21 @@ item_name = "Captain Room Key"
 item_icon = ExtResource("22_mdjjh")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
+
+[node name="DairyRiddle" parent="SubViewportContainer2/SubViewport" instance=ExtResource("24_6w61k")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 0)
+visible = false
+code = ["1", "8", "8", "9"]
+selectOptions = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+[node name="SlidePuzzleRiddle" parent="SubViewportContainer2/SubViewport" instance=ExtResource("25_rqhjm")]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0, 2, 0)
+visible = false
+
+[node name="LetterRiddle" parent="SubViewportContainer2/SubViewport" instance=ExtResource("24_6w61k")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 0)
+code = ["A", "B", "B", "A"]
+selectOptions = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer2/SubViewport"]
 environment = SubResource("Environment_s72p6")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c01ig7olg4lw4"]
 
 [ext_resource type="Script" path="res://scripts/SwapScene.gd" id="1_ebp52"]
-[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/UI/icon.svg" id="2_engof"]
+[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/Placeholder/UI/icon.svg" id="2_engof"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t4tp0"]
 

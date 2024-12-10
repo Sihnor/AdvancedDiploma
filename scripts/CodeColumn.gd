@@ -13,12 +13,8 @@ func _ready() -> void:
 	selectOptions = codeRiddle.selectOptions
 	parent = self.get_parent()  # Get the parent of the current node
 	children = parent.get_children()  # Get the parent’s children
-	var tmpIndex = 0
-	for child in children:
-		if child is Node3D and not child is Camera3D:
-			var label_node = child.get_node("Label3D")
-			label_node.text = selectOptions[tmpIndex]
-			tmpIndex += 1
+	print(code)
+	setDefault()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -36,7 +32,6 @@ func _on_arrow_up_input_event(camera: Node, event: InputEvent, event_position: V
 			else:
 				findIndex = findIndex+1
 			var index = selectOptions[findIndex]
-			print(index)
 			self.get_node("Label3D").text = index
 		if compare(code, getInputCode()):
 			print("Unlocked!")
@@ -51,7 +46,6 @@ func _on_arrow_down_input_event(camera: Node, event: InputEvent, event_position:
 			else:
 				findIndex = findIndex-1
 			var index = selectOptions[findIndex]
-			print(index)
 			self.get_node("Label3D").text = index
 		if compare(code, getInputCode()):
 			print("Unlocked!")
@@ -69,10 +63,13 @@ func getInputCode() -> Array:
 				var text = label_node.text.strip_edges()
 				tmpArray.append(text)
 	return tmpArray
+	
+func setDefault() -> void:
+	for child in children:
+		if child is Node3D and not child is Camera3D:
+			child.get_node("Label3D").text = selectOptions[0]
 
 func compare(code: Array, input: Array) -> bool:
-	print("input:" , input)
-	print("code:" , code)
 	if input == code:
 		return true
 	return false
