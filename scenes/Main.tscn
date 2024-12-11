@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=29 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
 [ext_resource type="PackedScene" uid="uid://cwj6bpg3u3b8w" path="res://scenes/MainNav.tscn" id="2_cdd04"]
@@ -23,7 +23,9 @@
 [ext_resource type="Texture2D" uid="uid://bpor3gs4h6fbk" path="res://Assets/Art/Placeholder/UI/Notebook.png" id="20_isdqg"]
 [ext_resource type="Texture2D" uid="uid://dm4i3oaw2qh65" path="res://Assets/Art/Placeholder/UI/Plush.png" id="21_hd3g0"]
 [ext_resource type="Texture2D" uid="uid://c6ug0w0dy0y6n" path="res://Assets/Art/Placeholder/UI/Key.png" id="22_mdjjh"]
+[ext_resource type="Texture2D" uid="uid://bwp2hkrla86bo" path="res://Assets/Art/Placeholder/UI/Note.png" id="23_xwnkh"]
 [ext_resource type="PackedScene" uid="uid://b2w2de81naqf" path="res://scenes/CodeRiddle.tscn" id="24_6w61k"]
+[ext_resource type="Texture2D" uid="uid://dcax7hhuhdhtj" path="res://Assets/Art/Placeholder/UI/PortraitPart.png" id="24_sn0n0"]
 [ext_resource type="PackedScene" uid="uid://bbtd20fe3jpp1" path="res://scenes/SlidePuzzle.tscn" id="25_rqhjm"]
 
 [sub_resource type="Environment" id="Environment_s72p6"]
@@ -75,7 +77,6 @@ size = Vector2i(1152, 648)
 render_target_update_mode = 4
 
 [node name="MainNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("2_cdd04")]
-visible = false
 
 [node name="TopLeftDrawerNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("14_8vtqr")]
 visible = false
@@ -149,25 +150,47 @@ nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/TopRightNav/P
 [node name="Key3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -4.25)
 visible = false
+item_name = "Note"
+item_icon = ExtResource("23_xwnkh")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "a"
+
+[node name="PortraitPart3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 4.25)
+visible = false
+item_name = "Portrait part"
+item_icon = ExtResource("24_sn0n0")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "a"
+
+[node name="DairyRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("rewardItem") instance=ExtResource("24_6w61k")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 0)
+visible = false
+rewardItem = NodePath("../PortraitPart3D")
+code = ["1", "8", "8", "9", "3"]
+selectOptions = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+swapScene = true
+sceneName = "captain_left_interaction_notebookCodeOpen"
+sceneID = 6
+
+[node name="LetterRiddle" parent="SubViewportContainer2/SubViewport" instance=ExtResource("24_6w61k")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 0)
+visible = false
+code = ["W", "H", "A", "L", "E"]
+selectOptions = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+
+[node name="CaptainKey3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -5)
+visible = false
 item_name = "Captain Room Key"
 item_icon = ExtResource("22_mdjjh")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
 
-[node name="DairyRiddle" parent="SubViewportContainer2/SubViewport" instance=ExtResource("24_6w61k")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 0)
+[node name="SlidePuzzleRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("rewardItem") instance=ExtResource("25_rqhjm")]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 2.5, 2.5, 1)
 visible = false
-code = ["1", "8", "8", "9"]
-selectOptions = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-
-[node name="SlidePuzzleRiddle" parent="SubViewportContainer2/SubViewport" instance=ExtResource("25_rqhjm")]
-transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 0, 2, 0)
-visible = false
-
-[node name="LetterRiddle" parent="SubViewportContainer2/SubViewport" instance=ExtResource("24_6w61k")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 0)
-code = ["A", "B", "B", "A"]
-selectOptions = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"]
+rewardItem = NodePath("../CaptainKey3D")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer2/SubViewport"]
 environment = SubResource("Environment_s72p6")

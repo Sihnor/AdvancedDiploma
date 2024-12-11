@@ -1,5 +1,6 @@
 extends Node3D
-
+class_name SlidePuzzleRiddle
+@export var rewardItem : PickupItem3D
 @export var gridSize: Vector2 = Vector2(3, 3) 
 @export var solvedState: Array = []
 @export var shuffle : bool
@@ -42,17 +43,20 @@ func _ready():
 
 
 func movePiece(piece):
-	if abs(piece.gridPosition.x - emptySlot.x) + abs(piece.gridPosition.y - emptySlot.y) == 1:
-		gridState[emptySlot.y][emptySlot.x] = piece.name
-		gridState[piece.gridPosition.y][piece.gridPosition.x] = "empty"  # Mark piece's old slot as empty
+	if not solved:
+		if abs(piece.gridPosition.x - emptySlot.x) + abs(piece.gridPosition.y - emptySlot.y) == 1:
+			gridState[emptySlot.y][emptySlot.x] = piece.name
+			gridState[piece.gridPosition.y][piece.gridPosition.x] = "empty"  # Mark piece's old slot as empty
 			
-		var temp = piece.gridPosition
-		piece.gridPosition = emptySlot
-		emptySlot = temp
-		updatePiecePosition(piece)
-	if checkSolved():
-		solved = true
-		print("Solved!")
+			var temp = piece.gridPosition
+			piece.gridPosition = emptySlot
+			emptySlot = temp
+			updatePiecePosition(piece)
+		if checkSolved():
+			solved = true
+			print("Solved!")
+			if rewardItem != null:
+				rewardItem.visible= true
 	
 
 func updatePiecePosition(piece):

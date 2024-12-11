@@ -3,6 +3,8 @@ class_name SwapScene
 @export var sceneName: String
 @export var sceneID: int
 @onready var button = $Button
+@export var selfDestroy: bool
+@export var isSlidePuzzle: bool
 
 var background : BackgroundTexture
 var mainNav : Control
@@ -48,3 +50,10 @@ func _ready():
 
 func _on_button_pressed() -> void:
 	SceneManager.switchScene(sceneName, sceneID, button)
+	if isSlidePuzzle:
+		var slidePuzzle: Node3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/SlidePuzzleRiddle")
+		if slidePuzzle != null:
+			slidePuzzle.visible =true
+	if selfDestroy:
+		queue_free()
+	

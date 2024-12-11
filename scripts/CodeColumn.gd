@@ -13,7 +13,7 @@ func _ready() -> void:
 	selectOptions = codeRiddle.selectOptions
 	parent = self.get_parent()  # Get the parent of the current node
 	children = parent.get_children()  # Get the parent’s children
-	print(code)
+#	print(code)
 	setDefault()
 
 
@@ -23,32 +23,44 @@ func _process(delta: float) -> void:
 
 
 func _on_arrow_up_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
-	if Input.is_action_pressed("uiClick"):
-		var labelNode = self.get_node("Label3D").text.strip_edges()
-		var findIndex = selectOptions.find(labelNode)
-		if findIndex != -1:
-			if findIndex+1 > (selectOptions.size()-1):
-				findIndex = 0
-			else:
-				findIndex = findIndex+1
-			var index = selectOptions[findIndex]
-			self.get_node("Label3D").text = index
-		if compare(code, getInputCode()):
-			print("Unlocked!")
+	if not codeRiddle.solved:
+		if Input.is_action_pressed("uiClick"):
+			var labelNode = self.get_node("Label3D").text.strip_edges()
+			var findIndex = selectOptions.find(labelNode)
+			if findIndex != -1:
+				if findIndex+1 > (selectOptions.size()-1):
+					findIndex = 0
+				else:
+					findIndex = findIndex+1
+				var index = selectOptions[findIndex]
+				self.get_node("Label3D").text = index
+			if compare(code, getInputCode()):
+				codeRiddle.solved = true
+				if codeRiddle.swapScene:
+					SceneManager.switchScene(codeRiddle.sceneName, codeRiddle.sceneID, null)
+				if codeRiddle.rewardItem != null:
+					codeRiddle.rewardItem.visible = true
+				print("Unlocked!")
 
 func _on_arrow_down_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
-	if Input.is_action_pressed("uiClick"):
-		var labelNode = self.get_node("Label3D").text.strip_edges()
-		var findIndex = selectOptions.find(labelNode)
-		if findIndex != -1:
-			if findIndex-1 < 0:
-				findIndex = (selectOptions.size()-1)
-			else:
-				findIndex = findIndex-1
-			var index = selectOptions[findIndex]
-			self.get_node("Label3D").text = index
-		if compare(code, getInputCode()):
-			print("Unlocked!")
+	if not codeRiddle.solved:
+		if Input.is_action_pressed("uiClick"):
+			var labelNode = self.get_node("Label3D").text.strip_edges()
+			var findIndex = selectOptions.find(labelNode)
+			if findIndex != -1:
+				if findIndex-1 < 0:
+					findIndex = (selectOptions.size()-1)
+				else:
+					findIndex = findIndex-1
+				var index = selectOptions[findIndex]
+				self.get_node("Label3D").text = index
+			if compare(code, getInputCode()):
+				codeRiddle.solved = true
+				if codeRiddle.swapScene:
+					SceneManager.switchScene(codeRiddle.sceneName, codeRiddle.sceneID, null)
+				if codeRiddle.rewardItem != null:
+					codeRiddle.rewardItem.visible = true
+				print("Unlocked!")
 		
 
 func updateCode(array: Array) -> void:
