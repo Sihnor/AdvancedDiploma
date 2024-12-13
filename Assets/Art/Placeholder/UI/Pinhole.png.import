@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bughqr6oyvaqa"
-path="res://.godot/imported/DE.png-5dec26711f21812464d3f019f5ebe584.ctex"
+uid="uid://csqbqsdnfq7u7"
+path="res://.godot/imported/Pinhole.png-746bb99190784dc411aa60819e5e19a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Placeholder/UI/DE.png"
-dest_files=["res://.godot/imported/DE.png-5dec26711f21812464d3f019f5ebe584.ctex"]
+source_file="res://Assets/Art/Placeholder/UI/Pinhole.png"
+dest_files=["res://.godot/imported/Pinhole.png-746bb99190784dc411aa60819e5e19a0.ctex"]
 
 [params]
 

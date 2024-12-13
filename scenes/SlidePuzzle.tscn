@@ -2,42 +2,42 @@
 
 [ext_resource type="Script" path="res://scripts/Piece.gd" id="1_81s26"]
 [ext_resource type="Script" path="res://scripts/SlidePuzzle.gd" id="1_fgl5l"]
-[ext_resource type="Texture2D" uid="uid://c6hbuprkhnd37" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/00.png" id="3_uko8e"]
-[ext_resource type="Texture2D" uid="uid://cgsnb2jbrr36r" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/01.png" id="4_i76yv"]
-[ext_resource type="Texture2D" uid="uid://cc3f4rpjrtslb" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/02.png" id="5_cmwt4"]
-[ext_resource type="Texture2D" uid="uid://dcr8myvf0o7hp" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/10.png" id="6_cp8qv"]
-[ext_resource type="Texture2D" uid="uid://kjhmkttf55fu" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/11.png" id="7_f3udt"]
-[ext_resource type="Texture2D" uid="uid://cla5f77iqy28v" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/12.png" id="8_leyw7"]
-[ext_resource type="Texture2D" uid="uid://d081og3kin4kx" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/20.png" id="9_roqop"]
-[ext_resource type="Texture2D" uid="uid://bm1kw58y05vm" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/21.png" id="10_w1kl2"]
+[ext_resource type="Texture2D" uid="uid://d0c7yhtrme80h" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/00.png" id="3_qmy0h"]
+[ext_resource type="Texture2D" uid="uid://cvl0iwwwnt0nq" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/01.png" id="4_p2xg8"]
+[ext_resource type="Texture2D" uid="uid://redisb81uia1" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/02.png" id="5_6ebuj"]
+[ext_resource type="Texture2D" uid="uid://dgraq7yejq1xj" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/03.png" id="6_vsnqa"]
+[ext_resource type="Texture2D" uid="uid://g036tffmns01" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/04.png" id="7_xwnci"]
+[ext_resource type="Texture2D" uid="uid://c753iqlxiub1c" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/05.png" id="8_rgtbd"]
+[ext_resource type="Texture2D" uid="uid://bvnlq6d8leupi" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/06.png" id="9_pw30c"]
+[ext_resource type="Texture2D" uid="uid://d2cq4cfyvddu4" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/07.png" id="10_j3h4q"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0t5a5"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_e70jw"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ms68n"]
-albedo_texture = ExtResource("3_uko8e")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ef56"]
+albedo_texture = ExtResource("3_qmy0h")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dlqqw"]
-albedo_texture = ExtResource("6_cp8qv")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_atxux"]
+albedo_texture = ExtResource("4_p2xg8")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7twt"]
-albedo_texture = ExtResource("9_roqop")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hmsxg"]
+albedo_texture = ExtResource("5_6ebuj")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ogyf"]
-albedo_texture = ExtResource("4_i76yv")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_otycq"]
+albedo_texture = ExtResource("6_vsnqa")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ikj0"]
-albedo_texture = ExtResource("7_f3udt")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fa756"]
+albedo_texture = ExtResource("7_xwnci")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p5rlp"]
-albedo_texture = ExtResource("10_w1kl2")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fgui7"]
+albedo_texture = ExtResource("8_rgtbd")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_07pf8"]
-albedo_texture = ExtResource("5_cmwt4")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jww7o"]
+albedo_texture = ExtResource("9_pw30c")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_er72e"]
-albedo_texture = ExtResource("8_leyw7")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tib58"]
+albedo_texture = ExtResource("10_j3h4q")
 
 [node name="PuzzleRoot" type="Node3D"]
 script = ExtResource("1_fgl5l")
@@ -51,7 +51,7 @@ shape = SubResource("BoxShape3D_0t5a5")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece1/CollisionShape3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_ms68n")
+surface_material_override/0 = SubResource("StandardMaterial3D_0ef56")
 
 [node name="Piece2" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -63,7 +63,7 @@ shape = SubResource("BoxShape3D_0t5a5")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece2/CollisionShape3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_dlqqw")
+surface_material_override/0 = SubResource("StandardMaterial3D_atxux")
 
 [node name="Piece3" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -75,7 +75,7 @@ shape = SubResource("BoxShape3D_0t5a5")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece3/CollisionShape3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_w7twt")
+surface_material_override/0 = SubResource("StandardMaterial3D_hmsxg")
 
 [node name="Piece4" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -87,7 +87,7 @@ shape = SubResource("BoxShape3D_0t5a5")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece4/CollisionShape3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_1ogyf")
+surface_material_override/0 = SubResource("StandardMaterial3D_otycq")
 
 [node name="Piece5" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -99,7 +99,7 @@ shape = SubResource("BoxShape3D_0t5a5")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece5/CollisionShape3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_8ikj0")
+surface_material_override/0 = SubResource("StandardMaterial3D_fa756")
 
 [node name="Piece6" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -111,7 +111,7 @@ shape = SubResource("BoxShape3D_0t5a5")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece6/CollisionShape3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_p5rlp")
+surface_material_override/0 = SubResource("StandardMaterial3D_fgui7")
 
 [node name="Piece7" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -123,7 +123,7 @@ shape = SubResource("BoxShape3D_0t5a5")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece7/CollisionShape3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_07pf8")
+surface_material_override/0 = SubResource("StandardMaterial3D_jww7o")
 
 [node name="Piece8" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -135,7 +135,7 @@ shape = SubResource("BoxShape3D_0t5a5")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece8/CollisionShape3D"]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_er72e")
+surface_material_override/0 = SubResource("StandardMaterial3D_tib58")
 
 [connection signal="input_event" from="Piece1" to="Piece1" method="_on_input_event"]
 [connection signal="input_event" from="Piece2" to="Piece2" method="_on_input_event"]

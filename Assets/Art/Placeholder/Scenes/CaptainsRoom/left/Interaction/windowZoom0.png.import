@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://t7a5oqrpsger"
-path="res://.godot/imported/left.png-63619e2839a83bf5f585ce48ee38dfa5.ctex"
+uid="uid://m7jgvs4jts5f"
+path="res://.godot/imported/windowZoom0.png-f4978a2b610848474a9689ea3ad0019a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/left.png"
-dest_files=["res://.godot/imported/left.png-63619e2839a83bf5f585ce48ee38dfa5.ctex"]
+source_file="res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/Interaction/windowZoom0.png"
+dest_files=["res://.godot/imported/windowZoom0.png-f4978a2b610848474a9689ea3ad0019a.ctex"]
 
 [params]
 
