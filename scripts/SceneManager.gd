@@ -18,11 +18,12 @@ var topRightGlobusNav : Control
 var topRightGlobusOpenNav : Control
 var notebook3D : PickupItem3D
 var plush3D : PickupItem3D
-var key3D : PickupItem3D
+var personalFile3D : PickupItem3D
 var portraitPart3D: PickupItem3D
 var captainKey3D : PickupItem3D
 var slidePuzzleRiddle: SlidePuzzleRiddle
 var dairyRiddle: CodeRiddle
+var letterRiddle: CodeRiddle
 var inventorySystem : InventorySystem
 var tmpSceneName : String
 var tmpSceneID: int
@@ -46,12 +47,16 @@ func _ready():
 	topRightGlobusOpenNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightGlobusOpenNav")
 	notebook3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Notebook3D")
 	plush3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Plush3D")
-	key3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Key3D")
+	personalFile3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/PersonalFile3D")
 	portraitPart3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/PortraitPart3D")
 	captainKey3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/CaptainKey3D")
 	slidePuzzleRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/SlidePuzzleRiddle")
 	dairyRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/DairyRiddle")
+	letterRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftDrawerNav/Panel/LetterRiddle")
 	inventorySystem = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/InventorySystem")
+	
+	if letterRiddle != null:
+			letterRiddle.visible =false
 	pass
 
 func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
@@ -60,14 +65,14 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		tmpSceneID = sceneID
 	if sceneID == 99:
 		print("sceneID: ", sceneID)
-		print("sceneID: ", tmpSceneID)
 		sceneID = tmpSceneID
 		sceneName = tmpSceneName
-		dairyRiddle.visible = false
+		if dairyRiddle != null:
+			dairyRiddle.visible = false
 		leftNotebookCode.visible = false
-	print(inventorySystem.isInventoryUsed)
 	
 	if sceneID == 0:
+		print("sceneID: ", sceneID)
 		leftNav.visible = false
 		topLeftNav.visible = false
 		rightNav.visible = false
@@ -76,13 +81,13 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			notebook3D.visible = false
 		if(plush3D != null):
 			plush3D.visible = false
-		if key3D != null:
-			key3D.visible = false
+		if personalFile3D != null:
+			personalFile3D.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 		mainNav.visible = true
 	elif sceneID == 1:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		topRightGlobusNav.visible = false
 		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightGlobusNav/Panel/OpenGlobus")
 		if tmpNode != null:
@@ -91,7 +96,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			portraitPart3D.visible = false
 		topRightGlobusOpenNav.visible = true
 	elif sceneID == 2:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		topRightNav.visible = false
 		if plush3D != null:
 			plush3D.visible = false
@@ -104,9 +109,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			sceneName = "captain_main_interaction_globusOpen"
 		topRightGlobusNav.visible = true
 	elif sceneID == 3:
-		print(sceneID)
-		print("tmpSceneID:", tmpSceneID)
-		print(inventorySystem.isInventoryUsed)
+		print("sceneID: ", sceneID)
 		if not inventorySystem.isInventoryUsed:
 			button.visible = false
 			inventorySystem.isInventoryUsed = false
@@ -116,7 +119,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			portraitPart3D.visible = false
 		topRightNav.visible = true
 	elif sceneID == 4:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		mainNav.visible = false
 		leftWindowNav.visible = false
 		slidePuzzleRiddle.visible = false
@@ -131,7 +134,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			tmpNode.button.visible = true
 		leftNav.visible = true
 	elif  sceneID == 5:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		inventorySystem.isInventoryUsed = true
 		mainNav.visible = false
 		leftNav.visible = false
@@ -148,16 +151,17 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		topRightGlobusNav.visible = false
 		topRightGlobusOpenNav.visible = false
 		slidePuzzleRiddle.visible = false
-
 		if notebook3D != null:
 			notebook3D.visible = false
 		if plush3D != null:
 			plush3D.visible = false
 		if captainKey3D != null:
 			captainKey3D.visible = false
-		if key3D != null:
-			key3D.visible = false
-		if dairyRiddle.solved:
+		if personalFile3D != null:
+			personalFile3D.visible = false
+		if letterRiddle != null:
+			letterRiddle.visible = false
+		if dairyRiddle == null:
 			sceneName = "captain_left_interaction_notebookCodeOpen"
 			if portraitPart3D != null:
 				portraitPart3D.visible = true
@@ -165,13 +169,13 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			dairyRiddle.visible = true
 		leftNotebookCode.visible = true
 	elif sceneID == 6:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		if portraitPart3D != null:
 			portraitPart3D.visible = true
 		dairyRiddle.visible = false
 		leftNotebookCode.visible = true
 	elif sceneID == 7:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		if not inventorySystem.isInventoryUsed:
 			button.visible = false
 			inventorySystem.isInventoryUsed = false
@@ -181,7 +185,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			portraitPart3D.visible = false
 		leftNav.visible = true
 	elif sceneID == 8:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		leftNav.visible = false
 		if(captainKey3D != null):
 			captainKey3D.visible = false
@@ -202,7 +206,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 					captainKey3D.visible = true
 		leftWindowNav.visible = true
 	elif sceneID == 9:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		mainNav.visible = false
 		rightDoorNav.visible = false
 		rightDoorOpenNav.visible = false
@@ -210,7 +214,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			portraitPart3D.visible = false
 		rightNav.visible = true
 	elif sceneID == 10:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		rightNav.visible = false
 		var openDoor: Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/RightDoorNav/Panel/OpenDoor")
 		if openDoor != null:
@@ -225,7 +229,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			portraitPart3D.visible = false
 		rightDoorNav.visible = true
 	elif sceneID == 11:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/RightDoorNav/Panel/OpenDoor")
 		if tmpNode != null:
 			tmpNode.queue_free()
@@ -234,7 +238,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		rightDoorNav.visible = false
 		rightDoorOpenNav.visible = true
 	elif sceneID == 12:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		mainNav.visible = false
 		topLeftRadioNav.visible = false
 		topLeftBookNav.visible = false
@@ -242,38 +246,42 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		topLeftDrawerNav.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
+		if letterRiddle != null:
+			letterRiddle.visible = false
 		topLeftNav.visible = true
 		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftNav/Panel/Drawer")
 		if tmpNode != null:
 			sceneName = "captain_topLeft"
 		else:
 			sceneName = "captain_topLeft_interaction_officeOpenDrawer"
-			if key3D != null:
-				key3D.visible = true
+			if personalFile3D != null:
+				personalFile3D.visible = true
 	elif sceneID == 13:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		topLeftNav.visible = false
-		if key3D != null:
-			key3D.visible = false
+		if personalFile3D != null:
+			personalFile3D.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 		topLeftBookNav.visible = true
 	elif sceneID == 14:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		topLeftNav.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
+		if letterRiddle != null:
+			letterRiddle.visible =true
 		topLeftDrawerNav.visible = true
 	elif sceneID == 15:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		topLeftNav.visible = false
-		if key3D != null:
-			key3D.visible = false
+		if personalFile3D != null:
+			personalFile3D.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 		topLeftMapNav.visible = true
 	elif sceneID == 16:
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		if not inventorySystem.isInventoryUsed:
 			button.visible = false
 			inventorySystem.isInventoryUsed = false
@@ -282,20 +290,20 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		var tmpNode: Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftNav/Panel/Drawer")
 		if tmpNode != null:
 			tmpNode.queue_free()
-		if key3D != null:
-			key3D.visible = true
+		if personalFile3D != null:
+			personalFile3D.visible = true
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 	elif sceneID == 17:
-		print(sceneID)
-		if key3D != null:
-			key3D.visible = false
+		print("sceneID: ", sceneID)
+		if personalFile3D != null:
+			personalFile3D.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 		topLeftRadioNav.visible = true
 		topLeftNav.visible = false
 	elif sceneID == 18 :
-		print(sceneID)
+		print("sceneID: ", sceneID)
 		inventorySystem.isInventoryUsed = false
 		mainNav.visible = false
 		topRightGlobusNav.visible = false

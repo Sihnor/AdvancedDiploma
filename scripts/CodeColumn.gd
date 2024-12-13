@@ -11,8 +11,8 @@ var children
 func _ready() -> void:
 	code = codeRiddle.code
 	selectOptions = codeRiddle.selectOptions
-	parent = self.get_parent()  # Get the parent of the current node
-	children = parent.get_children()  # Get the parent’s children
+	parent = self.get_parent()
+	children = parent.get_children()  
 #	print(code)
 	setDefault()
 
@@ -41,6 +41,7 @@ func _on_arrow_up_input_event(camera: Node, event: InputEvent, event_position: V
 				if codeRiddle.rewardItem != null:
 					codeRiddle.rewardItem.visible = true
 				print("Unlocked!")
+				codeRiddle.queue_free()
 
 func _on_arrow_down_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
 	if not codeRiddle.solved:
@@ -58,10 +59,12 @@ func _on_arrow_down_input_event(camera: Node, event: InputEvent, event_position:
 				codeRiddle.solved = true
 				if codeRiddle.swapScene:
 					SceneManager.switchScene(codeRiddle.sceneName, codeRiddle.sceneID, null)
+				else:
+					self.visible =false
 				if codeRiddle.rewardItem != null:
 					codeRiddle.rewardItem.visible = true
 				print("Unlocked!")
-		
+				codeRiddle.queue_free()
 
 func updateCode(array: Array) -> void:
 	pass
@@ -75,7 +78,7 @@ func getInputCode() -> Array:
 				var text = label_node.text.strip_edges()
 				tmpArray.append(text)
 	return tmpArray
-	
+
 func setDefault() -> void:
 	for child in children:
 		if child is Node3D and not child is Camera3D:

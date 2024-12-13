@@ -1,10 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3x8vutkwn5vy"]
+[gd_scene load_steps=4 format=3 uid="uid://c3x8vutkwn5vy"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_yuyyt"]
+[ext_resource type="PackedScene" uid="uid://b2w2de81naqf" path="res://scenes/CodeRiddle.tscn" id="2_fv7l1"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
 [node name="TopLeftDrawerNav" type="Control"]
+show_behind_parent = true
+top_level = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -44,6 +47,7 @@ sceneName = "captain_topLeft"
 sceneID = 12
 
 [node name="OpenDrawer" parent="Panel" instance=ExtResource("1_yuyyt")]
+visible = false
 layout_direction = 1
 layout_mode = 1
 anchors_preset = 8
@@ -62,3 +66,9 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_topLeft_interaction_officeOpenDrawer"
 sceneID = 16
+
+[node name="LetterRiddle" parent="Panel" node_paths=PackedStringArray("rewardItem") instance=ExtResource("2_fv7l1")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 0)
+rewardItem = NodePath("../OpenDrawer")
+code = ["W", "H", "A", "L", "E"]
+selectOptions = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]

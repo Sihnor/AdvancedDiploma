@@ -1,6 +1,6 @@
 extends Node3D
 class_name CodeRiddle
-@export var rewardItem : PickupItem3D
+@export var rewardItem : Node
 @export var code = []
 @export var selectOptions =[]
 @export var swapScene : bool
