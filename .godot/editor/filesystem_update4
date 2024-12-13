@@ -7,3 +7,7 @@ res://scenes/PickupItem3D.tscn
 res://scenes/SwapScene.tscn
 res://scenes/CodeRiddle.tscn
 res://scenes/GlubusPin.tscn
+res://scripts/Pin.gd
+res://scripts/GlobusMap.gd
+res://scenes/GlobusPinRiddle.tscn
+res://scenes/TopRightGlobusNav.tscn
