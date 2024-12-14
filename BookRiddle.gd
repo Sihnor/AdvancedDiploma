@@ -21,7 +21,7 @@ func clearInput():
 	for book in currentBooks:
 		if book is Book:
 			var t: Book = book
-			t.isSelected = false
+			#t.isSelected = false
 	inputs.clear()
 
 func swapBook(source: Book, destination: Book):

@@ -22,4 +22,7 @@ func _on_input_event(camera, event, event_position, normal, shape_idx):
 					parent.swapBook(parent.inputs[0], parent.inputs[1])
 					parent.clearInput()
 					parent.checkSolution()
+					isSelected = false
+			else:
+				isSelected = false
 		pass # Replace with function body.
