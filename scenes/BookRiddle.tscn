@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1bsl3hdb04e"]
+[gd_scene load_steps=10 format=3 uid="uid://d1bsl3hdb04e"]
 
 [ext_resource type="Script" path="res://BookRiddle.gd" id="1_bdoln"]
 [ext_resource type="Script" path="res://scripts/Book.gd" id="2_sctbl"]
@@ -7,11 +7,28 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_p0yq0"]
 
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_dxtl6"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_ol5fr"]
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_ai4ht"]
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_2klt3"]
+albedo_color = Color(1, 0, 1, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_f4uw8"]
+albedo_color = Color(0, 1, 1, 1)
+
 [node name="BookRiddle" type="Node3D"]
 script = ExtResource("1_bdoln")
+solution = "WHALE"
+shuffled = true
 
 [node name="Book1" type="Area3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
 script = ExtResource("2_sctbl")
 bookID = "W"
 
@@ -20,9 +37,10 @@ shape = SubResource("BoxShape3D_uhjjs")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Book1/CollisionShape3D"]
 mesh = SubResource("BoxMesh_p0yq0")
+surface_material_override/0 = SubResource("ORMMaterial3D_dxtl6")
 
 [node name="Book2" type="Area3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
 script = ExtResource("2_sctbl")
 bookID = "H"
 
@@ -31,6 +49,7 @@ shape = SubResource("BoxShape3D_uhjjs")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Book2/CollisionShape3D"]
 mesh = SubResource("BoxMesh_p0yq0")
+surface_material_override/0 = SubResource("ORMMaterial3D_ol5fr")
 
 [node name="Book3" type="Area3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -42,9 +61,10 @@ shape = SubResource("BoxShape3D_uhjjs")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Book3/CollisionShape3D"]
 mesh = SubResource("BoxMesh_p0yq0")
+surface_material_override/0 = SubResource("ORMMaterial3D_ai4ht")
 
 [node name="Book4" type="Area3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
 script = ExtResource("2_sctbl")
 bookID = "L"
 
@@ -53,9 +73,10 @@ shape = SubResource("BoxShape3D_uhjjs")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Book4/CollisionShape3D"]
 mesh = SubResource("BoxMesh_p0yq0")
+surface_material_override/0 = SubResource("ORMMaterial3D_2klt3")
 
 [node name="Book5" type="Area3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
 script = ExtResource("2_sctbl")
 bookID = "E"
 
@@ -64,9 +85,13 @@ shape = SubResource("BoxShape3D_uhjjs")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Book5/CollisionShape3D"]
 mesh = SubResource("BoxMesh_p0yq0")
+surface_material_override/0 = SubResource("ORMMaterial3D_f4uw8")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.07368)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.66178, 1.19322)
 
 [connection signal="input_event" from="Book1" to="Book1" method="_on_input_event"]
 [connection signal="input_event" from="Book2" to="Book2" method="_on_input_event"]
