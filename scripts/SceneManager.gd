@@ -24,6 +24,7 @@ var captainKey3D : PickupItem3D
 var slidePuzzleRiddle: SlidePuzzleRiddle
 var dairyRiddle: CodeRiddle
 var letterRiddle: CodeRiddle
+var bookRiddle: BookRiddle
 var inventorySystem : InventorySystem
 var tmpSceneName : String
 var tmpSceneID: int
@@ -53,10 +54,13 @@ func _ready():
 	slidePuzzleRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/SlidePuzzleRiddle")
 	dairyRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/DairyRiddle")
 	letterRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftDrawerNav/Panel/LetterRiddle")
+	bookRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftBookNav/BookRiddle")
 	inventorySystem = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/InventorySystem")
 	
 	if letterRiddle != null:
 			letterRiddle.visible =false
+	if bookRiddle != null:
+			bookRiddle.visible =false
 	pass
 
 func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
@@ -161,6 +165,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			personalFile3D.visible = false
 		if letterRiddle != null:
 			letterRiddle.visible = false
+		if bookRiddle != null:
+			bookRiddle.visible =false
 		if dairyRiddle == null:
 			sceneName = "captain_left_interaction_notebookCodeOpen"
 			if portraitPart3D != null:
@@ -248,6 +254,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			portraitPart3D.visible = false
 		if letterRiddle != null:
 			letterRiddle.visible = false
+		if bookRiddle != null:
+			bookRiddle.visible = false
 		topLeftNav.visible = true
 		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftNav/Panel/Drawer")
 		if tmpNode != null:
@@ -263,6 +271,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			personalFile3D.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
+		if bookRiddle != null:
+			bookRiddle.visible =true
 		topLeftBookNav.visible = true
 	elif sceneID == 14:
 		print("sceneID: ", sceneID)

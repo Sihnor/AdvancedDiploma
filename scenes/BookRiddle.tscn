@@ -87,12 +87,6 @@ shape = SubResource("BoxShape3D_uhjjs")
 mesh = SubResource("BoxMesh_p0yq0")
 surface_material_override/0 = SubResource("ORMMaterial3D_f4uw8")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.07368)
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.66178, 1.19322)
-
 [connection signal="input_event" from="Book1" to="Book1" method="_on_input_event"]
 [connection signal="input_event" from="Book2" to="Book2" method="_on_input_event"]
 [connection signal="input_event" from="Book3" to="Book3" method="_on_input_event"]

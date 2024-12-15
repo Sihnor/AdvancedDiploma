@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsvva1s0df31e"
-path="res://.godot/imported/pillowMove.png-c923b668e58054a434ec6f2b96f82b38.ctex"
+uid="uid://5cywf7r5llsh"
+path="res://.godot/imported/exitDoorZoomKey0.png-5f4b65a59c7de3734864baa6a4e295bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/Interaction/pillowMove.png"
-dest_files=["res://.godot/imported/pillowMove.png-c923b668e58054a434ec6f2b96f82b38.ctex"]
+source_file="res://Assets/Art/Placeholder/Scenes/CaptainsRoom/right/Interaction/exitDoorZoomKey0.png"
+dest_files=["res://.godot/imported/exitDoorZoomKey0.png-5f4b65a59c7de3734864baa6a4e295bd.ctex"]
 
 [params]
 

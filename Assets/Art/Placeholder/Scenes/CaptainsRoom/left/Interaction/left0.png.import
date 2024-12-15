@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsvva1s0df31e"
-path="res://.godot/imported/pillowMove.png-c923b668e58054a434ec6f2b96f82b38.ctex"
+uid="uid://bg46cdbwefui"
+path="res://.godot/imported/left0.png-e6983f156f87d99939c9915c509e2f9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/Interaction/pillowMove.png"
-dest_files=["res://.godot/imported/pillowMove.png-c923b668e58054a434ec6f2b96f82b38.ctex"]
+source_file="res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/Interaction/left0.png"
+dest_files=["res://.godot/imported/left0.png-e6983f156f87d99939c9915c509e2f9c.ctex"]
 
 [params]
 
