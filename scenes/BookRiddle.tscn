@@ -23,6 +23,7 @@ albedo_color = Color(1, 0, 1, 1)
 albedo_color = Color(0, 1, 1, 1)
 
 [node name="BookRiddle" type="Node3D"]
+visible = false
 script = ExtResource("1_bdoln")
 solution = "WHALE"
 shuffled = true

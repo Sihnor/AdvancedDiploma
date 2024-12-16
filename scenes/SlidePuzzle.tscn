@@ -1,46 +1,55 @@
-[gd_scene load_steps=21 format=3 uid="uid://bbtd20fe3jpp1"]
+[gd_scene load_steps=29 format=3 uid="uid://bbtd20fe3jpp1"]
 
 [ext_resource type="Script" path="res://scripts/Piece.gd" id="1_81s26"]
 [ext_resource type="Script" path="res://scripts/SlidePuzzle.gd" id="1_fgl5l"]
+[ext_resource type="PackedScene" uid="uid://dr5j63xomdit7" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/01_puzzelteile_sm.fbx" id="3_578dn"]
 [ext_resource type="Texture2D" uid="uid://d0c7yhtrme80h" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/00.png" id="3_qmy0h"]
 [ext_resource type="Texture2D" uid="uid://cvl0iwwwnt0nq" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/01.png" id="4_p2xg8"]
+[ext_resource type="PackedScene" uid="uid://hu27hx3ecens" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/02_puzzelteile_sm.fbx" id="4_pv4ft"]
 [ext_resource type="Texture2D" uid="uid://redisb81uia1" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/02.png" id="5_6ebuj"]
+[ext_resource type="PackedScene" uid="uid://ctwos4sjwv3p3" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/03_puzzelteile_sm.fbx" id="5_ftt3a"]
+[ext_resource type="PackedScene" uid="uid://d02mwr1v1fejd" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/04_puzzelteile_sm.fbx" id="6_nvlx7"]
 [ext_resource type="Texture2D" uid="uid://dgraq7yejq1xj" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/03.png" id="6_vsnqa"]
+[ext_resource type="PackedScene" uid="uid://vaduml2pupte" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/05_puzzelteile_sm.fbx" id="7_shemg"]
 [ext_resource type="Texture2D" uid="uid://g036tffmns01" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/04.png" id="7_xwnci"]
+[ext_resource type="PackedScene" uid="uid://dhny5pgtnhpgt" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/06_puzzelteile_sm.fbx" id="8_a0xdv"]
 [ext_resource type="Texture2D" uid="uid://c753iqlxiub1c" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/05.png" id="8_rgtbd"]
 [ext_resource type="Texture2D" uid="uid://bvnlq6d8leupi" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/06.png" id="9_pw30c"]
+[ext_resource type="PackedScene" uid="uid://ce0rmaigdvgw6" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/07_puzzelteile_sm.fbx" id="9_q6nba"]
 [ext_resource type="Texture2D" uid="uid://d2cq4cfyvddu4" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/07.png" id="10_j3h4q"]
+[ext_resource type="PackedScene" uid="uid://b2f4tw2524ijs" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/08_puzzelteile_sm.fbx" id="10_ptoog"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0t5a5"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_e70jw"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ef56"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m46wc"]
 albedo_texture = ExtResource("3_qmy0h")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_atxux"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sl33e"]
 albedo_texture = ExtResource("4_p2xg8")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hmsxg"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1uis"]
 albedo_texture = ExtResource("5_6ebuj")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_otycq"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xunqa"]
 albedo_texture = ExtResource("6_vsnqa")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fa756"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d113x"]
 albedo_texture = ExtResource("7_xwnci")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fgui7"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjkxt"]
 albedo_texture = ExtResource("8_rgtbd")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jww7o"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ds5mc"]
 albedo_texture = ExtResource("9_pw30c")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tib58"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3imr3"]
 albedo_texture = ExtResource("10_j3h4q")
 
 [node name="PuzzleRoot" type="Node3D"]
 script = ExtResource("1_fgl5l")
+shuffle = true
 
 [node name="Piece1" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -48,10 +57,15 @@ script = ExtResource("1_81s26")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Piece1"]
 shape = SubResource("BoxShape3D_0t5a5")
 
+[node name="01_puzzelteile_sm" parent="Piece1/CollisionShape3D" instance=ExtResource("3_578dn")]
+transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
+visible = false
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece1/CollisionShape3D"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 1.0009, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_0ef56")
+skeleton = NodePath("../../../Piece8/CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_m46wc")
 
 [node name="Piece2" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -60,10 +74,15 @@ gridPosition = Vector2(1, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Piece2"]
 shape = SubResource("BoxShape3D_0t5a5")
 
+[node name="03_puzzelteile_sm" parent="Piece2/CollisionShape3D" instance=ExtResource("5_ftt3a")]
+transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
+visible = false
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece2/CollisionShape3D"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 1.0009, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_atxux")
+skeleton = NodePath("../../../Piece8/CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_sl33e")
 
 [node name="Piece3" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -72,10 +91,15 @@ gridPosition = Vector2(2, 0)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Piece3"]
 shape = SubResource("BoxShape3D_0t5a5")
 
+[node name="05_puzzelteile_sm" parent="Piece3/CollisionShape3D" instance=ExtResource("7_shemg")]
+transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
+visible = false
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece3/CollisionShape3D"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 1.0009, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_hmsxg")
+skeleton = NodePath("../../../Piece8/CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1uis")
 
 [node name="Piece4" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -84,10 +108,15 @@ gridPosition = Vector2(0, 1)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Piece4"]
 shape = SubResource("BoxShape3D_0t5a5")
 
+[node name="02_puzzelteile_sm" parent="Piece4/CollisionShape3D" instance=ExtResource("4_pv4ft")]
+transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
+visible = false
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece4/CollisionShape3D"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 1.0009, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_otycq")
+skeleton = NodePath("../../../Piece8/CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_xunqa")
 
 [node name="Piece5" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -96,10 +125,15 @@ gridPosition = Vector2(1, 1)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Piece5"]
 shape = SubResource("BoxShape3D_0t5a5")
 
+[node name="04_puzzelteile_sm" parent="Piece5/CollisionShape3D" instance=ExtResource("6_nvlx7")]
+transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
+visible = false
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece5/CollisionShape3D"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 1.0009, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_fa756")
+skeleton = NodePath("../../../Piece8/CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_d113x")
 
 [node name="Piece6" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -108,10 +142,15 @@ gridPosition = Vector2(2, 1)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Piece6"]
 shape = SubResource("BoxShape3D_0t5a5")
 
+[node name="06_puzzelteile_sm" parent="Piece6/CollisionShape3D" instance=ExtResource("8_a0xdv")]
+transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
+visible = false
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece6/CollisionShape3D"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 1.0009, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_fgui7")
+skeleton = NodePath("../../../Piece8/CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_vjkxt")
 
 [node name="Piece7" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -120,10 +159,15 @@ gridPosition = Vector2(0, 2)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Piece7"]
 shape = SubResource("BoxShape3D_0t5a5")
 
+[node name="07_puzzelteile_sm" parent="Piece7/CollisionShape3D" instance=ExtResource("9_q6nba")]
+transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
+visible = false
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece7/CollisionShape3D"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 1.0009, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_jww7o")
+skeleton = NodePath("../../../Piece8/CollisionShape3D")
+surface_material_override/0 = SubResource("StandardMaterial3D_ds5mc")
 
 [node name="Piece8" type="Area3D" parent="."]
 script = ExtResource("1_81s26")
@@ -132,10 +176,20 @@ gridPosition = Vector2(1, 2)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Piece8"]
 shape = SubResource("BoxShape3D_0t5a5")
 
+[node name="08_puzzelteile_sm" parent="Piece8/CollisionShape3D" instance=ExtResource("10_ptoog")]
+transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0)
+visible = false
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Piece8/CollisionShape3D"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0, 0)
 mesh = SubResource("PlaneMesh_e70jw")
-surface_material_override/0 = SubResource("StandardMaterial3D_tib58")
+surface_material_override/0 = SubResource("StandardMaterial3D_3imr3")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 5, 1)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 4, -3.4641)
 
 [connection signal="input_event" from="Piece1" to="Piece1" method="_on_input_event"]
 [connection signal="input_event" from="Piece2" to="Piece2" method="_on_input_event"]

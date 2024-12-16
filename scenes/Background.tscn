@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://6m4rbr4uqs3u"]
+[gd_scene load_steps=3 format=3 uid="uid://6m4rbr4uqs3u"]
 
 [ext_resource type="Script" path="res://scripts/Background.gd" id="1_6fjdy"]
+[ext_resource type="Texture2D" uid="uid://278hci7yds0k" path="res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/Interaction/windowZoom.png" id="2_f6v4y"]
 
 [node name="Background" type="Control" node_paths=PackedStringArray("textureRect")]
 layout_mode = 3
@@ -24,4 +25,5 @@ mouse_filter = 1
 
 [node name="TextureRect" type="TextureRect" parent="PanelContainer"]
 layout_mode = 2
+texture = ExtResource("2_f6v4y")
 expand_mode = 1

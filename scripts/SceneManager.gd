@@ -21,6 +21,7 @@ var plush3D : PickupItem3D
 var personalFile3D : PickupItem3D
 var portraitPart3D: PickupItem3D
 var captainKey3D : PickupItem3D
+var closetKey3D : PickupItem3D
 var slidePuzzleRiddle: SlidePuzzleRiddle
 var dairyRiddle: CodeRiddle
 var letterRiddle: CodeRiddle
@@ -51,6 +52,7 @@ func _ready():
 	personalFile3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/PersonalFile3D")
 	portraitPart3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/PortraitPart3D")
 	captainKey3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/CaptainKey3D")
+	closetKey3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/ClosetKey3D")
 	slidePuzzleRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/SlidePuzzleRiddle")
 	dairyRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/DairyRiddle")
 	letterRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftDrawerNav/Panel/LetterRiddle")
@@ -87,6 +89,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			plush3D.visible = false
 		if personalFile3D != null:
 			personalFile3D.visible = false
+		if closetKey3D != null:
+			closetKey3D.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 		mainNav.visible = true
@@ -163,6 +167,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			captainKey3D.visible = false
 		if personalFile3D != null:
 			personalFile3D.visible = false
+		if closetKey3D != null:
+			closetKey3D.visible = false
 		if letterRiddle != null:
 			letterRiddle.visible = false
 		if bookRiddle != null:
@@ -264,11 +270,15 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			sceneName = "captain_topLeft_interaction_officeOpenDrawer"
 			if personalFile3D != null:
 				personalFile3D.visible = true
+			if closetKey3D != null:
+				closetKey3D.visible = true
 	elif sceneID == 13:
 		print("sceneID: ", sceneID)
 		topLeftNav.visible = false
 		if personalFile3D != null:
 			personalFile3D.visible = false
+		if closetKey3D != null:
+			closetKey3D.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 		if bookRiddle != null:
@@ -287,6 +297,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		topLeftNav.visible = false
 		if personalFile3D != null:
 			personalFile3D.visible = false
+		if closetKey3D != null:
+			closetKey3D.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 		topLeftMapNav.visible = true
@@ -302,12 +314,16 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			tmpNode.queue_free()
 		if personalFile3D != null:
 			personalFile3D.visible = true
+		if closetKey3D != null:
+			closetKey3D.visible = true
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 	elif sceneID == 17:
 		print("sceneID: ", sceneID)
 		if personalFile3D != null:
 			personalFile3D.visible = false
+		if closetKey3D != null:
+			closetKey3D.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 		topLeftRadioNav.visible = true
@@ -320,6 +336,13 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		topRightGlobusOpenNav.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
+		var openWardrobe: Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe")
+		if openWardrobe != null:
+			sceneName = "captain_topRight"
+			if inventorySystem.findItemInInventory("Closet Key") != "":
+				openWardrobe.visible = true
+			else:
+				openWardrobe.visible = false
 		if inventorySystem.findItemInInventory("Plush") != "":
 			sceneName = "captain_main_interaction_wardrobeOpen"
 		else:

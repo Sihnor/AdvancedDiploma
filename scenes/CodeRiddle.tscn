@@ -8,6 +8,7 @@
 [sub_resource type="BoxMesh" id="BoxMesh_0ol4a"]
 
 [node name="CodeRiddle" type="Node3D"]
+visible = false
 script = ExtResource("1_c1gr7")
 
 [node name="Column1" type="Node3D" parent="."]
