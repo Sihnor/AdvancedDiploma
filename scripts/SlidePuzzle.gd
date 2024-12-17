@@ -1,5 +1,6 @@
 extends Node3D
 class_name SlidePuzzleRiddle
+@onready var slideSound : AudioStreamPlayer3D= $AudioStreamPlayer3D
 @export var rewardItem : PickupItem3D
 @export var gridSize: Vector2 = Vector2(3, 3) 
 @export var solvedState: Array = []
@@ -44,6 +45,8 @@ func _ready():
 
 func movePiece(piece):
 	if not solved:
+		if slideSound != null:
+			slideSound.play()
 		if abs(piece.gridPosition.x - emptySlot.x) + abs(piece.gridPosition.y - emptySlot.y) == 1:
 			gridState[emptySlot.y][emptySlot.x] = piece.name
 			gridState[piece.gridPosition.y][piece.gridPosition.x] = "empty"  # Mark piece's old slot as empty

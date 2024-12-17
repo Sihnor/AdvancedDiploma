@@ -1,5 +1,7 @@
-DirectionalLight3D
 Camera3D
+AudioStreamPlayer3D
+AudioListener3D
+DirectionalLight3D
 MeshInstance3D
 CollisionShape3D
 Area3D
@@ -10,5 +12,3 @@ CheckButton
 CodeRiddle
 Node3D
 Label3D
-Label
-RichTextLabel

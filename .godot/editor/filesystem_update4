@@ -1,11 +1,12 @@
-res://scenes/Main.tscn
+res://scenes/SlidePuzzle.tscn
 res://scripts/GameManager.gd
 res://scripts/SceneManager.gd
 res://scripts/GlobusMap.gd
-res://scenes/SlidePuzzle.tscn
+res://scenes/Main.tscn
 res://scenes/Background.tscn
 res://scenes/BookRiddle.tscn
 res://scenes/CodeRiddle.tscn
 res://scenes/TopRightNav.tscn
 res://scenes/SwapScene.tscn
 res://scripts/SlidePuzzle.gd
+res://scenes/RightDoorNav.tscn
