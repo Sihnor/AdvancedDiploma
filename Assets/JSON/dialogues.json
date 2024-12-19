@@ -1,0 +1,19 @@
+[
+	{
+		"name": "Narrator",
+		"text": "Welcome to our adventure!"
+	},
+	{
+		"name": "Player",
+		"text": "Where do we start?"
+	},
+	{
+		"name": "Narrator",
+		"text": "Choose your path:",
+		"choices": [
+			{ "text": "Explore the forest", "filepath": "res://Assets/JSON/choice/forest.json"},
+			{ "text": "Visit the village", "filepath": "res://Assets/JSON/choice/village.json"},
+			{ "text": "Nothing", "filepath": ""}
+		]
+	}
+]

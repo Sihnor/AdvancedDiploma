@@ -127,8 +127,8 @@ metadata/_edit_use_anchors_ = true
 inventorySystem = NodePath("../InventorySystem")
 metadata/_edit_use_anchors_ = true
 
-[node name="DialogueSystem" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("mainUI") instance=ExtResource("17_mnevp")]
-mainUI = NodePath("../MainUI")
+[node name="DialogueSystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("17_mnevp")]
+filePath = "res://Assets/JSON/dialogues.json"
 metadata/_edit_use_anchors_ = true
 
 [node name="Notebook3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]

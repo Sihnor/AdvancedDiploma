@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Narrator",
+		"text": "You explore the forest..."
+	},
+	{
+		"name": "Player",
+		"text": "What should I do next?.."
+	},
+	{
+		"name": "Narrator",
+		"text": "There is a tree or and a house!"
+	},
+	{
+		"name": "Narrator",
+		"text": "Choose your path:",
+		"choices": [
+			{ "text": "Investigate the tree", "filepath": "res://Assets/JSON/choice/tree.json"},
+			{ "text": "Investigate the house", "filepath": "res://Assets/JSON/choice/house.json"}
+		]
+	}
+]
