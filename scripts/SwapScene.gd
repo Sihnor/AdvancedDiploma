@@ -5,6 +5,8 @@ class_name SwapScene
 @onready var button = $Button
 @export var selfDestroy: bool
 @export var isSlidePuzzle: bool
+@export var audioStreamPlayer:AudioStreamPlayer
+@export var sound:AudioStream
 
 var background : BackgroundTexture
 var mainNav : Control
@@ -27,6 +29,7 @@ var key3D : PickupItem3D
 var inventorySystem : InventorySystem
 
 func _ready():
+	audioStreamPlayer.stream = sound
 	background = get_tree().root.get_node("MainScene/SubViewportContainer/SubViewport/Background")
 	mainNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/MainNav")
 	leftNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/LeftNav")
@@ -49,6 +52,8 @@ func _ready():
 	pass
 
 func _on_button_pressed() -> void:
+	if sound != null: 
+		audioStreamPlayer.play()
 	SceneManager.switchScene(sceneName, sceneID, button)
 	if isSlidePuzzle:
 		var slidePuzzle: Node3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/SlidePuzzleRiddle")
