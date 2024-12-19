@@ -192,6 +192,7 @@ sceneID = 6
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 2, 2.75, 0.95)
 visible = false
 rewardItem = NodePath("../CaptainKey3D")
+shuffle = false
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer2/SubViewport"]
 environment = SubResource("Environment_s72p6")

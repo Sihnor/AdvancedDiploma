@@ -1,5 +1,7 @@
-VBoxContainer
+AudioStreamPlayer
+AudioStreamPlayer2D
 Camera3D
+VBoxContainer
 AudioStreamPlayer3D
 AudioListener3D
 DirectionalLight3D
@@ -11,4 +13,3 @@ Button
 TextureButton
 CheckButton
 CodeRiddle
-Node3D

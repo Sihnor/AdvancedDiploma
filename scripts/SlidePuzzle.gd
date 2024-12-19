@@ -1,6 +1,6 @@
 extends Node3D
 class_name SlidePuzzleRiddle
-@onready var slideSound : AudioStreamPlayer3D= $AudioStreamPlayer3D
+@onready var slideSound : AudioStreamPlayer= $AudioStreamPlayer
 @export var rewardItem : PickupItem3D
 @export var gridSize: Vector2 = Vector2(3, 3) 
 @export var solvedState: Array = []
