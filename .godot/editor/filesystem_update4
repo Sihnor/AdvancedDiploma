@@ -1,8 +1,4 @@
 res://scenes/Main.tscn
-res://scripts/GameManager.gd
-res://scripts/SceneManager.gd
-res://scripts/GlobusMap.gd
-res://scenes/DialogueSystem.tscn
-res://scenes/SlidePuzzle.tscn
-res://scripts/SlidePuzzle.gd
-res://Assets/JSON/dialogues.json
+res://scenes/SwapScene.tscn
+res://scripts/SwapScene.gd
+res://scenes/MainNav.tscn
