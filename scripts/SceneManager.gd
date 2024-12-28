@@ -27,8 +27,10 @@ var dairyRiddle: CodeRiddle
 var letterRiddle: CodeRiddle
 var bookRiddle: BookRiddle
 var inventorySystem : InventorySystem
+var dialogueSystem : DialogueSystem
 var tmpSceneName : String
 var tmpSceneID: int
+var visitedScenes: Array = []
 
 func _ready():
 	background = get_tree().root.get_node("MainScene/SubViewportContainer/SubViewport/Background")
@@ -58,6 +60,7 @@ func _ready():
 	letterRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftDrawerNav/Panel/LetterRiddle")
 	bookRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftBookNav/BookRiddle")
 	inventorySystem = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/InventorySystem")
+	dialogueSystem = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/DialogueSystem")
 	
 	if letterRiddle != null:
 			letterRiddle.visible =false
@@ -97,6 +100,15 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 	elif sceneID == 1:
 		print("sceneID: ", sceneID)
 		topRightGlobusNav.visible = false
+		if not sceneID in visitedScenes:
+			visitedScenes.append(sceneID)
+			dialogueSystem.filePath = "res://Assets/JSON/Dialogues/Scene1/GlobeWithPin.json"
+			dialogueSystem.dialogues = dialogueSystem.loadDialoguesFromJSON(dialogueSystem.filePath)
+			dialogueSystem.currentIndex = 0
+			dialogueSystem.updateDialogue()
+			dialogueSystem.visible =true
+		
+		
 		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightGlobusNav/Panel/OpenGlobus")
 		if tmpNode != null:
 			tmpNode.queue_free()
@@ -182,6 +194,14 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		leftNotebookCode.visible = true
 	elif sceneID == 6:
 		print("sceneID: ", sceneID)
+		if not sceneID in visitedScenes:
+			visitedScenes.append(sceneID)
+			dialogueSystem.filePath = "res://Assets/JSON/Dialogues/Scene1/CaptainsJournalUnderPillow.json"
+			dialogueSystem.dialogues = dialogueSystem.loadDialoguesFromJSON(dialogueSystem.filePath)
+			dialogueSystem.currentIndex = 0
+			dialogueSystem.updateDialogue()
+			dialogueSystem.visible =true
+		
 		if portraitPart3D != null:
 			portraitPart3D.visible = true
 		dairyRiddle.visible = false
@@ -214,6 +234,14 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		else:
 			slidePuzzleRiddle.visible = true
 			if slidePuzzleRiddle.solved:
+				if not sceneID in visitedScenes:
+					visitedScenes.append(sceneID)
+					dialogueSystem.filePath = "res://Assets/JSON/Dialogues/Scene1/PortraitCaptain.json"
+					dialogueSystem.dialogues = dialogueSystem.loadDialoguesFromJSON(dialogueSystem.filePath)
+					dialogueSystem.currentIndex = 0
+					dialogueSystem.updateDialogue()
+					dialogueSystem.visible =true
+			
 				if captainKey3D != null:
 					captainKey3D.visible = true
 		leftWindowNav.visible = true
@@ -242,6 +270,13 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		rightDoorNav.visible = true
 	elif sceneID == 11:
 		print("sceneID: ", sceneID)
+		if not sceneID in visitedScenes:
+			visitedScenes.append(sceneID)
+			dialogueSystem.filePath = "res://Assets/JSON/Dialogues/Scene1/RadioWhisper.json"
+			dialogueSystem.dialogues = dialogueSystem.loadDialoguesFromJSON(dialogueSystem.filePath)
+			dialogueSystem.currentIndex = 0
+			dialogueSystem.updateDialogue()
+			dialogueSystem.visible =true
 		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/RightDoorNav/Panel/OpenDoor")
 		if tmpNode != null:
 			tmpNode.queue_free()
@@ -295,6 +330,14 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 	elif sceneID == 15:
 		print("sceneID: ", sceneID)
 		topLeftNav.visible = false
+		if not sceneID in visitedScenes:
+			visitedScenes.append(sceneID)
+			dialogueSystem.filePath = "res://Assets/JSON/Dialogues/Scene1/MapOnDesk.json"
+			dialogueSystem.dialogues = dialogueSystem.loadDialoguesFromJSON(dialogueSystem.filePath)
+			dialogueSystem.currentIndex = 0
+			dialogueSystem.updateDialogue()
+			dialogueSystem.visible =true
+			
 		if personalFile3D != null:
 			personalFile3D.visible = false
 		if closetKey3D != null:

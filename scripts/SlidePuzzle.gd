@@ -60,6 +60,7 @@ func movePiece(piece):
 			print("Solved!")
 			if rewardItem != null:
 				rewardItem.visible= true
+				SceneManager.switchScene("captain_left_interaction_windowZoom", 8, null)
 	
 
 func updatePiecePosition(piece):

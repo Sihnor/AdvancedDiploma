@@ -1,0 +1,44 @@
+[
+	{
+		"name": "",
+		"text": "Kyra stirs, her eyelids fluttering open as she finds herself slouched in a worn, leather armchair. She looks around, disoriented"
+	},
+	{
+		"name": "Kyra",
+		"text": "How did I… end up here?"
+	},
+	{
+		"name": "Kyra",
+		"text": "I don’t remember sitting down neither getting abroad.. this.. weird old looking dark ship"
+	},
+	{
+		"name": "",
+		"text": "(mutters Kyra to herself)"
+	},
+	{
+		"name": "",
+		"text": "She rubs her temples, the faint memory of her mission coming back to her as she rises slowly."
+	},
+	{
+		"name": "Kyra",
+		"text": "The mission... the signal. Scotland Yard sent me to investigate, but…",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 01.wav"
+	},
+	{
+		"name": "",
+		"text": "*She pauses and glacing around*"
+	},
+	{
+		"name": "Kyra",
+		"text": "Something doesn’t feel right.. My hands and feet can’t stop shaking.. My mind and heart feel numb with paranoia and.. with a dark energy I cannot yet comprehend its force or origins.."
+	},
+	{
+		"name": "",
+		"text": "(Kyra wispers)"
+	},
+	{
+		"name": "Kyra",
+		"text": "I am not alone..",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 02.wav"
+	}
+]

@@ -1,17 +1,19 @@
 extends Control
-
+class_name DialogueSystem
 # Array to hold loaded dialogues
 var dialogues: Array = []
 var currentIndex = 0
 
 # Nodes
-@export var filePath: String
+var filePath: String
 @onready var nameLabelRef = $Background/CharacterNames
 @onready var dialogueLabelRef = $Background/DialogueText
 @onready var nextButtonRef = $Background/NextBtn
 @onready var choicesContainerRef = $Background/ChoicesContainer
+@onready var audioRef = $AudioStreamPlayer
 
 func _ready():
+	filePath = "res://Assets/JSON/Dialogues/Scene1/TheCaptainsRoom.json"
 	dialogues = loadDialoguesFromJSON(filePath)  # Load dialogues from JSON
 	if dialogues.size() > 0:
 		updateDialogue()
@@ -38,11 +40,15 @@ func updateDialogue():
 	# Clear previous choices
 	for child in choicesContainerRef.get_children():
 		child.queue_free()
-	
 	if currentIndex < dialogues.size():
 		var currentDialogue = dialogues[currentIndex]
 		nameLabelRef.text = currentDialogue["name"]
 		dialogueLabelRef.text = currentDialogue["text"]
+		if "audio" in currentDialogue:
+			if audioRef != null:
+				audioRef.stream = ResourceLoader.load(currentDialogue["audio"])
+				audioRef.play()
+			
 		
 		# Handle choices if they exist
 		if "choices" in currentDialogue:
@@ -65,14 +71,13 @@ func showChoices(choices):
 func _on_choice_selected(filePath):
 	if filePath != "":
 		dialogues = loadDialoguesFromJSON(filePath)  # Load dialogues from JSON
-		currentIndex =0
+		currentIndex = 0
 	else:
 		currentIndex += 1
 	updateDialogue()
 
 func _on_next_btn_pressed():
 	currentIndex += 1
-
 	updateDialogue()
 
 func hideDialogue():
