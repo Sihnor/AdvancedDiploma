@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dqdokhs4cjcq7"
+path="res://.godot/imported/Schublade öffnen.wav-59ac24114f68669317f5d9c5bc1645e8.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/SFX/Schublade öffnen.wav"
+dest_files=["res://.godot/imported/Schublade öffnen.wav-59ac24114f68669317f5d9c5bc1645e8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,14 +1,38 @@
 [
 	{
-		"name": "Kyra",
-		"text": "What the.. how is.. that even possible for an old Globe?"
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "What the.. how is.. that even possible for an old Globe?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "",
-		"text": "Kyra asks, but then she decided to not overthink much about it and continue to write the rest down."
+		"nameL": "",
+		"nameR": "",
+		"text": "Kyra asks, but then she decided to not overthink much about it and continue to write the rest down.",
+		"profileL": ""
 	},
 	{
-		"name": "Kyra",
-		"text": "And.. Marked… right.. here. These coordinates… they’re deliberate. Someone’s been tracking something... or someone. But what, who, why? What’s the purpose of this obsession?"
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "And.. Marked… right.. here.",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+	},
+	{
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "These coordinates… they’re deliberate.",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+	},
+	{
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "Someone’s been tracking something... or someone.",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+	},
+	{
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "But what, who, why? What’s the purpose of this obsession?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	}
 ]

@@ -1,44 +1,78 @@
 [
 	{
-		"name": "",
-		"text": "Kyra stirs, her eyelids fluttering open as she finds herself slouched in a worn, leather armchair. She looks around, disoriented"
+		"nameL": "",
+		"nameR": "",
+		"text": "Kyra stirs, her eyelids fluttering open as she finds herself slouched in a worn, leather armchair. She looks around, disoriented",
 	},
 	{
-		"name": "Kyra",
-		"text": "How did I… end up here?"
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "How did I… end up here?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "Kyra",
+		"nameL": "Kyra",
+		"nameR": "",
 		"text": "I don’t remember sitting down neither getting abroad.. this.. weird old looking dark ship"
 	},
 	{
-		"name": "",
-		"text": "(mutters Kyra to herself)"
+		"nameL": "",
+		"nameR": "",
+		"text": "(mutters Kyra to herself)",
+		"profileL": ""
 	},
 	{
-		"name": "",
+		"nameL": "",
+		"nameR": "",
 		"text": "She rubs her temples, the faint memory of her mission coming back to her as she rises slowly."
 	},
 	{
-		"name": "Kyra",
+		"nameL": "Kyra",
+		"nameR": "",
 		"text": "The mission... the signal. Scotland Yard sent me to investigate, but…",
-		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 01.wav"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "",
-		"text": "*She pauses and glacing around*"
+		"nameL": "",
+		"nameR": "",
+		"text": "*She pauses and glacing around*",
+		"profileL": ""
 	},
 	{
-		"name": "Kyra",
-		"text": "Something doesn’t feel right.. My hands and feet can’t stop shaking.. My mind and heart feel numb with paranoia and.. with a dark energy I cannot yet comprehend its force or origins.."
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "Something doesn’t feel right..",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "",
-		"text": "(Kyra wispers)"
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "My hands and feet can’t stop shaking..",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "Kyra",
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "My mind and heart feel numb with paranoia and..",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+	},
+	{
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "with a dark energy I cannot yet comprehend its force or origins..",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+	},
+	{
+		"nameL": "",
+		"nameR": "",
+		"text": "(Kyra wispers)",
+		"profileL": ""
+	},
+	{
+		"nameL": "Kyra",
+		"nameR": "",
 		"text": "I am not alone..",
-		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 02.wav"
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 02.wav",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	}
 ]

@@ -1,26 +1,44 @@
 [
 	{
-		"name": "",
-		"text": "Kyra leans over the map, noticing circles and markings on certain locations. Her fingers trace the inked circles, pausing at each one."
+		"nameL": "",
+		"nameR": "",
+		"text": "Kyra leans over the map, noticing circles and markings on certain locations. Her fingers trace the inked circles, pausing at each one.",
+		"profileL": ""
 	},
 	{
-		"name": "Kyra",
-		"text": "Strange… all these places... they’re all locations where people mysteriously vanished at sea."
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "Strange… all these places... they’re all locations where people mysteriously vanished at sea.",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "",
-		"text": "(her eyes narrow)"
+		"nameL": "",
+		"nameR": "",
+		"text": "(her eyes narrow)",
+		"profileL": ""
 	},
 	{
-		"name": "Kyra",
-		"text": "But here… there’s a pin… right in the middle of the Atlantic?"
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "But here… there’s a pin… right in the middle of the Atlantic?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "",
-		"text": "She frowns, unease prickling at the back of her mind."
+		"nameL": "",
+		"nameR": "",
+		"text": "She frowns, unease prickling at the back of her mind.",
+		"profileL": ""
 	},
 	{
-		"name": "Kyra",
-		"text": "Why would the Captain be studying these spots? There’s a pattern here... but why?"
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "Why would the Captain be studying these spots?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+	},
+	{
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "There’s a pattern here... but why?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	}
 ]

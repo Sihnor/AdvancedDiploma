@@ -1,26 +1,36 @@
 [
 	{
-		"name": "",
-		"text": "A distorted whisper crackles from a nearby radio."
+		"nameL": "",
+		"nameR": "",
+		"text": "A distorted whisper crackles from a nearby radio.",
+		"profileL": ""
 	},
 	{
-		"name": "Radio Whisper",
+		"nameL": "Radio Whisper",
+		"nameR": "",
 		"text": "Grata foris, electa."
 	},
 	{
-		"name": "",
+		"nameL": "",
+		"nameR": "",
 		"text": "Kyra shudders, pulling her coat tighter around her shoulders."
 	},
 	{
-		"name": "Kyra",
-		"text": "Welcome aboard… chosen one?"
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "Welcome aboard… chosen one?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "",
-		"text": "(she glances around nervously)"
+		"nameL": "",
+		"nameR": "",
+		"text": "(she glances around nervously)",
+		"profileL": ""
 	},
 	{
-		"name": "Kyra",
-		"text": "Who… or what is welcoming me?"
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "Who… or what is welcoming me?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	}
 ]

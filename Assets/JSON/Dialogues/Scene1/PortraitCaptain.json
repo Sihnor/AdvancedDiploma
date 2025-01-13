@@ -1,18 +1,32 @@
 [
 	{
-		"name": "",
-		"text": "(examining the key)"
+		"nameL": "",
+		"nameR": "",
+		"text": "(examining the key)",
+		"profileL": ""
 	},
 	{
-		"name": "Kyra",
-		"text": "This key… it feels warm to the touch. Almost… alive."
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "This key… it feels warm to the touch.",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "",
-		"text": "(she hesitates)"
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "Almost… alive.",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "Kyra",
-		"text": "It’s as if… it’s been waiting for me."
+		"nameL": "",
+		"nameR": "",
+		"text": "(she hesitates)",
+		"profileL": ""
+	},
+	{
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "It’s as if… it’s been waiting for me.",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	}
 ]

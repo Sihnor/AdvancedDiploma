@@ -1,42 +1,58 @@
 [
 	{
-		"name": "",
+		"nameL": "",
+		"nameR": "",
 		"text": "Kyra flips through the pages, deciphering its cryptic notes."
 	},
 	{
-		"name": "Kyra",
-		"text": "These entries… they’re so scattered, almost frantic."
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "These entries… they’re so scattered, almost frantic.",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "",
-		"text": "(she flips further)"
+		"nameL": "",
+		"nameR": "",
+		"text": "(she flips further)",
+		"profileL": ""
 	},
 	{
-		"name": "Kyra",
-		"text": "Wait... Tom?.. Tom Grange?"
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "Wait... Tom?.. Tom Grange?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "Kyra",
-		"text": "His name is everywhere mentioned and signed on this Journal.. but.. why would it be hidden under.. the Captain’s pillow?"
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "His name is everywhere mentioned and signed on this Journal.. but.. why would it be hidden under.. the Captain’s pillow?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "",
-		"text": "Says Kyra, giving the impression that Tom might have been a victim after the Captain and other passengers before him. She squints at the strange symbols and jumbled thoughts filling the pages."
+		"nameL": "",
+		"nameR": "",
+		"text": "Says Kyra, giving the impression that Tom might have been a victim after the Captain and other passengers before him. She squints at the strange symbols and jumbled thoughts filling the pages.",
+		"profileL": ""
 	},
 	{
-		"name": "Kyra",
-		"text": "Warnings... all these warnings."
+		"nameL": "Kyra",
+		"nameR": "",
+		"text": "Warnings... all these warnings.",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
 	},
 	{
-		"name": "Kyra",
+		"nameL": "Kyra",
+		"nameR": "",
 		"text": "What did the Captain and Tom know?"
 	},
 	{
-		"name": "Kyra",
+		"nameL": "Kyra",
+		"nameR": "",
 		"text": "What did they investigate so desperately to end up writing this Journal full of.. cryptomessages?"
 	},
 	{
-		"name": "Kyra",
+		"nameL": "Kyra",
+		"nameR": "",
 		"text": "How many other victims were involved into this very well-calculated chaotic nightmare?"
 	}
 ]
