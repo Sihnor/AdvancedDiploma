@@ -1,0 +1,7 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://b1qlbb6v68kqx"]
+
+[ext_resource type="Texture2D" uid="uid://bpj6h6uwdmgh2" path="res://Assets/Art/Dialoge/Dialogbalken links.png" id="1_k1ja7"]
+
+[resource]
+texture = ExtResource("1_k1ja7")
+region_rect = Rect2(26, 919, 1567, 360)

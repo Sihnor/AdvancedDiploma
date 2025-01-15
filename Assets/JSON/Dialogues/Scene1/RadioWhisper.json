@@ -8,7 +8,8 @@
 	{
 		"nameL": "Radio Whisper",
 		"nameR": "",
-		"text": "Grata foris, electa."
+		"text": "Grata foris, electa.",
+		"audio": "res://Assets/Audio/Voices/Radio/Radio Sidney.wav"
 	},
 	{
 		"nameL": "",
@@ -19,7 +20,8 @@
 		"nameL": "Kyra",
 		"nameR": "",
 		"text": "Welcome aboard… chosen one?",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 11.wav",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
 		"nameL": "",
@@ -31,6 +33,7 @@
 		"nameL": "Kyra",
 		"nameR": "",
 		"text": "Who… or what is welcoming me?",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 12.wav",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	}
 ]

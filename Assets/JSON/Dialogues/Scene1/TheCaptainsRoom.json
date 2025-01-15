@@ -8,12 +8,13 @@
 		"nameL": "Kyra",
 		"nameR": "",
 		"text": "How did I… end up here?",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
 		"nameL": "Kyra",
 		"nameR": "",
-		"text": "I don’t remember sitting down neither getting abroad.. this.. weird old looking dark ship"
+		"text": "I don’t remember sitting down neither getting abroad.. this.. weird old looking dark ship",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 00.wav",
 	},
 	{
 		"nameL": "",
@@ -30,7 +31,7 @@
 		"nameL": "Kyra",
 		"nameR": "",
 		"text": "The mission... the signal. Scotland Yard sent me to investigate, but…",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
 		"nameL": "",
@@ -42,25 +43,25 @@
 		"nameL": "Kyra",
 		"nameR": "",
 		"text": "Something doesn’t feel right..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
 		"nameL": "Kyra",
 		"nameR": "",
 		"text": "My hands and feet can’t stop shaking..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
 		"nameL": "Kyra",
 		"nameR": "",
 		"text": "My mind and heart feel numb with paranoia and..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
 		"nameL": "Kyra",
 		"nameR": "",
 		"text": "with a dark energy I cannot yet comprehend its force or origins..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
 		"nameL": "",
@@ -73,6 +74,6 @@
 		"nameR": "",
 		"text": "I am not alone..",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 02.wav",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	}
 ]

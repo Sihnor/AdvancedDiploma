@@ -2,13 +2,14 @@
 	{
 		"nameL": "",
 		"nameR": "",
-		"text": "Kyra flips through the pages, deciphering its cryptic notes."
+		"text": "Kyra flips through the pages, deciphering its cryptic notes.",
+		"profileL": ""
 	},
 	{
 		"nameL": "Kyra",
 		"nameR": "",
 		"text": "These entries… they’re so scattered, almost frantic.",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
 		"nameL": "",
@@ -20,13 +21,13 @@
 		"nameL": "Kyra",
 		"nameR": "",
 		"text": "Wait... Tom?.. Tom Grange?",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
 		"nameL": "Kyra",
 		"nameR": "",
 		"text": "His name is everywhere mentioned and signed on this Journal.. but.. why would it be hidden under.. the Captain’s pillow?",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
 		"nameL": "",
@@ -38,7 +39,7 @@
 		"nameL": "Kyra",
 		"nameR": "",
 		"text": "Warnings... all these warnings.",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
 		"nameL": "Kyra",

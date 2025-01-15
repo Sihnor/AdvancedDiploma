@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=30 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
 [ext_resource type="PackedScene" uid="uid://cwj6bpg3u3b8w" path="res://scenes/MainNav.tscn" id="2_cdd04"]
@@ -21,12 +21,13 @@
 [ext_resource type="PackedScene" uid="uid://dbu0l40uitgwg" path="res://scenes/MainUI.tscn" id="18_es0gl"]
 [ext_resource type="PackedScene" uid="uid://c5pgqlg128lek" path="res://scenes/InventorySystem.tscn" id="19_qp1ry"]
 [ext_resource type="Texture2D" uid="uid://bpor3gs4h6fbk" path="res://Assets/Art/Placeholder/UI/Notebook.png" id="20_isdqg"]
-[ext_resource type="Texture2D" uid="uid://dm4i3oaw2qh65" path="res://Assets/Art/Placeholder/UI/Plush.png" id="21_hd3g0"]
-[ext_resource type="Texture2D" uid="uid://c6ug0w0dy0y6n" path="res://Assets/Art/Placeholder/UI/Key.png" id="22_mdjjh"]
-[ext_resource type="Texture2D" uid="uid://bwp2hkrla86bo" path="res://Assets/Art/Placeholder/UI/Note.png" id="23_xwnkh"]
+[ext_resource type="Texture2D" uid="uid://jkwemu8d667" path="res://Assets/Art/Placeholder/Experiment/Wal_Experiment.png" id="22_ntpke"]
+[ext_resource type="Texture2D" uid="uid://b66yn1mvrv87l" path="res://Assets/Art/Placeholder/Experiment/TomDokument_Experiment.png" id="23_0x4sd"]
 [ext_resource type="PackedScene" uid="uid://b2w2de81naqf" path="res://scenes/CodeRiddle.tscn" id="24_6w61k"]
-[ext_resource type="Texture2D" uid="uid://dcax7hhuhdhtj" path="res://Assets/Art/Placeholder/UI/PortraitPart.png" id="24_sn0n0"]
+[ext_resource type="Texture2D" uid="uid://byv75rj7ws8b7" path="res://Assets/Art/Placeholder/Experiment/Schrankschlüssel_Experiment.png" id="24_yuas4"]
+[ext_resource type="Texture2D" uid="uid://cyfibjdf30b2y" path="res://Assets/Art/Placeholder/Experiment/Portraitschnipsel_Experiment.png" id="25_7o8ki"]
 [ext_resource type="PackedScene" uid="uid://bbtd20fe3jpp1" path="res://scenes/SlidePuzzle.tscn" id="25_rqhjm"]
+[ext_resource type="Texture2D" uid="uid://dxio8ghmqqne6" path="res://Assets/Art/Placeholder/Experiment/Captainsroomschlüssel_Experiment.png" id="26_fox68"]
 
 [sub_resource type="Environment" id="Environment_s72p6"]
 ambient_light_source = 3
@@ -142,7 +143,7 @@ nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/LeftNav/Panel
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.15, 2.5)
 visible = false
 item_name = "Plush"
-item_icon = ExtResource("21_hd3g0")
+item_icon = ExtResource("22_ntpke")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe"
 
@@ -150,7 +151,7 @@ nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/TopRightNav/P
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1, -3, -10)
 visible = false
 item_name = "Personal File"
-item_icon = ExtResource("23_xwnkh")
+item_icon = ExtResource("23_0x4sd")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
 
@@ -158,7 +159,7 @@ nodeDependedSubpath = "a"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25, -3, -8)
 visible = false
 item_name = "Closet Key"
-item_icon = ExtResource("22_mdjjh")
+item_icon = ExtResource("24_yuas4")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
 
@@ -166,7 +167,7 @@ nodeDependedSubpath = "a"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 4.25)
 visible = false
 item_name = "Portrait part"
-item_icon = ExtResource("24_sn0n0")
+item_icon = ExtResource("25_7o8ki")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
 
@@ -174,7 +175,7 @@ nodeDependedSubpath = "a"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -5)
 visible = false
 item_name = "Captain Room Key"
-item_icon = ExtResource("22_mdjjh")
+item_icon = ExtResource("26_fox68")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
 

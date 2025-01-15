@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cawa88uh5xpyf"
-path="res://.godot/imported/Grandma (Kiki).wav-73a2e95a7b36f943000772e9026eed0d.sample"
+path="res://.godot/imported/Kyra 00.wav-82980aa8c469f60cbf224eac0a05d561.sample"
 
 [deps]
 
-source_file="res://Assets/Audio/Voices/Kyra/Grandma (Kiki).wav"
-dest_files=["res://.godot/imported/Grandma (Kiki).wav-73a2e95a7b36f943000772e9026eed0d.sample"]
+source_file="res://Assets/Audio/Voices/Kyra/Kyra 00.wav"
+dest_files=["res://.godot/imported/Kyra 00.wav-82980aa8c469f60cbf224eac0a05d561.sample"]
 
 [params]
 
