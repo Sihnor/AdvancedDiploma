@@ -3,17 +3,24 @@ extends Node3D
 var code = []
 var selectOptions =[]
 var parent
+var rewardSound:AudioStream
 var children
-@onready var codeRiddle = $".."
+@onready var codeRiddle: CodeRiddle = $".."
+@export var audioStreamPlayer:AudioStreamPlayer
+@export var sound:AudioStream
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if sound != null:
+		audioStreamPlayer.stream = sound
 	code = codeRiddle.code
 	selectOptions = codeRiddle.selectOptions
 	parent = self.get_parent()
 	children = parent.get_children()  
 #	print(code)
+	if codeRiddle.rewardSound != null:
+		rewardSound = codeRiddle.rewardSound
 	setDefault()
 
 
@@ -25,6 +32,8 @@ func _process(delta: float) -> void:
 func _on_arrow_up_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
 	if not codeRiddle.solved:
 		if Input.is_action_pressed("uiClick"):
+			if sound != null:
+				audioStreamPlayer.play()
 			var labelNode = self.get_node("Label3D").text.strip_edges()
 			var findIndex = selectOptions.find(labelNode)
 			if findIndex != -1:
@@ -38,14 +47,22 @@ func _on_arrow_up_input_event(camera: Node, event: InputEvent, event_position: V
 				codeRiddle.solved = true
 				if codeRiddle.swapScene:
 					SceneManager.switchScene(codeRiddle.sceneName, codeRiddle.sceneID, null)
+				else:
+					self.visible =false
 				if codeRiddle.rewardItem != null:
 					codeRiddle.rewardItem.visible = true
 				print("Unlocked!")
+				parent.visible = false
+				audioStreamPlayer.stream = rewardSound
+				audioStreamPlayer.play()
+				await get_tree().create_timer(0.2).timeout  # Creates a 1-second delay
 				codeRiddle.queue_free()
 
 func _on_arrow_down_input_event(camera: Node, event: InputEvent, event_position: Vector3, normal: Vector3, shape_idx: int) -> void:
 	if not codeRiddle.solved:
 		if Input.is_action_pressed("uiClick"):
+			if sound != null:
+				audioStreamPlayer.play()
 			var labelNode = self.get_node("Label3D").text.strip_edges()
 			var findIndex = selectOptions.find(labelNode)
 			if findIndex != -1:
@@ -61,9 +78,14 @@ func _on_arrow_down_input_event(camera: Node, event: InputEvent, event_position:
 					SceneManager.switchScene(codeRiddle.sceneName, codeRiddle.sceneID, null)
 				else:
 					self.visible =false
+					
 				if codeRiddle.rewardItem != null:
 					codeRiddle.rewardItem.visible = true
 				print("Unlocked!")
+				parent.visible = false
+				audioStreamPlayer.stream = rewardSound
+				audioStreamPlayer.play()
+				await get_tree().create_timer(0.2).timeout  # Creates a 1-second delay
 				codeRiddle.queue_free()
 
 func updateCode(array: Array) -> void:

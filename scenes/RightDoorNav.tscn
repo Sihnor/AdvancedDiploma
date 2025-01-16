@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dn4l1mgm34vg7"]
+[gd_scene load_steps=5 format=3 uid="uid://dn4l1mgm34vg7"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_wjaol"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_ce37a"]
+[ext_resource type="AudioStream" uid="uid://cmtl1olg0f5lv" path="res://Assets/Audio/SFX/Schlüssel ins Schloss stecken + tür öffnen.wav" id="3_nwnlq"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -41,6 +43,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_right"
 sceneID = 9
+sound = ExtResource("2_ce37a")
 
 [node name="OpenDoor" parent="Panel" instance=ExtResource("1_wjaol")]
 layout_direction = 1
@@ -61,3 +64,4 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_right_interaction_exitDoorZoomKey"
 sceneID = 11
+sound = ExtResource("3_nwnlq")

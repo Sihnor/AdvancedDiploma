@@ -1,38 +1,32 @@
 [
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "What the.. how is.. that even possible for an old Globe?",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 05.wav",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "Kyra asks, but then she decided to not overthink much about it and continue to write the rest down.",
 		"profileL": ""
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "And.. Marked… right.. here.",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "These coordinates… they’re deliberate.",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "Someone’s been tracking something... or someone.",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "But what, who, why? What’s the purpose of this obsession?",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	}

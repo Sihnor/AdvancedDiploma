@@ -1,7 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3x8vutkwn5vy"]
+[gd_scene load_steps=7 format=3 uid="uid://c3x8vutkwn5vy"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_yuyyt"]
 [ext_resource type="PackedScene" uid="uid://b2w2de81naqf" path="res://scenes/CodeRiddle.tscn" id="2_fv7l1"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_xblrw"]
+[ext_resource type="AudioStream" uid="uid://bm4fstb2tg0al" path="res://Assets/Audio/SFX/schublade öffnen richtig.wav" id="3_466p3"]
+[ext_resource type="AudioStream" uid="uid://exrf1tynuho4" path="res://Assets/Audio/SFX/Tür öffnen.wav" id="5_hqb6v"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -45,6 +48,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_topLeft"
 sceneID = 12
+sound = ExtResource("2_xblrw")
 
 [node name="OpenDrawer" parent="Panel" instance=ExtResource("1_yuyyt")]
 visible = false
@@ -66,9 +70,11 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_topLeft_interaction_officeOpenDrawer"
 sceneID = 16
+sound = ExtResource("3_466p3")
 
 [node name="LetterRiddle" parent="Panel" node_paths=PackedStringArray("rewardItem") instance=ExtResource("2_fv7l1")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 0)
 rewardItem = NodePath("../OpenDrawer")
 code = ["W", "H", "A", "L", "E"]
 selectOptions = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+rewardSound = ExtResource("5_hqb6v")

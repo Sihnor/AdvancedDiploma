@@ -1,6 +1,8 @@
 extends Node3D
 class_name SlidePuzzleRiddle
 @onready var slideSound : AudioStreamPlayer= $AudioStreamPlayer
+@onready var timer = $Timer
+@export var sound:AudioStream
 @export var rewardItem : PickupItem3D
 @export var gridSize: Vector2 = Vector2(3, 3) 
 @export var solvedState: Array = []
@@ -57,6 +59,8 @@ func movePiece(piece):
 			updatePiecePosition(piece)
 		if checkSolved():
 			solved = true
+			slideSound.stream = sound
+			slideSound.play()
 			print("Solved!")
 			if rewardItem != null:
 				rewardItem.visible= true
@@ -107,3 +111,7 @@ func randomizeGrid(pieces: Array, gridPositions: Array):
 		for x in range(gridSize.x):
 			if gridState[y][x] == "empty":
 				emptySlot = Vector2(x, y)
+
+
+func _on_timer_timeout():
+	pass # Replace with function body.

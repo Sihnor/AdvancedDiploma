@@ -6,6 +6,7 @@ class_name CodeRiddle
 @export var swapScene : bool
 @export var sceneName : String
 @export var sceneID : int
+@export var rewardSound:AudioStream
 var solved : bool
 
 

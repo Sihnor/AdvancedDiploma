@@ -7,6 +7,7 @@ class_name SwapScene
 @export var isSlidePuzzle: bool
 @export var audioStreamPlayer:AudioStreamPlayer
 @export var sound:AudioStream
+@export var buttonIcon: CompressedTexture2D
 
 var background : BackgroundTexture
 var mainNav : Control
@@ -29,6 +30,8 @@ var key3D : PickupItem3D
 var inventorySystem : InventorySystem
 
 func _ready():
+	if buttonIcon != null:
+		button.icon = buttonIcon
 	audioStreamPlayer.stream = sound
 	background = get_tree().root.get_node("MainScene/SubViewportContainer/SubViewport/Background")
 	mainNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/MainNav")
@@ -60,5 +63,7 @@ func _on_button_pressed() -> void:
 		if slidePuzzle != null:
 			slidePuzzle.visible =true
 	if selfDestroy:
+		self.visible = false
+		await get_tree().create_timer(0.5).timeout  # Creates a 1-second delay
 		queue_free()
 	

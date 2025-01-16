@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2o4sghcmtr32"]
+[gd_scene load_steps=5 format=3 uid="uid://b2o4sghcmtr32"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_damfn"]
+[ext_resource type="AudioStream" uid="uid://bm6mif3hvd470" path="res://Assets/Audio/SFX/light-switch-sound-228104.mp3" id="2_d2pcv"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="3_ur0nk"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -44,6 +46,7 @@ sceneName = "captain_left_interaction_windowZoom"
 sceneID = 8
 selfDestroy = true
 isSlidePuzzle = true
+sound = ExtResource("2_d2pcv")
 
 [node name="Back" parent="Panel" instance=ExtResource("1_damfn")]
 layout_direction = 1
@@ -63,3 +66,4 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_left"
 sceneID = 4
+sound = ExtResource("3_ur0nk")

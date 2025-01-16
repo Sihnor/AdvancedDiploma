@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=33 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
 [ext_resource type="PackedScene" uid="uid://cwj6bpg3u3b8w" path="res://scenes/MainNav.tscn" id="2_cdd04"]
@@ -21,11 +21,14 @@
 [ext_resource type="PackedScene" uid="uid://dbu0l40uitgwg" path="res://scenes/MainUI.tscn" id="18_es0gl"]
 [ext_resource type="PackedScene" uid="uid://c5pgqlg128lek" path="res://scenes/InventorySystem.tscn" id="19_qp1ry"]
 [ext_resource type="Texture2D" uid="uid://bpor3gs4h6fbk" path="res://Assets/Art/Placeholder/UI/Notebook.png" id="20_isdqg"]
+[ext_resource type="AudioStream" uid="uid://bp6sln60kxlyy" path="res://Assets/Audio/SFX/notizbuch aufheben.wav" id="22_lj2cc"]
 [ext_resource type="Texture2D" uid="uid://jkwemu8d667" path="res://Assets/Art/Placeholder/Experiment/Wal_Experiment.png" id="22_ntpke"]
 [ext_resource type="Texture2D" uid="uid://b66yn1mvrv87l" path="res://Assets/Art/Placeholder/Experiment/TomDokument_Experiment.png" id="23_0x4sd"]
+[ext_resource type="AudioStream" uid="uid://bypxc4klh8a7p" path="res://Assets/Audio/SFX/Kopfkissen rücken.wav" id="24_0ypa0"]
 [ext_resource type="PackedScene" uid="uid://b2w2de81naqf" path="res://scenes/CodeRiddle.tscn" id="24_6w61k"]
 [ext_resource type="Texture2D" uid="uid://byv75rj7ws8b7" path="res://Assets/Art/Placeholder/Experiment/Schrankschlüssel_Experiment.png" id="24_yuas4"]
 [ext_resource type="Texture2D" uid="uid://cyfibjdf30b2y" path="res://Assets/Art/Placeholder/Experiment/Portraitschnipsel_Experiment.png" id="25_7o8ki"]
+[ext_resource type="AudioStream" uid="uid://d3jfrdcfia2xm" path="res://Assets/Audio/SFX/schlüssel aufheben.wav" id="25_c12nf"]
 [ext_resource type="PackedScene" uid="uid://bbtd20fe3jpp1" path="res://scenes/SlidePuzzle.tscn" id="25_rqhjm"]
 [ext_resource type="Texture2D" uid="uid://dxio8ghmqqne6" path="res://Assets/Art/Placeholder/Experiment/Captainsroomschlüssel_Experiment.png" id="26_fox68"]
 
@@ -79,6 +82,9 @@ render_target_update_mode = 4
 
 [node name="MainNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("2_cdd04")]
 
+[node name="TopRightNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_wt7dn")]
+visible = false
+
 [node name="TopRightGlobusNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_8wmc8")]
 visible = false
 
@@ -118,9 +124,6 @@ visible = false
 [node name="RightDoorOpenNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("15_jiwka")]
 visible = false
 
-[node name="TopRightNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_wt7dn")]
-visible = false
-
 [node name="InventorySystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("19_qp1ry")]
 metadata/_edit_use_anchors_ = true
 
@@ -131,14 +134,6 @@ metadata/_edit_use_anchors_ = true
 [node name="DialogueSystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("17_mnevp")]
 metadata/_edit_use_anchors_ = true
 
-[node name="Notebook3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 5.15)
-visible = false
-item_name = "Notebook"
-item_icon = ExtResource("20_isdqg")
-inventorySystem = NodePath("../InventorySystem")
-nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/LeftNav/Panel/PillowMove"
-
 [node name="Plush3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.15, 2.5)
 visible = false
@@ -146,6 +141,16 @@ item_name = "Plush"
 item_icon = ExtResource("22_ntpke")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe"
+sound = ExtResource("24_0ypa0")
+
+[node name="Notebook3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 5.15)
+visible = false
+item_name = "Notebook"
+item_icon = ExtResource("20_isdqg")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/LeftNav/Panel/PillowMove"
+sound = ExtResource("22_lj2cc")
 
 [node name="PersonalFile3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1, -3, -10)
@@ -154,14 +159,7 @@ item_name = "Personal File"
 item_icon = ExtResource("23_0x4sd")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
-
-[node name="ClosetKey3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25, -3, -8)
-visible = false
-item_name = "Closet Key"
-item_icon = ExtResource("24_yuas4")
-inventorySystem = NodePath("../InventorySystem")
-nodeDependedSubpath = "a"
+sound = ExtResource("22_lj2cc")
 
 [node name="PortraitPart3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 4.25)
@@ -170,6 +168,16 @@ item_name = "Portrait part"
 item_icon = ExtResource("25_7o8ki")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
+sound = ExtResource("22_lj2cc")
+
+[node name="ClosetKey3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25, -3, -8)
+visible = false
+item_name = "Closet Key"
+item_icon = ExtResource("24_yuas4")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "a"
+sound = ExtResource("25_c12nf")
 
 [node name="CaptainKey3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -5)
@@ -178,6 +186,7 @@ item_name = "Captain Room Key"
 item_icon = ExtResource("26_fox68")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
+sound = ExtResource("25_c12nf")
 
 [node name="DairyRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("rewardItem") instance=ExtResource("24_6w61k")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 0)
@@ -187,6 +196,7 @@ selectOptions = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 swapScene = true
 sceneName = "captain_left_interaction_notebookCodeOpen"
 sceneID = 6
+rewardSound = ExtResource("22_lj2cc")
 
 [node name="SlidePuzzleRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("rewardItem") instance=ExtResource("25_rqhjm")]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 2, 2.75, 0.95)

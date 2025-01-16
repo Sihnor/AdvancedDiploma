@@ -1,37 +1,31 @@
 [
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "A distorted whisper crackles from a nearby radio.",
 		"profileL": ""
 	},
 	{
-		"nameL": "Radio Whisper",
-		"nameR": "",
+		"name": "Radio Whisper",
 		"text": "Grata foris, electa.",
 		"audio": "res://Assets/Audio/Voices/Radio/Radio Sidney.wav"
 	},
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "Kyra shudders, pulling her coat tighter around her shoulders."
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "Welcome aboard… chosen one?",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 11.wav",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "(she glances around nervously)",
 		"profileL": ""
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "Who… or what is welcoming me?",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 12.wav",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"

@@ -1,77 +1,64 @@
 [
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "Kyra stirs, her eyelids fluttering open as she finds herself slouched in a worn, leather armchair. She looks around, disoriented",
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "How did I… end up here?",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "I don’t remember sitting down neither getting abroad.. this.. weird old looking dark ship",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 00.wav",
 	},
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "(mutters Kyra to herself)",
 		"profileL": ""
 	},
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "She rubs her temples, the faint memory of her mission coming back to her as she rises slowly."
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "The mission... the signal. Scotland Yard sent me to investigate, but…",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "*She pauses and glacing around*",
 		"profileL": ""
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "Something doesn’t feel right..",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "My hands and feet can’t stop shaking..",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "My mind and heart feel numb with paranoia and..",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "with a dark energy I cannot yet comprehend its force or origins..",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "(Kyra wispers)",
 		"profileL": ""
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "I am not alone..",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 02.wav",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"

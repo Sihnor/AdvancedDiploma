@@ -1,31 +1,26 @@
 [
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "(examining the key)",
 		"profileL": ""
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "This key… it feels warm to the touch.",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "Almost… alive.",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "(she hesitates)",
 		"profileL": ""
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "It’s as if… it’s been waiting for me.",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	}

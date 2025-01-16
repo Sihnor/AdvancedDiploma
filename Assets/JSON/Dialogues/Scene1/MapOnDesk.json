@@ -1,43 +1,36 @@
 [
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "Kyra leans over the map, noticing circles and markings on certain locations. Her fingers trace the inked circles, pausing at each one.",
 		"profileL": ""
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "Strange… all these places... they’re all locations where people mysteriously vanished at sea.",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "(her eyes narrow)",
 		"profileL": ""
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "But here… there’s a pin… right in the middle of the Atlantic?",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "She frowns, unease prickling at the back of her mind.",
 		"profileL": ""
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "Why would the Captain be studying these spots?",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "There’s a pattern here... but why?",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	}

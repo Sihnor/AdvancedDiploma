@@ -1,7 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://d1bsl3hdb04e"]
+[gd_scene load_steps=12 format=3 uid="uid://d1bsl3hdb04e"]
 
 [ext_resource type="Script" path="res://BookRiddle.gd" id="1_bdoln"]
+[ext_resource type="AudioStream" uid="uid://bm6mif3hvd470" path="res://Assets/Audio/SFX/light-switch-sound-228104.mp3" id="2_fy6fg"]
 [ext_resource type="Script" path="res://scripts/Book.gd" id="2_sctbl"]
+[ext_resource type="AudioStream" uid="uid://bm4fstb2tg0al" path="res://Assets/Audio/SFX/schublade öffnen richtig.wav" id="4_c7eam"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_uhjjs"]
 
@@ -27,6 +29,7 @@ visible = false
 script = ExtResource("1_bdoln")
 solution = "WHALE"
 shuffled = true
+rewardSound = ExtResource("2_fy6fg")
 
 [node name="Book1" type="Area3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
@@ -87,6 +90,9 @@ shape = SubResource("BoxShape3D_uhjjs")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Book5/CollisionShape3D"]
 mesh = SubResource("BoxMesh_p0yq0")
 surface_material_override/0 = SubResource("ORMMaterial3D_f4uw8")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_c7eam")
 
 [connection signal="input_event" from="Book1" to="Book1" method="_on_input_event"]
 [connection signal="input_event" from="Book2" to="Book2" method="_on_input_event"]

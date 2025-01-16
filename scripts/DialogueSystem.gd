@@ -6,12 +6,12 @@ var currentIndex = 0
 
 # Nodes
 var filePath: String
-@onready var nameLabelLeftRef = $Background/CharacterNamesLeft
-@onready var nameLabelRightRef = $Background/CharacterNamesRight
+@onready var nameLabelRef = $Background/CharacterNames
 @onready var dialogueLabelRef = $Background/DialogueText
 @onready var nextButtonRef = $Background/NextBtn
 @onready var choicesContainerRef = $Background/ChoicesContainer
-@onready var audioRef = $AudioStreamPlayer
+@onready var voiceRef = $VoiceStreamPlayer
+@onready var audioRef= $AudioStreamPlayer
 @onready var profileLeftRef = $ProfileLeft
 @onready var profileRightRef = $ProfileRight
 
@@ -45,19 +45,15 @@ func updateDialogue():
 		child.queue_free()
 	if currentIndex < dialogues.size():
 		var currentDialogue = dialogues[currentIndex]
-		nameLabelLeftRef.text = currentDialogue["nameL"]
-		nameLabelRightRef.text = currentDialogue["nameR"]
+		nameLabelRef.text = currentDialogue["name"]
 		dialogueLabelRef.text = currentDialogue["text"]
 		if "audio" in currentDialogue:
-			if audioRef != null:
-				audioRef.stream = ResourceLoader.load(currentDialogue["audio"])
-				audioRef.play()
+			if voiceRef != null:
+				voiceRef.stream = ResourceLoader.load(currentDialogue["audio"])
+				voiceRef.play()
 		if "profileL" in currentDialogue:
 			if profileLeftRef != null:
 				profileLeftRef.texture = ResourceLoader.load(currentDialogue["profileL"])
-		if "profileR" in currentDialogue:
-			if profileRightRef != null:
-				profileRightRef.texture =  ResourceLoader.load(currentDialogue["profileR"])
 		# Handle choices if they exist
 		if "choices" in currentDialogue:
 			showChoices(currentDialogue["choices"])
@@ -77,6 +73,7 @@ func showChoices(choices):
 		choicesContainerRef.add_child(button)
 
 func _on_choice_selected(filePath):
+	audioRef.play()
 	if filePath != "":
 		dialogues = loadDialoguesFromJSON(filePath)  # Load dialogues from JSON
 		currentIndex = 0
@@ -86,8 +83,9 @@ func _on_choice_selected(filePath):
 
 func _on_next_btn_pressed():
 	currentIndex += 1
-	if audioRef != null:
-		audioRef.stop()
+	audioRef.play()
+	if voiceRef != null:
+		voiceRef.stop()
 	updateDialogue()
 
 func hideDialogue():

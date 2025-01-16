@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://btrvd3iljyob2"]
+[gd_scene load_steps=5 format=3 uid="uid://btrvd3iljyob2"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_tcv07"]
+[ext_resource type="AudioStream" uid="uid://exrf1tynuho4" path="res://Assets/Audio/SFX/Tür öffnen.wav" id="2_v5l8e"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="3_ie6im"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -40,6 +42,7 @@ grow_horizontal = 0
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+sound = ExtResource("2_v5l8e")
 
 [node name="Back" parent="Panel" instance=ExtResource("1_tcv07")]
 layout_direction = 1
@@ -59,3 +62,4 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_right"
 sceneID = 9
+sound = ExtResource("3_ie6im")

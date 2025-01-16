@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://c5pgqlg128lek"]
+[gd_scene load_steps=6 format=3 uid="uid://c5pgqlg128lek"]
 
 [ext_resource type="Script" path="res://scripts/InventorySystem.gd" id="1_hn0i8"]
+[ext_resource type="AudioStream" uid="uid://bp6sln60kxlyy" path="res://Assets/Audio/SFX/notizbuch aufheben.wav" id="2_7wivi"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o8c4q"]
 
@@ -8,7 +9,7 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ry5nl"]
 
-[node name="InventorySystem" type="Control"]
+[node name="InventorySystem" type="Control" node_paths=PackedStringArray("audioStreamPlayer")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,6 +18,8 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
 script = ExtResource("1_hn0i8")
+audioStreamPlayer = NodePath("AudioStreamPlayer")
+sound = ExtResource("2_7wivi")
 
 [node name="Background" type="Panel" parent="."]
 layout_mode = 0
@@ -45,5 +48,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_7t2fp")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_7t2fp")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_7t2fp")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ry5nl")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [connection signal="pressed" from="Background/ItemSlots/Button" to="." method="_on_button_pressed"]

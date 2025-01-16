@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://d2ykc31xty202"]
+[gd_scene load_steps=5 format=3 uid="uid://d2ykc31xty202"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_72ioy"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_ui5qd"]
+[ext_resource type="AudioStream" uid="uid://bypxc4klh8a7p" path="res://Assets/Audio/SFX/Kopfkissen rücken.wav" id="2_wurff"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -41,6 +43,7 @@ scale = Vector2(1.25, 1)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_main"
+sound = ExtResource("2_ui5qd")
 
 [node name="Window" parent="Panel" instance=ExtResource("1_72ioy")]
 layout_direction = 1
@@ -61,6 +64,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_left_interaction_windowZoom"
 sceneID = 8
+sound = ExtResource("2_ui5qd")
 
 [node name="PillowMove" parent="Panel" instance=ExtResource("1_72ioy")]
 layout_direction = 1
@@ -79,3 +83,4 @@ size_flags_vertical = 4
 mouse_filter = 1
 sceneName = "captain_left_interaction_pillowMove"
 sceneID = 7
+sound = ExtResource("2_wurff")

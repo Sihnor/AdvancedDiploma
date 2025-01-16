@@ -1,59 +1,49 @@
 [
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "Kyra flips through the pages, deciphering its cryptic notes.",
 		"profileL": ""
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "These entries… they’re so scattered, almost frantic.",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "(she flips further)",
 		"profileL": ""
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "Wait... Tom?.. Tom Grange?",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "His name is everywhere mentioned and signed on this Journal.. but.. why would it be hidden under.. the Captain’s pillow?",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "",
-		"nameR": "",
+		"name": "Narrator ",
 		"text": "Says Kyra, giving the impression that Tom might have been a victim after the Captain and other passengers before him. She squints at the strange symbols and jumbled thoughts filling the pages.",
 		"profileL": ""
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "Warnings... all these warnings.",
 		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "What did the Captain and Tom know?"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "What did they investigate so desperately to end up writing this Journal full of.. cryptomessages?"
 	},
 	{
-		"nameL": "Kyra",
-		"nameR": "",
+		"name": "Kyra",
 		"text": "How many other victims were involved into this very well-calculated chaotic nightmare?"
 	}
 ]

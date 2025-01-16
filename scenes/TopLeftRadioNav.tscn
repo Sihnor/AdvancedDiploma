@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://p5ahydkjisqy"]
+[gd_scene load_steps=4 format=3 uid="uid://p5ahydkjisqy"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_3f01k"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_p5yso"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -42,3 +43,4 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_topLeft"
 sceneID = 12
+sound = ExtResource("2_p5yso")

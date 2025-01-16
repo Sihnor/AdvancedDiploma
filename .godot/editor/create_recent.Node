@@ -1,9 +1,10 @@
-TextureRect
+Timer
 AudioStreamPlayer
+AudioStreamPlayer3D
+TextureRect
 AudioStreamPlayer2D
 Camera3D
 VBoxContainer
-AudioStreamPlayer3D
 AudioListener3D
 DirectionalLight3D
 MeshInstance3D
@@ -11,5 +12,3 @@ CollisionShape3D
 Area3D
 Control
 Button
-TextureButton
-CheckButton

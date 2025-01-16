@@ -1,7 +1,10 @@
 extends Node3D
 class_name BookRiddle
+
+@onready var audioStreamPlayer = $AudioStreamPlayer
 @export var solution: String 
 @export var shuffled: bool
+@export var rewardSound:AudioStream
 var books = []
 var inputs = []
 var isSolved = false
@@ -40,11 +43,16 @@ func swapBook(source: Book, destination: Book):
 	pass
 
 func checkSolution():
+	audioStreamPlayer.play()
+	print(books)
 	var inputString :String = ""
 	for book in books:
 		var tmpBook: Book = book
 		inputString += tmpBook.bookID
 	if inputString == solution:
+		if rewardSound != null:
+			audioStreamPlayer.stream = rewardSound
+			audioStreamPlayer.play()
 		print("Solved")
 		isSolved = true
 

@@ -5,8 +5,12 @@ var inventory = []
 var background : BackgroundTexture
 var isInventoryUsed = false
 @onready var itemSlotsRef = $Background/ItemSlots
+@export var audioStreamPlayer:AudioStreamPlayer
+@export var sound:AudioStream
 
 func _ready():
+	if sound != null:
+		audioStreamPlayer.stream = sound
 	background = get_tree().root.get_node("MainScene/SubViewportContainer/SubViewport/Background")
 	self.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	for pickup_item in get_tree().get_nodes_in_group("pickup_items"):
@@ -59,6 +63,8 @@ func findItemInInventory(itemName: String) -> String:
 func _on_item_slot_pressed(itemName: String):
 	print("Item pressed:", itemName)
 	if(itemName == "Notebook"):
+		if sound != null:
+			audioStreamPlayer.play()
 		isInventoryUsed = true
 		SceneManager.switchScene("captain_left_interaction_notebookCode", 5, null)
 		#background.swapBackground(GameManager.getSceneTexture("captain_left_interaction_notebookCode"))

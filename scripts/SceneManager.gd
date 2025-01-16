@@ -107,10 +107,10 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			dialogueSystem.currentIndex = 0
 			dialogueSystem.updateDialogue()
 			dialogueSystem.visible =true
-		
-		
 		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightGlobusNav/Panel/OpenGlobus")
 		if tmpNode != null:
+			background.swapBackground(GameManager.getSceneTexture(sceneName))
+			await get_tree().create_timer(0.1).timeout  # Creates a 1-second delay
 			tmpNode.queue_free()
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
@@ -270,6 +270,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		rightDoorNav.visible = true
 	elif sceneID == 11:
 		print("sceneID: ", sceneID)
+		await get_tree().create_timer(0.1).timeout  # Creates a 1-second delay
 		if not sceneID in visitedScenes:
 			visitedScenes.append(sceneID)
 			dialogueSystem.filePath = "res://Assets/JSON/Dialogues/Scene1/RadioWhisper.json"

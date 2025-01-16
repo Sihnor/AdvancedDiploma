@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bp6sln60kxlyy"
-path="res://.godot/imported/notizbuch aufheben.wav-450eb92495933c44ec182e65c8af1a31.sample"
+path="res://.godot/imported/notizbuch aufheben.wav-4fd0a1544a481e9323740d402221e291.sample"
 
 [deps]
 
-source_file="res://Assets/Audio/SFX/Safe/notizbuch aufheben.wav"
-dest_files=["res://.godot/imported/notizbuch aufheben.wav-450eb92495933c44ec182e65c8af1a31.sample"]
+source_file="res://Assets/Audio/SFX/notizbuch aufheben.wav"
+dest_files=["res://.godot/imported/notizbuch aufheben.wav-4fd0a1544a481e9323740d402221e291.sample"]
 
 [params]
 

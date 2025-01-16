@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2w2de81naqf"]
+[gd_scene load_steps=6 format=3 uid="uid://b2w2de81naqf"]
 
 [ext_resource type="Script" path="res://scripts/CodeRiddle.gd" id="1_c1gr7"]
 [ext_resource type="Script" path="res://scripts/CodeColumn.gd" id="1_ey4um"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="3_uh5hc"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_86r85"]
 
@@ -11,9 +12,11 @@
 visible = false
 script = ExtResource("1_c1gr7")
 
-[node name="Column1" type="Node3D" parent="."]
+[node name="Column1" type="Node3D" parent="." node_paths=PackedStringArray("audioStreamPlayer")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
 script = ExtResource("1_ey4um")
+audioStreamPlayer = NodePath("../AudioStreamPlayer")
+sound = ExtResource("3_uh5hc")
 
 [node name="ArrowUp" type="Area3D" parent="Column1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -39,9 +42,11 @@ shape = SubResource("BoxShape3D_86r85")
 mesh = SubResource("BoxMesh_0ol4a")
 skeleton = NodePath("../..")
 
-[node name="Column2" type="Node3D" parent="."]
+[node name="Column2" type="Node3D" parent="." node_paths=PackedStringArray("audioStreamPlayer")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
 script = ExtResource("1_ey4um")
+audioStreamPlayer = NodePath("../AudioStreamPlayer")
+sound = ExtResource("3_uh5hc")
 
 [node name="ArrowUp" type="Area3D" parent="Column2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -67,8 +72,10 @@ shape = SubResource("BoxShape3D_86r85")
 mesh = SubResource("BoxMesh_0ol4a")
 skeleton = NodePath("../..")
 
-[node name="Column3" type="Node3D" parent="."]
+[node name="Column3" type="Node3D" parent="." node_paths=PackedStringArray("audioStreamPlayer")]
 script = ExtResource("1_ey4um")
+audioStreamPlayer = NodePath("../AudioStreamPlayer")
+sound = ExtResource("3_uh5hc")
 
 [node name="ArrowUp" type="Area3D" parent="Column3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -94,9 +101,11 @@ shape = SubResource("BoxShape3D_86r85")
 mesh = SubResource("BoxMesh_0ol4a")
 skeleton = NodePath("../..")
 
-[node name="Column4" type="Node3D" parent="."]
+[node name="Column4" type="Node3D" parent="." node_paths=PackedStringArray("audioStreamPlayer")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 script = ExtResource("1_ey4um")
+audioStreamPlayer = NodePath("../AudioStreamPlayer")
+sound = ExtResource("3_uh5hc")
 
 [node name="ArrowUp" type="Area3D" parent="Column4"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -122,9 +131,11 @@ shape = SubResource("BoxShape3D_86r85")
 mesh = SubResource("BoxMesh_0ol4a")
 skeleton = NodePath("../..")
 
-[node name="Column5" type="Node3D" parent="."]
+[node name="Column5" type="Node3D" parent="." node_paths=PackedStringArray("audioStreamPlayer")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
 script = ExtResource("1_ey4um")
+audioStreamPlayer = NodePath("../AudioStreamPlayer")
+sound = ExtResource("3_uh5hc")
 
 [node name="ArrowUp" type="Area3D" parent="Column5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -149,6 +160,8 @@ shape = SubResource("BoxShape3D_86r85")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Column5/ArrowDown/CollisionShape3D"]
 mesh = SubResource("BoxMesh_0ol4a")
 skeleton = NodePath("../..")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [connection signal="input_event" from="Column1/ArrowUp" to="Column1" method="_on_arrow_up_input_event"]
 [connection signal="input_event" from="Column1/ArrowDown" to="Column1" method="_on_arrow_down_input_event"]

@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://o2s547vsoxmj"]
+[gd_scene load_steps=5 format=3 uid="uid://o2s547vsoxmj"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_ptmjv"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_vn8wm"]
+[ext_resource type="AudioStream" uid="uid://de13osl4hgcl7" path="res://Assets/Audio/SFX/Schrank öffnen.wav" id="3_j3ssr"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -42,6 +44,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_main_interaction_globusZoom"
 sceneID = 2
+sound = ExtResource("2_vn8wm")
 
 [node name="Back" parent="Panel" instance=ExtResource("1_ptmjv")]
 layout_direction = 1
@@ -61,6 +64,7 @@ scale = Vector2(1.25, 1)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_main"
+sound = ExtResource("2_vn8wm")
 
 [node name="OpenWardrobe" parent="Panel" instance=ExtResource("1_ptmjv")]
 layout_mode = 1
@@ -81,3 +85,4 @@ size_flags_vertical = 4
 mouse_filter = 1
 sceneName = "captain_main_interaction_wardrobeOpen"
 sceneID = 3
+sound = ExtResource("3_j3ssr")

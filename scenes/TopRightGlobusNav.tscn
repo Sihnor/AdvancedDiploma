@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3nlrfc4y8aml"]
+[gd_scene load_steps=6 format=3 uid="uid://b3nlrfc4y8aml"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_2xpty"]
 [ext_resource type="PackedScene" uid="uid://sd8lmvc2x1x8" path="res://scenes/GlobusPinRiddle.tscn" id="2_w0rob"]
+[ext_resource type="AudioStream" uid="uid://exrf1tynuho4" path="res://Assets/Audio/SFX/Tür öffnen.wav" id="3_8ugob"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="4_cjf5u"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -51,6 +53,7 @@ size_flags_vertical = 4
 mouse_filter = 1
 sceneName = "captain_main_interaction_globusOpen"
 sceneID = 1
+sound = ExtResource("3_8ugob")
 
 [node name="Back" parent="Panel" instance=ExtResource("1_2xpty")]
 layout_direction = 1
@@ -72,3 +75,4 @@ size_flags_vertical = 4
 mouse_filter = 1
 sceneName = "captain_topRight"
 sceneID = 18
+sound = ExtResource("4_cjf5u")

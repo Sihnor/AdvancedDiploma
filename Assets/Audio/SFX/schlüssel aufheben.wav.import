@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://d3jfrdcfia2xm"
-path="res://.godot/imported/schlüssel aufheben.wav-bd66abc03d18dd4591b6f50423c6e687.sample"
+path="res://.godot/imported/schlüssel aufheben.wav-81e901532fb6a3dd7e84632824606a01.sample"
 
 [deps]
 
-source_file="res://Assets/Audio/SFX/Safe/schlüssel aufheben.wav"
-dest_files=["res://.godot/imported/schlüssel aufheben.wav-bd66abc03d18dd4591b6f50423c6e687.sample"]
+source_file="res://Assets/Audio/SFX/schlüssel aufheben.wav"
+dest_files=["res://.godot/imported/schlüssel aufheben.wav-81e901532fb6a3dd7e84632824606a01.sample"]
 
 [params]
 

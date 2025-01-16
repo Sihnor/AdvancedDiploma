@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cwj6bpg3u3b8w"]
+[gd_scene load_steps=4 format=3 uid="uid://cwj6bpg3u3b8w"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_lsuiq"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_eldge"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -41,6 +42,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_left"
 sceneID = 4
+sound = ExtResource("2_eldge")
 
 [node name="TopLeft" parent="Panel" instance=ExtResource("1_lsuiq")]
 layout_direction = 1
@@ -60,6 +62,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_topLeft"
 sceneID = 12
+sound = ExtResource("2_eldge")
 
 [node name="TopRight" parent="Panel" instance=ExtResource("1_lsuiq")]
 layout_direction = 1
@@ -79,6 +82,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_topRight"
 sceneID = 18
+sound = ExtResource("2_eldge")
 
 [node name="Right" parent="Panel" instance=ExtResource("1_lsuiq")]
 layout_direction = 1
@@ -98,3 +102,4 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_right"
 sceneID = 9
+sound = ExtResource("2_eldge")
