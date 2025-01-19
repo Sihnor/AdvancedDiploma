@@ -2,8 +2,8 @@
 	{
 		"name": "Kyra",
 		"text": "What the.. how is.. that even possible for an old Globe?",
-		"audio": "res://Assets/Audio/Voices/Kyra/Kyra 05.wav",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-13.wav"
 	},
 	{
 		"name": "Narrator ",
@@ -13,21 +13,25 @@
 	{
 		"name": "Kyra",
 		"text": "And.. Marked… right.. here.",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-14.wav"
 	},
 	{
 		"name": "Kyra",
 		"text": "These coordinates… they’re deliberate.",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-15.wav"
 	},
 	{
 		"name": "Kyra",
 		"text": "Someone’s been tracking something... or someone.",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-16.wav"
 	},
 	{
 		"name": "Kyra",
 		"text": "But what, who, why? What’s the purpose of this obsession?",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-17.wav"
 	}
 ]

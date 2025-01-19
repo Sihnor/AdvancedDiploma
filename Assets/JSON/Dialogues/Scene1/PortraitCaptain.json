@@ -7,12 +7,14 @@
 	{
 		"name": "Kyra",
 		"text": "This key… it feels warm to the touch.",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-25.wav"
 	},
 	{
 		"name": "Kyra",
 		"text": "Almost… alive.",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-26.wav"
 	},
 	{
 		"name": "Narrator ",
@@ -22,6 +24,7 @@
 	{
 		"name": "Kyra",
 		"text": "It’s as if… it’s been waiting for me.",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-27.wav"
 	}
 ]
