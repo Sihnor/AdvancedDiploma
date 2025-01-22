@@ -17,5 +17,18 @@
 	"captain_topLeft_interaction_mapZoom": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/Interaction/mapZoom.png",
 	"captain_topLeft_interaction_officeOpenDrawer": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/Interaction/officeOpenDrawer.png",
 	"captain_topLeft_interaction_radioZoom": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/Interaction/radioZoom.png",
-	"captain_topRight": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topRight/topRight.png"
+	"captain_topRight": "res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topRight/topRight.png",
+	"hallway01": "res://Assets/Art/Placeholder/Scenes/Hallway/Hallway01.png",
+	"hallway02": "res://Assets/Art/Placeholder/Scenes/Hallway/Hallway02.png",
+	"hallway021": "res://Assets/Art/Placeholder/Scenes/Hallway/Hallway02.1.png",
+	"hallway03": "res://Assets/Art/Placeholder/Scenes/Hallway/Hallway03.png",
+	"hallway04": "res://Assets/Art/Placeholder/Scenes/Hallway/Hallway04.png",
+	"dininghall01": "res://Assets/Art/Placeholder/Scenes/DiningRoom/DiningHall01.png",
+	"dininghall02": "res://Assets/Art/Placeholder/Scenes/DiningRoom/DiningHall02.png",
+	"dininghall03": "res://Assets/Art/Placeholder/Scenes/DiningRoom/DiningHall03.png",
+	"dininghall031": "res://Assets/Art/Placeholder/Scenes/DiningRoom/DiningHall03.1.png",
+	"dininghall04": "res://Assets/Art/Placeholder/Scenes/DiningRoom/DiningHall04.png",
+	"dininghall041": "res://Assets/Art/Placeholder/Scenes/DiningRoom/DiningHall04.1.png",
+	"dininghall05": "res://Assets/Art/Placeholder/Scenes/DiningRoom/DiningHall05.png",
+	"dininghall051": "res://Assets/Art/Placeholder/Scenes/DiningRoom/DiningHall05.1.png"
 }

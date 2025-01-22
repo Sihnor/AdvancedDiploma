@@ -15,6 +15,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_frp0o")
+metadata/_edit_use_anchors_ = true
 
 [node name="ProfileLeft" type="TextureRect" parent="."]
 layout_mode = 1
@@ -51,16 +52,21 @@ offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = SubResource("Theme_hql2p")
+metadata/_edit_use_anchors_ = true
 
 [node name="CharacterNames" type="Label" parent="Background"]
+clip_contents = true
+layout_direction = 1
 layout_mode = 1
 offset_left = 46.0
 offset_top = 35.0
 offset_right = 154.0
 offset_bottom = 60.0
 text = "Name Sample"
+metadata/_edit_use_anchors_ = true
 
 [node name="DialogueText" type="RichTextLabel" parent="Background"]
+layout_direction = 1
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -76,8 +82,11 @@ grow_vertical = 2
 bbcode_enabled = true
 text = "DialogueText Sample.."
 fit_content = true
+metadata/_edit_use_anchors_ = true
 
 [node name="ChoicesContainer" type="VBoxContainer" parent="Background"]
+clip_contents = true
+layout_direction = 1
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -90,8 +99,11 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="NextBtn" type="Button" parent="Background"]
+clip_contents = true
+layout_direction = 1
 layout_mode = 1
 anchors_preset = 3
 anchor_left = 1.0
@@ -107,6 +119,7 @@ grow_vertical = 0
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 text = "Next..."
+metadata/_edit_use_anchors_ = true
 
 [node name="VoiceStreamPlayer" type="AudioStreamPlayer" parent="."]
 

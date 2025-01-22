@@ -1,6 +1,7 @@
 extends Node
 
 var background : BackgroundTexture
+
 var mainNav : Control
 var leftNav : Control
 var leftWindowNav : Control
@@ -16,24 +17,46 @@ var rightDoorOpenNav : Control
 var topRightNav : Control
 var topRightGlobusNav : Control
 var topRightGlobusOpenNav : Control
+
+var dininghall01Nav : Control
+var dininghall02Nav : Control
+var dininghall03Nav : Control
+var dininghall031Nav : Control
+var dininghall04Nav : Control
+var dininghall041Nav : Control
+var dininghall05Nav : Control
+var dininghall051Nav : Control
+
 var notebook3D : PickupItem3D
 var plush3D : PickupItem3D
 var personalFile3D : PickupItem3D
 var portraitPart3D: PickupItem3D
 var captainKey3D : PickupItem3D
 var closetKey3D : PickupItem3D
+var chair3D : PickupItem3D
+var seahoundStatue3D : PickupItem3D
+var dolphineStatue3D : PickupItem3D
+var candle3D : PickupItem3D
+
 var slidePuzzleRiddle: SlidePuzzleRiddle
 var dairyRiddle: CodeRiddle
 var letterRiddle: CodeRiddle
 var bookRiddle: BookRiddle
+
+var interactionMeridith : DialogueInteration
+var interactionCrazyGuy : DialogueInteration
+
 var inventorySystem : InventorySystem
 var dialogueSystem : DialogueSystem
+
+var exitDoorUnlocked : bool = false
 var tmpSceneName : String
 var tmpSceneID: int
 var visitedScenes: Array = []
 
 func _ready():
 	background = get_tree().root.get_node("MainScene/SubViewportContainer/SubViewport/Background")
+	
 	mainNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/MainNav")
 	leftNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/LeftNav")
 	leftWindowNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/LeftWindowNav")
@@ -49,16 +72,34 @@ func _ready():
 	topRightNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightNav")
 	topRightGlobusNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightGlobusNav")
 	topRightGlobusOpenNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightGlobusOpenNav")
+	dininghall01Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall01Nav")
+	dininghall02Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall02Nav")
+	dininghall03Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall03Nav")
+	dininghall031Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall031Nav")
+	dininghall04Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall04Nav")
+	dininghall041Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall041Nav")
+	dininghall05Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall05Nav")
+	dininghall051Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall051Nav")
+	
 	notebook3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Notebook3D")
 	plush3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Plush3D")
 	personalFile3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/PersonalFile3D")
 	portraitPart3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/PortraitPart3D")
 	captainKey3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/CaptainKey3D")
 	closetKey3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/ClosetKey3D")
+	chair3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Chair3D")
+	seahoundStatue3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/SeahoundStatue3D")
+	dolphineStatue3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/DolphineStatue3D")
+	candle3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Candle3D")
+	
 	slidePuzzleRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/SlidePuzzleRiddle")
 	dairyRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/DairyRiddle")
 	letterRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftDrawerNav/Panel/LetterRiddle")
 	bookRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftBookNav/BookRiddle")
+	
+	interactionMeridith = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/MeridithInteraction")
+	interactionCrazyGuy = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/CrazyGuyInteraction")
+	
 	inventorySystem = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/InventorySystem")
 	dialogueSystem = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/DialogueSystem")
 	
@@ -265,6 +306,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 				openDoor.visible = false
 		else:
 			sceneName = "captain_right_interaction_exitDoorZoomKey"
+			sceneID = 11
+			switchScene(sceneName, sceneID, null)
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 		rightDoorNav.visible = true
@@ -278,12 +321,16 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			dialogueSystem.currentIndex = 0
 			dialogueSystem.updateDialogue()
 			dialogueSystem.visible =true
+		exitDoorUnlocked = true
 		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/RightDoorNav/Panel/OpenDoor")
 		if tmpNode != null:
 			tmpNode.queue_free()
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
+		if chair3D != null:
+			chair3D.visible = false
 		rightDoorNav.visible = false
+		dininghall01Nav.visible = false
 		rightDoorOpenNav.visible = true
 	elif sceneID == 12:
 		print("sceneID: ", sceneID)
@@ -356,8 +403,9 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		var tmpNode: Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftNav/Panel/Drawer")
 		if tmpNode != null:
 			tmpNode.queue_free()
-		if personalFile3D != null:
-			personalFile3D.visible = true
+		#TODO: When reached certain dialogue or task
+		#if personalFile3D != null:
+		#	personalFile3D.visible = true
 		if closetKey3D != null:
 			closetKey3D.visible = true
 		if portraitPart3D != null:
@@ -393,6 +441,61 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe")
 			tmpNode.button.visible = true
 		topRightNav.visible = true
+	elif sceneID == 19:
+		print("sceneID: ", sceneID)
+	elif sceneID == 20:
+		print("sceneID: ", sceneID)
+	elif sceneID == 21:
+		print("sceneID: ", sceneID)
+	elif sceneID == 22:
+		print("sceneID: ", sceneID)
+	elif sceneID == 23:
+		print("sceneID: ", sceneID)
+	elif sceneID == 24:
+		print("sceneID: ", sceneID)
+		dininghall01Nav.visible = true
+		if chair3D != null:
+			chair3D.visible = true
+		#TODO: change maybe later
+		rightDoorOpenNav.visible = false
+		dininghall03Nav.visible = false
+		dininghall02Nav.visible = false
+		interactionMeridith.visible = false
+		interactionCrazyGuy.visible = false
+	elif sceneID == 25:
+		print("sceneID: ", sceneID)
+		dininghall02Nav.visible = true
+		interactionMeridith.visible = true
+		if chair3D != null:
+			chair3D.visible = false
+		dininghall01Nav.visible = false
+		dininghall03Nav.visible = false
+		dininghall04Nav.visible = false
+		dininghall05Nav.visible = false
+		interactionCrazyGuy.visible = false
+	elif sceneID == 26:
+		print("sceneID: ", sceneID)
+	elif sceneID == 27:
+		print("sceneID: ", sceneID)
+		dininghall03Nav.visible = true
+		interactionCrazyGuy.visible = true
+		if chair3D != null:
+			chair3D.visible = false
+		dininghall01Nav.visible = false
+	elif sceneID == 28:
+		print("sceneID: ", sceneID)
+		dininghall04Nav.visible = true
+		dininghall02Nav.visible = false
+		interactionMeridith.visible = false
+	elif sceneID == 29:
+		print("sceneID: ", sceneID)
+	elif sceneID == 30:
+		print("sceneID: ", sceneID)
+		dininghall05Nav.visible = true
+		dininghall02Nav.visible = false
+		interactionMeridith.visible = false
+	elif sceneID == 31:
+		print("sceneID: ", sceneID)
 	else:
 		print("nothing")
 	background.swapBackground(GameManager.getSceneTexture(sceneName))
