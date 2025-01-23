@@ -296,7 +296,7 @@ PortraitCaptain.json::JSON::-1::1737300878::0::1::::<><>::
 RadioWhisper.json::JSON::-1::1737300954::0::1::::<><>::
 TheCaptainsRoom.json::JSON::-1::1737301062::0::1::::<><>::
 ::res://Assets/JSON/Dialogues/Scene3/::1737627925
-MeredithDiningHall.json::JSON::-1::1737632796::0::1::::<><>::
+MeredithDiningHall.json::JSON::-1::1737648064::0::1::::<><>::
 ::res://Assets/JSON/Dialogues/Scene4/::1737632856
 AnimalStatueFirstEncounter.json::JSON::-1::1737646066::0::1::::<><>::
 BookshelfFirstEncounter.json::JSON::-1::1737646830::0::1::::<><>::
@@ -338,7 +338,7 @@ MainNav.tscn::PackedScene::6337460138198217884::1737502410::0::1::::<><>::uid://
 MainUI.tscn::PackedScene::7272277581068064738::1733777948::0::1::::<><>::uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg<>res://scripts/MainUI.gd
 Notebook3D.tscn::PackedScene::8469139343881746870::1733261276::0::1::::<><>::
 PickupItem2D.tscn::PackedScene::7783466821998762829::1733777948::0::1::::<><>::res://scripts/PickupItem2D.gd<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
-PickupItem3D.tscn::PackedScene::4547064949461884066::1737647774::0::1::::<><>::res://scripts/PickupItem3D.gd<>res://scripts/RotateItemAnimationj.gd
+PickupItem3D.tscn::PackedScene::4547064949461884066::1737648064::0::1::::<><>::res://scripts/PickupItem3D.gd<>res://scripts/RotateItemAnimationj.gd
 RightDoorNav.tscn::PackedScene::8132298930936251112::1737519744::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://cmtl1olg0f5lv::::res://Assets/Audio/SFX/Schlüssel ins Schloss stecken + tür öffnen.wav
 RightDoorOpenNav.tscn::PackedScene::3756385032389558565::1737519744::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://exrf1tynuho4::::res://Assets/Audio/SFX/Tür öffnen.wav<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
 RightNav.tscn::PackedScene::5093652666770014593::1737055314::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
