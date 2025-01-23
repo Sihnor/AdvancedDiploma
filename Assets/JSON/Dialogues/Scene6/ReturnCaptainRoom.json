@@ -1,0 +1,121 @@
+[
+	{
+		"name": "Riddle Voice",
+		"text": "I am always hungry, devouring the fleeting seconds. Yet time alone cannot safe me. Who am I?",
+		"profileL": "",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Enitys Voice/Riddle Voice.wav"
+	},
+	{
+		"name": "Narrator",
+		"text": "Kyra hesitates, her mind racing. After a moment of silence, a familiar voice echoes in her mind",
+		"profileL": "",
+		"profileR": "",
+		"audio": ""
+	},
+	{
+		"name": "Tom's Voice",
+		"text": "It’s closer than you think… a thing that all fear, yet cannot escape.",
+		"profileL": "",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Tom/Tom 04.wav"
+	},
+	{
+		"name": "Narrator",
+		"text": "Realization dawns on her",
+		"profileL": "",
+		"profileR": "",
+		"audio": ""
+	},
+	{
+		"name": "Kyra",
+		"text": "Death",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-58.wav"
+	},
+	{
+		"name": "Narrator",
+		"text": "The phone emits a low, mocking chuckle.",
+		"profileL": "",
+		"profileR": "",
+		"audio": ""
+	},
+	{
+		"name": "Entity Voice",
+		"text": "Well-thought, chosen one.. Death is your new eternal ship… and you, my dear, are here to stay ... for eternity.",
+		"profileL": "",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Enitys Voice/Enity´s Voice.wav"
+	},
+	{
+		"name": "Narrator",
+		"text": "Kyra stands frozen, gripping the radio, her pulse quickening as Tom’s message fades into the static.",
+		"profileL": "",
+		"profileR": "",
+		"audio": ""
+	},
+	{
+		"name": "Kyra",
+		"text": "Leave the ship… leave the sea… warn everybody..",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-59.wav"
+	},
+	{
+		"name": "Narrator",
+		"text": "*she pauses, looking around in desperation*",
+		"profileL": "",
+		"profileR": "",
+		"audio": ""
+	},
+	{
+		"name": "Kyra",
+		"text": "But how? The doors… the halls… the statues!...",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-60.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "it’s like they’re shifting, leading me in repetitive dark circles…I cannot understand nor escape  from!...",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-61.wav"
+	},
+	{
+		"name": "Narrator",
+		"text": "The radio crackles again",
+		"profileL": "",
+		"profileR": "",
+		"audio": ""
+	},
+	{
+		"name": "Kyra",
+		"text": "I must… I must be the one who decides my fate",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-62.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "and I’ll be the one telling my story... no matter what the price is..",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-63.wav"
+	},
+	{
+		"name": "Narrator",
+		"text": "The Radio gets silent",
+		"profileL": "",
+		"profileR": "",
+		"audio": ""
+	},
+	{
+		"name": "Narrator",
+		"text": "She turns, steps toward the door, and disappears into the shadows as the whispers fade.",
+		"profileL": "",
+		"profileR": "",
+		"audio": ""
+	}
+]

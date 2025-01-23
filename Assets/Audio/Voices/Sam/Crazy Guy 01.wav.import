@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cpm4l16ttpmwa"
+path="res://.godot/imported/Crazy Guy 01.wav-491aa8bc1dcc9c97329a63b6c651a67a.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Voices/Sam/Crazy Guy 01.wav"
+dest_files=["res://.godot/imported/Crazy Guy 01.wav-491aa8bc1dcc9c97329a63b6c651a67a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

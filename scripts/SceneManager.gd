@@ -468,6 +468,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		interactionMeridith.visible = true
 		if chair3D != null:
 			chair3D.visible = false
+		if seahoundStatue3D != null:
+			seahoundStatue3D.visible = false
 		dininghall01Nav.visible = false
 		dininghall03Nav.visible = false
 		dininghall04Nav.visible = false
@@ -492,6 +494,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 	elif sceneID == 30:
 		print("sceneID: ", sceneID)
 		dininghall05Nav.visible = true
+		if seahoundStatue3D != null:
+			seahoundStatue3D.visible = true
 		dininghall02Nav.visible = false
 		interactionMeridith.visible = false
 	elif sceneID == 31:

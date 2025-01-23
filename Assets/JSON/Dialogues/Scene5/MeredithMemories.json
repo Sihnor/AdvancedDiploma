@@ -1,0 +1,79 @@
+[
+	{
+		"name": "Meredith",
+		"text": "It was a young man named Tom..",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/KyraGrey_01.png",
+		"profileR": "res://Assets/Art/CharacterIdols/Meredith/Meredith_01.png",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 06.wav"
+	},
+	{
+		"name": "Meredith",
+		"text": "he warned us about something my memories fail to recall completely..",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 07.wav"
+	},
+	{
+		"name": "Meredith",
+		"text": "He told us that… that the signal was more than we could ever understand",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 08.wav"
+	},
+	{
+		"name": "Meredith",
+		"text": "That our intellect wasn’t enough neither prepared for it dangerous true force.",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 09.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "What else did he say?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_02.png",
+		"profileR": "res://Assets/Art/CharacterIdols/Meredith/Meredith_01_grey.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-57.wav"
+	},
+	{
+		"name": "Meredith",
+		"text": "He said… he said it was ancient…",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/KyraGrey_02.png",
+		"profileR": "res://Assets/Art/CharacterIdols/Meredith/Meredith_01.png",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 10.wav"
+	},
+	{
+		"name": "Meredith",
+		"text": "something that shouldn’t be found..",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 11.wav"
+	},
+	{
+		"name": "Meredith",
+		"text": "something that we should have not tried to comprehend or investigate...",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 12.wav"
+	},
+	{
+		"name": "Narrator",
+		"text": "(Her face distorts with fear as her body begins to stiffen, transforming slowly into a statue.)",
+		"profileL": "",
+		"profileR": "",
+		"audio": ""
+	},
+	{
+		"name": "Meredith",
+		"text": "Find a way to escape and warn them Kyra…",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/KyraGrey_02.png",
+		"profileR": "res://Assets/Art/CharacterIdols/Meredith/Meredith_01.png",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 13.wav"
+	},
+	{
+		"name": "Meredith",
+		"text": "tell them what happened here… tell them about us and about.. you...",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 14.wav"
+	},
+	{
+		"name": "Meredith",
+		"text": "before it’s too late for your family to ever see you again.",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 15.wav"
+	},
+	{
+		"name": "Narrator",
+		"text": "(Kyra blinks once, Meredith transforms into a statue, leaving Kyra alone. Stunned and horrified, she quickly checks Sam and he also ended up turning into a statue.)",
+		"profileL": "",
+		"profileR": "",
+		"audio": ""
+	}
+]

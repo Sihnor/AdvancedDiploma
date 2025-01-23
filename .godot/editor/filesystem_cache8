@@ -26,7 +26,7 @@ Crate_normal.png::CompressedTexture2D::9002973667354351693::1732039768::17354143
 Dialogbalken links.png::CompressedTexture2D::3459729125507229425::1736946328::1736946328::1::::<><>::
 dialogbalken mitte.png::CompressedTexture2D::4564893529981738118::1736946322::1736946322::1::::<><>::
 Dialogbalken rechts.png::CompressedTexture2D::8044193930472954891::1736946332::1736946334::1::::<><>::
-Left_Dialogue_styleboxtexture.tres::StyleBoxTexture::1351439204302279662::1737507588::0::1::::<><>::uid://dmuwx01g0r5q2::::res://Assets/Art/Dialoge/Dialogbalken rechts.png
+Left_Dialogue_styleboxtexture.tres::StyleBoxTexture::1351439204302279662::1737624828::0::1::::<><>::uid://dmuwx01g0r5q2::::res://Assets/Art/Dialoge/Dialogbalken rechts.png
 Middle_Dialogue_styleboxtexture.tres::StyleBoxTexture::5655851450202458541::1736954964::0::1::::<><>::uid://b6bjenx34bo6y::::res://Assets/Art/Dialoge/dialogbalken mitte.png
 Right_Dialogue_styleboxtexture.tres::StyleBoxTexture::4245030436470401975::1737034834::0::1::::<><>::uid://bpj6h6uwdmgh2::::res://Assets/Art/Dialoge/Dialogbalken links.png
 ::res://Assets/Art/Navigation/::1736948703
@@ -182,17 +182,9 @@ sol-101774.mp3::AudioStreamMP3::2294039451448337236::1736728036::1736728038::1::
 ::res://Assets/Audio/SFX/safeLater/::1737048600
 Kerzenleuchter.wav::AudioStreamWAV::2440456400729230826::1737045470::1737048634::1::::<><>::
 ::res://Assets/Audio/Voices/::1732993587
-::res://Assets/Audio/Voices/Crazy Guy/::1732993587
-Crazy Guy (Lamar)-01.wav::AudioStreamWAV::1524020371959626483::1732993588::1735414342::1::::<><>::
-Crazy Guy (Lamar).wav::AudioStreamWAV::5088374869762459180::1732993588::1735414342::1::::<><>::
 ::res://Assets/Audio/Voices/Enitys Voice/::1737299771
 Enity´s Voice.wav::AudioStreamWAV::3023064754992156771::1737299772::1737299774::1::::<><>::
-::res://Assets/Audio/Voices/Grandma _Lady/::1732993587
-Grandma (Kiki)-01.wav::AudioStreamWAV::5539768669596308860::1732993588::1735414342::1::::<><>::
-Grandma (Kiki)-02.wav::AudioStreamWAV::5058943246204644192::1732993588::1735414342::1::::<><>::
-Grandma (Kiki)-03.wav::AudioStreamWAV::7987986279614855582::1732993588::1735414342::1::::<><>::
-Grandma (Kiki)-04.wav::AudioStreamWAV::8306068506848352744::1732993588::1735414342::1::::<><>::
-Grandma (Kiki).wav::AudioStreamWAV::543027282041089598::1732993588::1735414342::1::::<><>::
+Riddle Voice.wav::AudioStreamWAV::1650244545593563778::1737299768::1737647716::1::::<><>::
 ::res://Assets/Audio/Voices/Kyra/::1732993587
 Kyra (Dilara)-01.wav::AudioStreamWAV::6967875797481667957::1737299668::1737299670::1::::<><>::
 Kyra (Dilara)-02.wav::AudioStreamWAV::2494798288910270196::1737299668::1737299670::1::::<><>::
@@ -223,16 +215,71 @@ Kyra (Dilara)-26.wav::AudioStreamWAV::7670093340250287693::1737299668::173730069
 Kyra (Dilara)-27.wav::AudioStreamWAV::1343169535026244316::1737299668::1737300704::1::::<><>::
 Kyra (Dilara)-28.wav::AudioStreamWAV::2973964325284700525::1737299668::1737300710::1::::<><>::
 Kyra (Dilara)-29.wav::AudioStreamWAV::1652282558864841418::1737299668::1737300720::1::::<><>::
-::res://Assets/Audio/Voices/Radio/::1732993588
-Radio Voice.wav::AudioStreamWAV::7208318634998061450::1737299692::1737299692::1::::<><>::
+Kyra (Dilara)-30.wav::AudioStreamWAV::2581255879598797057::1737630742::1737630742::1::::<><>::
+Kyra (Dilara)-31.wav::AudioStreamWAV::4956548837925383792::1737630742::1737630742::1::::<><>::
+Kyra (Dilara)-32.wav::AudioStreamWAV::2796181670150275124::1737630742::1737630742::1::::<><>::
+Kyra (Dilara)-33.wav::AudioStreamWAV::3728987379458892278::1737630742::1737630742::1::::<><>::
+Kyra (Dilara)-34.wav::AudioStreamWAV::7966389832117300839::1737630742::1737630742::1::::<><>::
+Kyra (Dilara)-35.wav::AudioStreamWAV::2547194894698815433::1737648006::1737648006::1::::<><>::
+Kyra (Dilara)-36.wav::AudioStreamWAV::3949016967598657012::1737648006::1737648006::1::::<><>::
+Kyra (Dilara)-37.wav::AudioStreamWAV::764206564499115772::1737648006::1737648006::1::::<><>::
+Kyra (Dilara)-38.wav::AudioStreamWAV::3362002100011756634::1737630742::1737632464::1::::<><>::
+Kyra (Dilara)-39.wav::AudioStreamWAV::1335189688494184052::1737630742::1737632456::1::::<><>::
+Kyra (Dilara)-40.wav::AudioStreamWAV::106645960618538161::1737630742::1737632448::1::::<><>::
+Kyra (Dilara)-41.wav::AudioStreamWAV::7372106673271703227::1737630742::1737632444::1::::<><>::
+Kyra (Dilara)-42.wav::AudioStreamWAV::5275105315104447000::1737630742::1737632436::1::::<><>::
+Kyra (Dilara)-43.wav::AudioStreamWAV::4126149701140087458::1737630742::1737632430::1::::<><>::
+Kyra (Dilara)-44.wav::AudioStreamWAV::6922305095635017798::1737630742::1737632426::1::::<><>::
+Kyra (Dilara)-45.wav::AudioStreamWAV::3513522625021947774::1737630742::1737632420::1::::<><>::
+Kyra (Dilara)-46.wav::AudioStreamWAV::4104743475330077964::1737630742::1737632416::1::::<><>::
+Kyra (Dilara)-47.wav::AudioStreamWAV::8461169374986123337::1737630742::1737632410::1::::<><>::
+Kyra (Dilara)-48.wav::AudioStreamWAV::4286554136087000687::1737630742::1737632404::1::::<><>::
+Kyra (Dilara)-49.wav::AudioStreamWAV::8257639340804638283::1737630742::1737632398::1::::<><>::
+Kyra (Dilara)-50.wav::AudioStreamWAV::2017904433109958910::1737630742::1737632390::1::::<><>::
+Kyra (Dilara)-51.wav::AudioStreamWAV::5064345839853506345::1737630742::1737632384::1::::<><>::
+Kyra (Dilara)-52.wav::AudioStreamWAV::4911828895395058203::1737630742::1737632378::1::::<><>::
+Kyra (Dilara)-53.wav::AudioStreamWAV::3434548392966396277::1737630742::1737632374::1::::<><>::
+Kyra (Dilara)-54.wav::AudioStreamWAV::5050270199627229684::1737630742::1737632366::1::::<><>::
+Kyra (Dilara)-55.wav::AudioStreamWAV::2765357817845592398::1737630742::1737632356::1::::<><>::
+Kyra (Dilara)-56.wav::AudioStreamWAV::3815064863036582077::1737630742::1737632350::1::::<><>::
+Kyra (Dilara)-57.wav::AudioStreamWAV::3755167160472123044::1737630742::1737632342::1::::<><>::
+Kyra (Dilara)-58.wav::AudioStreamWAV::6777092357150813361::1737630742::1737632336::1::::<><>::
+Kyra (Dilara)-59.wav::AudioStreamWAV::3311740287182604856::1737630742::1737632328::1::::<><>::
+Kyra (Dilara)-60.wav::AudioStreamWAV::6011396930386839271::1737630742::1737632320::1::::<><>::
+Kyra (Dilara)-61.wav::AudioStreamWAV::8852319653833154181::1737630742::1737632314::1::::<><>::
+Kyra (Dilara)-62.wav::AudioStreamWAV::3426518109423262926::1737630742::1737632306::1::::<><>::
+Kyra (Dilara)-63.wav::AudioStreamWAV::6835240927034682228::1737630742::1737632298::1::::<><>::
+::res://Assets/Audio/Voices/Meredith/::1737630723
+Meredith 01.wav::AudioStreamWAV::3062631301350553181::1737630724::1737630724::1::::<><>::
+Meredith 02.wav::AudioStreamWAV::7786533078519875251::1737630724::1737630724::1::::<><>::
+Meredith 03.wav::AudioStreamWAV::7557090051185212804::1737630724::1737630724::1::::<><>::
+Meredith 04.wav::AudioStreamWAV::8273556774601083598::1737630724::1737630724::1::::<><>::
+Meredith 05.wav::AudioStreamWAV::72899494367213644::1737630724::1737630724::1::::<><>::
+Meredith 06.wav::AudioStreamWAV::7989110052581479921::1737630724::1737630724::1::::<><>::
+Meredith 07.wav::AudioStreamWAV::2272834723643858739::1737630724::1737630724::1::::<><>::
+Meredith 08.wav::AudioStreamWAV::5262445276880692974::1737630724::1737630724::1::::<><>::
+Meredith 09.wav::AudioStreamWAV::3950961885848293405::1737630724::1737630724::1::::<><>::
+Meredith 10.wav::AudioStreamWAV::662146079710615581::1737630724::1737630724::1::::<><>::
+Meredith 11.wav::AudioStreamWAV::7676914879163253520::1737630724::1737630724::1::::<><>::
+Meredith 12.wav::AudioStreamWAV::7001340254974753194::1737630724::1737630724::1::::<><>::
+Meredith 13.wav::AudioStreamWAV::4611450868390616771::1737630724::1737630724::1::::<><>::
+Meredith 14.wav::AudioStreamWAV::4744758674135055601::1737630724::1737630724::1::::<><>::
+Meredith 15.wav::AudioStreamWAV::441008321938725631::1737630724::1737630724::1::::<><>::
 ::res://Assets/Audio/Voices/Radio Voice/::1737299762
 Radio Voice.wav::AudioStreamWAV::3139981441294791391::1737299764::1737299764::1::::<><>::
 ::res://Assets/Audio/Voices/Riddle Voice/::1737299767
-Riddle Voice.wav::AudioStreamWAV::1650244545593563778::1737299768::1737299768::1::::<><>::
-::res://Assets/Audio/Voices/Tom/::1732993588
-Tom (Jonas)-01.wav::AudioStreamWAV::7562414040141148227::1732993590::1735414342::1::::<><>::
-Tom (Jonas).wav::AudioStreamWAV::4977634009047071533::1732993590::1735414342::1::::<><>::
+::res://Assets/Audio/Voices/Sam/::1737630723
+Crazy Guy 01.wav::AudioStreamWAV::5852228405913894756::1737630724::1737646894::1::::<><>::
+Crazy Guy 02.wav::AudioStreamWAV::6035720363987626386::1737630724::1737646894::1::::<><>::
+Crazy Guy 03.wav::AudioStreamWAV::5816979984294072677::1737630724::1737646894::1::::<><>::
+Crazy Guy 04.wav::AudioStreamWAV::8628628810388441101::1737630724::1737646894::1::::<><>::
+::res://Assets/Audio/Voices/Tom/::1737630723
+Tom 01.wav::AudioStreamWAV::4887346703374888233::1737630724::1737630724::1::::<><>::
+Tom 02.wav::AudioStreamWAV::3666857238535386642::1737630724::1737630724::1::::<><>::
+Tom 03.wav::AudioStreamWAV::8386832722667609252::1737630724::1737630724::1::::<><>::
+Tom 04.wav::AudioStreamWAV::3405225066756904750::1737630724::1737630724::1::::<><>::
 ::res://Assets/JSON/::1734559294
+CrazyGuy.json::JSON::-1::1737522044::0::1::::<><>::
 dialogues.json::JSON::-1::1734636088::0::1::::<><>::
 MeridithTest.json::JSON::-1::1737521228::0::1::::<><>::
 ::res://Assets/JSON/choice/::1734567916
@@ -248,19 +295,34 @@ MapOnDesk.json::JSON::-1::1737300192::0::1::::<><>::
 PortraitCaptain.json::JSON::-1::1737300878::0::1::::<><>::
 RadioWhisper.json::JSON::-1::1737300954::0::1::::<><>::
 TheCaptainsRoom.json::JSON::-1::1737301062::0::1::::<><>::
+::res://Assets/JSON/Dialogues/Scene3/::1737627925
+MeredithDiningHall.json::JSON::-1::1737632796::0::1::::<><>::
+::res://Assets/JSON/Dialogues/Scene4/::1737632856
+AnimalStatueFirstEncounter.json::JSON::-1::1737646066::0::1::::<><>::
+BookshelfFirstEncounter.json::JSON::-1::1737646830::0::1::::<><>::
+BruningCandle.json::JSON::-1::1737647132::0::1::::<><>::
+DisplayCasePlaceStatue.json::JSON::-1::1737647196::0::1::::<><>::
+OpenedShelf.json::JSON::-1::1737646786::0::1::::<><>::
+OrganizedBooks.json::JSON::-1::1737646752::0::1::::<><>::
+SamAltar.json::JSON::-1::1737647088::0::1::::<><>::
+::res://Assets/JSON/Dialogues/Scene5/::1737642432
+FileCandleInteraction.json::JSON::-1::1737647394::0::1::::<><>::
+MeredithMemories.json::JSON::-1::1737647498::0::1::::<><>::
+::res://Assets/JSON/Dialogues/Scene6/::1737643744
+ReturnCaptainRoom.json::JSON::-1::1737647760::0::1::::<><>::
 ::res://scenes/::1732039766
 3DViewport.tscn::PackedScene::1435262317156502667::1733777948::0::1::::<><>::res://scripts/3DViewport.gd<>uid://bct6a7lt8dc6p::::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/main.png<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
-Background.tscn::PackedScene::2202417917244361780::1737521806::0::1::::<><>::res://scripts/Background.gd<>uid://bx4nu3bge7yky::::res://Assets/Art/Placeholder/Scenes/DiningRoom/DiningHall02.png
+Background.tscn::PackedScene::2202417917244361780::1737642310::0::1::::<><>::res://scripts/Background.gd<>uid://bq8en477sqwq3::::res://Assets/Art/Placeholder/Scenes/DiningRoom/DiningHall04.png
 BookRiddle.tscn::PackedScene::264333835136207322::1737486308::0::1::::<><>::res://BookRiddle.gd<>uid://bm6mif3hvd470::::res://Assets/Audio/SFX/light-switch-sound-228104.mp3<>res://scripts/Book.gd<>uid://bm4fstb2tg0al::::res://Assets/Audio/SFX/schublade öffnen richtig.wav
 CodeRiddle.tscn::PackedScene::127311198557834061::1737118110::0::1::::<><>::res://scripts/CodeRiddle.gd<>res://scripts/CodeColumn.gd<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
 crate.tscn::PackedScene::2331090909585695710::1732039768::0::1::::<><>::uid://cd3rxu61epd3p::::res://Assets/Art/Crate/Crate.fbx<>uid://ca35bl2yx3jn4::::res://Assets/Art/Crate/Textures/Crate_albedo.png<>uid://816rdp5aecy8::::res://Assets/Art/Crate/Textures/Crate_ao.png<>uid://d1jdwqb83g3ef::::res://Assets/Art/Crate/Textures/Crate_normal.png<>uid://bp1auupcnyvxd::::res://Assets/Audio/SFX/Möven.mp3
-DialogueInteraction.tscn::PackedScene::9201240278525191122::1737521806::0::1::::<><>::res://scripts/dialogueInteraction.gd<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
+DialogueInteraction.tscn::PackedScene::9201240278525191122::1737642310::0::1::::<><>::res://scripts/dialogueInteraction.gd<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
 DialogueSystem.tscn::PackedScene::3294395130157583743::1737489080::0::1::::<><>::res://scripts/DialogueSystem.gd<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://tiwahhsisfnq::::res://Assets/Art/Dialoge/Left_Dialogue_styleboxtexture.tres
 Dininghall01Nav.tscn::PackedScene::8910602140757986096::1737519744::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
 Dininghall02Nav.tscn::PackedScene::6058269089528109879::1737519744::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
 Dininghall03Nav.tscn::PackedScene::300955577455500941::1737511576::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
-Dininghall04Nav.tscn::PackedScene::6736340945792016877::1737511712::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
-Dininghall05Nav.tscn::PackedScene::2243419271281489863::1737518136::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
+Dininghall04Nav.tscn::PackedScene::6736340945792016877::1737642310::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
+Dininghall05Nav.tscn::PackedScene::2243419271281489863::1737627306::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
 Dininghall031Nav.tscn::PackedScene::7314327871968288025::1737512336::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
 Dininghall041Nav.tscn::PackedScene::5349313731423837089::1737512452::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
 Dininghall051Nav.tscn::PackedScene::6094925680458635941::1737518136::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
@@ -271,18 +333,18 @@ LeftNav.tscn::PackedScene::9104518148809185961::1737054746::0::1::::<><>::uid://
 LeftNotebookCodeNav.tscn::PackedScene::8930632418147173459::1737058140::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://bp6sln60kxlyy::::res://Assets/Audio/SFX/notizbuch aufheben.wav
 LeftNotebookCodeOpenNav.tscn::PackedScene::229291845976363928::1733441162::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn
 LeftWindowNav.tscn::PackedScene::4312214013618733935::1737118110::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://bm6mif3hvd470::::res://Assets/Audio/SFX/light-switch-sound-228104.mp3<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
-Main.tscn::PackedScene::4249296749994118019::1737521920::0::1::::<><>::uid://6m4rbr4uqs3u::::res://scenes/Background.tscn<>uid://cwj6bpg3u3b8w::::res://scenes/MainNav.tscn<>uid://p5ahydkjisqy::::res://scenes/TopLeftRadioNav.tscn<>uid://yxu6nudywmn5::::res://scenes/TopLeftMapNav.tscn<>uid://dn4l1mgm34vg7::::res://scenes/RightDoorNav.tscn<>uid://cetnyk2nihqe8::::res://scenes/RightNav.tscn<>uid://b3nlrfc4y8aml::::res://scenes/TopRightGlobusNav.tscn<>uid://bxbos0gxepw15::::res://scenes/TopLeftBookNav.tscn<>uid://b2o4sghcmtr32::::res://scenes/LeftWindowNav.tscn<>uid://d2ykc31xty202::::res://scenes/LeftNav.tscn<>uid://o2s547vsoxmj::::res://scenes/TopRightNav.tscn<>uid://bg3ruliyhrcr5::::res://scenes/TopLeftNav.tscn<>uid://cf7xqrrdhc6yi::::res://scenes/TopRightGlobusOpenNav.tscn<>uid://d0ichgc34176v::::res://scenes/LeftNotebookCodeNav.tscn<>uid://c3x8vutkwn5vy::::res://scenes/TopLeftDrawerNav.tscn<>uid://btrvd3iljyob2::::res://scenes/RightDoorOpenNav.tscn<>uid://dy7mkyuun44lo::::res://scenes/Dininghall01Nav.tscn<>uid://b51vq3wsky7ww::::res://scenes/PickupItem3D.tscn<>uid://bm63haxmbj0d4::::res://scenes/DialogueSystem.tscn<>uid://dbu0l40uitgwg::::res://scenes/MainUI.tscn<>uid://cskw2ovxuw2q2::::res://scenes/Dininghall02Nav.tscn<>uid://c5pgqlg128lek::::res://scenes/InventorySystem.tscn<>uid://ej1xuylcigfl::::res://scenes/Dininghall03Nav.tscn<>uid://bpor3gs4h6fbk::::res://Assets/Art/Placeholder/UI/Notebook.png<>uid://dchd58uigxf8l::::res://scenes/Dininghall031Nav.tscn<>uid://c28es0f18kvur::::res://scenes/Dininghall04Nav.tscn<>uid://cihioephk7sp2::::res://scenes/Dininghall041Nav.tscn<>uid://bp6sln60kxlyy::::res://Assets/Audio/SFX/notizbuch aufheben.wav<>uid://jkwemu8d667::::res://Assets/Art/Placeholder/Experiment/Wal_Experiment.png<>uid://b66yn1mvrv87l::::res://Assets/Art/Placeholder/Experiment/TomDokument_Experiment.png<>uid://67y11ra13xbj::::res://scenes/Dininghall05Nav.tscn<>uid://bypxc4klh8a7p::::res://Assets/Audio/SFX/Kopfkissen rücken.wav<>uid://b2w2de81naqf::::res://scenes/CodeRiddle.tscn<>uid://cs3oshanxh6kn::::res://scenes/Dininghall051Nav.tscn<>uid://byv75rj7ws8b7::::res://Assets/Art/Placeholder/Experiment/Schrankschlüssel_Experiment.png<>uid://d4dfc3a7qahje::::res://scenes/DialogueInteraction.tscn<>uid://cyfibjdf30b2y::::res://Assets/Art/Placeholder/Experiment/Portraitschnipsel_Experiment.png<>uid://d3jfrdcfia2xm::::res://Assets/Audio/SFX/schlüssel aufheben.wav<>uid://bbtd20fe3jpp1::::res://scenes/SlidePuzzle.tscn<>uid://dxio8ghmqqne6::::res://Assets/Art/Placeholder/Experiment/Captainsroomschlüssel_Experiment.png<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
+Main.tscn::PackedScene::4249296749994118019::1737642310::0::1::::<><>::uid://6m4rbr4uqs3u::::res://scenes/Background.tscn<>uid://cwj6bpg3u3b8w::::res://scenes/MainNav.tscn<>uid://p5ahydkjisqy::::res://scenes/TopLeftRadioNav.tscn<>uid://yxu6nudywmn5::::res://scenes/TopLeftMapNav.tscn<>uid://dn4l1mgm34vg7::::res://scenes/RightDoorNav.tscn<>uid://cetnyk2nihqe8::::res://scenes/RightNav.tscn<>uid://b3nlrfc4y8aml::::res://scenes/TopRightGlobusNav.tscn<>uid://bxbos0gxepw15::::res://scenes/TopLeftBookNav.tscn<>uid://b2o4sghcmtr32::::res://scenes/LeftWindowNav.tscn<>uid://d2ykc31xty202::::res://scenes/LeftNav.tscn<>uid://o2s547vsoxmj::::res://scenes/TopRightNav.tscn<>uid://bg3ruliyhrcr5::::res://scenes/TopLeftNav.tscn<>uid://cf7xqrrdhc6yi::::res://scenes/TopRightGlobusOpenNav.tscn<>uid://d0ichgc34176v::::res://scenes/LeftNotebookCodeNav.tscn<>uid://c3x8vutkwn5vy::::res://scenes/TopLeftDrawerNav.tscn<>uid://btrvd3iljyob2::::res://scenes/RightDoorOpenNav.tscn<>uid://dy7mkyuun44lo::::res://scenes/Dininghall01Nav.tscn<>uid://b51vq3wsky7ww::::res://scenes/PickupItem3D.tscn<>uid://bm63haxmbj0d4::::res://scenes/DialogueSystem.tscn<>uid://dbu0l40uitgwg::::res://scenes/MainUI.tscn<>uid://cskw2ovxuw2q2::::res://scenes/Dininghall02Nav.tscn<>uid://c5pgqlg128lek::::res://scenes/InventorySystem.tscn<>uid://ej1xuylcigfl::::res://scenes/Dininghall03Nav.tscn<>uid://bpor3gs4h6fbk::::res://Assets/Art/Placeholder/UI/Notebook.png<>uid://dchd58uigxf8l::::res://scenes/Dininghall031Nav.tscn<>uid://c28es0f18kvur::::res://scenes/Dininghall04Nav.tscn<>uid://cihioephk7sp2::::res://scenes/Dininghall041Nav.tscn<>uid://bp6sln60kxlyy::::res://Assets/Audio/SFX/notizbuch aufheben.wav<>uid://jkwemu8d667::::res://Assets/Art/Placeholder/Experiment/Wal_Experiment.png<>uid://b66yn1mvrv87l::::res://Assets/Art/Placeholder/Experiment/TomDokument_Experiment.png<>uid://67y11ra13xbj::::res://scenes/Dininghall05Nav.tscn<>uid://bypxc4klh8a7p::::res://Assets/Audio/SFX/Kopfkissen rücken.wav<>uid://b2w2de81naqf::::res://scenes/CodeRiddle.tscn<>uid://cs3oshanxh6kn::::res://scenes/Dininghall051Nav.tscn<>uid://byv75rj7ws8b7::::res://Assets/Art/Placeholder/Experiment/Schrankschlüssel_Experiment.png<>uid://d4dfc3a7qahje::::res://scenes/DialogueInteraction.tscn<>uid://cyfibjdf30b2y::::res://Assets/Art/Placeholder/Experiment/Portraitschnipsel_Experiment.png<>uid://d3jfrdcfia2xm::::res://Assets/Audio/SFX/schlüssel aufheben.wav<>uid://bbtd20fe3jpp1::::res://scenes/SlidePuzzle.tscn<>uid://dxio8ghmqqne6::::res://Assets/Art/Placeholder/Experiment/Captainsroomschlüssel_Experiment.png<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
 MainNav.tscn::PackedScene::6337460138198217884::1737502410::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
 MainUI.tscn::PackedScene::7272277581068064738::1733777948::0::1::::<><>::uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg<>res://scripts/MainUI.gd
 Notebook3D.tscn::PackedScene::8469139343881746870::1733261276::0::1::::<><>::
 PickupItem2D.tscn::PackedScene::7783466821998762829::1733777948::0::1::::<><>::res://scripts/PickupItem2D.gd<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
-PickupItem3D.tscn::PackedScene::4547064949461884066::1737058140::0::1::::<><>::res://scripts/PickupItem3D.gd<>res://scripts/RotateItemAnimationj.gd
+PickupItem3D.tscn::PackedScene::4547064949461884066::1737647774::0::1::::<><>::res://scripts/PickupItem3D.gd<>res://scripts/RotateItemAnimationj.gd
 RightDoorNav.tscn::PackedScene::8132298930936251112::1737519744::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://cmtl1olg0f5lv::::res://Assets/Audio/SFX/Schlüssel ins Schloss stecken + tür öffnen.wav
 RightDoorOpenNav.tscn::PackedScene::3756385032389558565::1737519744::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://exrf1tynuho4::::res://Assets/Audio/SFX/Tür öffnen.wav<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
 RightNav.tscn::PackedScene::5093652666770014593::1737055314::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
 SlidePuzzle.tscn::PackedScene::2496064393099307164::1737058140::0::1::::<><>::res://scripts/Piece.gd<>res://scripts/SlidePuzzle.gd<>uid://exrf1tynuho4::::res://Assets/Audio/SFX/Tür öffnen.wav<>uid://1ox6vucnbuat::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/01_puzzelteilQuadrat_sm.fbx<>uid://bqgiji4lcg413::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/02_puzzelteilQuadrat_sm.fbx<>uid://bj8xorvpmbsxb::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/03_puzzelteilQuadrat_sm.fbx<>uid://cv2s4pj6qky3a::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/04_puzzelteilQuadrat_sm.fbx<>uid://ogelyfy5nnla::::res://Assets/Audio/SFX/Schieben.wav<>uid://cpdilwukph0wk::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/05_puzzelteilQuadrat_sm.fbx<>uid://bd2v04t3huyxt::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/06_puzzelteilQuadrat_sm.fbx<>uid://ddtqj7hydr0ix::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/07_puzzelteilQuadrat_sm.fbx<>uid://cxm77mxcy5gek::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/08_puzzelteilQuadrat_sm.fbx
-SwapScene.tscn::PackedScene::6581734433531554397::1737521806::0::1::::<><>::res://scripts/SwapScene.gd<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
-testAlphabet.tscn::PackedScene::7776987970679469077::1733861960::0::1::::<><>::uid://b2w2de81naqf::::res://scenes/CodeRiddle.tscn
+SwapScene.tscn::PackedScene::6581734433531554397::1737642310::0::1::::<><>::res://scripts/SwapScene.gd<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
+testAlphabet.tscn::PackedScene::7776987970679469077::1737625566::0::1::::<><>::uid://b2w2de81naqf::::res://scenes/CodeRiddle.tscn
 TopLeftBookNav.tscn::PackedScene::4003711970714480386::1737486308::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://d1bsl3hdb04e::::res://scenes/BookRiddle.tscn
 TopLeftDrawerNav.tscn::PackedScene::6787651920330366626::1737486308::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://b2w2de81naqf::::res://scenes/CodeRiddle.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://bm4fstb2tg0al::::res://Assets/Audio/SFX/schublade öffnen richtig.wav<>uid://exrf1tynuho4::::res://Assets/Audio/SFX/Tür öffnen.wav
 TopLeftMapNav.tscn::PackedScene::1733283348991430680::1737055234::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
@@ -292,7 +354,7 @@ TopRightGlobusNav.tscn::PackedScene::4379243728834955595::1737063062::0::1::::<>
 TopRightGlobusOpenNav.tscn::PackedScene::5191271656546787284::1737063062::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
 TopRightNav.tscn::PackedScene::1039530063568681261::1737063062::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://de13osl4hgcl7::::res://Assets/Audio/SFX/Schrank öffnen.wav
 ::res://scenes/JSON/::1733164408
-gameScenes.json::JSON::-1::1737497852::0::1::::<><>::
+gameScenes.json::JSON::-1::1737624828::0::1::::<><>::
 ::res://scripts/::1727804414
 3DViewport.gd::GDScript::-1::1734568552::0::1::::<>TextureRect<>::
 Background.gd::GDScript::-1::1734568552::0::1::::BackgroundTexture<>Control<>::
@@ -301,8 +363,8 @@ CodeColumn.gd::GDScript::-1::1737066074::0::1::::<>Node3D<>::
 CodeRiddle.gd::GDScript::-1::1737065612::0::1::::CodeRiddle<>Node3D<>::
 dialogueInteraction.gd::GDScript::-1::1737521098::0::1::::DialogueInteration<>Control<>::
 DialogueSystem.gd::GDScript::-1::1737056524::0::1::::DialogueSystem<>Control<>::
-GameManager.gd::GDScript::-1::1737489346::0::1::::<>Node<>::
-GlobusMap.gd::GDScript::-1::1737489346::0::1::::GlobusMap<>Control<>::
+GameManager.gd::GDScript::-1::1737624828::0::1::::<>Node<>::
+GlobusMap.gd::GDScript::-1::1737624828::0::1::::GlobusMap<>Control<>::
 InventorySystem.gd::GDScript::-1::1737046938::0::1::::InventorySystem<>Control<>::
 MainUI.gd::GDScript::-1::1733362724::0::1::::<>Control<>::
 PickupItem2D.gd::GDScript::-1::1733362754::0::1::::<>Control<>::
@@ -310,6 +372,6 @@ PickupItem3D.gd::GDScript::-1::1737053542::0::1::::PickupItem3D<>Node3D<>::
 Piece.gd::GDScript::-1::1734568554::0::1::::<>Area3D<>::
 Pin.gd::GDScript::-1::1734568554::0::1::::<>TextureButton<>::
 RotateItemAnimationj.gd::GDScript::-1::1733362838::0::1::::<>MeshInstance3D<>::
-SceneManager.gd::GDScript::-1::1737520996::0::1::::<>Node<>::
+SceneManager.gd::GDScript::-1::1737626142::0::1::::<>Node<>::
 SlidePuzzle.gd::GDScript::-1::1737057780::0::1::::SlidePuzzleRiddle<>Node3D<>::
 SwapScene.gd::GDScript::-1::1737067688::0::1::::SwapScene<>Control<>::

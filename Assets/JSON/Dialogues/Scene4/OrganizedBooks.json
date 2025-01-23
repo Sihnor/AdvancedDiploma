@@ -1,0 +1,23 @@
+[
+	{
+		"name": "Kyra",
+		"text": "What is..",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-40.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "oh… those.. those were the victims affected by..",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-41.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "whatever this is!",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-42.wav"
+	}
+]

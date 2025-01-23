@@ -1,0 +1,64 @@
+[
+	{
+		"name": "Narrator ",
+		"text": "*soft humming drifting through the air*",
+	},
+	{
+		"name": "Kyra",
+		"text": "Thank goodness, someone else!",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_02.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-33.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "Are you alright?",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-34.wav"
+	},
+	{
+		"name": "Meredith",
+		"text": "I… was on the last ship.",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/KyraGrey_02.png",
+		"profileR": "res://Assets/Art/CharacterIdols/Meredith/Meredith_01.png",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 01.wav",
+	},
+	{
+		"name": "Meredith",
+		"text": "I remember the beautiful melody that haunts me delicately and eternally…",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 02.wav",
+	},
+	{
+		"name": "Meredith",
+		"text": "but everything else… it’s like fog, a fog I cannot escape from…",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 03.wav",
+	},
+	{
+		"name": "Kyra",
+		"text": "That melody you’re talking about..",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileR": "res://Assets/Art/CharacterIdols/Meredith/Meredith_01_grey.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-35.wav",
+	},
+	{
+		"name": "Kyra",
+		"text": "Do you think it might help you remember what happened to you?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_02.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-36.wav",
+	},
+	{
+		"name": "Kyra",
+		"text": "What happened here? What is the reason of this presence on this ship?",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-37.wav",
+	},
+	{
+		"name": "Meredith",
+		"text": "Maybe… maybe it’s the only thing I still have.",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/KyraGrey_02.png",
+		"profileR": "res://Assets/Art/CharacterIdols/Meredith/Meredith_01.png",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 04.wav",
+	},
+	{
+		"name": "Meredith",
+		"text": "The only part of me that didn’t… fade away.",
+		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 05.wav",
+	}
+]
