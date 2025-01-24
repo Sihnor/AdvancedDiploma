@@ -19,6 +19,10 @@ func _ready():
 func addItem(itemName: String, itemIcon: Texture2D):
 	inventory.append({"name": itemName, "icon": itemIcon})
 	updateInventoryUI()
+	
+func removeItem(itemName: String, itemIcon: Texture2D):
+	inventory.erase({"name": itemName, "icon": itemIcon})
+	updateInventoryUI()
 
 func updateInventoryUI():
 	clearChildren(itemSlotsRef)
@@ -50,6 +54,13 @@ func clearChildren(container: Node):
 func _on_item_picked_up(itemName: String, itemIcon: Texture2D):
 	if findItemInInventory(itemName) == "":
 		addItem(itemName, itemIcon)
+	if findItemInInventory("Chair Piece") != "" and findItemInInventory("Knife") != "":
+		var new_texture = load("res://Assets/Art/Placeholder/UI/icon.svg") as Texture2D
+		removeItem("Chair Piece", new_texture)
+		removeItem("Knife", new_texture)
+		itemIcon = ResourceLoader.load("res://Assets/Art/Placeholder/UI/Plush.png")
+		addItem("Wood Dolphine Statue", itemIcon)
+		
 
 func setInteractive(isInteractive: bool):
 	self.mouse_filter = Control.MOUSE_FILTER_PASS if isInteractive else Control.MOUSE_FILTER_IGNORE

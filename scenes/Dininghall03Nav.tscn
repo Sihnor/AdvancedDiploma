@@ -40,3 +40,24 @@ size_flags_vertical = 4
 sceneName = "dininghall01"
 sceneID = 24
 sound = ExtResource("2_6l1r1")
+
+[node name="ApplyWoodDolphine" parent="Panel" instance=ExtResource("1_g82xp")]
+visible = false
+layout_direction = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.390625
+anchor_top = 0.5
+anchor_right = 0.477431
+anchor_bottom = 0.654321
+offset_right = 0.0
+offset_bottom = -3.05176e-05
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "dininghall031"
+sceneID = 27
+selfDestroy = true
+sound = ExtResource("2_6l1r1")
+metadata/_edit_use_anchors_ = true

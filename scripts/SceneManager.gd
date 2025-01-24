@@ -28,12 +28,13 @@ var dininghall05Nav : Control
 var dininghall051Nav : Control
 
 var notebook3D : PickupItem3D
-var plush3D : PickupItem3D
+var whaleStatue3D : PickupItem3D
 var personalFile3D : PickupItem3D
 var portraitPart3D: PickupItem3D
 var captainKey3D : PickupItem3D
 var closetKey3D : PickupItem3D
-var chair3D : PickupItem3D
+var chairPiece3D : PickupItem3D
+var knife3D : PickupItem3D
 var seahoundStatue3D : PickupItem3D
 var dolphineStatue3D : PickupItem3D
 var candle3D : PickupItem3D
@@ -82,12 +83,13 @@ func _ready():
 	dininghall051Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall051Nav")
 	
 	notebook3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Notebook3D")
-	plush3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Plush3D")
+	whaleStatue3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/WhaleStatue3D")
 	personalFile3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/PersonalFile3D")
 	portraitPart3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/PortraitPart3D")
 	captainKey3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/CaptainKey3D")
 	closetKey3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/ClosetKey3D")
-	chair3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Chair3D")
+	chairPiece3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/ChairPiece3D")
+	knife3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Knife3D")
 	seahoundStatue3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/SeahoundStatue3D")
 	dolphineStatue3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/DolphineStatue3D")
 	candle3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Candle3D")
@@ -129,8 +131,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		topRightNav.visible = false
 		if(notebook3D != null):
 			notebook3D.visible = false
-		if(plush3D != null):
-			plush3D.visible = false
+		if(whaleStatue3D != null):
+			whaleStatue3D.visible = false
 		if personalFile3D != null:
 			personalFile3D.visible = false
 		if closetKey3D != null:
@@ -159,8 +161,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 	elif sceneID == 2:
 		print("sceneID: ", sceneID)
 		topRightNav.visible = false
-		if plush3D != null:
-			plush3D.visible = false
+		if whaleStatue3D != null:
+			whaleStatue3D.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightGlobusNav/Panel/OpenGlobus")
@@ -174,8 +176,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		if not inventorySystem.isInventoryUsed:
 			button.visible = false
 			inventorySystem.isInventoryUsed = false
-		if plush3D != null:
-			plush3D.visible = true
+		if whaleStatue3D != null:
+			whaleStatue3D.visible = true
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
 		topRightNav.visible = true
@@ -214,8 +216,8 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		slidePuzzleRiddle.visible = false
 		if notebook3D != null:
 			notebook3D.visible = false
-		if plush3D != null:
-			plush3D.visible = false
+		if whaleStatue3D != null:
+			whaleStatue3D.visible = false
 		if captainKey3D != null:
 			captainKey3D.visible = false
 		if personalFile3D != null:
@@ -327,8 +329,10 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			tmpNode.queue_free()
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
-		if chair3D != null:
-			chair3D.visible = false
+		if chairPiece3D != null:
+			chairPiece3D.visible = false
+		if knife3D != null:
+			knife3D.visible = false
 		rightDoorNav.visible = false
 		dininghall01Nav.visible = false
 		rightDoorOpenNav.visible = true
@@ -351,8 +355,10 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			sceneName = "captain_topLeft"
 		else:
 			sceneName = "captain_topLeft_interaction_officeOpenDrawer"
-			if personalFile3D != null:
-				personalFile3D.visible = true
+			if visitedScenes.find(29) != -1:
+				print(visitedScenes.find(29))
+				if personalFile3D != null:
+					personalFile3D.visible = true
 			if closetKey3D != null:
 				closetKey3D.visible = true
 	elif sceneID == 13:
@@ -403,9 +409,10 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		var tmpNode: Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftNav/Panel/Drawer")
 		if tmpNode != null:
 			tmpNode.queue_free()
-		#TODO: When reached certain dialogue or task
-		#if personalFile3D != null:
-		#	personalFile3D.visible = true
+		if visitedScenes.find(29) != -1:
+			print(visitedScenes.find(29))
+			if personalFile3D != null:
+				personalFile3D.visible = true
 		if closetKey3D != null:
 			closetKey3D.visible = true
 		if portraitPart3D != null:
@@ -435,7 +442,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 				openWardrobe.visible = true
 			else:
 				openWardrobe.visible = false
-		if inventorySystem.findItemInInventory("Plush") != "":
+		if inventorySystem.findItemInInventory("Whale Statue") != "":
 			sceneName = "captain_main_interaction_wardrobeOpen"
 		else:
 			var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe")
@@ -454,43 +461,103 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 	elif sceneID == 24:
 		print("sceneID: ", sceneID)
 		dininghall01Nav.visible = true
-		if chair3D != null:
-			chair3D.visible = true
+		if chairPiece3D != null:
+			chairPiece3D.visible = true
+		if knife3D != null:
+			knife3D.visible = true
 		#TODO: change maybe later
 		rightDoorOpenNav.visible = false
 		dininghall03Nav.visible = false
 		dininghall02Nav.visible = false
 		interactionMeridith.visible = false
 		interactionCrazyGuy.visible = false
+		if candle3D != null:
+			candle3D.visible = false
+		if dolphineStatue3D != null:
+			dolphineStatue3D.visible = false
+		dininghall031Nav.visible = false
 	elif sceneID == 25:
 		print("sceneID: ", sceneID)
 		dininghall02Nav.visible = true
 		interactionMeridith.visible = true
-		if chair3D != null:
-			chair3D.visible = false
+		if chairPiece3D != null:
+			chairPiece3D.visible = false
+		if knife3D != null:
+			knife3D.visible = false
 		if seahoundStatue3D != null:
 			seahoundStatue3D.visible = false
 		dininghall01Nav.visible = false
 		dininghall03Nav.visible = false
 		dininghall04Nav.visible = false
+		dininghall041Nav.visible = false
 		dininghall05Nav.visible = false
 		interactionCrazyGuy.visible = false
 	elif sceneID == 26:
 		print("sceneID: ", sceneID)
-	elif sceneID == 27:
-		print("sceneID: ", sceneID)
 		dininghall03Nav.visible = true
 		interactionCrazyGuy.visible = true
-		if chair3D != null:
-			chair3D.visible = false
+		
+		if chairPiece3D != null:
+			chairPiece3D.visible = false
+		if knife3D != null:
+			knife3D.visible = false
+			
 		dininghall01Nav.visible = false
+		if inventorySystem.findItemInInventory("Wood Dolphine Statue") != "":
+			print("in there")
+			var tmpNode: Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall03Nav/Panel/ApplyWoodDolphine")
+			if tmpNode != null:
+				tmpNode.visible = true
+			else:
+				print("in there3")
+				sceneID = 27
+				#TODO: random bug, background won't change
+				switchScene("dininghall031", sceneID, null)
+	elif sceneID == 27:
+		print("sceneID: ", sceneID)
+		dininghall031Nav.visible = true
+		if not sceneID in visitedScenes:
+			visitedScenes.append(sceneID)
+			dialogueSystem.filePath = "res://Assets/JSON/Dialogues/Scene4/BruningCandle.json"
+			dialogueSystem.dialogues = dialogueSystem.loadDialoguesFromJSON(dialogueSystem.filePath)
+			dialogueSystem.currentIndex = 0
+			dialogueSystem.updateDialogue()
+			dialogueSystem.visible =true
+		
+		if dolphineStatue3D != null:
+			dolphineStatue3D.visible = true
+		if candle3D != null:
+			candle3D.visible = true
+		interactionCrazyGuy.visible = false
+		dininghall03Nav.visible = false
 	elif sceneID == 28:
 		print("sceneID: ", sceneID)
 		dininghall04Nav.visible = true
+		if inventorySystem.findItemInInventory("Whale Statue")  != "" and  inventorySystem.findItemInInventory("Seahound Statue") != "" and  inventorySystem.findItemInInventory("Dolphine Statue")  != "":
+			var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall04Nav/Panel/ApplyStatue")
+			if tmpNode != null:
+				tmpNode.visible = true
+			else:
+				sceneID = 29
+				background.swapBackground(GameManager.getSceneTexture("dininghall041"))
+				switchScene("dininghall041", sceneID, null)
 		dininghall02Nav.visible = false
 		interactionMeridith.visible = false
 	elif sceneID == 29:
 		print("sceneID: ", sceneID)
+		dininghall041Nav.visible = true
+		if not sceneID in visitedScenes:
+			visitedScenes.append(sceneID)
+			dialogueSystem.filePath = "res://Assets/JSON/Dialogues/Scene4/DisplayCasePlaceStatue.json"
+			dialogueSystem.dialogues = dialogueSystem.loadDialoguesFromJSON(dialogueSystem.filePath)
+			dialogueSystem.currentIndex = 0
+			dialogueSystem.updateDialogue()
+			dialogueSystem.visible =true
+		
+		
+		dininghall04Nav.visible = false
+		dininghall02Nav.visible = false
+		interactionMeridith.visible = false
 	elif sceneID == 30:
 		print("sceneID: ", sceneID)
 		dininghall05Nav.visible = true

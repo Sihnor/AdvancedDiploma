@@ -171,7 +171,7 @@ offset_bottom = 0.0
 grow_horizontal = 2
 grow_vertical = 2
 dialogueSystem = NodePath("../DialogueSystem")
-filePath = "res://Assets/JSON/MeridithTest.json"
+filePath = "res://Assets/JSON/Dialogues/Scene3/MeredithDiningHall.json"
 metadata/_edit_use_anchors_ = true
 
 [node name="CrazyGuyInteraction" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("25_4x672")]
@@ -189,7 +189,7 @@ grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2.5, 2.5)
 dialogueSystem = NodePath("../DialogueSystem")
-filePath = "res://Assets/JSON/CrazyGuy.json"
+filePath = "res://Assets/JSON/Dialogues/Scene4/SamAltar.json"
 metadata/_edit_use_anchors_ = true
 
 [node name="InventorySystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("19_qp1ry")]
@@ -200,15 +200,6 @@ inventorySystem = NodePath("../InventorySystem")
 metadata/_edit_use_anchors_ = true
 
 [node name="DialogueSystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("17_mnevp")]
-
-[node name="WhaleStatue3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.15, 2.5)
-visible = false
-item_name = "WhaleStatue"
-item_icon = ExtResource("22_ntpke")
-inventorySystem = NodePath("../InventorySystem")
-nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe"
-sound = ExtResource("24_0ypa0")
 
 [node name="Notebook3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 5.15)
@@ -255,18 +246,35 @@ inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
 sound = ExtResource("25_c12nf")
 
-[node name="Chair3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+[node name="ChairPiece3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -2.25, 1.5)
 visible = false
-item_name = "Chair"
+item_name = "Chair Piece"
 item_icon = ExtResource("38_2hhkd")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("25_c12nf")
 
+[node name="Knife3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1.25, -3.5)
+visible = false
+item_name = "Knife"
+item_icon = ExtResource("38_2hhkd")
+inventorySystem = NodePath("../InventorySystem")
+sound = ExtResource("25_c12nf")
+
+[node name="WhaleStatue3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.15, 2.5)
+visible = false
+item_name = "Whale Statue"
+item_icon = ExtResource("22_ntpke")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe"
+sound = ExtResource("24_0ypa0")
+
 [node name="SeahoundStatue3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.35, 1.25)
 visible = false
-item_name = "SeahoundStatue"
+item_name = "Seahound Statue"
 item_icon = ExtResource("38_2hhkd")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("24_0ypa0")
@@ -274,7 +282,7 @@ sound = ExtResource("24_0ypa0")
 [node name="DolphineStatue3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, -0.2)
 visible = false
-item_name = "SeahoundStatue"
+item_name = "Dolphine Statue"
 item_icon = ExtResource("38_2hhkd")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("24_0ypa0")

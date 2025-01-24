@@ -54,6 +54,9 @@ func updateDialogue():
 		if "profileL" in currentDialogue:
 			if profileLeftRef != null:
 				profileLeftRef.texture = ResourceLoader.load(currentDialogue["profileL"])
+		if "profileR" in currentDialogue:
+			if profileRightRef != null:
+				profileRightRef.texture = ResourceLoader.load(currentDialogue["profileR"])
 		# Handle choices if they exist
 		if "choices" in currentDialogue:
 			showChoices(currentDialogue["choices"])

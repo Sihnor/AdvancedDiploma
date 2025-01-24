@@ -41,7 +41,7 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "dininghall03"
-sceneID = 27
+sceneID = 26
 sound = ExtResource("2_7qs5b")
 
 [node name="Left" parent="Panel" instance=ExtResource("1_kk3b5")]
