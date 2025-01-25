@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=44 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
 [ext_resource type="PackedScene" uid="uid://cwj6bpg3u3b8w" path="res://scenes/MainNav.tscn" id="2_cdd04"]
@@ -41,6 +41,7 @@
 [ext_resource type="PackedScene" uid="uid://bbtd20fe3jpp1" path="res://scenes/SlidePuzzle.tscn" id="25_rqhjm"]
 [ext_resource type="Texture2D" uid="uid://dxio8ghmqqne6" path="res://Assets/Art/Placeholder/Experiment/Captainsroomschlüssel_Experiment.png" id="26_fox68"]
 [ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/Placeholder/UI/icon.svg" id="38_2hhkd"]
+[ext_resource type="PackedScene" uid="uid://c2mlwdyrxdwcw" path="res://scenes/PianoRiddle.tscn" id="42_ft0xb"]
 
 [sub_resource type="Environment" id="Environment_s72p6"]
 ambient_light_source = 3
@@ -172,6 +173,7 @@ grow_horizontal = 2
 grow_vertical = 2
 dialogueSystem = NodePath("../DialogueSystem")
 filePath = "res://Assets/JSON/Dialogues/Scene3/MeredithDiningHall.json"
+isSelfDestroy = true
 metadata/_edit_use_anchors_ = true
 
 [node name="CrazyGuyInteraction" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("25_4x672")]
@@ -190,6 +192,26 @@ grow_vertical = 2
 scale = Vector2(2.5, 2.5)
 dialogueSystem = NodePath("../DialogueSystem")
 filePath = "res://Assets/JSON/Dialogues/Scene4/SamAltar.json"
+isSelfDestroy = true
+metadata/_edit_use_anchors_ = true
+
+[node name="RadioInteraction" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("25_4x672")]
+visible = false
+anchors_preset = -1
+anchor_left = 0.455729
+anchor_top = 0.601852
+anchor_right = 0.490451
+anchor_bottom = 0.66358
+offset_left = 45.0
+offset_top = -40.0
+offset_right = 45.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.5, 2.5)
+dialogueSystem = NodePath("../DialogueSystem")
+filePath = "res://Assets/JSON/Dialogues/Scene6/ReturnCaptainRoom.json"
+isEndScene = true
 metadata/_edit_use_anchors_ = true
 
 [node name="InventorySystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("19_qp1ry")]
@@ -310,6 +332,12 @@ transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, 
 visible = false
 rewardItem = NodePath("../CaptainKey3D")
 shuffle = false
+
+[node name="PianoRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("42_ft0xb")]
+transform = Transform3D(0.36468, -0.358469, 0.859365, -0.016065, 0.920365, 0.390731, -0.930994, -0.156297, 0.329879, 0, -1, 0)
+visible = false
+solution = "EFECD"
+dialogueSystem = NodePath("../DialogueSystem")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer2/SubViewport"]
 environment = SubResource("Environment_s72p6")

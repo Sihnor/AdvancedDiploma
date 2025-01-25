@@ -1,10 +1,10 @@
+AudioStreamPlayer
+Camera3D
 MeshInstance3D
 Timer
-AudioStreamPlayer
 AudioStreamPlayer3D
 TextureRect
 AudioStreamPlayer2D
-Camera3D
 VBoxContainer
 AudioListener3D
 DirectionalLight3D

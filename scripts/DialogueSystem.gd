@@ -3,6 +3,7 @@ class_name DialogueSystem
 # Array to hold loaded dialogues
 var dialogues: Array = []
 var currentIndex = 0
+var isEndScene = false
 
 # Nodes
 var filePath: String
@@ -92,4 +93,9 @@ func _on_next_btn_pressed():
 	updateDialogue()
 
 func hideDialogue():
-	visible = false
+	if isEndScene:
+		nextButtonRef.visible = false
+		print("end scene here")
+	else:
+		visible = false
+	

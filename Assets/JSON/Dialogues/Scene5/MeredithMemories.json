@@ -47,7 +47,7 @@
 	},
 	{
 		"name": "Narrator",
-		"text": "(Her face distorts with fear as her body begins to stiffen, transforming slowly into a statue.)",
+		"text": "(Her face distorts with fear.)",
 		"profileL": "",
 		"profileR": "",
 		"audio": ""
@@ -68,12 +68,5 @@
 		"name": "Meredith",
 		"text": "before it’s too late for your family to ever see you again.",
 		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 15.wav"
-	},
-	{
-		"name": "Narrator",
-		"text": "(Kyra blinks once, Meredith transforms into a statue, leaving Kyra alone. Stunned and horrified, she quickly checks Sam and he also ended up turning into a statue.)",
-		"profileL": "",
-		"profileR": "",
-		"audio": ""
 	}
 ]

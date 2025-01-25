@@ -3,6 +3,8 @@ class_name DialogueInteration
 
 @export var dialogueSystem:DialogueSystem
 @export var filePath:String
+@export var isSelfDestroy = false
+@export var isEndScene = false
 var shouldReset = false
 
 # Called when the node enters the scene tree for the first time.
@@ -23,5 +25,7 @@ func _on_button_pressed():
 		dialogueSystem.currentIndex = 0
 		dialogueSystem.updateDialogue()
 		dialogueSystem.visible = true
-		
-	pass # Replace with function body.
+		if isSelfDestroy:
+			self.queue_free()
+		if isEndScene:
+			dialogueSystem.isEndScene = isEndScene
