@@ -43,4 +43,6 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_topLeft"
 sceneID = 12
+selfDestroy = null
+isSlidePuzzle = null
 sound = ExtResource("2_p5yso")

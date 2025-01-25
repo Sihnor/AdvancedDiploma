@@ -1,6 +1,8 @@
-[gd_scene load_steps=44 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=46 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
+[ext_resource type="Script" path="res://scripts/Manager/GameManager.gd" id="1_jpa0k"]
+[ext_resource type="Script" path="res://scripts/Manager/SceneManager.gd" id="2_8qkvr"]
 [ext_resource type="PackedScene" uid="uid://cwj6bpg3u3b8w" path="res://scenes/MainNav.tscn" id="2_cdd04"]
 [ext_resource type="PackedScene" uid="uid://p5ahydkjisqy" path="res://scenes/TopLeftRadioNav.tscn" id="2_ij6ai"]
 [ext_resource type="PackedScene" uid="uid://yxu6nudywmn5" path="res://scenes/TopLeftMapNav.tscn" id="3_1xnhc"]
@@ -57,6 +59,12 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 1
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_jpa0k")
+
+[node name="SceneManager" type="Node" parent="."]
+script = ExtResource("2_8qkvr")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
 layout_mode = 1

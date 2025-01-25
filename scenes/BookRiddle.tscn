@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://d1bsl3hdb04e"]
 
-[ext_resource type="Script" path="res://BookRiddle.gd" id="1_bdoln"]
+[ext_resource type="Script" path="res://scripts/BookRiddle.gd" id="1_bdoln"]
 [ext_resource type="AudioStream" uid="uid://bm6mif3hvd470" path="res://Assets/Audio/SFX/light-switch-sound-228104.mp3" id="2_fy6fg"]
 [ext_resource type="Script" path="res://scripts/Book.gd" id="2_sctbl"]
 [ext_resource type="AudioStream" uid="uid://bm4fstb2tg0al" path="res://Assets/Audio/SFX/schublade öffnen richtig.wav" id="4_c7eam"]
