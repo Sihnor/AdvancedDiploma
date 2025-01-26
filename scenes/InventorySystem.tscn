@@ -50,5 +50,6 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_7t2fp")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ry5nl")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
 
 [connection signal="pressed" from="Background/ItemSlots/Button" to="." method="_on_button_pressed"]

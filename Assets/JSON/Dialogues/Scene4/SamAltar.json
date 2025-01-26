@@ -9,7 +9,7 @@
 	{
 		"name": "Sam",
 		"text": "You can’t escape… no one escapes…",
-		"profileR": "res://Assets/Art/CharacterIdols/Tom/Tom_01.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuy_01.png",
 		"audio": ""
 	},
 	{
@@ -20,15 +20,15 @@
 	{
 		"name": "Kyra",
 		"text": "Why… why are you praying to that statue?",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_02.png",
-		"profileR": "res://Assets/Art/CharacterIdols/Tom/Tom_01_grey.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_02.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuyGrey_01.png",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-44.wav"
 	},
 	{
 		"name": "Sam",
 		"text": "Because it listens! It hears us, it knows… it knows what we did…",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/KyraGrey_02.png",
-		"profileR": "res://Assets/Art/CharacterIdols/Tom/Tom_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/KyraGrey_02.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuy_01.png",
 		"audio": "res://Assets/Audio/Voices/Sam/Crazy Guy 04.wav"
 	},
 	{
@@ -51,8 +51,8 @@
 	{
 		"name": "Kyra",
 		"text": "I am really sorry for.. whatever drove you to this state.. but..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_02.png",
-		"profileR": "res://Assets/Art/CharacterIdols/Tom/Tom_01_grey.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_02.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuyGrey_01.png",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-45.wav"
 	},
 	{
@@ -68,15 +68,15 @@
 	{
 		"name": "Sam",
 		"text": "Dolphins give me a state of comfort.. a comfort out of this immortal nightmare..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/KyraGrey_02.png",
-		"profileR": "res://Assets/Art/CharacterIdols/Tom/Tom_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/KyraGrey_02.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuy_01.png",
 		"audio": "res://Assets/Audio/Voices/Sam/Crazy Guy 03.wav"
 	},
 	{
 		"name": "Kyra",
 		"text": "if having a dolphin gives him a sense of comfort.",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
-		"profileR": "res://Assets/Art/CharacterIdols/Tom/Tom_01_grey.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuyGrey_01.png",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-48.wav"
 	},
 	{

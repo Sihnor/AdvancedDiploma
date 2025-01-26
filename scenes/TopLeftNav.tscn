@@ -1,9 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://bg3ruliyhrcr5"]
+[gd_scene load_steps=9 format=3 uid="uid://bg3ruliyhrcr5"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_5myt2"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_tqmt7"]
+[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_i4fnh"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uir78"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_djgeu"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4fwkc"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6um2s"]
 
 [node name="TopLeftNav" type="Control"]
 layout_mode = 3
@@ -41,6 +50,7 @@ size_flags_vertical = 4
 sceneName = "captain_topLeft_interaction_radioZoom"
 sceneID = 17
 sound = ExtResource("2_tqmt7")
+buttonIcon = SubResource("CompressedTexture2D_uir78")
 
 [node name="Book" parent="Panel" instance=ExtResource("1_5myt2")]
 layout_direction = 1
@@ -61,6 +71,7 @@ size_flags_vertical = 4
 sceneName = "captain_topLeft_interaction_bookZoom"
 sceneID = 13
 sound = ExtResource("2_tqmt7")
+buttonIcon = SubResource("CompressedTexture2D_djgeu")
 
 [node name="Map" parent="Panel" instance=ExtResource("1_5myt2")]
 layout_direction = 1
@@ -82,6 +93,7 @@ size_flags_vertical = 4
 sceneName = "captain_topLeft_interaction_mapZoom"
 sceneID = 15
 sound = ExtResource("2_tqmt7")
+buttonIcon = SubResource("CompressedTexture2D_4fwkc")
 
 [node name="Drawer" parent="Panel" instance=ExtResource("1_5myt2")]
 layout_direction = 1
@@ -103,6 +115,7 @@ size_flags_vertical = 4
 sceneName = "captain_topLeft_interaction_drawer"
 sceneID = 14
 sound = ExtResource("2_tqmt7")
+buttonIcon = SubResource("CompressedTexture2D_6um2s")
 
 [node name="Back" parent="Panel" instance=ExtResource("1_5myt2")]
 layout_direction = 1
@@ -122,3 +135,4 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_main"
 sound = ExtResource("2_tqmt7")
+buttonIcon = ExtResource("3_i4fnh")

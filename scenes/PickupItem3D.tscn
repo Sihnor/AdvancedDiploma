@@ -27,6 +27,7 @@ skeleton = NodePath("../..")
 script = ExtResource("2_sqt26")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
 
 [node name="Timer" type="Timer" parent="."]
 

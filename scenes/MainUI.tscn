@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dbu0l40uitgwg"]
 
-[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/Placeholder/UI/icon.svg" id="1_g01ax"]
 [ext_resource type="Script" path="res://scripts/MainUI.gd" id="1_xw3nc"]
+[ext_resource type="Texture2D" uid="uid://b1ltyk1vqp6cu" path="res://Assets/Art/Finished/2DAssets/UI/Inventar/Inventar_fertig.webp" id="2_pq50o"]
 
 [node name="MainUI" type="Control"]
 layout_mode = 3
@@ -23,7 +23,10 @@ alignment = 2
 [node name="TopBarIcon" type="TextureButton" parent="TopBar"]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
+size_flags_horizontal = 4
 mouse_filter = 1
-texture_normal = ExtResource("1_g01ax")
+texture_normal = ExtResource("2_pq50o")
+ignore_texture_size = true
+stretch_mode = 4
 
 [connection signal="pressed" from="TopBar/TopBarIcon" to="." method="_on_top_bar_icon_pressed"]

@@ -6,7 +6,7 @@
 	{
 		"name": "Kyra",
 		"text": "How did I… end up here?",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-01.wav"
 	},
 	{
@@ -26,7 +26,7 @@
 	{
 		"name": "Kyra",
 		"text": "The mission... the signal. Scotland Yard sent me to investigate, but…",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-03.wav"
 	},
 	{
@@ -37,25 +37,25 @@
 	{
 		"name": "Kyra",
 		"text": "Something doesn’t feel right..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-04.wav"
 	},
 	{
 		"name": "Kyra",
 		"text": "My hands and feet can’t stop shaking..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-05.wav"
 	},
 	{
 		"name": "Kyra",
 		"text": "My mind and heart feel numb with paranoia and..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-06.wav"
 	},
 	{
 		"name": "Kyra",
 		"text": "with a dark energy I cannot yet comprehend its force or origins..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-07.wav"
 	},
 	{
@@ -67,6 +67,6 @@
 		"name": "Kyra",
 		"text": "I am not alone..",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-08.wav",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png"
 	}
 ]

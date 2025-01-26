@@ -162,6 +162,7 @@ mesh = SubResource("BoxMesh_0ol4a")
 skeleton = NodePath("../..")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
 
 [connection signal="input_event" from="Column1/ArrowUp" to="Column1" method="_on_arrow_up_input_event"]
 [connection signal="input_event" from="Column1/ArrowDown" to="Column1" method="_on_arrow_down_input_event"]

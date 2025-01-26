@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c01ig7olg4lw4"]
 
 [ext_resource type="Script" path="res://scripts/SwapScene.gd" id="1_ebp52"]
-[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/Placeholder/UI/icon.svg" id="2_engof"]
+[ext_resource type="Texture2D" uid="uid://bruj80ittdole" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2146.PNG" id="2_lyscg"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t4tp0"]
 
@@ -36,9 +36,10 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_t4tp0")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_t4tp0")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_t4tp0")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_t4tp0")
-icon = ExtResource("2_engof")
+icon = ExtResource("2_lyscg")
 expand_icon = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

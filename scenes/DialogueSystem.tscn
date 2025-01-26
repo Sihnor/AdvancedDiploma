@@ -122,8 +122,10 @@ text = "Next..."
 metadata/_edit_use_anchors_ = true
 
 [node name="VoiceStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Voice"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_1vpr1")
+bus = &"SFX"
 
 [connection signal="pressed" from="Background/NextBtn" to="." method="_on_next_btn_pressed"]

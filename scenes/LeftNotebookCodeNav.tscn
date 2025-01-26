@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://d0ichgc34176v"]
+[gd_scene load_steps=5 format=3 uid="uid://d0ichgc34176v"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_qu5i0"]
 [ext_resource type="AudioStream" uid="uid://bp6sln60kxlyy" path="res://Assets/Audio/SFX/notizbuch aufheben.wav" id="2_xsp7q"]
+[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_3ndcd"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -44,3 +45,4 @@ size_flags_vertical = 4
 mouse_filter = 1
 sceneID = 99
 sound = ExtResource("2_xsp7q")
+buttonIcon = ExtResource("3_3ndcd")

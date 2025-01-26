@@ -1,10 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://d2ykc31xty202"]
+[gd_scene load_steps=7 format=3 uid="uid://d2ykc31xty202"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_72ioy"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_ui5qd"]
 [ext_resource type="AudioStream" uid="uid://bypxc4klh8a7p" path="res://Assets/Audio/SFX/Kopfkissen rücken.wav" id="2_wurff"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3cfnc"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gnjxo"]
 
 [node name="LeftNav" type="Control"]
 layout_mode = 3
@@ -65,6 +69,7 @@ size_flags_vertical = 4
 sceneName = "captain_left_interaction_windowZoom"
 sceneID = 8
 sound = ExtResource("2_ui5qd")
+buttonIcon = SubResource("CompressedTexture2D_3cfnc")
 
 [node name="PillowMove" parent="Panel" instance=ExtResource("1_72ioy")]
 layout_direction = 1
@@ -73,14 +78,15 @@ anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 90.0
-offset_top = 51.0
+offset_top = -94.0
 offset_right = 184.0
-offset_bottom = 147.0
+offset_bottom = 2.0
 grow_vertical = 2
-scale = Vector2(1.5, 1)
+scale = Vector2(2.45084, 3.04)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 mouse_filter = 1
 sceneName = "captain_left_interaction_pillowMove"
 sceneID = 7
 sound = ExtResource("2_wurff")
+buttonIcon = SubResource("CompressedTexture2D_gnjxo")

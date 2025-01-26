@@ -25,7 +25,6 @@ albedo_color = Color(1, 0, 1, 1)
 albedo_color = Color(0, 1, 1, 1)
 
 [node name="BookRiddle" type="Node3D"]
-visible = false
 script = ExtResource("1_bdoln")
 solution = "WHALE"
 shuffled = true
@@ -93,6 +92,7 @@ surface_material_override/0 = SubResource("ORMMaterial3D_f4uw8")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_c7eam")
+bus = &"SFX"
 
 [connection signal="input_event" from="Book1" to="Book1" method="_on_input_event"]
 [connection signal="input_event" from="Book2" to="Book2" method="_on_input_event"]

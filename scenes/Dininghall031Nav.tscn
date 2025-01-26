@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dchd58uigxf8l"]
+[gd_scene load_steps=5 format=3 uid="uid://dchd58uigxf8l"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_6gjos"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_n0838"]
+[ext_resource type="Texture2D" uid="uid://dvn66wqx220w3" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2147.PNG" id="3_2yg21"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nbgdt"]
 
@@ -40,3 +41,4 @@ size_flags_vertical = 4
 sceneName = "dininghall01"
 sceneID = 24
 sound = ExtResource("2_n0838")
+buttonIcon = ExtResource("3_2yg21")

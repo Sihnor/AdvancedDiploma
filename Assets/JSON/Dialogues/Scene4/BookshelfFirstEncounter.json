@@ -2,14 +2,14 @@
 	{
 		"name": "Kyra",
 		"text": "My OCD cannot stand this mess even if I wanted to …",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"profileR": "",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-38.wav"
 	},
 	{
 		"name": "Kyra",
 		"text": "I must organise them before they completely burn my eyes.",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"profileR": "",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-39.wav"
 	}

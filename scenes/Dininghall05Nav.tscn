@@ -1,9 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://67y11ra13xbj"]
+[gd_scene load_steps=6 format=3 uid="uid://67y11ra13xbj"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_n5c00"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_2mfn5"]
+[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_1c61k"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pguxi"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_78pwe"]
 
 [node name="Dininghall05Nav" type="Control"]
 layout_mode = 3
@@ -41,6 +44,7 @@ size_flags_vertical = 4
 sceneName = "dininghall02"
 sceneID = 25
 sound = ExtResource("2_2mfn5")
+buttonIcon = ExtResource("3_1c61k")
 metadata/_edit_use_anchors_ = true
 
 [node name="ApplyCandleFile" parent="Panel" instance=ExtResource("1_n5c00")]
@@ -64,4 +68,5 @@ sceneName = "dininghall051"
 sceneID = 31
 selfDestroy = true
 sound = ExtResource("2_2mfn5")
+buttonIcon = SubResource("CompressedTexture2D_78pwe")
 metadata/_edit_use_anchors_ = true

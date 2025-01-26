@@ -30,7 +30,7 @@
 	{
 		"name": "Kyra",
 		"text": "Death",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"profileR": "",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-58.wav"
 	},
@@ -58,7 +58,7 @@
 	{
 		"name": "Kyra",
 		"text": "Leave the ship… leave the sea… warn everybody..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"profileR": "",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-59.wav"
 	},
@@ -72,14 +72,14 @@
 	{
 		"name": "Kyra",
 		"text": "But how? The doors… the halls… the statues!...",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"profileR": "",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-60.wav"
 	},
 	{
 		"name": "Kyra",
 		"text": "it’s like they’re shifting, leading me in repetitive dark circles…I cannot understand nor escape  from!...",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"profileR": "",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-61.wav"
 	},
@@ -93,14 +93,14 @@
 	{
 		"name": "Kyra",
 		"text": "I must… I must be the one who decides my fate",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"profileR": "",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-62.wav"
 	},
 	{
 		"name": "Kyra",
 		"text": "and I’ll be the one telling my story... no matter what the price is..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
 		"profileR": "",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-63.wav"
 	},

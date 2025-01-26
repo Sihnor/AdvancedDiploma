@@ -7,7 +7,7 @@
 	{
 		"name": "Radio Whisper",
 		"text": "Grata foris, electa.",
-		"audio": "res://Assets/Audio/Voices/Radio/Radio Voice.wav"
+		"audio": "res://Assets/Audio/Voices/Radio Voice/Radio Voice.wav"
 	},
 	{
 		"name": "Narrator ",
@@ -17,7 +17,7 @@
 		"name": "Kyra",
 		"text": "Welcome aboard… chosen one?",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-28.wav",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png"
 	},
 	{
 		"name": "Narrator ",
@@ -28,6 +28,6 @@
 		"name": "Kyra",
 		"text": "Who… or what is welcoming me?",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-29.wav",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png"
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png"
 	}
 ]

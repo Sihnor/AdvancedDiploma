@@ -2,8 +2,8 @@
 	{
 		"name": "Meredith",
 		"text": "It was a young man named Tom..",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/KyraGrey_01.png",
-		"profileR": "res://Assets/Art/CharacterIdols/Meredith/Meredith_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/KyraGrey_01.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/Meredith_02.png",
 		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 06.wav"
 	},
 	{
@@ -24,15 +24,15 @@
 	{
 		"name": "Kyra",
 		"text": "What else did he say?",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_02.png",
-		"profileR": "res://Assets/Art/CharacterIdols/Meredith/Meredith_01_grey.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_02.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/Meredith_02_grey.png",
 		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-57.wav"
 	},
 	{
 		"name": "Meredith",
 		"text": "He said… he said it was ancient…",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/KyraGrey_02.png",
-		"profileR": "res://Assets/Art/CharacterIdols/Meredith/Meredith_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/KyraGrey_02.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/Meredith_02.png",
 		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 10.wav"
 	},
 	{
@@ -55,8 +55,8 @@
 	{
 		"name": "Meredith",
 		"text": "Find a way to escape and warn them Kyra…",
-		"profileL": "res://Assets/Art/CharacterIdols/Kyra/KyraGrey_02.png",
-		"profileR": "res://Assets/Art/CharacterIdols/Meredith/Meredith_01.png",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/KyraGrey_02.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/Meredith_02.png",
 		"audio": "res://Assets/Audio/Voices/Meredith/Meredith 13.wav"
 	},
 	{

@@ -38,6 +38,11 @@ albedo_color = Color(1, 0, 1, 1)
 [node name="PianoRiddle" type="Node3D"]
 script = ExtResource("1_4ndln")
 
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.31712, 0)
+text = "EFECD"
+font_size = 64
+
 [node name="Note1" type="Area3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0)
 script = ExtResource("2_hnalr")
@@ -130,9 +135,11 @@ mesh = SubResource("BoxMesh_p0yq0")
 surface_material_override/0 = SubResource("StandardMaterial3D_j0ehe")
 
 [node name="NotePlayer" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
 
 [node name="sfxPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_dvh7s")
+bus = &"SFX"
 
 [connection signal="input_event" from="Note1" to="Note1" method="_on_input_event"]
 [connection signal="input_event" from="Note2" to="Note2" method="_on_input_event"]

@@ -324,7 +324,7 @@ sound = ExtResource("24_0ypa0")
 [node name="DairyRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("rewardItem") instance=ExtResource("24_6w61k")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 0)
 rewardItem = NodePath("../PortraitPart3D")
-code = ["1", "8", "8", "9", "3"]
+code = ["5", "7", "3", "2", "8"]
 selectOptions = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 swapScene = true
 sceneName = "captain_left_interaction_notebookCodeOpen"
@@ -335,7 +335,6 @@ rewardSound = ExtResource("22_lj2cc")
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 2, 2.75, 0.95)
 visible = false
 rewardItem = NodePath("../CaptainKey3D")
-shuffle = false
 
 [node name="PianoRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("42_ft0xb")]
 transform = Transform3D(0.36468, -0.358469, 0.859365, -0.016065, 0.920365, 0.390731, -0.930994, -0.156297, 0.329879, 0, -1, 0)

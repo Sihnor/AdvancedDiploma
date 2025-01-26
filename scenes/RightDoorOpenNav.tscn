@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://btrvd3iljyob2"]
+[gd_scene load_steps=6 format=3 uid="uid://btrvd3iljyob2"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_tcv07"]
 [ext_resource type="AudioStream" uid="uid://exrf1tynuho4" path="res://Assets/Audio/SFX/Tür öffnen.wav" id="2_v5l8e"]
+[ext_resource type="Texture2D" uid="uid://dvn66wqx220w3" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2147.PNG" id="3_0hc2c"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="3_ie6im"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
@@ -44,6 +45,7 @@ size_flags_vertical = 4
 sceneName = "dininghall01"
 sceneID = 24
 sound = ExtResource("2_v5l8e")
+buttonIcon = ExtResource("3_0hc2c")
 
 [node name="Back" parent="Panel" instance=ExtResource("1_tcv07")]
 layout_direction = 1

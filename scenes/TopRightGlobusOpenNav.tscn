@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cf7xqrrdhc6yi"]
+[gd_scene load_steps=5 format=3 uid="uid://cf7xqrrdhc6yi"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_bm8jq"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_ppx2i"]
+[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_ni1wb"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -44,3 +45,4 @@ size_flags_vertical = 4
 sceneName = "captain_topRight"
 sceneID = 18
 sound = ExtResource("2_ppx2i")
+buttonIcon = ExtResource("3_ni1wb")

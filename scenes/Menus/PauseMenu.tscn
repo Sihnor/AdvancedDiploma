@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bafqx5p03hpru"]
+[gd_scene load_steps=6 format=3 uid="uid://bafqx5p03hpru"]
 
 [ext_resource type="Script" path="res://scripts/Menus/PauseMenu.gd" id="1_aeg3o"]
 [ext_resource type="PackedScene" uid="uid://b283124h4t7vc" path="res://scenes/Menus/OptionMenu.tscn" id="2_hrj0n"]
 [ext_resource type="Script" path="res://scripts/Menus/pauseNode.gd" id="2_kimyk"]
+[ext_resource type="Texture2D" uid="uid://dc140nwusiat1" path="res://Assets/Art/Finished/2DAssets/UI/Pausenbildschirm/Pausenbildschirm_holzbrett.webp" id="2_o06mr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_o5u4d"]
 font_size = 64
@@ -28,11 +29,22 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_o06mr")
+expand_mode = 2
+
 [node name="PauseTitle" type="Label" parent="CanvasLayer/Panel"]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 250.0
+offset_top = 41.0
+offset_bottom = 291.0
 grow_horizontal = 2
 text = "Pause Game"
 label_settings = SubResource("LabelSettings_o5u4d")
