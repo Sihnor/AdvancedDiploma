@@ -369,11 +369,11 @@ PauseMenu.tscn::PackedScene::2397756717653642602::1737790374::0::1::::<><>::res:
 Background.gd::GDScript::-1::1734568552::0::1::::BackgroundTexture<>Control<>::
 Book.gd::GDScript::-1::1734568552::0::1::::Book<>Area3D<>::
 BookRiddle.gd::GDScript::-1::1737057212::0::1::::BookRiddle<>Node3D<>::
-CodeColumn.gd::GDScript::-1::1737787270::0::1::::<>Node3D<>::
+CodeColumn.gd::GDScript::-1::1737790868::0::1::::<>Node3D<>::
 CodeRiddle.gd::GDScript::-1::1737065612::0::1::::CodeRiddle<>Node3D<>::
 dialogueInteraction.gd::GDScript::-1::1737779904::0::1::::DialogueInteration<>Control<>::
 DialogueSystem.gd::GDScript::-1::1737780170::0::1::::DialogueSystem<>Control<>::
-GlobusMap.gd::GDScript::-1::1737763622::0::1::::GlobusMap<>Control<>::
+GlobusMap.gd::GDScript::-1::1737790862::0::1::::GlobusMap<>Control<>::
 InventorySystem.gd::GDScript::-1::1737790574::0::1::::InventorySystem<>Control<>::
 MainUI.gd::GDScript::-1::1733362724::0::1::::<>Control<>::
 note.gd::GDScript::-1::1737775444::0::1::::Note<>Area3D<>::
@@ -386,10 +386,8 @@ RotateItemAnimationj.gd::GDScript::-1::1733362838::0::1::::<>MeshInstance3D<>::
 SlidePuzzle.gd::GDScript::-1::1737790620::0::1::::SlidePuzzleRiddle<>Node3D<>::
 SwapScene.gd::GDScript::-1::1737790548::0::1::::SwapScene<>Control<>::
 ::res://scripts/Manager/::1737789797
-GameManager2.gd::GDScript::-1::1737789770::0::1::::SceneManager<>Node<>::
-GameManager.gd::GDScript::-1::1737790598::0::1::::<>Node<>::
-SceneManager2.gd::GDScript::-1::1737789824::0::1::::SceneManager<>Node<>::
-SceneManager.gd::GDScript::-1::1737790616::0::1::::<>Node<>::
+GameManager.gd::GDScript::-1::1737790862::0::1::::<>Node<>::
+SceneManager.gd::GDScript::-1::1737791166::0::1::::<>Node<>::
 ::res://scripts/Menus/::1737781426
 EndMenu.gd::GDScript::-1::1737782270::0::1::::<>Control<>::
 MainMenu.gd::GDScript::-1::1737789534::0::1::::<>Control<>::

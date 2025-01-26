@@ -330,10 +330,10 @@ rewardSound = ExtResource("22_lj2cc")
 [node name="SlidePuzzleRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("rewardItem") instance=ExtResource("25_rqhjm")]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 2, 2.75, 0.95)
 visible = false
-shuffle = null
+rewardItem = NodePath("../CaptainKey3D")
 gridSize = null
 solvedState = null
-rewardItem = NodePath("../CaptainKey3D")
+shuffle = null
 
 [node name="PianoRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("42_ft0xb")]
 transform = Transform3D(0.36468, -0.358469, 0.859365, -0.016065, 0.920365, 0.390731, -0.930994, -0.156297, 0.329879, 0, -1, 0)
