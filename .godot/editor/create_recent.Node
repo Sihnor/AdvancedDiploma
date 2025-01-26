@@ -1,3 +1,4 @@
+VideoStreamPlayer
 Label3D
 TextureRect
 Node
@@ -12,4 +13,3 @@ VBoxContainer
 AudioListener3D
 DirectionalLight3D
 CollisionShape3D
-Area3D

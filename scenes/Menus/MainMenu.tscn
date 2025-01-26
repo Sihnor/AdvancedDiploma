@@ -1,7 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://do6hueiu6mk1u"]
+[gd_scene load_steps=12 format=3 uid="uid://do6hueiu6mk1u"]
 
 [ext_resource type="Script" path="res://scripts/Menus/MainMenu.gd" id="1_f3ekp"]
+[ext_resource type="VideoStream" path="res://Assets/Art/Finished/Menu_Intro/Intro_Render_Final.ogv" id="2_0t5n0"]
 [ext_resource type="Texture2D" uid="uid://bewjgrsldbg2i" path="res://Assets/Art/Finished/2DAssets/Scenes/Startbildschirm/Startbildschirm_Fertig.png" id="2_2cx71"]
+[ext_resource type="VideoStream" path="res://Assets/Art/Finished/Menu_Intro/loop_Render_Final.ogv" id="2_cwkhy"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_wgdiv"]
 [ext_resource type="AudioStream" uid="uid://d1cs07ry5wlms" path="res://Assets/Audio/BGM/chillBeats.mp3" id="3_v22wj"]
 
@@ -74,6 +76,20 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_f3ekp")
+introCutscene = ExtResource("2_0t5n0")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_cwkhy")
+autoplay = true
+expand = true
+loop = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -211,6 +227,7 @@ stream = ExtResource("3_v22wj")
 autoplay = true
 bus = &"BGM"
 
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
 [connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/StartGame" to="." method="_on_start_game_pressed"]
 [connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
