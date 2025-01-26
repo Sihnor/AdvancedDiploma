@@ -40,8 +40,8 @@ func _ready():
 		pieces[i].gridPosition = gridPositions[i]
 		updatePiecePosition(pieces[i])
 		gridState[gridPositions[i].y][gridPositions[i].x] = pieces[i].name  # Add piece to gridState
-		
-	randomizeGrid(pieces, gridPositions)
+	if shuffle:
+		randomizeGrid(pieces, gridPositions)
 	gridState[emptySlot.y][emptySlot.x] = "empty"
 
 

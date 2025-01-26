@@ -15,6 +15,8 @@ func _process(delta):
 func _on_start_game_pressed():
 	sfxAudioStream.play()
 	get_tree().change_scene_to_file("res://scenes/Main.tscn") 
+	GameManager.loadGameManager()
+	SceneManager.loadSceneManager()
 	pass # Replace with function body.
 
 

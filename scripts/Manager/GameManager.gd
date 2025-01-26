@@ -2,19 +2,19 @@ extends Node
 
 # Path to the JSON file (editable in the Inspector)
 var jsonFilePath: String = "res://scenes/JSON/gameScenes.json"
-var background: BackgroundTexture
+var backgroundNode: BackgroundTexture
 
 # Dictionary to store the mappings of scene names to their textures
 var sceneTextures: Dictionary = {}
 
-func _ready():
+func loadGameManager():
+	await get_tree().create_timer(0.05).timeout
 	#print(get_tree().root.get_node("MainScene/SubViewportContainer/SubViewport/Background").name)  # This should print the name of the active scene
-	# Check if the background node exists in the specific path
-	background = get_tree().root.get_node("MainScene/SubViewportContainer/SubViewport/Background")
-
-	# If the background node is found, print a message
-	if background:
-		print("Background node found:", background)
+	# Check if the backgroundNode node exists in the specific path
+	#backgroundNode = get_tree().root.get_node("MainScene/SubViewportContainer/SubViewport/Background")
+	# If the backgroundNode node is found, print a message
+	if backgroundNode:
+		print("Background node found:", backgroundNode)
 	else:
 		print("Background node not found!")
 	
@@ -28,8 +28,8 @@ func _ready():
 	var texture = getSceneTexture(sceneName)
 	if texture:
 		print("Loaded texture for scene:", sceneName, "Texture:", sceneTextures[sceneName])
-		if background != null:
-			background.swapBackground(texture)
+		if backgroundNode != null:
+			backgroundNode.swapBackground(texture)
 	else:
 		print("No texture found for scene:", sceneName)
 

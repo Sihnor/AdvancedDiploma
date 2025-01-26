@@ -1,6 +1,7 @@
-[gd_scene load_steps=44 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=46 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
+[ext_resource type="Script" path="res://scenes/mainSceneHandle.gd" id="1_p2dk2"]
 [ext_resource type="PackedScene" uid="uid://cwj6bpg3u3b8w" path="res://scenes/MainNav.tscn" id="2_cdd04"]
 [ext_resource type="PackedScene" uid="uid://p5ahydkjisqy" path="res://scenes/TopLeftRadioNav.tscn" id="2_ij6ai"]
 [ext_resource type="PackedScene" uid="uid://yxu6nudywmn5" path="res://scenes/TopLeftMapNav.tscn" id="3_1xnhc"]
@@ -42,12 +43,14 @@
 [ext_resource type="Texture2D" uid="uid://dxio8ghmqqne6" path="res://Assets/Art/Placeholder/Experiment/Captainsroomschlüssel_Experiment.png" id="26_fox68"]
 [ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/Placeholder/UI/icon.svg" id="38_2hhkd"]
 [ext_resource type="PackedScene" uid="uid://c2mlwdyrxdwcw" path="res://scenes/PianoRiddle.tscn" id="42_ft0xb"]
+[ext_resource type="PackedScene" uid="uid://bafqx5p03hpru" path="res://scenes/Menus/PauseMenu.tscn" id="44_ktcvb"]
 
 [sub_resource type="Environment" id="Environment_s72p6"]
 ambient_light_source = 3
 ambient_light_color = Color(1, 1, 1, 1)
 
 [node name="MainScene" type="Control"]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -57,6 +60,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 mouse_filter = 1
+script = ExtResource("1_p2dk2")
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="."]
 layout_mode = 1
@@ -71,7 +75,7 @@ stretch = true
 transparent_bg = true
 handle_input_locally = false
 size = Vector2i(1152, 648)
-render_target_update_mode = 4
+render_target_update_mode = 0
 
 [node name="Background" parent="SubViewportContainer/SubViewport" instance=ExtResource("1_jadi2")]
 
@@ -89,7 +93,7 @@ transparent_bg = true
 handle_input_locally = false
 physics_object_picking = true
 size = Vector2i(1152, 648)
-render_target_update_mode = 4
+render_target_update_mode = 0
 
 [node name="MainNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("2_cdd04")]
 
@@ -331,9 +335,7 @@ rewardSound = ExtResource("22_lj2cc")
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 2, 2.75, 0.95)
 visible = false
 rewardItem = NodePath("../CaptainKey3D")
-gridSize = null
-solvedState = null
-shuffle = null
+shuffle = false
 
 [node name="PianoRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("42_ft0xb")]
 transform = Transform3D(0.36468, -0.358469, 0.859365, -0.016065, 0.920365, 0.390731, -0.930994, -0.156297, 0.329879, 0, -1, 0)
@@ -350,3 +352,6 @@ shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="SubViewportContainer2/SubViewport"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5, 0)
+
+[node name="PauseMenu" parent="." instance=ExtResource("44_ktcvb")]
+layout_mode = 1

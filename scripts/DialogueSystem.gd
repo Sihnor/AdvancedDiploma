@@ -95,6 +95,7 @@ func _on_next_btn_pressed():
 func hideDialogue():
 	if isEndScene:
 		nextButtonRef.visible = false
+		get_tree().change_scene_to_file("res://scenes/Menus/EndMenu.tscn") 
 		print("end scene here")
 	else:
 		visible = false

@@ -2,6 +2,7 @@ extends Node
 
 var background : BackgroundTexture
 
+var mainScene :Control
 var mainNav : Control
 var leftNav : Control
 var leftWindowNav : Control
@@ -57,57 +58,58 @@ var tmpSceneName : String
 var tmpSceneID: int
 var visitedScenes: Array = []
 
-func _ready():
-	background = get_tree().root.get_node("MainScene/SubViewportContainer/SubViewport/Background")
+func loadSceneManager():
+	#background = mainScene.get_node("SubViewportContainer/SubViewport/Background")
+	await get_tree().create_timer(0.05).timeout
+	mainScene.visible = true
+	mainNav = mainScene.get_node("SubViewportContainer2/SubViewport/MainNav")
+	leftNav = mainScene.get_node("SubViewportContainer2/SubViewport/LeftNav")
+	leftWindowNav = mainScene.get_node("SubViewportContainer2/SubViewport/LeftWindowNav")
+	leftNotebookCode = mainScene.get_node("SubViewportContainer2/SubViewport/LeftNotebookCodeNav")
+	topLeftNav = mainScene.get_node("SubViewportContainer2/SubViewport/TopLeftNav")
+	topLeftRadioNav = mainScene.get_node("SubViewportContainer2/SubViewport/TopLeftRadioNav")
+	topLeftBookNav = mainScene.get_node("SubViewportContainer2/SubViewport/TopLeftBookNav")
+	topLeftDrawerNav = mainScene.get_node("SubViewportContainer2/SubViewport/TopLeftDrawerNav")
+	topLeftMapNav = mainScene.get_node("SubViewportContainer2/SubViewport/TopLeftMapNav")
+	rightNav = mainScene.get_node("SubViewportContainer2/SubViewport/RightNav")
+	rightDoorNav = mainScene.get_node("SubViewportContainer2/SubViewport/RightDoorNav")
+	rightDoorOpenNav = mainScene.get_node("SubViewportContainer2/SubViewport/RightDoorOpenNav")
+	topRightNav = mainScene.get_node("SubViewportContainer2/SubViewport/TopRightNav")
+	topRightGlobusNav = mainScene.get_node("SubViewportContainer2/SubViewport/TopRightGlobusNav")
+	topRightGlobusOpenNav = mainScene.get_node("SubViewportContainer2/SubViewport/TopRightGlobusOpenNav")
+	dininghall01Nav = mainScene.get_node("SubViewportContainer2/SubViewport/Dininghall01Nav")
+	dininghall02Nav = mainScene.get_node("SubViewportContainer2/SubViewport/Dininghall02Nav")
+	dininghall03Nav = mainScene.get_node("SubViewportContainer2/SubViewport/Dininghall03Nav")
+	dininghall031Nav = mainScene.get_node("SubViewportContainer2/SubViewport/Dininghall031Nav")
+	dininghall04Nav = mainScene.get_node("SubViewportContainer2/SubViewport/Dininghall04Nav")
+	dininghall041Nav = mainScene.get_node("SubViewportContainer2/SubViewport/Dininghall041Nav")
+	dininghall05Nav = mainScene.get_node("SubViewportContainer2/SubViewport/Dininghall05Nav")
+	dininghall051Nav = mainScene.get_node("SubViewportContainer2/SubViewport/Dininghall051Nav")
 	
-	mainNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/MainNav")
-	leftNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/LeftNav")
-	leftWindowNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/LeftWindowNav")
-	leftNotebookCode = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/LeftNotebookCodeNav")
-	topLeftNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftNav")
-	topLeftRadioNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftRadioNav")
-	topLeftBookNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftBookNav")
-	topLeftDrawerNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftDrawerNav")
-	topLeftMapNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftMapNav")
-	rightNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/RightNav")
-	rightDoorNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/RightDoorNav")
-	rightDoorOpenNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/RightDoorOpenNav")
-	topRightNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightNav")
-	topRightGlobusNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightGlobusNav")
-	topRightGlobusOpenNav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightGlobusOpenNav")
-	dininghall01Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall01Nav")
-	dininghall02Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall02Nav")
-	dininghall03Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall03Nav")
-	dininghall031Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall031Nav")
-	dininghall04Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall04Nav")
-	dininghall041Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall041Nav")
-	dininghall05Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall05Nav")
-	dininghall051Nav = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall051Nav")
+	notebook3D = mainScene.get_node("SubViewportContainer2/SubViewport/Notebook3D")
+	whaleStatue3D = mainScene.get_node("SubViewportContainer2/SubViewport/WhaleStatue3D")
+	personalFile3D = mainScene.get_node("SubViewportContainer2/SubViewport/PersonalFile3D")
+	portraitPart3D = mainScene.get_node("SubViewportContainer2/SubViewport/PortraitPart3D")
+	captainKey3D = mainScene.get_node("SubViewportContainer2/SubViewport/CaptainKey3D")
+	closetKey3D = mainScene.get_node("SubViewportContainer2/SubViewport/ClosetKey3D")
+	chairPiece3D = mainScene.get_node("SubViewportContainer2/SubViewport/ChairPiece3D")
+	knife3D = mainScene.get_node("SubViewportContainer2/SubViewport/Knife3D")
+	seahoundStatue3D = mainScene.get_node("SubViewportContainer2/SubViewport/SeahoundStatue3D")
+	dolphineStatue3D = mainScene.get_node("SubViewportContainer2/SubViewport/DolphineStatue3D")
+	candle3D = mainScene.get_node("SubViewportContainer2/SubViewport/Candle3D")
 	
-	notebook3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Notebook3D")
-	whaleStatue3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/WhaleStatue3D")
-	personalFile3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/PersonalFile3D")
-	portraitPart3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/PortraitPart3D")
-	captainKey3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/CaptainKey3D")
-	closetKey3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/ClosetKey3D")
-	chairPiece3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/ChairPiece3D")
-	knife3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Knife3D")
-	seahoundStatue3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/SeahoundStatue3D")
-	dolphineStatue3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/DolphineStatue3D")
-	candle3D = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Candle3D")
+	slidePuzzleRiddle = mainScene.get_node("SubViewportContainer2/SubViewport/SlidePuzzleRiddle")
+	dairyRiddle = mainScene.get_node("SubViewportContainer2/SubViewport/DairyRiddle")
+	letterRiddle = mainScene.get_node("SubViewportContainer2/SubViewport/TopLeftDrawerNav/Panel/LetterRiddle")
+	bookRiddle = mainScene.get_node("SubViewportContainer2/SubViewport/TopLeftBookNav/BookRiddle")
+	pianoRiddle = mainScene.get_node("SubViewportContainer2/SubViewport/PianoRiddle")
 	
-	slidePuzzleRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/SlidePuzzleRiddle")
-	dairyRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/DairyRiddle")
-	letterRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftDrawerNav/Panel/LetterRiddle")
-	bookRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftBookNav/BookRiddle")
-	pianoRiddle = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/PianoRiddle")
+	interactionMeridith = mainScene.get_node("SubViewportContainer2/SubViewport/MeridithInteraction")
+	interactionCrazyGuy = mainScene.get_node("SubViewportContainer2/SubViewport/CrazyGuyInteraction")
+	interactionRadio = mainScene.get_node("SubViewportContainer2/SubViewport/RadioInteraction")
 	
-	interactionMeridith = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/MeridithInteraction")
-	interactionCrazyGuy = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/CrazyGuyInteraction")
-	interactionRadio = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/RadioInteraction")
-	
-	inventorySystem = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/InventorySystem")
-	dialogueSystem = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/DialogueSystem")
+	inventorySystem = mainScene.get_node("SubViewportContainer2/SubViewport/InventorySystem")
+	dialogueSystem = mainScene.get_node("SubViewportContainer2/SubViewport/DialogueSystem")
 	
 	if letterRiddle != null:
 			letterRiddle.visible =false
@@ -154,7 +156,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			dialogueSystem.currentIndex = 0
 			dialogueSystem.updateDialogue()
 			dialogueSystem.visible =true
-		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightGlobusNav/Panel/OpenGlobus")
+		var tmpNode:Control = mainScene.get_node("SubViewportContainer2/SubViewport/TopRightGlobusNav/Panel/OpenGlobus")
 		if tmpNode != null:
 			background.swapBackground(GameManager.getSceneTexture(sceneName))
 			await get_tree().create_timer(0.1).timeout  # Creates a 1-second delay
@@ -169,7 +171,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			whaleStatue3D.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
-		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightGlobusNav/Panel/OpenGlobus")
+		var tmpNode:Control = mainScene.get_node("SubViewportContainer2/SubViewport/TopRightGlobusNav/Panel/OpenGlobus")
 		if tmpNode != null:
 			sceneName = "captain_main_interaction_globusZoom"
 		else:
@@ -197,7 +199,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		if inventorySystem.findItemInInventory("Notebook") != "":
 			sceneName = "captain_left_interaction_pillowMove"
 		else:
-			var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/LeftNav/Panel/PillowMove")
+			var tmpNode:Control = mainScene.get_node("SubViewportContainer2/SubViewport/LeftNav/Panel/PillowMove")
 			tmpNode.button.visible = true
 		leftNav.visible = true
 	elif  sceneID == 5:
@@ -301,7 +303,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			portraitPart3D.visible = false
 		if(notebook3D != null):
 			notebook3D.visible = false
-		var applyPuzzle: Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/LeftWindowNav/Panel/ApplyPuzzle")
+		var applyPuzzle: Control = mainScene.get_node("SubViewportContainer2/SubViewport/LeftWindowNav/Panel/ApplyPuzzle")
 		if applyPuzzle != null:
 			if inventorySystem.findItemInInventory("Portrait part") != "":
 				applyPuzzle.visible = true
@@ -332,7 +334,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 	elif sceneID == 10:
 		print("sceneID: ", sceneID)
 		rightNav.visible = false
-		var openDoor: Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/RightDoorNav/Panel/OpenDoor")
+		var openDoor: Control = mainScene.get_node("SubViewportContainer2/SubViewport/RightDoorNav/Panel/OpenDoor")
 		if openDoor != null:
 			sceneName = "captain_right_interaction_exitDoorZoom"
 			if inventorySystem.findItemInInventory("Captain Room Key") != "":
@@ -357,7 +359,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			dialogueSystem.updateDialogue()
 			dialogueSystem.visible =true
 		exitDoorUnlocked = true
-		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/RightDoorNav/Panel/OpenDoor")
+		var tmpNode:Control = mainScene.get_node("SubViewportContainer2/SubViewport/RightDoorNav/Panel/OpenDoor")
 		if tmpNode != null:
 			tmpNode.queue_free()
 		if portraitPart3D != null:
@@ -385,7 +387,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		topLeftNav.visible = true
 		if pianoRiddle.isSolved:
 			interactionRadio.visible = false
-		var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftNav/Panel/Drawer")
+		var tmpNode:Control = mainScene.get_node("SubViewportContainer2/SubViewport/TopLeftNav/Panel/Drawer")
 		if tmpNode != null:
 			sceneName = "captain_topLeft"
 		else:
@@ -448,7 +450,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			inventorySystem.isInventoryUsed = false
 		topLeftDrawerNav.visible = false
 		topLeftNav.visible = true
-		var tmpNode: Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopLeftNav/Panel/Drawer")
+		var tmpNode: Control = mainScene.get_node("SubViewportContainer2/SubViewport/TopLeftNav/Panel/Drawer")
 		if tmpNode != null:
 			tmpNode.queue_free()
 		if visitedScenes.find(29) != -1:
@@ -479,7 +481,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		topRightGlobusOpenNav.visible = false
 		if portraitPart3D != null:
 			portraitPart3D.visible = false
-		var openWardrobe: Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe")
+		var openWardrobe: Control = mainScene.get_node("SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe")
 		if openWardrobe != null:
 			sceneName = "captain_topRight"
 			if inventorySystem.findItemInInventory("Closet Key") != "":
@@ -489,7 +491,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		if inventorySystem.findItemInInventory("Whale Statue") != "":
 			sceneName = "captain_main_interaction_wardrobeOpen"
 		else:
-			var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe")
+			var tmpNode:Control = mainScene.get_node("SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe")
 			tmpNode.button.visible = true
 		topRightNav.visible = true
 	elif sceneID == 19:
@@ -556,7 +558,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			knife3D.visible = false
 		dininghall01Nav.visible = false
 		if inventorySystem.findItemInInventory("Wood Dolphine Statue") != "":
-			var tmpNode: Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall03Nav/Panel/ApplyWoodDolphine")
+			var tmpNode: Control = mainScene.get_node("SubViewportContainer2/SubViewport/Dininghall03Nav/Panel/ApplyWoodDolphine")
 			if tmpNode != null:
 				tmpNode.visible = true
 			else:
@@ -585,7 +587,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		print("sceneID: ", sceneID)
 		dininghall04Nav.visible = true
 		if inventorySystem.findItemInInventory("Whale Statue")  != "" and  inventorySystem.findItemInInventory("Seahound Statue") != "" and  inventorySystem.findItemInInventory("Dolphine Statue")  != "":
-			var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall04Nav/Panel/ApplyStatue")
+			var tmpNode:Control = mainScene.get_node("SubViewportContainer2/SubViewport/Dininghall04Nav/Panel/ApplyStatue")
 			if tmpNode != null:
 				tmpNode.visible = true
 			else:
@@ -615,7 +617,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 		print("sceneID: ", sceneID)
 		dininghall05Nav.visible = true
 		if inventorySystem.findItemInInventory("Personal File") != "" and inventorySystem.findItemInInventory("Candle") != "":
-			var tmpNode:Control = get_tree().root.get_node("MainScene/SubViewportContainer2/SubViewport/Dininghall05Nav/Panel/ApplyCandleFile")
+			var tmpNode:Control = mainScene.get_node("SubViewportContainer2/SubViewport/Dininghall05Nav/Panel/ApplyCandleFile")
 			if tmpNode != null:
 				tmpNode.visible = true
 			else:
