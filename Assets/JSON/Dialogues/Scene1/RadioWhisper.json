@@ -1,0 +1,33 @@
+[
+	{
+		"name": "Narrator ",
+		"text": "A distorted whisper crackles from a nearby radio.",
+		"profileL": ""
+	},
+	{
+		"name": "Radio Whisper",
+		"text": "Grata foris, electa.",
+		"audio": "res://Assets/Audio/Voices/Radio Voice/Radio Voice.wav"
+	},
+	{
+		"name": "Narrator ",
+		"text": "Kyra shudders, pulling her coat tighter around her shoulders."
+	},
+	{
+		"name": "Kyra",
+		"text": "Welcome aboard… chosen one?",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-28.wav",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png"
+	},
+	{
+		"name": "Narrator ",
+		"text": "(she glances around nervously)",
+		"profileL": ""
+	},
+	{
+		"name": "Kyra",
+		"text": "Who… or what is welcoming me?",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-29.wav",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png"
+	}
+]

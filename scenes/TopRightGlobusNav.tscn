@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=3 uid="uid://b3nlrfc4y8aml"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_2xpty"]
+[ext_resource type="PackedScene" uid="uid://sd8lmvc2x1x8" path="res://scenes/GlobusPinRiddle.tscn" id="2_w0rob"]
+[ext_resource type="AudioStream" uid="uid://exrf1tynuho4" path="res://Assets/Audio/SFX/Tür öffnen.wav" id="3_8ugob"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="4_cjf5u"]
+[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="5_37o13"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[node name="TopRightGlobusNav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bgdep")
+
+[node name="GlobusPinRiddle" parent="Panel" node_paths=PackedStringArray("reward") instance=ExtResource("2_w0rob")]
+layout_mode = 1
+mouse_filter = 1
+solution = [0, 3, 5]
+reward = NodePath("../OpenGlobus")
+
+[node name="OpenGlobus" parent="Panel" instance=ExtResource("1_2xpty")]
+visible = false
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -201.0
+offset_top = -199.0
+offset_right = -107.0
+offset_bottom = -103.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4, 4)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+sceneName = "captain_main_interaction_globusOpen"
+sceneID = 1
+sound = ExtResource("3_8ugob")
+
+[node name="Back" parent="Panel" instance=ExtResource("1_2xpty")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -437.0
+offset_top = -113.0
+offset_right = -343.0
+offset_bottom = -17.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.15, 1.15)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+sceneName = "captain_topRight"
+sceneID = 18
+sound = ExtResource("4_cjf5u")
+buttonIcon = ExtResource("5_37o13")

@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbu0l40uitgwg"]
+
+[ext_resource type="Script" path="res://scripts/MainUI.gd" id="1_xw3nc"]
+[ext_resource type="Texture2D" uid="uid://b1ltyk1vqp6cu" path="res://Assets/Art/Finished/2DAssets/UI/Inventar/Inventar_fertig.webp" id="2_pq50o"]
+
+[node name="MainUI" type="Control"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -129.0
+offset_bottom = 126.0
+grow_horizontal = 0
+mouse_filter = 1
+script = ExtResource("1_xw3nc")
+
+[node name="TopBar" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+alignment = 2
+
+[node name="TopBarIcon" type="TextureButton" parent="TopBar"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+texture_normal = ExtResource("2_pq50o")
+ignore_texture_size = true
+stretch_mode = 4
+
+[connection signal="pressed" from="TopBar/TopBarIcon" to="." method="_on_top_bar_icon_pressed"]

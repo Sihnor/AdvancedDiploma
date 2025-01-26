@@ -1,0 +1,56 @@
+[
+	{
+		"name": "Narrator ",
+		"text": "Kyra flips through the pages, deciphering its cryptic notes.",
+		"profileL": ""
+	},
+	{
+		"name": "Kyra",
+		"text": "These entries… they’re so scattered, almost frantic.",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-18.wav"
+	},
+	{
+		"name": "Narrator ",
+		"text": "(she flips further)",
+		"profileL": ""
+	},
+	{
+		"name": "Kyra",
+		"text": "Wait... Tom?.. Tom Grange?",
+		"profileL": "res://Assets/Art/CharacterIdols/Kyra/Kyra_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-19.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "His name is everywhere mentioned and signed on this Journal.. but.. why would it be hidden under.. the Captain’s pillow?",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-20.wav"
+	},
+	{
+		"name": "Narrator ",
+		"text": "Says Kyra, giving the impression that Tom might have been a victim after the Captain and other passengers before him. She squints at the strange symbols and jumbled thoughts filling the pages.",
+		"profileL": ""
+	},
+	{
+		"name": "Kyra",
+		"text": "Warnings... all these warnings.",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-21.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "What did the Captain and Tom know?",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-22.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "What did they investigate so desperately to end up writing this Journal full of.. cryptomessages?",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-23.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "How many other victims were involved into this very well-calculated chaotic nightmare?",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-24.wav"
+	}
+]

@@ -1,0 +1,19 @@
+[
+	{
+		"name": "",
+		"text": "Kyra stirs, her eyelids fluttering open as she finds herself slouched in a worn, leather armchair. She looks around, disoriented."
+	},
+	{
+		"name": "Player",
+		"text": "How did I… end up here? I don’t remember sitting down neither getting abroad.. this.. weird old looking dark ship"
+	},
+	{
+		"name": "Narrator",
+		"text": "Choose your path:",
+		"choices": [
+			{ "text": "Explore the forest", "filepath": "res://Assets/JSON/choice/forest.json"},
+			{ "text": "Visit the village", "filepath": "res://Assets/JSON/choice/village.json"},
+			{ "text": "Nothing", "filepath": ""}
+		]
+	}
+]

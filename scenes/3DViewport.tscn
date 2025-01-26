@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3 uid="uid://upitceslesjb"]
+
+[ext_resource type="Script" path="res://scripts/3DViewport.gd" id="1_frkl8"]
+[ext_resource type="Texture2D" uid="uid://bct6a7lt8dc6p" path="res://Assets/Art/Placeholder/Scenes/CaptainsRoom/main.png" id="1_n87f1"]
+[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/Placeholder/UI/icon.svg" id="2_xsi5e"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pm4up"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_68xwx"]
+sky_material = SubResource("ProceduralSkyMaterial_pm4up")
+
+[sub_resource type="Environment" id="Environment_8jvuw"]
+background_mode = 2
+sky = SubResource("Sky_68xwx")
+tonemap_mode = 2
+
+[sub_resource type="BoxMesh" id="BoxMesh_v5kvh"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_n87f1")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Panel" node_paths=PackedStringArray("viewport")]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_xsi5e")
+expand_mode = 1
+script = ExtResource("1_frkl8")
+viewport = NodePath("../../SubViewport2")
+
+[node name="SubViewport2" type="SubViewport" parent="."]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1920, 1080)
+size_2d_override_stretch = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewport2"]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 4.27634, -1.73537)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewport2"]
+environment = SubResource("Environment_8jvuw")
+
+[node name="Camera3D" type="Camera3D" parent="SubViewport2"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="SubViewport2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1.5)
+gi_mode = 0
+mesh = SubResource("BoxMesh_v5kvh")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="SubViewport2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -1.5)
+gi_mode = 0
+mesh = SubResource("BoxMesh_v5kvh")
+skeleton = NodePath("../..")

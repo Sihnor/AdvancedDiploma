@@ -1,0 +1,115 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbtd20fe3jpp1"]
+
+[ext_resource type="Script" path="res://scripts/Piece.gd" id="1_81s26"]
+[ext_resource type="Script" path="res://scripts/SlidePuzzle.gd" id="1_fgl5l"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0t5a5"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e70jw"]
+
+[node name="PuzzleRoot" type="Node3D"]
+script = ExtResource("1_fgl5l")
+gridSize = null
+solvedState = null
+
+[node name="Piece1" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece1"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece1/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+
+[node name="Piece2" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece2"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece2/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+
+[node name="Piece3" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(2, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece3"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece3/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+
+[node name="Piece4" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(0, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece4"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece4/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+
+[node name="Piece5" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(1, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece5"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece5/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+
+[node name="Piece6" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(2, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece6"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece6/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+
+[node name="Piece7" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(0, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece7"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece7/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+
+[node name="Piece8" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece8"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Piece8/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("PlaneMesh_e70jw")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 1, 3, -0.0299999)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.258819, 0.965926, 0, -0.965926, 0.258819, 0, 5, 2)
+
+[connection signal="input_event" from="Piece1" to="Piece1" method="_on_input_event"]
+[connection signal="input_event" from="Piece2" to="Piece2" method="_on_input_event"]
+[connection signal="input_event" from="Piece3" to="Piece3" method="_on_input_event"]
+[connection signal="input_event" from="Piece4" to="Piece4" method="_on_input_event"]
+[connection signal="input_event" from="Piece5" to="Piece5" method="_on_input_event"]
+[connection signal="input_event" from="Piece6" to="Piece6" method="_on_input_event"]
+[connection signal="input_event" from="Piece7" to="Piece7" method="_on_input_event"]
+[connection signal="input_event" from="Piece8" to="Piece8" method="_on_input_event"]

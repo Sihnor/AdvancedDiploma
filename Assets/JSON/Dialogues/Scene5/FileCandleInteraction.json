@@ -1,0 +1,21 @@
+[
+	{
+		"name": "Kyra",
+		"text": "these  symbols… look like sheet music.",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-54.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "Could it be… the same melody that woman was humming earlier?",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-55.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "There is only one way to find out…",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-56.wav"
+	},
+]

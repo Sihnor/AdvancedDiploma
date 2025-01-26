@@ -1,41 +1,356 @@
-[gd_scene load_steps=7 format=3 uid="uid://dv1amstg8r2l5"]
+[gd_scene load_steps=46 format=3 uid="uid://b1snkc6h5h532"]
 
-[ext_resource type="PackedScene" uid="uid://8hgyycna6a7g" path="res://scenes/crate.tscn" id="1_8okoj"]
+[ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
+[ext_resource type="Script" path="res://scenes/mainSceneHandle.gd" id="1_p2dk2"]
+[ext_resource type="PackedScene" uid="uid://cwj6bpg3u3b8w" path="res://scenes/MainNav.tscn" id="2_cdd04"]
+[ext_resource type="PackedScene" uid="uid://p5ahydkjisqy" path="res://scenes/TopLeftRadioNav.tscn" id="2_ij6ai"]
+[ext_resource type="PackedScene" uid="uid://yxu6nudywmn5" path="res://scenes/TopLeftMapNav.tscn" id="3_1xnhc"]
+[ext_resource type="PackedScene" uid="uid://dn4l1mgm34vg7" path="res://scenes/RightDoorNav.tscn" id="3_2noqw"]
+[ext_resource type="PackedScene" uid="uid://cetnyk2nihqe8" path="res://scenes/RightNav.tscn" id="3_5k288"]
+[ext_resource type="PackedScene" uid="uid://b3nlrfc4y8aml" path="res://scenes/TopRightGlobusNav.tscn" id="3_8wmc8"]
+[ext_resource type="PackedScene" uid="uid://bxbos0gxepw15" path="res://scenes/TopLeftBookNav.tscn" id="3_k06il"]
+[ext_resource type="PackedScene" uid="uid://b2o4sghcmtr32" path="res://scenes/LeftWindowNav.tscn" id="3_otgd4"]
+[ext_resource type="PackedScene" uid="uid://d2ykc31xty202" path="res://scenes/LeftNav.tscn" id="3_s2r7w"]
+[ext_resource type="PackedScene" uid="uid://o2s547vsoxmj" path="res://scenes/TopRightNav.tscn" id="3_wt7dn"]
+[ext_resource type="PackedScene" uid="uid://bg3ruliyhrcr5" path="res://scenes/TopLeftNav.tscn" id="4_dryyg"]
+[ext_resource type="PackedScene" uid="uid://cf7xqrrdhc6yi" path="res://scenes/TopRightGlobusOpenNav.tscn" id="5_1srnc"]
+[ext_resource type="PackedScene" uid="uid://d0ichgc34176v" path="res://scenes/LeftNotebookCodeNav.tscn" id="7_lgcxy"]
+[ext_resource type="PackedScene" uid="uid://c3x8vutkwn5vy" path="res://scenes/TopLeftDrawerNav.tscn" id="14_8vtqr"]
+[ext_resource type="PackedScene" uid="uid://btrvd3iljyob2" path="res://scenes/RightDoorOpenNav.tscn" id="15_jiwka"]
+[ext_resource type="PackedScene" uid="uid://dy7mkyuun44lo" path="res://scenes/Dininghall01Nav.tscn" id="17_icjhv"]
+[ext_resource type="PackedScene" uid="uid://b51vq3wsky7ww" path="res://scenes/PickupItem3D.tscn" id="17_lw812"]
+[ext_resource type="PackedScene" uid="uid://bm63haxmbj0d4" path="res://scenes/DialogueSystem.tscn" id="17_mnevp"]
+[ext_resource type="PackedScene" uid="uid://dbu0l40uitgwg" path="res://scenes/MainUI.tscn" id="18_es0gl"]
+[ext_resource type="PackedScene" uid="uid://cskw2ovxuw2q2" path="res://scenes/Dininghall02Nav.tscn" id="18_go3bj"]
+[ext_resource type="PackedScene" uid="uid://c5pgqlg128lek" path="res://scenes/InventorySystem.tscn" id="19_qp1ry"]
+[ext_resource type="PackedScene" uid="uid://ej1xuylcigfl" path="res://scenes/Dininghall03Nav.tscn" id="19_t2k18"]
+[ext_resource type="Texture2D" uid="uid://bpor3gs4h6fbk" path="res://Assets/Art/Placeholder/UI/Notebook.png" id="20_isdqg"]
+[ext_resource type="PackedScene" uid="uid://dchd58uigxf8l" path="res://scenes/Dininghall031Nav.tscn" id="20_ulaxx"]
+[ext_resource type="PackedScene" uid="uid://c28es0f18kvur" path="res://scenes/Dininghall04Nav.tscn" id="21_qnw6b"]
+[ext_resource type="PackedScene" uid="uid://cihioephk7sp2" path="res://scenes/Dininghall041Nav.tscn" id="22_1wjkp"]
+[ext_resource type="AudioStream" uid="uid://bp6sln60kxlyy" path="res://Assets/Audio/SFX/notizbuch aufheben.wav" id="22_lj2cc"]
+[ext_resource type="Texture2D" uid="uid://jkwemu8d667" path="res://Assets/Art/Placeholder/Experiment/Wal_Experiment.png" id="22_ntpke"]
+[ext_resource type="Texture2D" uid="uid://b66yn1mvrv87l" path="res://Assets/Art/Placeholder/Experiment/TomDokument_Experiment.png" id="23_0x4sd"]
+[ext_resource type="PackedScene" uid="uid://67y11ra13xbj" path="res://scenes/Dininghall05Nav.tscn" id="23_qi1h4"]
+[ext_resource type="AudioStream" uid="uid://bypxc4klh8a7p" path="res://Assets/Audio/SFX/Kopfkissen rücken.wav" id="24_0ypa0"]
+[ext_resource type="PackedScene" uid="uid://b2w2de81naqf" path="res://scenes/CodeRiddle.tscn" id="24_6w61k"]
+[ext_resource type="PackedScene" uid="uid://cs3oshanxh6kn" path="res://scenes/Dininghall051Nav.tscn" id="24_8q6ki"]
+[ext_resource type="Texture2D" uid="uid://byv75rj7ws8b7" path="res://Assets/Art/Placeholder/Experiment/Schrankschlüssel_Experiment.png" id="24_yuas4"]
+[ext_resource type="PackedScene" uid="uid://d4dfc3a7qahje" path="res://scenes/DialogueInteraction.tscn" id="25_4x672"]
+[ext_resource type="Texture2D" uid="uid://cyfibjdf30b2y" path="res://Assets/Art/Placeholder/Experiment/Portraitschnipsel_Experiment.png" id="25_7o8ki"]
+[ext_resource type="AudioStream" uid="uid://d3jfrdcfia2xm" path="res://Assets/Audio/SFX/schlüssel aufheben.wav" id="25_c12nf"]
+[ext_resource type="PackedScene" uid="uid://bbtd20fe3jpp1" path="res://scenes/SlidePuzzle.tscn" id="25_rqhjm"]
+[ext_resource type="Texture2D" uid="uid://dxio8ghmqqne6" path="res://Assets/Art/Placeholder/Experiment/Captainsroomschlüssel_Experiment.png" id="26_fox68"]
+[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/Placeholder/UI/icon.svg" id="38_2hhkd"]
+[ext_resource type="PackedScene" uid="uid://c2mlwdyrxdwcw" path="res://scenes/PianoRiddle.tscn" id="42_ft0xb"]
+[ext_resource type="PackedScene" uid="uid://bafqx5p03hpru" path="res://scenes/Menus/PauseMenu.tscn" id="44_ktcvb"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_18yuk"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+[sub_resource type="Environment" id="Environment_s72p6"]
+ambient_light_source = 3
+ambient_light_color = Color(1, 1, 1, 1)
 
-[sub_resource type="Sky" id="Sky_subqu"]
-sky_material = SubResource("ProceduralSkyMaterial_18yuk")
+[node name="MainScene" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 1
+script = ExtResource("1_p2dk2")
 
-[sub_resource type="Environment" id="Environment_fma5p"]
-background_mode = 2
-sky = SubResource("Sky_subqu")
-tonemap_mode = 2
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_rmdyd"]
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 0
 
-[sub_resource type="BoxMesh" id="BoxMesh_17xjt"]
+[node name="Background" parent="SubViewportContainer/SubViewport" instance=ExtResource("1_jadi2")]
 
-[node name="Node3D" type="Node3D"]
+[node name="SubViewportContainer2" type="SubViewportContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_fma5p")
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer2"]
+transparent_bg = true
+handle_input_locally = false
+physics_object_picking = true
+size = Vector2i(1152, 648)
+render_target_update_mode = 0
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="MainNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("2_cdd04")]
+
+[node name="TopRightNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_wt7dn")]
+visible = false
+
+[node name="TopRightGlobusNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_8wmc8")]
+visible = false
+
+[node name="TopRightGlobusOpenNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("5_1srnc")]
+visible = false
+
+[node name="LeftNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_s2r7w")]
+visible = false
+
+[node name="LeftNotebookCodeNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("7_lgcxy")]
+visible = false
+
+[node name="LeftWindowNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_otgd4")]
+visible = false
+
+[node name="TopLeftNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("4_dryyg")]
+visible = false
+
+[node name="TopLeftDrawerNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("14_8vtqr")]
+visible = false
+
+[node name="TopLeftRadioNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("2_ij6ai")]
+visible = false
+
+[node name="TopLeftBookNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_k06il")]
+visible = false
+
+[node name="TopLeftMapNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_1xnhc")]
+visible = false
+
+[node name="RightNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_5k288")]
+visible = false
+
+[node name="RightDoorNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("3_2noqw")]
+visible = false
+
+[node name="RightDoorOpenNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("15_jiwka")]
+visible = false
+
+[node name="Dininghall01Nav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("17_icjhv")]
+visible = false
+
+[node name="Dininghall02Nav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("18_go3bj")]
+visible = false
+
+[node name="Dininghall03Nav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("19_t2k18")]
+visible = false
+
+[node name="Dininghall031Nav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("20_ulaxx")]
+visible = false
+
+[node name="Dininghall04Nav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("21_qnw6b")]
+visible = false
+
+[node name="Dininghall041Nav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("22_1wjkp")]
+visible = false
+
+[node name="Dininghall05Nav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("23_qi1h4")]
+visible = false
+
+[node name="Dininghall051Nav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("24_8q6ki")]
+visible = false
+
+[node name="MeridithInteraction" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("25_4x672")]
+visible = false
+anchors_preset = -1
+anchor_left = 0.455729
+anchor_top = 0.601852
+anchor_right = 0.490451
+anchor_bottom = 0.66358
+offset_top = -3.05176e-05
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+dialogueSystem = NodePath("../DialogueSystem")
+filePath = "res://Assets/JSON/Dialogues/Scene3/MeredithDiningHall.json"
+isSelfDestroy = true
+metadata/_edit_use_anchors_ = true
+
+[node name="CrazyGuyInteraction" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("25_4x672")]
+visible = false
+anchors_preset = -1
+anchor_left = 0.455729
+anchor_top = 0.601852
+anchor_right = 0.490451
+anchor_bottom = 0.66358
+offset_left = 45.0
+offset_top = -40.0
+offset_right = 45.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.5, 2.5)
+dialogueSystem = NodePath("../DialogueSystem")
+filePath = "res://Assets/JSON/Dialogues/Scene4/SamAltar.json"
+isSelfDestroy = true
+metadata/_edit_use_anchors_ = true
+
+[node name="RadioInteraction" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("25_4x672")]
+visible = false
+anchors_preset = -1
+anchor_left = 0.455729
+anchor_top = 0.601852
+anchor_right = 0.490451
+anchor_bottom = 0.66358
+offset_left = 45.0
+offset_top = -40.0
+offset_right = 45.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.5, 2.5)
+dialogueSystem = NodePath("../DialogueSystem")
+filePath = "res://Assets/JSON/Dialogues/Scene6/ReturnCaptainRoom.json"
+isEndScene = true
+metadata/_edit_use_anchors_ = true
+
+[node name="InventorySystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("19_qp1ry")]
+metadata/_edit_use_anchors_ = true
+
+[node name="MainUI" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("18_es0gl")]
+inventorySystem = NodePath("../InventorySystem")
+metadata/_edit_use_anchors_ = true
+
+[node name="DialogueSystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("17_mnevp")]
+
+[node name="Notebook3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 5.15)
+visible = false
+item_name = "Notebook"
+item_icon = ExtResource("20_isdqg")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/LeftNav/Panel/PillowMove"
+sound = ExtResource("22_lj2cc")
+
+[node name="PersonalFile3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1, -3, -10)
+visible = false
+item_name = "Personal File"
+item_icon = ExtResource("23_0x4sd")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "a"
+sound = ExtResource("22_lj2cc")
+
+[node name="PortraitPart3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 4.25)
+visible = false
+item_name = "Portrait part"
+item_icon = ExtResource("25_7o8ki")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "a"
+sound = ExtResource("22_lj2cc")
+
+[node name="ClosetKey3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25, -3, -8)
+visible = false
+item_name = "Closet Key"
+item_icon = ExtResource("24_yuas4")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "a"
+sound = ExtResource("25_c12nf")
+
+[node name="CaptainKey3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -5)
+visible = false
+item_name = "Captain Room Key"
+item_icon = ExtResource("26_fox68")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "a"
+sound = ExtResource("25_c12nf")
+
+[node name="ChairPiece3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -2.25, 1.5)
+visible = false
+item_name = "Chair Piece"
+item_icon = ExtResource("38_2hhkd")
+inventorySystem = NodePath("../InventorySystem")
+sound = ExtResource("25_c12nf")
+
+[node name="Knife3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1.25, -3.5)
+visible = false
+item_name = "Knife"
+item_icon = ExtResource("38_2hhkd")
+inventorySystem = NodePath("../InventorySystem")
+sound = ExtResource("25_c12nf")
+
+[node name="WhaleStatue3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.15, 2.5)
+visible = false
+item_name = "Whale Statue"
+item_icon = ExtResource("22_ntpke")
+inventorySystem = NodePath("../InventorySystem")
+nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/TopRightNav/Panel/OpenWardrobe"
+sound = ExtResource("24_0ypa0")
+
+[node name="SeahoundStatue3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.35, 1.25)
+visible = false
+item_name = "Seahound Statue"
+item_icon = ExtResource("38_2hhkd")
+inventorySystem = NodePath("../InventorySystem")
+sound = ExtResource("24_0ypa0")
+
+[node name="DolphineStatue3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, -0.2)
+visible = false
+item_name = "Dolphine Statue"
+item_icon = ExtResource("38_2hhkd")
+inventorySystem = NodePath("../InventorySystem")
+sound = ExtResource("24_0ypa0")
+
+[node name="Candle3D" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("inventorySystem") instance=ExtResource("17_lw812")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.65, 3.65)
+visible = false
+item_name = "Candle"
+item_icon = ExtResource("38_2hhkd")
+inventorySystem = NodePath("../InventorySystem")
+sound = ExtResource("24_0ypa0")
+
+[node name="DairyRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("rewardItem") instance=ExtResource("24_6w61k")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 0)
+rewardItem = NodePath("../PortraitPart3D")
+code = ["5", "7", "3", "2", "8"]
+selectOptions = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+swapScene = true
+sceneName = "captain_left_interaction_notebookCodeOpen"
+sceneID = 6
+rewardSound = ExtResource("22_lj2cc")
+
+[node name="SlidePuzzleRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("rewardItem") instance=ExtResource("25_rqhjm")]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 2, 2.75, 0.95)
+visible = false
+rewardItem = NodePath("../CaptainKey3D")
+
+[node name="PianoRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("42_ft0xb")]
+transform = Transform3D(0.36468, -0.358469, 0.859365, -0.016065, 0.920365, 0.390731, -0.930994, -0.156297, 0.329879, 0, -1, 0)
+visible = false
+solution = "EFECD"
+dialogueSystem = NodePath("../DialogueSystem")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer2/SubViewport"]
+environment = SubResource("Environment_s72p6")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer2/SubViewport"]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 4.27634, -1.73537)
 shadow_enabled = true
 
-[node name="Crate" parent="." instance=ExtResource("1_8okoj")]
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer2/SubViewport"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5, 0)
 
-[node name="Plane" type="MeshInstance3D" parent="."]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
-mesh = SubResource("PlaneMesh_rmdyd")
-
-[node name="box" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 1)
-mesh = SubResource("BoxMesh_17xjt")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.45697, 2, 0)
+[node name="PauseMenu" parent="." instance=ExtResource("44_ktcvb")]
+layout_mode = 1

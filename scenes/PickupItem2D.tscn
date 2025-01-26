@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://di5mtc7p0qfu8"]
+
+[ext_resource type="Script" path="res://scripts/PickupItem2D.gd" id="1_p04oi"]
+[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/Placeholder/UI/icon.svg" id="2_5m5jm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iotq8"]
+
+[node name="PickupItem2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_p04oi")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(12, 12)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_iotq8")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_iotq8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_iotq8")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_iotq8")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_iotq8")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_iotq8")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_iotq8")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_iotq8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_iotq8")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_iotq8")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_iotq8")
+icon = ExtResource("2_5m5jm")
+expand_icon = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

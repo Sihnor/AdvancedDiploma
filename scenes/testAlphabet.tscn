@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://di2h4dejed5xx"]
+
+[ext_resource type="PackedScene" uid="uid://b2w2de81naqf" path="res://scenes/CodeRiddle.tscn" id="1_de2w8"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CodeRiddle" parent="." instance=ExtResource("1_de2w8")]
+code = ["A", "B", "B", "A"]
+selectOptions = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]

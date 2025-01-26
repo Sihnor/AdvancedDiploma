@@ -1,3 +1,15 @@
+Label3D
+TextureRect
+Node
+HBoxContainer
+AudioStreamPlayer
 Camera3D
-AudioStreamPlayer3D
 MeshInstance3D
+Timer
+AudioStreamPlayer3D
+AudioStreamPlayer2D
+VBoxContainer
+AudioListener3D
+DirectionalLight3D
+CollisionShape3D
+Area3D

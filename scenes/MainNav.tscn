@@ -1,0 +1,108 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwj6bpg3u3b8w"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_lsuiq"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_eldge"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[node name="MainNav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bgdep")
+
+[node name="Left" parent="Panel" instance=ExtResource("1_lsuiq")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -471.0
+offset_top = 10.0
+offset_right = -431.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -3.13934
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_left"
+sceneID = 4
+sound = ExtResource("2_eldge")
+
+[node name="TopLeft" parent="Panel" instance=ExtResource("1_lsuiq")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -207.774
+offset_top = 195.225
+offset_right = -167.774
+offset_bottom = 235.225
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.57645
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_topLeft"
+sceneID = 12
+sound = ExtResource("2_eldge")
+
+[node name="TopRight" parent="Panel" instance=ExtResource("1_lsuiq")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 82.226
+offset_top = 195.225
+offset_right = 122.226
+offset_bottom = 235.225
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.57645
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_topRight"
+sceneID = 18
+sound = ExtResource("2_eldge")
+
+[node name="Right" parent="Panel" instance=ExtResource("1_lsuiq")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 454.0
+offset_top = -24.0
+offset_right = 494.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_right"
+sceneID = 9
+sound = ExtResource("2_eldge")

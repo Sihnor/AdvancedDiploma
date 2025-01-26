@@ -1,0 +1,96 @@
+[gd_scene load_steps=8 format=3 uid="uid://o2s547vsoxmj"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_ptmjv"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_vn8wm"]
+[ext_resource type="AudioStream" uid="uid://de13osl4hgcl7" path="res://Assets/Audio/SFX/Schrank öffnen.wav" id="3_j3ssr"]
+[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_obyld"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rsmsj"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_74yfr"]
+
+[node name="TopRightNav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bgdep")
+
+[node name="Globus" parent="Panel" instance=ExtResource("1_ptmjv")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -307.0
+offset_top = 1.0
+offset_right = -213.0
+offset_bottom = 97.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(2, 2)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_main_interaction_globusZoom"
+sceneID = 2
+sound = ExtResource("2_vn8wm")
+buttonIcon = SubResource("CompressedTexture2D_rsmsj")
+
+[node name="Back" parent="Panel" instance=ExtResource("1_ptmjv")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -427.0
+offset_top = -96.0
+offset_right = -333.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.25, 1)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_main"
+sound = ExtResource("2_vn8wm")
+buttonIcon = ExtResource("3_obyld")
+
+[node name="OpenWardrobe" parent="Panel" instance=ExtResource("1_ptmjv")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -291.0
+offset_top = -274.0
+offset_right = -197.0
+offset_bottom = -178.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4.5, 6.25)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+sceneName = "captain_main_interaction_wardrobeOpen"
+sceneID = 3
+sound = ExtResource("3_j3ssr")
+buttonIcon = SubResource("CompressedTexture2D_74yfr")

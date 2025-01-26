@@ -1,0 +1,217 @@
+[gd_scene load_steps=10 format=3 uid="uid://do6hueiu6mk1u"]
+
+[ext_resource type="Script" path="res://scripts/Menus/MainMenu.gd" id="1_f3ekp"]
+[ext_resource type="Texture2D" uid="uid://bewjgrsldbg2i" path="res://Assets/Art/Finished/2DAssets/Scenes/Startbildschirm/Startbildschirm_Fertig.png" id="2_2cx71"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_wgdiv"]
+[ext_resource type="AudioStream" uid="uid://d1cs07ry5wlms" path="res://Assets/Audio/BGM/chillBeats.mp3" id="3_v22wj"]
+
+[sub_resource type="FontFile" id="FontFile_ohqef"]
+cache/0/64/0/ascent = 0.0
+cache/0/64/0/descent = 0.0
+cache/0/64/0/underline_position = 0.0
+cache/0/64/0/underline_thickness = 0.0
+cache/0/64/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/65/0/ascent = 0.0
+cache/0/65/0/descent = 0.0
+cache/0/65/0/underline_position = 0.0
+cache/0/65/0/underline_thickness = 0.0
+cache/0/65/0/scale = 1.0
+cache/0/63/0/ascent = 0.0
+cache/0/63/0/descent = 0.0
+cache/0/63/0/underline_position = 0.0
+cache/0/63/0/underline_thickness = 0.0
+cache/0/63/0/scale = 1.0
+cache/0/62/0/ascent = 0.0
+cache/0/62/0/descent = 0.0
+cache/0/62/0/underline_position = 0.0
+cache/0/62/0/underline_thickness = 0.0
+cache/0/62/0/scale = 1.0
+cache/0/61/0/ascent = 0.0
+cache/0/61/0/descent = 0.0
+cache/0/61/0/underline_position = 0.0
+cache/0/61/0/underline_thickness = 0.0
+cache/0/61/0/scale = 1.0
+cache/0/60/0/ascent = 0.0
+cache/0/60/0/descent = 0.0
+cache/0/60/0/underline_position = 0.0
+cache/0/60/0/underline_thickness = 0.0
+cache/0/60/0/scale = 1.0
+cache/0/59/0/ascent = 0.0
+cache/0/59/0/descent = 0.0
+cache/0/59/0/underline_position = 0.0
+cache/0/59/0/underline_thickness = 0.0
+cache/0/59/0/scale = 1.0
+cache/0/58/0/ascent = 0.0
+cache/0/58/0/descent = 0.0
+cache/0/58/0/underline_position = 0.0
+cache/0/58/0/underline_thickness = 0.0
+cache/0/58/0/scale = 1.0
+cache/0/57/0/ascent = 0.0
+cache/0/57/0/descent = 0.0
+cache/0/57/0/underline_position = 0.0
+cache/0/57/0/underline_thickness = 0.0
+cache/0/57/0/scale = 1.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s1g8p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sgql2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lbpce"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vycnj"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_f3ekp")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_2cx71")
+expand_mode = 1
+
+[node name="Titel" type="Label" parent="Panel"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.000868056
+anchor_top = 0.104938
+anchor_right = 1.00087
+anchor_bottom = 0.240741
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("FontFile_ohqef")
+theme_override_font_sizes/font_size = 57
+text = "The ship of the Chosen ﻿Ones"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.392361
+anchor_top = 0.433642
+anchor_right = 0.609375
+anchor_bottom = 0.950617
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+custom_minimum_size = Vector2(0, 327)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="StartGame" type="Button" parent="Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_s1g8p")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_s1g8p")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_s1g8p")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_s1g8p")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_s1g8p")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_s1g8p")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_s1g8p")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_s1g8p")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_s1g8p")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_s1g8p")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_s1g8p")
+text = "Start Game"
+
+[node name="Options" type="Button" parent="Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sgql2")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_sgql2")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_sgql2")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_sgql2")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_sgql2")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_sgql2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_sgql2")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_sgql2")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_sgql2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_sgql2")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sgql2")
+text = "Settings"
+
+[node name="Credits" type="Button" parent="Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lbpce")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_lbpce")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_lbpce")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_lbpce")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lbpce")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_lbpce")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_lbpce")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_lbpce")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lbpce")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_lbpce")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lbpce")
+text = "Credits"
+
+[node name="Quit" type="Button" parent="Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 10
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vycnj")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_vycnj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_vycnj")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_vycnj")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_vycnj")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_vycnj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vycnj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_vycnj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vycnj")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_vycnj")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vycnj")
+text = "Quit"
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_wgdiv")
+bus = &"SFX"
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_v22wj")
+autoplay = true
+bus = &"BGM"
+
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

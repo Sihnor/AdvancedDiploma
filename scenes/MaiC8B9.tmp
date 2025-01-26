@@ -1,0 +1,51 @@
+[gd_scene load_steps=9 format=3 uid="uid://dv1amstg8r2l5"]
+
+[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/icon.svg" id="2_1pe1t"]
+[ext_resource type="PackedScene" uid="uid://bm63haxmbj0d4" path="res://scenes/DialogueSystem.tscn" id="2_ekkl0"]
+[ext_resource type="PackedScene" uid="uid://c5pgqlg128lek" path="res://scenes/InventorySystem.tscn" id="3_a7jd3"]
+[ext_resource type="PackedScene" uid="uid://b51vq3wsky7ww" path="res://scenes/PickupItem3D.tscn" id="4_ky10d"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_18yuk"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_subqu"]
+sky_material = SubResource("ProceduralSkyMaterial_18yuk")
+
+[sub_resource type="Environment" id="Environment_fma5p"]
+background_mode = 2
+sky = SubResource("Sky_subqu")
+tonemap_mode = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_rmdyd"]
+
+[node name="MainScene" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_fma5p")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 4.27634, -1.73537)
+shadow_enabled = true
+
+[node name="Plane" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+mesh = SubResource("PlaneMesh_rmdyd")
+
+[node name="PickupItem3D" parent="." node_paths=PackedStringArray("main_camera") instance=ExtResource("4_ky10d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.03912, 2.13658, 0)
+main_camera = NodePath("../MainCamera")
+item_name = "key"
+item_icon = ExtResource("2_1pe1t")
+
+[node name="MainCamera" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.47959, 2, 0)
+
+[node name="InventorySystem" parent="." instance=ExtResource("3_a7jd3")]
+
+[node name="DialogueSystem" parent="." instance=ExtResource("2_ekkl0")]
+visible = false
+offset_left = -1.0
+offset_top = -1.0
+offset_right = -0.999878
+offset_bottom = -1.0

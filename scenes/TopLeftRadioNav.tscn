@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://p5ahydkjisqy"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_3f01k"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_p5yso"]
+[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_qxtsg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[node name="TopLeftRadioNav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bgdep")
+
+[node name="Back" parent="Panel" instance=ExtResource("1_3f01k")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -202.0
+offset_top = -123.0
+offset_right = -108.0
+offset_bottom = -27.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.35, 1.25)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_topLeft"
+sceneID = 12
+selfDestroy = null
+isSlidePuzzle = null
+sound = ExtResource("2_p5yso")
+buttonIcon = ExtResource("3_qxtsg")

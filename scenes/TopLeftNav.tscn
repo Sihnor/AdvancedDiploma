@@ -1,0 +1,138 @@
+[gd_scene load_steps=9 format=3 uid="uid://bg3ruliyhrcr5"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_5myt2"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_tqmt7"]
+[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_i4fnh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uir78"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_djgeu"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4fwkc"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6um2s"]
+
+[node name="TopLeftNav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bgdep")
+
+[node name="Radio" parent="Panel" instance=ExtResource("1_5myt2")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -376.0
+offset_top = 50.0
+offset_right = -280.0
+offset_bottom = 144.0
+grow_horizontal = 2
+scale = Vector2(1.75, 1)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_topLeft_interaction_radioZoom"
+sceneID = 17
+sound = ExtResource("2_tqmt7")
+buttonIcon = SubResource("CompressedTexture2D_uir78")
+
+[node name="Book" parent="Panel" instance=ExtResource("1_5myt2")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -452.0
+offset_top = -149.0
+offset_right = -354.0
+offset_bottom = -48.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_topLeft_interaction_bookZoom"
+sceneID = 13
+sound = ExtResource("2_tqmt7")
+buttonIcon = SubResource("CompressedTexture2D_djgeu")
+
+[node name="Map" parent="Panel" instance=ExtResource("1_5myt2")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -276.0
+offset_top = 1.0
+offset_right = -180.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4.5, 1.25)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_topLeft_interaction_mapZoom"
+sceneID = 15
+sound = ExtResource("2_tqmt7")
+buttonIcon = SubResource("CompressedTexture2D_4fwkc")
+
+[node name="Drawer" parent="Panel" instance=ExtResource("1_5myt2")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 274.0
+offset_top = 151.0
+offset_right = 368.0
+offset_bottom = 245.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_topLeft_interaction_drawer"
+sceneID = 14
+sound = ExtResource("2_tqmt7")
+buttonIcon = SubResource("CompressedTexture2D_6um2s")
+
+[node name="Back" parent="Panel" instance=ExtResource("1_5myt2")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -376.0
+offset_top = 186.0
+offset_right = -282.0
+offset_bottom = 282.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_main"
+sound = ExtResource("2_tqmt7")
+buttonIcon = ExtResource("3_i4fnh")

@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://yxu6nudywmn5"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_nyncs"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_pqrjk"]
+[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_lorti"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[node name="TopLeftMapNav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bgdep")
+
+[node name="Back" parent="Panel" instance=ExtResource("1_nyncs")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -262.0
+offset_top = -96.0
+offset_right = -168.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_topLeft"
+sceneID = 12
+sound = ExtResource("2_pqrjk")
+buttonIcon = ExtResource("3_lorti")

@@ -1,0 +1,72 @@
+[gd_scene load_steps=6 format=3 uid="uid://c28es0f18kvur"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_bw4tg"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_np3n7"]
+[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_k78w8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ngu4m"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b4q77"]
+
+[node name="Dininghall04Nav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ngu4m")
+
+[node name="Exit" parent="Panel" instance=ExtResource("1_bw4tg")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -123.0
+offset_right = 20.0
+offset_bottom = -83.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "dininghall02"
+sceneID = 25
+sound = ExtResource("2_np3n7")
+buttonIcon = ExtResource("3_k78w8")
+
+[node name="ApplyStatue" parent="Panel" instance=ExtResource("1_bw4tg")]
+visible = false
+layout_direction = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.303819
+anchor_top = 0.462963
+anchor_right = 0.637153
+anchor_bottom = 0.609568
+offset_right = -288.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(4, 1)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "dininghall041"
+sceneID = 29
+selfDestroy = true
+sound = ExtResource("2_np3n7")
+buttonIcon = SubResource("CompressedTexture2D_b4q77")
+metadata/_edit_use_anchors_ = true

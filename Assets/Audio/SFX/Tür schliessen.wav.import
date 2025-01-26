@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ck076e4ufh2qm"
+path="res://.godot/imported/Tür schliessen.wav-b23dc4e65d6721e4d70314b6f4af5502.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/SFX/Tür schliessen.wav"
+dest_files=["res://.godot/imported/Tür schliessen.wav-b23dc4e65d6721e4d70314b6f4af5502.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
