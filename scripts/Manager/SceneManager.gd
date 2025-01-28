@@ -115,7 +115,7 @@ func loadSceneManager():
 			letterRiddle.visible =false
 	if bookRiddle != null:
 			bookRiddle.visible =false
-	pass
+	visitedScenes.clear()
 
 func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 	if sceneID != 5 and sceneID != 99 and sceneID != 6:
@@ -310,6 +310,7 @@ func switchScene(sceneName: String, sceneID: int, button: Button) -> void:
 			else:
 				applyPuzzle.visible = false
 		else:
+			slidePuzzleRiddle.checkSlidePuzzleState()
 			slidePuzzleRiddle.visible = true
 			if slidePuzzleRiddle.solved:
 				if not sceneID in visitedScenes:

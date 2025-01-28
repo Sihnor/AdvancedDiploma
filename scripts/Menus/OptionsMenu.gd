@@ -8,6 +8,7 @@ class_name OptionMenu
 @onready var voiceSlider= $Panel/MarginContainer/VBoxContainer/VoiceContainer/VoiceSlider
 @onready var resolutionButton=$Panel/MarginContainer/VBoxContainer/ResolutionContainer/OptionButton
 @onready var fullscreenCheckbox=$Panel/MarginContainer/VBoxContainer/FullscreenContainer/CheckBox
+@onready var skipSlidePuzzle = $Panel/MarginContainer/VBoxContainer/SkipSlidePuzzle/Skip
 @onready var backButton = $Panel/MarginContainer/VBoxContainer/Button
 @onready var sfxAudioStream: AudioStreamPlayer = $SFX
 @onready var voiceAudioStream: AudioStreamPlayer = $Voice
@@ -83,6 +84,12 @@ func _on_check_box_toggled(toggled_on):
 	else:
 		DisplayServer.window_set_mode(DisplayServer.WindowMode.WINDOW_MODE_WINDOWED)
 
+func _on_skip_toggled(toggled_on):
+	if toggled_on:
+		GameManager.skipSlidePuzzle = true
+	else:
+		GameManager.skipSlidePuzzle = false
+
 
 func _on_button_pressed():
 	sfxAudioStream.play()
@@ -107,8 +114,8 @@ func loadSettings():
 	voiceSlider.value = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Voice"))
 	
 	# Get the current window mode
+	skipSlidePuzzle.button_pressed = GameManager.skipSlidePuzzle
 	fullscreenCheckbox.button_pressed= DisplayServer.window_get_mode() == DisplayServer.WindowMode.WINDOW_MODE_FULLSCREEN
-	
 	# Populate resolution dropdown
 	var resolutions = ["1920x1080", "1920x1009", "1918x1078", "1600x900", "1280x720", "1152x648"]
 	for resolution in resolutions:

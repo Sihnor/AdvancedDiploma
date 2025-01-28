@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=50 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
 [ext_resource type="Script" path="res://scenes/mainSceneHandle.gd" id="1_p2dk2"]
@@ -41,9 +41,14 @@
 [ext_resource type="AudioStream" uid="uid://d3jfrdcfia2xm" path="res://Assets/Audio/SFX/schlüssel aufheben.wav" id="25_c12nf"]
 [ext_resource type="PackedScene" uid="uid://bbtd20fe3jpp1" path="res://scenes/SlidePuzzle.tscn" id="25_rqhjm"]
 [ext_resource type="Texture2D" uid="uid://dxio8ghmqqne6" path="res://Assets/Art/Placeholder/Experiment/Captainsroomschlüssel_Experiment.png" id="26_fox68"]
+[ext_resource type="Texture2D" uid="uid://bffod8nyojhx0" path="res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuy_01.png" id="27_jmptk"]
+[ext_resource type="Texture2D" uid="uid://nkrjlfcm4m2v" path="res://Assets/Art/Finished/2DAssets/Character Idols/Meredith_InGame.png" id="27_rsscs"]
 [ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/Placeholder/UI/icon.svg" id="38_2hhkd"]
 [ext_resource type="PackedScene" uid="uid://c2mlwdyrxdwcw" path="res://scenes/PianoRiddle.tscn" id="42_ft0xb"]
 [ext_resource type="PackedScene" uid="uid://bafqx5p03hpru" path="res://scenes/Menus/PauseMenu.tscn" id="44_ktcvb"]
+[ext_resource type="AudioStream" uid="uid://cmwc2h5h70t3r" path="res://Assets/Audio/BGM/captains room.wav" id="47_psw4p"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xdr3c"]
 
 [sub_resource type="Environment" id="Environment_s72p6"]
 ambient_light_source = 3
@@ -178,6 +183,7 @@ grow_vertical = 2
 dialogueSystem = NodePath("../DialogueSystem")
 filePath = "res://Assets/JSON/Dialogues/Scene3/MeredithDiningHall.json"
 isSelfDestroy = true
+buttonIcon = ExtResource("27_rsscs")
 metadata/_edit_use_anchors_ = true
 
 [node name="CrazyGuyInteraction" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("25_4x672")]
@@ -197,6 +203,7 @@ scale = Vector2(2.5, 2.5)
 dialogueSystem = NodePath("../DialogueSystem")
 filePath = "res://Assets/JSON/Dialogues/Scene4/SamAltar.json"
 isSelfDestroy = true
+buttonIcon = ExtResource("27_jmptk")
 metadata/_edit_use_anchors_ = true
 
 [node name="RadioInteraction" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("25_4x672")]
@@ -216,6 +223,7 @@ scale = Vector2(2.5, 2.5)
 dialogueSystem = NodePath("../DialogueSystem")
 filePath = "res://Assets/JSON/Dialogues/Scene6/ReturnCaptainRoom.json"
 isEndScene = true
+buttonIcon = SubResource("CompressedTexture2D_xdr3c")
 metadata/_edit_use_anchors_ = true
 
 [node name="InventorySystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("19_qp1ry")]
@@ -354,3 +362,8 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5
 
 [node name="PauseMenu" parent="." instance=ExtResource("44_ktcvb")]
 layout_mode = 1
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("47_psw4p")
+autoplay = true
+bus = &"BGM"
