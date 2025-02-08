@@ -2,11 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_n5c00"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_2mfn5"]
-[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_1c61k"]
+[ext_resource type="Texture2D" uid="uid://dvymmxkpx7tx7" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG" id="3_t00je"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pguxi"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_78pwe"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3icij"]
 
 [node name="Dininghall05Nav" type="Control"]
 layout_mode = 3
@@ -35,20 +35,20 @@ anchor_left = 0.0868056
 anchor_top = 0.833333
 anchor_right = 0.173611
 anchor_bottom = 0.987654
-offset_right = 0.0
-offset_bottom = 0.0
+offset_right = -66.6664
+offset_bottom = -66.6666
 grow_horizontal = 2
 grow_vertical = 0
+scale = Vector2(1.5, 1.5)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "dininghall02"
 sceneID = 25
 sound = ExtResource("2_2mfn5")
-buttonIcon = ExtResource("3_1c61k")
+buttonIcon = ExtResource("3_t00je")
 metadata/_edit_use_anchors_ = true
 
 [node name="ApplyCandleFile" parent="Panel" instance=ExtResource("1_n5c00")]
-visible = false
 layout_direction = 1
 layout_mode = 1
 anchors_preset = -1
@@ -56,17 +56,19 @@ anchor_left = 0.506944
 anchor_top = 0.0617284
 anchor_right = 0.858252
 anchor_bottom = 0.645428
-offset_right = -309.706
-offset_bottom = -283.237
+offset_left = -0.000488281
+offset_top = -25.9997
+offset_right = -574.512
+offset_bottom = -556.395
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.211185
-scale = Vector2(5, 3)
+scale = Vector2(6, 5)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "dininghall051"
 sceneID = 31
 selfDestroy = true
 sound = ExtResource("2_2mfn5")
-buttonIcon = SubResource("CompressedTexture2D_78pwe")
+buttonIcon = SubResource("CompressedTexture2D_3icij")
 metadata/_edit_use_anchors_ = true

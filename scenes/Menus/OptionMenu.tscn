@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/Menus/OptionsMenu.gd" id="1_q3l5x"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_8v2u7"]
-[ext_resource type="Texture2D" uid="uid://lcqektc3sfpy" path="res://Assets/Art/Finished/2DAssets/UI/Einstellungen (Credits noch in progress)/UI_Einstellungen_Hintergrund_Fertig.png" id="2_ehefa"]
+[ext_resource type="Texture2D" uid="uid://lcqektc3sfpy" path="res://Assets/Art/Finished/UI/Einstellungen (Credits noch in progress)/UI_Einstellungen_Hintergrund_Fertig.png" id="2_ehefa"]
 [ext_resource type="AudioStream" uid="uid://btel43gq0gtg5" path="res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-33.wav" id="3_rbt22"]
 [ext_resource type="AudioStream" uid="uid://b6dydbc3443js" path="res://Assets/Audio/BGM/main theme.wav" id="5_apnjj"]
 
@@ -72,14 +72,14 @@ size_flags_vertical = 4
 
 [node name="MasterVolume" type="Label" parent="Panel/MarginContainer/VBoxContainer/MasterContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
 text = "Master Volume"
 label_settings = SubResource("LabelSettings_poo2q")
 
 [node name="MasterSlider" type="HSlider" parent="Panel/MarginContainer/VBoxContainer/MasterContainer"]
-custom_minimum_size = Vector2(300, 25)
+custom_minimum_size = Vector2(300, 29)
 layout_mode = 2
 size_flags_horizontal = 10
-focus_mode = 0
 min_value = -70.0
 max_value = 0.0
 

@@ -4,7 +4,7 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t4tp0"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tbhcq"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f26b3"]
 
 [node name="DialogueInteraction" type="Control"]
 layout_mode = 3
@@ -36,7 +36,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_t4tp0")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_t4tp0")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_t4tp0")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_t4tp0")
-icon = SubResource("CompressedTexture2D_tbhcq")
+icon = SubResource("CompressedTexture2D_f26b3")
 expand_icon = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
