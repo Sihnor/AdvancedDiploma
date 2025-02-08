@@ -22,6 +22,11 @@ SceneManager="*res://scripts/Manager/SceneManager.gd"
 
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=4
+window/stretch/mode="canvas_items"
+window/stretch/aspect="ignore"
 window/tighter_shadow_caster_culling=true
 
 [input]

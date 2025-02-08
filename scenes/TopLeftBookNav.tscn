@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_e4dct"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_ln0mi"]
-[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="2_lweok"]
 [ext_resource type="PackedScene" uid="uid://d1bsl3hdb04e" path="res://scenes/BookRiddle.tscn" id="2_y5swd"]
+[ext_resource type="Texture2D" uid="uid://dvymmxkpx7tx7" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG" id="3_8v35m"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -33,16 +33,17 @@ anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 225.0
-offset_top = -103.0
-offset_right = 319.0
-offset_bottom = -7.0
+offset_top = -180.0
+offset_right = 325.0
+offset_bottom = -80.0
 grow_vertical = 0
+scale = Vector2(1.5, 1.5)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_topLeft"
 sceneID = 12
 sound = ExtResource("2_ln0mi")
-buttonIcon = ExtResource("2_lweok")
+buttonIcon = ExtResource("3_8v35m")
 
 [node name="BookRiddle" parent="." instance=ExtResource("2_y5swd")]
 transform = Transform3D(0.0871558, 0, 0.996195, 0, 1, 0, -0.996195, 0, 0.0871558, 1, 1.75, -1)

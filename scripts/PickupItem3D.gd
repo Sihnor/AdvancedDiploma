@@ -3,6 +3,7 @@ class_name PickupItem3D
 
 @onready var area = $Area3D
 @onready var timer = $Timer
+@export var mesh: MeshInstance3D
 @export var item_name: String  
 @export var item_icon: Texture2D 
 @export var inventorySystem: InventorySystem

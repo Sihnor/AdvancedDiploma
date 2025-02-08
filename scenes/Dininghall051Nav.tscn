@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_suv53"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_0m01f"]
-[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_vtprj"]
+[ext_resource type="Texture2D" uid="uid://dvymmxkpx7tx7" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG" id="3_ba7e8"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_47dhh"]
 
@@ -33,13 +33,14 @@ anchor_left = 0.0868056
 anchor_top = 0.810185
 anchor_right = 0.169271
 anchor_bottom = 0.96142
-offset_right = 0.0
-offset_bottom = 0.0
+offset_right = -58.3336
+offset_bottom = -63.3338
 grow_vertical = 0
+scale = Vector2(1.5, 1.5)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "dininghall02"
 sceneID = 25
 sound = ExtResource("2_0m01f")
-buttonIcon = ExtResource("3_vtprj")
+buttonIcon = ExtResource("3_ba7e8")
 metadata/_edit_use_anchors_ = true

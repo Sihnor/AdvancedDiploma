@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://b1snkc6h5h532"]
+[gd_scene load_steps=54 format=3 uid="uid://b1snkc6h5h532"]
 
 [ext_resource type="PackedScene" uid="uid://6m4rbr4uqs3u" path="res://scenes/Background.tscn" id="1_jadi2"]
 [ext_resource type="Script" path="res://scenes/mainSceneHandle.gd" id="1_p2dk2"]
@@ -24,33 +24,41 @@
 [ext_resource type="PackedScene" uid="uid://cskw2ovxuw2q2" path="res://scenes/Dininghall02Nav.tscn" id="18_go3bj"]
 [ext_resource type="PackedScene" uid="uid://c5pgqlg128lek" path="res://scenes/InventorySystem.tscn" id="19_qp1ry"]
 [ext_resource type="PackedScene" uid="uid://ej1xuylcigfl" path="res://scenes/Dininghall03Nav.tscn" id="19_t2k18"]
-[ext_resource type="Texture2D" uid="uid://bpor3gs4h6fbk" path="res://Assets/Art/Placeholder/UI/Notebook.png" id="20_isdqg"]
 [ext_resource type="PackedScene" uid="uid://dchd58uigxf8l" path="res://scenes/Dininghall031Nav.tscn" id="20_ulaxx"]
 [ext_resource type="PackedScene" uid="uid://c28es0f18kvur" path="res://scenes/Dininghall04Nav.tscn" id="21_qnw6b"]
 [ext_resource type="PackedScene" uid="uid://cihioephk7sp2" path="res://scenes/Dininghall041Nav.tscn" id="22_1wjkp"]
 [ext_resource type="AudioStream" uid="uid://bp6sln60kxlyy" path="res://Assets/Audio/SFX/notizbuch aufheben.wav" id="22_lj2cc"]
 [ext_resource type="Texture2D" uid="uid://jkwemu8d667" path="res://Assets/Art/Placeholder/Experiment/Wal_Experiment.png" id="22_ntpke"]
-[ext_resource type="Texture2D" uid="uid://b66yn1mvrv87l" path="res://Assets/Art/Placeholder/Experiment/TomDokument_Experiment.png" id="23_0x4sd"]
 [ext_resource type="PackedScene" uid="uid://67y11ra13xbj" path="res://scenes/Dininghall05Nav.tscn" id="23_qi1h4"]
 [ext_resource type="AudioStream" uid="uid://bypxc4klh8a7p" path="res://Assets/Audio/SFX/Kopfkissen rücken.wav" id="24_0ypa0"]
 [ext_resource type="PackedScene" uid="uid://b2w2de81naqf" path="res://scenes/CodeRiddle.tscn" id="24_6w61k"]
 [ext_resource type="PackedScene" uid="uid://cs3oshanxh6kn" path="res://scenes/Dininghall051Nav.tscn" id="24_8q6ki"]
-[ext_resource type="Texture2D" uid="uid://byv75rj7ws8b7" path="res://Assets/Art/Placeholder/Experiment/Schrankschlüssel_Experiment.png" id="24_yuas4"]
 [ext_resource type="PackedScene" uid="uid://d4dfc3a7qahje" path="res://scenes/DialogueInteraction.tscn" id="25_4x672"]
-[ext_resource type="Texture2D" uid="uid://cyfibjdf30b2y" path="res://Assets/Art/Placeholder/Experiment/Portraitschnipsel_Experiment.png" id="25_7o8ki"]
 [ext_resource type="AudioStream" uid="uid://d3jfrdcfia2xm" path="res://Assets/Audio/SFX/schlüssel aufheben.wav" id="25_c12nf"]
 [ext_resource type="PackedScene" uid="uid://bbtd20fe3jpp1" path="res://scenes/SlidePuzzle.tscn" id="25_rqhjm"]
 [ext_resource type="Texture2D" uid="uid://dxio8ghmqqne6" path="res://Assets/Art/Placeholder/Experiment/Captainsroomschlüssel_Experiment.png" id="26_fox68"]
-[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/Placeholder/UI/icon.svg" id="38_2hhkd"]
+[ext_resource type="Texture2D" uid="uid://nkrjlfcm4m2v" path="res://Assets/Art/Finished/2DAssets/Character Idols/Meredith_InGame.png" id="27_rsscs"]
+[ext_resource type="Texture2D" uid="uid://cok7fcpgq4h4h" path="res://Assets/Art/Finished/2DAssets/Character Idols/Crazy_guy_ingame.PNG" id="28_gh0pp"]
+[ext_resource type="Texture2D" uid="uid://kqapphbx3lk6" path="res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary/Diary_onbed.png" id="33_8hmoo"]
+[ext_resource type="Texture2D" uid="uid://wwpg1sb4025v" path="res://Assets/Art/Finished/2DAssets/Item pngs/TomDokument_Placeholder.png" id="35_g0vmy"]
+[ext_resource type="Texture2D" uid="uid://c6dfehecfwycu" path="res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Portrait_piece.png" id="36_dsafq"]
+[ext_resource type="Texture2D" uid="uid://py4uxl4nducx" path="res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Drawer_key.png" id="37_2mycj"]
+[ext_resource type="Texture2D" uid="uid://ccbjx7mjscmhj" path="res://Assets/Art/Finished/2DAssets/Item pngs/Holzbein_Placeholder.png" id="40_t0sjp"]
+[ext_resource type="Texture2D" uid="uid://b6c4on3mscb4m" path="res://Assets/Art/Finished/2DAssets/Item pngs/Messer_Placeholder.png" id="41_qf7tb"]
 [ext_resource type="PackedScene" uid="uid://c2mlwdyrxdwcw" path="res://scenes/PianoRiddle.tscn" id="42_ft0xb"]
+[ext_resource type="Texture2D" uid="uid://82u1eou8fcb1" path="res://Assets/Art/Finished/2DAssets/Item pngs/Seehund_Placeholder.png" id="44_cp7c3"]
 [ext_resource type="PackedScene" uid="uid://bafqx5p03hpru" path="res://scenes/Menus/PauseMenu.tscn" id="44_ktcvb"]
+[ext_resource type="Texture2D" uid="uid://dfxt40qo2ecuu" path="res://Assets/Art/Finished/2DAssets/Item pngs/Delphin_Placeholder.png" id="45_ak016"]
+[ext_resource type="Texture2D" uid="uid://cblfnjueu21xu" path="res://Assets/Art/Finished/2DAssets/Item pngs/Kerze_Placeholder.png" id="46_7vtsh"]
+[ext_resource type="AudioStream" uid="uid://cmwc2h5h70t3r" path="res://Assets/Audio/BGM/captains room.wav" id="47_psw4p"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xdr3c"]
 
 [sub_resource type="Environment" id="Environment_s72p6"]
 ambient_light_source = 3
 ambient_light_color = Color(1, 1, 1, 1)
 
 [node name="MainScene" type="Control"]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -74,8 +82,8 @@ stretch = true
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
 transparent_bg = true
 handle_input_locally = false
-size = Vector2i(1152, 648)
-render_target_update_mode = 0
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
 
 [node name="Background" parent="SubViewportContainer/SubViewport" instance=ExtResource("1_jadi2")]
 
@@ -92,8 +100,8 @@ stretch = true
 transparent_bg = true
 handle_input_locally = false
 physics_object_picking = true
-size = Vector2i(1152, 648)
-render_target_update_mode = 0
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
 
 [node name="MainNav" parent="SubViewportContainer2/SubViewport" instance=ExtResource("2_cdd04")]
 
@@ -170,14 +178,16 @@ anchor_left = 0.455729
 anchor_top = 0.601852
 anchor_right = 0.490451
 anchor_bottom = 0.66358
-offset_top = -3.05176e-05
-offset_right = 0.0
-offset_bottom = 0.0
+offset_left = -85.9997
+offset_top = -158.0
+offset_right = -52.666
+offset_bottom = -124.666
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(5, 5)
 dialogueSystem = NodePath("../DialogueSystem")
 filePath = "res://Assets/JSON/Dialogues/Scene3/MeredithDiningHall.json"
-isSelfDestroy = true
+buttonIcon = ExtResource("27_rsscs")
 metadata/_edit_use_anchors_ = true
 
 [node name="CrazyGuyInteraction" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("25_4x672")]
@@ -187,16 +197,16 @@ anchor_left = 0.455729
 anchor_top = 0.601852
 anchor_right = 0.490451
 anchor_bottom = 0.66358
-offset_left = 45.0
-offset_top = -40.0
-offset_right = 45.0
-offset_bottom = -40.0
+offset_left = -388.0
+offset_top = -397.0
+offset_right = -354.666
+offset_bottom = -363.666
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2.5, 2.5)
+scale = Vector2(9, 9)
 dialogueSystem = NodePath("../DialogueSystem")
 filePath = "res://Assets/JSON/Dialogues/Scene4/SamAltar.json"
-isSelfDestroy = true
+buttonIcon = ExtResource("28_gh0pp")
 metadata/_edit_use_anchors_ = true
 
 [node name="RadioInteraction" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("dialogueSystem") instance=ExtResource("25_4x672")]
@@ -206,16 +216,17 @@ anchor_left = 0.455729
 anchor_top = 0.601852
 anchor_right = 0.490451
 anchor_bottom = 0.66358
-offset_left = 45.0
-offset_top = -40.0
-offset_right = 45.0
-offset_bottom = -40.0
+offset_left = -586.0
+offset_top = -525.0
+offset_right = -552.666
+offset_bottom = -491.666
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(2.5, 2.5)
+scale = Vector2(11.5, 8.5)
 dialogueSystem = NodePath("../DialogueSystem")
 filePath = "res://Assets/JSON/Dialogues/Scene6/ReturnCaptainRoom.json"
 isEndScene = true
+buttonIcon = SubResource("CompressedTexture2D_xdr3c")
 metadata/_edit_use_anchors_ = true
 
 [node name="InventorySystem" parent="SubViewportContainer2/SubViewport" instance=ExtResource("19_qp1ry")]
@@ -231,7 +242,7 @@ metadata/_edit_use_anchors_ = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 5.15)
 visible = false
 item_name = "Notebook"
-item_icon = ExtResource("20_isdqg")
+item_icon = ExtResource("33_8hmoo")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "MainScene/SubViewportContainer2/SubViewport/LeftNav/Panel/PillowMove"
 sound = ExtResource("22_lj2cc")
@@ -240,7 +251,7 @@ sound = ExtResource("22_lj2cc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1, -3, -10)
 visible = false
 item_name = "Personal File"
-item_icon = ExtResource("23_0x4sd")
+item_icon = ExtResource("35_g0vmy")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
 sound = ExtResource("22_lj2cc")
@@ -249,7 +260,7 @@ sound = ExtResource("22_lj2cc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 4.25)
 visible = false
 item_name = "Portrait part"
-item_icon = ExtResource("25_7o8ki")
+item_icon = ExtResource("36_dsafq")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
 sound = ExtResource("22_lj2cc")
@@ -258,7 +269,7 @@ sound = ExtResource("22_lj2cc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.25, -3, -8)
 visible = false
 item_name = "Closet Key"
-item_icon = ExtResource("24_yuas4")
+item_icon = ExtResource("37_2mycj")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
 sound = ExtResource("25_c12nf")
@@ -276,7 +287,7 @@ sound = ExtResource("25_c12nf")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -2.25, 1.5)
 visible = false
 item_name = "Chair Piece"
-item_icon = ExtResource("38_2hhkd")
+item_icon = ExtResource("40_t0sjp")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("25_c12nf")
 
@@ -284,7 +295,7 @@ sound = ExtResource("25_c12nf")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1.25, -3.5)
 visible = false
 item_name = "Knife"
-item_icon = ExtResource("38_2hhkd")
+item_icon = ExtResource("41_qf7tb")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("25_c12nf")
 
@@ -301,7 +312,7 @@ sound = ExtResource("24_0ypa0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2.35, 1.25)
 visible = false
 item_name = "Seahound Statue"
-item_icon = ExtResource("38_2hhkd")
+item_icon = ExtResource("44_cp7c3")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("24_0ypa0")
 
@@ -309,7 +320,7 @@ sound = ExtResource("24_0ypa0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, -0.2)
 visible = false
 item_name = "Dolphine Statue"
-item_icon = ExtResource("38_2hhkd")
+item_icon = ExtResource("45_ak016")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("24_0ypa0")
 
@@ -317,14 +328,14 @@ sound = ExtResource("24_0ypa0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 2.65, 3.65)
 visible = false
 item_name = "Candle"
-item_icon = ExtResource("38_2hhkd")
+item_icon = ExtResource("46_7vtsh")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("24_0ypa0")
 
 [node name="DairyRiddle" parent="SubViewportContainer2/SubViewport" node_paths=PackedStringArray("rewardItem") instance=ExtResource("24_6w61k")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 2, 0)
 rewardItem = NodePath("../PortraitPart3D")
-code = ["5", "7", "3", "2", "8"]
+code = ["5", "7", "2", "8", "3"]
 selectOptions = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 swapScene = true
 sceneName = "captain_left_interaction_notebookCodeOpen"
@@ -354,3 +365,8 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 1.5
 
 [node name="PauseMenu" parent="." instance=ExtResource("44_ktcvb")]
 layout_mode = 1
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("47_psw4p")
+autoplay = true
+bus = &"BGM"

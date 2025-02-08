@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_qu5i0"]
 [ext_resource type="AudioStream" uid="uid://bp6sln60kxlyy" path="res://Assets/Audio/SFX/notizbuch aufheben.wav" id="2_xsp7q"]
-[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_3ndcd"]
+[ext_resource type="Texture2D" uid="uid://dvymmxkpx7tx7" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG" id="3_1ymq8"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -35,8 +35,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -272.0
 offset_top = -198.0
-offset_right = -178.0
-offset_bottom = -102.0
+offset_right = -172.0
+offset_bottom = -98.0
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.15, 1.15)
@@ -45,4 +45,4 @@ size_flags_vertical = 4
 mouse_filter = 1
 sceneID = 99
 sound = ExtResource("2_xsp7q")
-buttonIcon = ExtResource("3_3ndcd")
+buttonIcon = ExtResource("3_1ymq8")

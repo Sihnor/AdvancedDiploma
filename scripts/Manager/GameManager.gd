@@ -3,6 +3,7 @@ extends Node
 # Path to the JSON file (editable in the Inspector)
 var jsonFilePath: String = "res://scenes/JSON/gameScenes.json"
 var backgroundNode: BackgroundTexture
+var skipSlidePuzzle:bool
 
 # Dictionary to store the mappings of scene names to their textures
 var sceneTextures: Dictionary = {}

@@ -10,12 +10,12 @@
 		"name": "Sam",
 		"text": "You can’t escape… no one escapes…",
 		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuy_01.png",
-		"audio": ""
+		"audio": "res://Assets/Audio/Voices/Sam/Crazy Guy 05.wav"
 	},
 	{
 		"name": "Sam",
-		"text": "chosen ones… we’re all bound.",
-		"audio": ""
+		"text": "We are chosen ones… we’re all bound.",
+		"audio": "res://Assets/Audio/Voices/Sam/Crazy Guy 06.wav"
 	},
 	{
 		"name": "Kyra",

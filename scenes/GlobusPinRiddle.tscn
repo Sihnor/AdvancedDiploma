@@ -34,10 +34,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Pin1" type="TextureButton" parent="Panel" node_paths=PackedStringArray("globusMap")]
 layout_mode = 0
-offset_left = 280.0
-offset_top = 188.0
-offset_right = 408.0
-offset_bottom = 316.0
+offset_left = 737.0
+offset_top = 325.0
+offset_right = 865.0
+offset_bottom = 453.0
 toggle_mode = true
 texture_normal = ExtResource("2_f4nvq")
 texture_pressed = ExtResource("3_mdxnd")
@@ -47,10 +47,10 @@ globusMap = NodePath("../..")
 
 [node name="Pin2" type="TextureButton" parent="Panel" node_paths=PackedStringArray("globusMap")]
 layout_mode = 0
-offset_left = 450.0
-offset_top = 188.0
-offset_right = 578.0
-offset_bottom = 316.0
+offset_left = 940.0
+offset_top = 300.0
+offset_right = 1068.0
+offset_bottom = 428.0
 toggle_mode = true
 texture_normal = ExtResource("2_f4nvq")
 texture_pressed = ExtResource("3_mdxnd")
@@ -61,10 +61,10 @@ globusMap = NodePath("../..")
 
 [node name="Pin3" type="TextureButton" parent="Panel" node_paths=PackedStringArray("globusMap")]
 layout_mode = 0
-offset_left = 604.0
-offset_top = 191.0
-offset_right = 732.0
-offset_bottom = 319.0
+offset_left = 1094.0
+offset_top = 395.0
+offset_right = 1222.0
+offset_bottom = 523.0
 toggle_mode = true
 texture_normal = ExtResource("2_f4nvq")
 texture_pressed = ExtResource("3_mdxnd")
@@ -75,10 +75,10 @@ globusMap = NodePath("../..")
 
 [node name="Pin4" type="TextureButton" parent="Panel" node_paths=PackedStringArray("globusMap")]
 layout_mode = 0
-offset_left = 791.0
-offset_top = 190.0
-offset_right = 919.0
-offset_bottom = 318.0
+offset_left = 885.0
+offset_top = 438.0
+offset_right = 1013.0
+offset_bottom = 566.0
 toggle_mode = true
 texture_normal = ExtResource("2_f4nvq")
 texture_pressed = ExtResource("3_mdxnd")
@@ -89,10 +89,10 @@ globusMap = NodePath("../..")
 
 [node name="Pin5" type="TextureButton" parent="Panel" node_paths=PackedStringArray("globusMap")]
 layout_mode = 0
-offset_left = 360.0
-offset_top = 341.0
-offset_right = 488.0
-offset_bottom = 469.0
+offset_left = 718.0
+offset_top = 575.0
+offset_right = 846.0
+offset_bottom = 703.0
 toggle_mode = true
 texture_normal = ExtResource("2_f4nvq")
 texture_pressed = ExtResource("3_mdxnd")
@@ -103,10 +103,10 @@ globusMap = NodePath("../..")
 
 [node name="Pin6" type="TextureButton" parent="Panel" node_paths=PackedStringArray("globusMap")]
 layout_mode = 0
-offset_left = 729.0
-offset_top = 337.0
-offset_right = 857.0
-offset_bottom = 465.0
+offset_left = 895.0
+offset_top = 588.0
+offset_right = 1023.0
+offset_bottom = 716.0
 toggle_mode = true
 texture_normal = ExtResource("2_f4nvq")
 texture_pressed = ExtResource("3_mdxnd")

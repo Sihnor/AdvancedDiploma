@@ -6,10 +6,17 @@ class_name SlidePuzzleRiddle
 @export var rewardItem : PickupItem3D
 @export var gridSize: Vector2 = Vector2(3, 3) 
 @export var solvedState: Array = []
-@export var shuffle : bool
 var emptySlot: Vector2 = Vector2(2, 2) 
 var gridState: Array = []
+var pieces: Array = []
+var tmpPieces: Array = []
+var tmpGridPosition: Array = []
 var solved = false
+var gridPositions = [
+	Vector2(0, 0), Vector2(1, 0), Vector2(2, 0),
+	Vector2(0, 1), Vector2(1, 1), Vector2(2, 1),
+	Vector2(0, 2), Vector2(1, 2)  # Leave (2, 2) as emptySlot
+]
 
 func _ready():
 	if solvedState.is_empty():
@@ -18,29 +25,29 @@ func _ready():
 			["Piece4", "Piece5", "Piece6"],
 			["Piece7", "Piece8", "empty"]
 		]
-	
 	for y in range(gridSize.y):
 		var row = []
 		for x in range(gridSize.x):
 			row.append(null)  # Fill each cell with null initially
 		gridState.append(row)
-
-	var gridPositions = [
-		Vector2(0, 0), Vector2(1, 0), Vector2(2, 0),
-		Vector2(0, 1), Vector2(1, 1), Vector2(2, 1),
-		Vector2(0, 2), Vector2(1, 2)  # Leave (2, 2) as emptySlot
-	]
-	
-	var pieces = []
 	for piece in get_children():
 		if piece.name.begins_with("Piece"):
 			pieces.append(piece)
-	
+	#Engine Debugger
+	tmpPieces = pieces
+	tmpGridPosition = gridPositions
+	checkSlidePuzzleState()
+
+
+func checkSlidePuzzleState():
+	if GameManager.skipSlidePuzzle:
+		pieces = tmpPieces
+		gridPositions = tmpGridPosition
 	for i in range(pieces.size()):
 		pieces[i].gridPosition = gridPositions[i]
 		updatePiecePosition(pieces[i])
 		gridState[gridPositions[i].y][gridPositions[i].x] = pieces[i].name  # Add piece to gridState
-	if shuffle:
+	if not GameManager.skipSlidePuzzle and not solved:
 		randomizeGrid(pieces, gridPositions)
 	gridState[emptySlot.y][emptySlot.x] = "empty"
 
@@ -61,7 +68,6 @@ func movePiece(piece):
 			solved = true
 			slideSound.stream = sound
 			slideSound.play()
-			print("Solved!")
 			if rewardItem != null:
 				rewardItem.visible= true
 				SceneManager.switchScene("captain_left_interaction_windowZoom", 8, null)
@@ -85,7 +91,7 @@ func randomizeGrid(pieces: Array, gridPositions: Array):
 	var piece_names = []
 	for piece in pieces:
 		piece_names.append(piece.name)
-	if shuffle:
+	if not GameManager.skipSlidePuzzle and not solved:
 		piece_names.shuffle()
 	piece_names.append("empty")  # Add "empty" slot back
 

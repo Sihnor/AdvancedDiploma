@@ -1,14 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://cskw2ovxuw2q2"]
+[gd_scene load_steps=5 format=3 uid="uid://cskw2ovxuw2q2"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_vochk"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_3yv82"]
-[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_gta3n"]
+[ext_resource type="Texture2D" uid="uid://dvymmxkpx7tx7" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG" id="3_sdlq6"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8hcwh"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7014n"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gq8ab"]
 
 [node name="Dininghall02Nav" type="Control"]
 layout_mode = 3
@@ -29,41 +25,6 @@ grow_vertical = 2
 mouse_filter = 1
 theme_override_styles/panel = SubResource("StyleBoxEmpty_8hcwh")
 
-[node name="Piano" parent="Panel" instance=ExtResource("1_vochk")]
-layout_direction = 1
-layout_mode = 1
-offset_left = 225.0
-offset_top = 200.0
-offset_right = 265.0
-offset_bottom = 240.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-sceneName = "dininghall05"
-sceneID = 30
-sound = ExtResource("2_3yv82")
-buttonIcon = SubResource("CompressedTexture2D_7014n")
-
-[node name="DisplayCase" parent="Panel" instance=ExtResource("1_vochk")]
-layout_direction = 1
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -377.0
-offset_top = 26.0
-offset_right = -337.0
-offset_bottom = 66.0
-grow_horizontal = 0
-grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-sceneName = "dininghall04"
-sceneID = 28
-sound = ExtResource("2_3yv82")
-buttonIcon = SubResource("CompressedTexture2D_gq8ab")
-
 [node name="Exit" parent="Panel" instance=ExtResource("1_vochk")]
 layout_direction = 1
 layout_mode = 1
@@ -73,14 +34,51 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -20.0
-offset_top = -123.0
-offset_right = 20.0
-offset_bottom = -83.0
+offset_top = -165.0
+offset_right = 80.0
+offset_bottom = -65.0
 grow_horizontal = 2
 grow_vertical = 0
+scale = Vector2(1.5, 1.5)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "dininghall01"
 sceneID = 24
 sound = ExtResource("2_3yv82")
-buttonIcon = ExtResource("3_gta3n")
+buttonIcon = ExtResource("3_sdlq6")
+
+[node name="Piano" parent="Panel" instance=ExtResource("1_vochk")]
+layout_direction = 1
+offset_left = 578.0
+offset_top = 663.0
+offset_right = 678.0
+offset_bottom = 763.0
+rotation = -0.785398
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "dininghall05"
+sceneID = 30
+sound = ExtResource("2_3yv82")
+
+[node name="DisplayCase" parent="Panel" instance=ExtResource("1_vochk")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 330.0
+offset_right = -228.0
+offset_bottom = 430.0
+grow_horizontal = 0
+grow_vertical = 2
+rotation = -1.5708
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "dininghall04"
+sceneID = 28
+sound = ExtResource("2_3yv82")

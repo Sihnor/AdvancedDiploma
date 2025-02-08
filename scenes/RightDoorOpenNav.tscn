@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://btrvd3iljyob2"]
+[gd_scene load_steps=7 format=3 uid="uid://btrvd3iljyob2"]
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_tcv07"]
 [ext_resource type="AudioStream" uid="uid://exrf1tynuho4" path="res://Assets/Audio/SFX/Tür öffnen.wav" id="2_v5l8e"]
-[ext_resource type="Texture2D" uid="uid://dvn66wqx220w3" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2147.PNG" id="3_0hc2c"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="3_ie6im"]
+[ext_resource type="Texture2D" uid="uid://tqqab77njwae" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG" id="3_j1p28"]
+[ext_resource type="AudioStream" uid="uid://c2480a1xmsxhj" path="res://Assets/Audio/BGM/ dining hall.wav" id="4_wqpx4"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -35,17 +36,19 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 offset_left = -217.0
-offset_top = -149.0
-offset_right = -123.0
-offset_bottom = -53.0
+offset_top = -172.0
+offset_right = -117.0
+offset_bottom = -72.0
 grow_horizontal = 0
 grow_vertical = 2
+scale = Vector2(1.5, 1.5)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "dininghall01"
 sceneID = 24
 sound = ExtResource("2_v5l8e")
-buttonIcon = ExtResource("3_0hc2c")
+buttonIcon = ExtResource("3_j1p28")
+music = ExtResource("4_wqpx4")
 
 [node name="Back" parent="Panel" instance=ExtResource("1_tcv07")]
 layout_direction = 1
@@ -57,10 +60,11 @@ anchor_right = 1.0
 anchor_bottom = 0.5
 offset_left = -217.0
 offset_top = -9.0
-offset_right = -123.0
-offset_bottom = 87.0
+offset_right = -117.0
+offset_bottom = 91.0
 grow_horizontal = 0
 grow_vertical = 2
+scale = Vector2(1.5, 1.5)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_right"

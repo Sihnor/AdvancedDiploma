@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_3f01k"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_p5yso"]
-[ext_resource type="Texture2D" uid="uid://dtx15pbxkqlxg" path="res://Assets/Art/Finished/2DAssets/UI/Pfeile/IMG_2149.PNG" id="3_qxtsg"]
+[ext_resource type="Texture2D" uid="uid://dvymmxkpx7tx7" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG" id="3_l15na"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
 
@@ -34,12 +34,12 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = -202.0
-offset_top = -123.0
-offset_right = -108.0
-offset_bottom = -27.0
+offset_top = -165.0
+offset_right = -102.0
+offset_bottom = -65.0
 grow_horizontal = 0
 grow_vertical = 0
-scale = Vector2(1.35, 1.25)
+scale = Vector2(1.5, 1.5)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 sceneName = "captain_topLeft"
@@ -47,4 +47,4 @@ sceneID = 12
 selfDestroy = null
 isSlidePuzzle = null
 sound = ExtResource("2_p5yso")
-buttonIcon = ExtResource("3_qxtsg")
+buttonIcon = ExtResource("3_l15na")

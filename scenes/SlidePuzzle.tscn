@@ -18,7 +18,6 @@
 [node name="PuzzleRoot" type="Node3D"]
 script = ExtResource("1_fgl5l")
 sound = ExtResource("2_n6vhp")
-shuffle = true
 
 [node name="Piece1" type="Area3D" parent="."]
 script = ExtResource("1_81s26")

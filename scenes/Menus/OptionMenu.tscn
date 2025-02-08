@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://scripts/Menus/OptionsMenu.gd" id="1_q3l5x"]
 [ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_8v2u7"]
-[ext_resource type="Texture2D" uid="uid://lcqektc3sfpy" path="res://Assets/Art/Finished/2DAssets/UI/Einstellungen (Credits noch in progress)/UI_Einstellungen_Hintergrund_Fertig.png" id="2_ehefa"]
+[ext_resource type="Texture2D" uid="uid://lcqektc3sfpy" path="res://Assets/Art/Finished/UI/Einstellungen (Credits noch in progress)/UI_Einstellungen_Hintergrund_Fertig.png" id="2_ehefa"]
 [ext_resource type="AudioStream" uid="uid://btel43gq0gtg5" path="res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-33.wav" id="3_rbt22"]
-[ext_resource type="AudioStream" uid="uid://d1cs07ry5wlms" path="res://Assets/Audio/BGM/chillBeats.mp3" id="4_mi3qg"]
+[ext_resource type="AudioStream" uid="uid://b6dydbc3443js" path="res://Assets/Audio/BGM/main theme.wav" id="5_apnjj"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ne8p8"]
 
@@ -72,14 +72,14 @@ size_flags_vertical = 4
 
 [node name="MasterVolume" type="Label" parent="Panel/MarginContainer/VBoxContainer/MasterContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
 text = "Master Volume"
 label_settings = SubResource("LabelSettings_poo2q")
 
 [node name="MasterSlider" type="HSlider" parent="Panel/MarginContainer/VBoxContainer/MasterContainer"]
-custom_minimum_size = Vector2(300, 25)
+custom_minimum_size = Vector2(300, 29)
 layout_mode = 2
 size_flags_horizontal = 10
-focus_mode = 0
 min_value = -70.0
 max_value = 0.0
 
@@ -166,6 +166,23 @@ focus_mode = 0
 alignment = 1
 icon_alignment = 1
 
+[node name="SkipSlidePuzzle" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Fullscreen" type="Label" parent="Panel/MarginContainer/VBoxContainer/SkipSlidePuzzle"]
+layout_mode = 2
+text = "Skip Slide Puzzle"
+label_settings = SubResource("LabelSettings_4bk1q")
+
+[node name="Skip" type="CheckBox" parent="Panel/MarginContainer/VBoxContainer/SkipSlidePuzzle"]
+custom_minimum_size = Vector2(300, 25)
+layout_mode = 2
+size_flags_horizontal = 10
+focus_mode = 0
+alignment = 1
+icon_alignment = 1
+
 [node name="Button" type="Button" parent="Panel/MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
@@ -193,7 +210,7 @@ stream = ExtResource("3_rbt22")
 bus = &"Voice"
 
 [node name="BGM" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_mi3qg")
+stream = ExtResource("5_apnjj")
 bus = &"BGM"
 
 [connection signal="value_changed" from="Panel/MarginContainer/VBoxContainer/MasterContainer/MasterSlider" to="." method="_on_master_slider_value_changed"]
@@ -202,4 +219,5 @@ bus = &"BGM"
 [connection signal="value_changed" from="Panel/MarginContainer/VBoxContainer/VoiceContainer/VoiceSlider" to="." method="_on_voice_slider_value_changed"]
 [connection signal="item_selected" from="Panel/MarginContainer/VBoxContainer/ResolutionContainer/OptionButton" to="." method="_on_option_button_item_selected"]
 [connection signal="toggled" from="Panel/MarginContainer/VBoxContainer/FullscreenContainer/CheckBox" to="." method="_on_check_box_toggled"]
+[connection signal="toggled" from="Panel/MarginContainer/VBoxContainer/SkipSlidePuzzle/Skip" to="." method="_on_skip_toggled"]
 [connection signal="pressed" from="Panel/MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
