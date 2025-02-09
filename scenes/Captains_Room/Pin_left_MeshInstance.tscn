@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl33at6iul1ie"]
+
+[ext_resource type="Texture2D" uid="uid://ccvyngcs07bbr" path="res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_left/Pin_left.png" id="1_3jjcj"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5ywkw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eb8qo"]
+transparency = 1
+albedo_texture = ExtResource("1_3jjcj")
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+mesh = SubResource("PlaneMesh_5ywkw")
+surface_material_override/0 = SubResource("StandardMaterial3D_eb8qo")
