@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://e07uiky6fod7"]
+
+[ext_resource type="Texture2D" uid="uid://b6lqu1tc0732h" path="res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Wardrobe_Whale/Wardrobe_whale.png" id="1_d83w4"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_hxrwr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pcoab"]
+transparency = 1
+albedo_texture = ExtResource("1_d83w4")
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+mesh = SubResource("PlaneMesh_hxrwr")
+surface_material_override/0 = SubResource("StandardMaterial3D_pcoab")
