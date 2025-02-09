@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739115090
+::res://::1739128719
 default_bus_layout.tres::AudioBusLayout::895420128603570091::1739107808::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1739107808::0::1::::<><>::
 README.md::TextFile::-1::1731938671::0::1::::<><>::
@@ -57,7 +57,7 @@ Tom_01_grey.png::CompressedTexture2D::8742018049272068235::1739107805::173910813
 Tom_02.png::CompressedTexture2D::2904014500328043990::1739107805::1739108134::1::::<><>::
 Tom_02_grey.png::CompressedTexture2D::2799498705521686052::1739107805::1739108133::1::::<><>::
 Tom_InGame.png::CompressedTexture2D::1219873011604849875::1739107805::1739108133::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Item pngs/::1739108131
+::res://Assets/Art/Finished/2DAssets/Item pngs/::1739128752
 Delphin_Placeholder.png::CompressedTexture2D::7558893706971606228::1739107805::1739108131::1::::<><>::
 Holzbein_Placeholder.png::CompressedTexture2D::4915872658328960631::1739107805::1739108131::1::::<><>::
 Kerze_Placeholder.png::CompressedTexture2D::4866065670419288098::1739107805::1739108130::1::::<><>::
@@ -65,45 +65,47 @@ Messer_Placeholder.png::CompressedTexture2D::4568190112512555930::1739107805::17
 Seehund_Placeholder.png::CompressedTexture2D::2373231042585208060::1739107805::1739108131::1::::<><>::
 TomDokument_Placeholder.png::CompressedTexture2D::1590493733779741109::1739107805::1739108130::1::::<><>::
 ::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/::1739115090
-::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_closed/::1739114644
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_closed/::1739115450
 Diary_closed.png::CompressedTexture2D::797210088919911340::1739107805::1739114614::1::::<><>::
 Diary_closed_MeshInstance.tscn::PackedScene::5468818028901760867::1739114644::0::1::::<><>::uid://lmf60l1o8vou::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_closed/Diary_closed.png
-Diary_closed_opacity.png::CompressedTexture2D::2615173121697798982::1739107805::1739114569::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_onbed/::1739114786
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_onbed/::1739115454
 Diary_onbed.png::CompressedTexture2D::734946066095021519::1739107805::1739114688::1::::<><>::
 Diary_onbed_MeshInstance.tscn::PackedScene::4955465964847545602::1739114786::0::1::::<><>::uid://kqapphbx3lk6::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_onbed/Diary_onbed.png
-Diary_onbed_opacity.png::CompressedTexture2D::480935148046008433::1739107805::1739114547::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_open/::1739114753
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_open/::1739115464
 Diary_open.png::CompressedTexture2D::7344732099261338200::1739107805::1739114747::1::::<><>::
 Diary_open_MeshInstance.tscn::PackedScene::3023011001479974509::1739114753::0::1::::<><>::uid://dcv3wujjvddlo::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_open/Diary_open.png
-Diary_open_opacity.png::CompressedTexture2D::4172431785153865093::1739107805::1739114583::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Drawer_Key/::1739114296
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Drawer_Key/::1739115467
 Drawer_key.png::CompressedTexture2D::1104175455701288435::1739107805::1739110238::1::::<><>::
 Drawer_Key_MeshInstance.tscn::PackedScene::6592217555782126446::1739114296::0::1::::<><>::uid://py4uxl4nducx::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Drawer_Key/Drawer_key.png
-Drawer_key_opacity.png::CompressedTexture2D::2604593477361487081::1739107805::1739110241::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_left/::1739115269
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_left/::1739115470
 Pin_left.png::CompressedTexture2D::4958051729726895623::1739115085::1739115256::1::::<><>::
 Pin_left_MeshInstance.tscn::PackedScene::4480759435481427492::1739115269::0::1::::<><>::uid://ccvyngcs07bbr::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_left/Pin_left.png
-Pin_left_opacity.png::CompressedTexture2D::6955226659199344595::1739115085::1739115092::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_middle/::1739115302
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_middle/::1739115473
 Pin_middle.png::CompressedTexture2D::7673623581940338045::1739115097::1739115288::1::::<><>::
 Pin_middle_MeshInstance.tscn::PackedScene::3291688378146529718::1739115302::0::1::::<><>::uid://dhlfpu56gcm1j::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_middle/Pin_middle.png
-Pin_middle_opacity.png::CompressedTexture2D::8896492684753327710::1739115097::1739115098::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_right/::1739115343
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_right/::1739115476
 Pin_right.png::CompressedTexture2D::4808795963552740100::1739115103::1739115328::1::::<><>::
 Pin_right_MeshInstance.tscn::PackedScene::944131540024767570::1739115343::0::1::::<><>::uid://carofw8vyuny7::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_right/Pin_right.png
-Pin_right_opacity.png::CompressedTexture2D::3372817976978863680::1739115103::1739115104::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Portrait_piece/::1739114459
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Portrait_piece/::1739115480
 Portrait_piece.png::CompressedTexture2D::6955199755507950968::1739107805::1739114355::1::::<><>::
 Portrait_piece_MeshInstance.tscn::PackedScene::5408239451329254251::1739114459::0::1::::<><>::uid://c6dfehecfwycu::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Portrait_piece/Portrait_piece.png
-Portrait_piece_opacity.png::CompressedTexture2D::2201821447929605757::1739107805::1739114355::1::::<><>::
 ::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Schreibtisch_Zettel/::1739114880
 Schreibtisch_Zettel.PNG::CompressedTexture2D::6552139790951610622::1739107805::1739114861::1::::<><>::
 Schreibtisch_zettel_MeshInstance.tscn::PackedScene::1873009766591872601::1739114880::0::1::::<><>::uid://c0l51xsxfe4fq::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Schreibtisch_Zettel/Schreibtisch_Zettel.PNG
-::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Wardrobe_Whale/::1739114591
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Wardrobe_Whale/::1739115486
 Wardrobe_whale.png::CompressedTexture2D::4585991574613081757::1739107805::1739114478::1::::<><>::
 Wardrobe_whale_MeshInstance.tscn::PackedScene::334343914817183446::1739114591::0::1::::<><>::uid://b6lqu1tc0732h::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Wardrobe_Whale/Wardrobe_whale.png
-Wardrobe_whale_opacity.png::CompressedTexture2D::9014166920289459968::1739107805::1739114380::1::::<><>::
+::res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/::1739128767
+Diary_closed_64.png::CompressedTexture2D::6792682374743223369::1739128767::1739128768::1::::<><>::
+Diary_onbed_64.png::CompressedTexture2D::2363831797646452202::1739128767::1739128768::1::::<><>::
+Diary_open_64.png::CompressedTexture2D::4070715878115177684::1739128767::1739128768::1::::<><>::
+Drawer_key_64.png::CompressedTexture2D::583621706795783536::1739128767::1739128768::1::::<><>::
+Pin_left_64.png::CompressedTexture2D::4733881879087632054::1739128767::1739128768::1::::<><>::
+Pin_middle_64.png::CompressedTexture2D::767606485294851607::1739128767::1739128768::1::::<><>::
+Pin_right_64.png::CompressedTexture2D::6901846959794742974::1739128767::1739128768::1::::<><>::
+Portrait_piece_64.png::CompressedTexture2D::4840604103085709743::1739128767::1739128768::1::::<><>::
+Schreibtisch_Zettel_64.png::CompressedTexture2D::3532115963950819982::1739128767::1739128768::1::::<><>::
+Wardrobe_whale_64.png::CompressedTexture2D::8740507265202633680::1739128767::1739128768::1::::<><>::
 ::res://Assets/Art/Finished/2DAssets/Scenes/::1739107805
 ::res://Assets/Art/Finished/2DAssets/Scenes/captain room/::1739108137
 CaptainsRoom_Shot_1.0.1.1_noPins.png::CompressedTexture2D::908833109334999569::1739107805::1739108130::1::::<><>::
@@ -303,8 +305,8 @@ Pinhole.png::CompressedTexture2D::6069360837283710840::1739107806::1739108128::1
 Plush.png::CompressedTexture2D::8061931604138094536::1739107806::1739108128::1::::<><>::
 PortraitPart.png::CompressedTexture2D::7301093753989224691::1739107806::1739108128::1::::<><>::
 ::res://Assets/Audio/::1739107807
-::res://Assets/Audio/BGM/::1739115364
- dining hall.wav::AudioStreamWAV::6729855447316425603::1739107806::1739115373::1::::<><>::
+::res://Assets/Audio/BGM/::1739128754
+ dining hall.wav::AudioStreamWAV::6729855447316425603::1739107806::1739128754::1::::<><>::
 captains room.wav::AudioStreamWAV::5660693866422270653::1739107806::1739108139::1::::<><>::
 Hallway.wav::AudioStreamWAV::337250804884147676::1739107806::1739108139::1::::<><>::
 main theme.wav::AudioStreamWAV::4569930591867471212::1739107807::1739108141::1::::<><>::
@@ -547,9 +549,9 @@ Schreibtisch_zettel_MeshInstance.tscn::PackedScene::6979762574573345296::1739114
 Wardrobe_whale_MeshInstance.tscn::PackedScene::1848278418207079815::1739114977::0::1::::<><>::uid://b6lqu1tc0732h::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Wardrobe_Whale/Wardrobe_whale.png
 ::res://scenes/JSON/::1739107808
 gameScenes.json::JSON::-1::1739107808::0::1::::<><>::
-::res://scenes/Menus/::1739111029
+::res://scenes/Menus/::1739126671
 EndMenu.tscn::PackedScene::8343304317358490935::1739107808::0::1::::<><>::res://scripts/Menus/EndMenu.gd<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg<>res://Assets/Art/Finished/Menu_Intro/OVG/loop_Render_Final.ogv<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://b6dydbc3443js::::res://Assets/Audio/BGM/main theme.wav
-MainMenu.tscn::PackedScene::8206362530617527680::1739111028::0::1::::<><>::res://scripts/Menus/MainMenu.gd<>uid://bewjgrsldbg2i::::res://Assets/Art/Finished/UI/Startbildschirm/Startbildschirm_Fertig.png<>res://Assets/Art/Finished/Menu_Intro/OVG/Intro_Render_Final.ogv<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>res://Assets/Art/Finished/Menu_Intro/OVG/loop_Render_Final.ogv<>uid://b6dydbc3443js::::res://Assets/Audio/BGM/main theme.wav
+MainMenu.tscn::PackedScene::8206362530617527680::1739126671::0::1::::<><>::res://scripts/Menus/MainMenu.gd<>uid://bewjgrsldbg2i::::res://Assets/Art/Finished/UI/Startbildschirm/Startbildschirm_Fertig.png<>res://Assets/Art/Finished/Menu_Intro/OVG/Intro_Render_Final.ogv<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>res://Assets/Art/Finished/Menu_Intro/OVG/loop_Render_Final.ogv<>uid://b6dydbc3443js::::res://Assets/Audio/BGM/main theme.wav
 OptionMenu.tscn::PackedScene::4351391897530304468::1739107808::0::1::::<><>::res://scripts/Menus/OptionsMenu.gd<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://lcqektc3sfpy::::res://Assets/Art/Finished/UI/Einstellungen (Credits noch in progress)/UI_Einstellungen_Hintergrund_Fertig.png<>uid://btel43gq0gtg5::::res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-33.wav<>uid://b6dydbc3443js::::res://Assets/Audio/BGM/main theme.wav
 PauseMenu.tscn::PackedScene::2397756717653642602::1739107808::0::1::::<><>::res://scripts/Menus/PauseMenu.gd<>uid://b283124h4t7vc::::res://scenes/Menus/OptionMenu.tscn<>res://scripts/Menus/pauseNode.gd<>uid://dc140nwusiat1::::res://Assets/Art/Finished/UI/Pausenbildschirm/Pausenbildschirm_holzbrett.webp
 ::res://scripts/::1739107808
