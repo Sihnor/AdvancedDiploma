@@ -1,537 +1,586 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730840848
-default_bus_layout.tres::AudioBusLayout::895420128603570091::1738003276::0::1::::<><>::
-export_presets.cfg::TextFile::-1::1738765622::0::1::::<><>::
-README.md::TextFile::-1::1730840850::0::1::::<><>::
-::res://Assets/::1732039766
-::res://Assets/Art/::1732039766
-::res://Assets/Art/CharacterIdols/::1736730358
-::res://Assets/Art/CharacterIdols/Kyra/::1736945147
-KyraGrey_01.png::CompressedTexture2D::3581950554345362566::1736945894::1736945894::1::::<><>::
-KyraGrey_02.png::CompressedTexture2D::8516296665644171414::1736945900::1736945900::1::::<><>::
-Kyra_01.png::CompressedTexture2D::1576116266099901541::1736730360::1736945154::1::::<><>::
-Kyra_02.png::CompressedTexture2D::2806826040075959471::1736945908::1736945910::1::::<><>::
-::res://Assets/Art/CharacterIdols/Meredith/::1736945173
-Meredith_01.png::CompressedTexture2D::4387551268216540825::1736730360::1736945180::1::::<><>::
-Meredith_01_grey.png::CompressedTexture2D::3935761609415096932::1736730360::1736945180::1::::<><>::
-::res://Assets/Art/CharacterIdols/Tom/::1736945197
-Tom_01.png::CompressedTexture2D::8780004987672479398::1736730360::1736945204::1::::<><>::
-Tom_01_grey.png::CompressedTexture2D::1594936209850771715::1736730360::1736945204::1::::<><>::
-::res://Assets/Art/Crate/::1732039766
-Crate.fbx::PackedScene::5042284837094015627::1732039768::1735414344::1::::<><>::
-::res://Assets/Art/Crate/Textures/::1732039766
-Crate_albedo.png::CompressedTexture2D::4832467860665642763::1732039768::1735414336::1::::<><>::
-Crate_ao.png::CompressedTexture2D::2371818429038106233::1732039768::1735414338::1::::<><>::
-Crate_normal.png::CompressedTexture2D::9002973667354351693::1732039768::1735414336::1::::<><>::
-::res://Assets/Art/Dialoge/::1736946274
-Dialogbalken links.png::CompressedTexture2D::3459729125507229425::1736946328::1736946328::1::::<><>::
-dialogbalken mitte.png::CompressedTexture2D::4564893529981738118::1736946322::1736946322::1::::<><>::
-Dialogbalken rechts.png::CompressedTexture2D::8044193930472954891::1736946332::1736946334::1::::<><>::
-Left_Dialogue_styleboxtexture.tres::StyleBoxTexture::1351439204302279662::1738968850::0::1::::<><>::uid://g8olr2siwa31::::res://Assets/Art/Finished/UI/Dialoge/Dialogbalken rechts.png
-Middle_Dialogue_styleboxtexture.tres::StyleBoxTexture::5655851450202458541::1736954964::0::1::::<><>::uid://b6bjenx34bo6y::::res://Assets/Art/Dialoge/dialogbalken mitte.png
-Right_Dialogue_styleboxtexture.tres::StyleBoxTexture::4245030436470401975::1737034834::0::1::::<><>::uid://bpj6h6uwdmgh2::::res://Assets/Art/Dialoge/Dialogbalken links.png
-::res://Assets/Art/Finished/::1737877845
-::res://Assets/Art/Finished/2DAssets/::1737877865
-::res://Assets/Art/Finished/2DAssets/Character Idols/::1737877865
-CrazyGuyGrey_01.png::CompressedTexture2D::2987848331856400746::1737877866::1737877872::1::::<><>::
-CrazyGuy_01.png::CompressedTexture2D::2748543940396540715::1737877866::1737877872::1::::<><>::
-Crazy_guy_ingame.PNG::CompressedTexture2D::5778080957111213925::1738977390::1738977390::1::::<><>::
-KyraGrey_01.png::CompressedTexture2D::226606095908436943::1737877866::1737877872::1::::<><>::
-KyraGrey_02.png::CompressedTexture2D::3193535570547431653::1737877866::1737877872::1::::<><>::
-Kyra_01.png::CompressedTexture2D::1230692103435203999::1737877866::1737877872::1::::<><>::
-Kyra_02.png::CompressedTexture2D::3789479319821678583::1737877866::1737877872::1::::<><>::
-Meredith_01.png::CompressedTexture2D::5816626116046664027::1737877866::1737877872::1::::<><>::
-Meredith_01_grey.png::CompressedTexture2D::7846697161354807034::1737877866::1737877872::1::::<><>::
-Meredith_02.png::CompressedTexture2D::2680235789282644562::1737877866::1737877872::1::::<><>::
-Meredith_02_grey.png::CompressedTexture2D::3585588551246683114::1737877866::1737877872::1::::<><>::
-Meredith_InGame.png::CompressedTexture2D::934147591446127875::1737877866::1737877870::1::::<><>::
-Tom_01.png::CompressedTexture2D::1728779545133845689::1737877866::1737877872::1::::<><>::
-Tom_01_grey.png::CompressedTexture2D::8742018049272068235::1737877866::1737877872::1::::<><>::
-Tom_02.png::CompressedTexture2D::2904014500328043990::1737877866::1737877872::1::::<><>::
-Tom_02_grey.png::CompressedTexture2D::2799498705521686052::1737877866::1737877872::1::::<><>::
-Tom_InGame.png::CompressedTexture2D::1219873011604849875::1737877866::1737877870::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Item pngs/::1737877865
-Delphin_Placeholder.png::CompressedTexture2D::7558893706971606228::1738962998::1738963000::1::::<><>::
-Holzbein_Placeholder.png::CompressedTexture2D::4915872658328960631::1738962998::1738963000::1::::<><>::
-Kerze_Placeholder.png::CompressedTexture2D::4866065670419288098::1738962998::1738963000::1::::<><>::
-Messer_Placeholder.png::CompressedTexture2D::4568190112512555930::1738962998::1738963000::1::::<><>::
-Seehund_Placeholder.png::CompressedTexture2D::2373231042585208060::1738962998::1738963000::1::::<><>::
-TomDokument_Placeholder.png::CompressedTexture2D::1590493733779741109::1738962998::1738963000::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/::1738962997
-Drawer_key.png::CompressedTexture2D::1104175455701288435::1738962998::1738963000::1::::<><>::
-Drawer_key_opacity.png::CompressedTexture2D::2604593477361487081::1738962998::1738963000::1::::<><>::
-Portrait_piece.png::CompressedTexture2D::6955199755507950968::1738962998::1738978352::1::::<><>::
-Portrait_piece_opacity.png::CompressedTexture2D::2201821447929605757::1738962998::1738978360::1::::<><>::
-Schreibtisch_Zettel.PNG::CompressedTexture2D::6552139790951610622::1738962998::1738963000::1::::<><>::
-Wardrobe_whale.png::CompressedTexture2D::4585991574613081757::1738962998::1738963000::1::::<><>::
-Wardrobe_whale_opacity.png::CompressedTexture2D::9014166920289459968::1738962998::1738963000::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary/::1738962997
-Diary_closed.png::CompressedTexture2D::797210088919911340::1738962998::1738963000::1::::<><>::
-Diary_closed_opacity.png::CompressedTexture2D::2615173121697798982::1738962998::1738963000::1::::<><>::
-Diary_onbed.png::CompressedTexture2D::734946066095021519::1738962998::1738963000::1::::<><>::
-Diary_onbed_opacity.png::CompressedTexture2D::480935148046008433::1738962998::1738963000::1::::<><>::
-Diary_open.png::CompressedTexture2D::7344732099261338200::1738962998::1738963000::1::::<><>::
-Diary_open_opacity.png::CompressedTexture2D::4172431785153865093::1738962998::1738963000::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Scenes/::1737877865
-::res://Assets/Art/Finished/2DAssets/Scenes/captain room/::1737877865
-CaptainsRoom_Shot_1.0.1.1_noPins.png::CompressedTexture2D::908833109334999569::1737877866::1737877870::1::::<><>::
-CaptainsRoom_Shot_1.0.1.1_PuzzleSolved.png::CompressedTexture2D::2990852699380420772::1737877866::1737877870::1::::<><>::
-CaptainsRoom_Shot_1.0.1.1_withPins.png::CompressedTexture2D::7308952562907439763::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.1.2_noNote.png::CompressedTexture2D::7643009989647751881::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.1.2_withNote.png::CompressedTexture2D::2087438568967358559::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.1_noKey.png::CompressedTexture2D::8730119747479576186::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.1_withKey.png::CompressedTexture2D::8406852422987847026::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.2.1_MapCloseup.png::CompressedTexture2D::6839570918610509485::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.2.2_Radiocloseup.png::CompressedTexture2D::7113010944661495383::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.2.3_BookpuzzleSolved.png::CompressedTexture2D::8396583678795890957::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.2.3_BooksCloseup.png::CompressedTexture2D::6501713461397222185::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.2.4.png::CompressedTexture2D::872183424129237176::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.2.png::CompressedTexture2D::6537804711246397220::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.3_noKey.png::CompressedTexture2D::4182972114195334074::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.3_withKey.png::CompressedTexture2D::1736166427997823852::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.4_noStatue.png::CompressedTexture2D::7254086250290890546::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.4_withStatue.png::CompressedTexture2D::6579584325105077460::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.0.png::CompressedTexture2D::8198624251716052028::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.1.1_afterpuzzle.png::CompressedTexture2D::559208315809578401::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.1.1_beforepuzzle.png::CompressedTexture2D::8181047215620865977::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.1.2.png::CompressedTexture2D::8872561013452100863::1737877866::1737877872::1::::<><>::
-CaptainsRoom_Shot_1.1.3.png::CompressedTexture2D::7745789563766972832::1737877868::1737877870::1::::<><>::
-CaptainsRoom_Shot_1.1.png::CompressedTexture2D::4151293449824027187::1737877868::1737877870::1::::<><>::
-CaptainsRoom_Shot_1.2.png::CompressedTexture2D::8937712212972750172::1737877868::1737877870::1::::<><>::
-CaptainsRoom_Shot_1.3.png::CompressedTexture2D::9014371258365164510::1737877868::1737877870::1::::<><>::
-CaptainsRoom_Shot_1.4.png::CompressedTexture2D::6438920746583825007::1737877868::1737877870::1::::<><>::
-CaptainsRoom_Shot_1.5_noDiary.png::CompressedTexture2D::7689649882306969875::1737877868::1737877870::1::::<><>::
-CaptainsRoom_Shot_1.5_withDiary.png::CompressedTexture2D::6605973504614750333::1737877868::1737877870::1::::<><>::
-::res://Assets/Art/Finished/2DAssets/Scenes/dining hall/::1737877866
-DiningHall_01.jpeg::CompressedTexture2D::5951123936946623882::1737877868::1737877870::1::::<><>::
-DiningHall_02.jpeg::CompressedTexture2D::8228691603877138780::1737877868::1737877870::1::::<><>::
-DiningHall_03.jpeg::CompressedTexture2D::3388999207508261877::1737877868::1737877870::1::::<><>::
-DiningHall_04.jpeg::CompressedTexture2D::1390698141189737501::1737877868::1737877870::1::::<><>::
-DiningHall_05.jpeg::CompressedTexture2D::8485387756927217298::1737877868::1737877870::1::::<><>::
-::res://Assets/Art/Finished/3DAssets/::1737877865
-::res://Assets/Art/Finished/Menu_Intro/::1737932449
-Intro_Render_Final.ogv::VideoStreamTheora::-1::1737932836::0::1::::<><>::
-LoopIntro_Render_Final.ogv::VideoStreamTheora::-1::1737932836::0::1::::<><>::
-loop_Render_Final.ogv::VideoStreamTheora::-1::1737932836::0::1::::<><>::
-::res://Assets/Art/Finished/Menu_Intro/OVG/::1738001649
-Intro_Render_Final.ogv::VideoStreamTheora::-1::1738001662::0::1::::<><>::
-loop_Render_Final.ogv::VideoStreamTheora::-1::1738001662::0::1::::<><>::
-::res://Assets/Art/Finished/Navigation/::1736948703
-Pfeil_links.webp::CompressedTexture2D::5247951001965295064::1736948758::1738973010::1::::<><>::
-Pfeil_oben.webp::CompressedTexture2D::816969877400142100::1736948752::1738973010::1::::<><>::
-Pfeil_rechts.webp::CompressedTexture2D::6811795395802130405::1736948764::1738973010::1::::<><>::
-Pfeil_unten.webp::CompressedTexture2D::6651834204583041442::1736948742::1738973010::1::::<><>::
-::res://Assets/Art/Finished/UI/::1737877866
-::res://Assets/Art/Finished/UI/Dialoge/::1737877866
-Dialogbalken links.png::CompressedTexture2D::7323202507426360959::1737877868::1738962354::1::::<><>::
-dialogbalken mitte.png::CompressedTexture2D::380715078081827627::1737877868::1738962354::1::::<><>::
-Dialogbalken rechts.png::CompressedTexture2D::490128144779916930::1737877868::1738962354::1::::<><>::
-Dialogbalken_next.PNG::CompressedTexture2D::2311500052465946129::1738962444::1738962446::1::::<><>::
-::res://Assets/Art/Finished/UI/Einstellungen (Credits noch in progress)/::1737877866
-UI_Einstellungen_Accessibility_Fertig.png::CompressedTexture2D::1366410419887618201::1737877868::1738962354::1::::<><>::
-UI_Einstellungen_Audio_Fertig.png::CompressedTexture2D::6500574997325826685::1737877868::1738962354::1::::<><>::
-UI_Einstellungen_Controls_Fertig.png::CompressedTexture2D::218430373055135250::1737877868::1738962354::1::::<><>::
-UI_Einstellungen_Fertig.png::CompressedTexture2D::4794306704016084146::1737877868::1738962354::1::::<><>::
-UI_Einstellungen_Hintergrund_Fertig.png::CompressedTexture2D::777185205300146170::1737877868::1738962354::1::::<><>::
-UI_Einstellungen_Regler.png::CompressedTexture2D::8491975819701260492::1737877868::1738962354::1::::<><>::
-UI_Einstellungen_Video_Fertig.png::CompressedTexture2D::1715365659712172856::1737877868::1738962354::1::::<><>::
-UI_Einstellungen_X.png::CompressedTexture2D::7495847821493222394::1737877868::1738962354::1::::<><>::
-::res://Assets/Art/Finished/UI/Inventar/::1737877866
-Inventar_fertig.webp::CompressedTexture2D::4235235821867447916::1737877868::1738962354::1::::<><>::
-Inventar_Kompass.webp::CompressedTexture2D::2395981625032976756::1737877868::1738962354::1::::<><>::
-Inventar_nadel.webp::CompressedTexture2D::959632600127101667::1737877868::1738962354::1::::<><>::
-Inventar_neu.PNG::CompressedTexture2D::4614162530387694022::1738962736::1738962736::1::::<><>::
-::res://Assets/Art/Finished/UI/Pausenbildschirm/::1737877866
-Pausenbildschirm_fertig.webp::CompressedTexture2D::5537483621521004286::1737877868::1738962354::1::::<><>::
-Pausenbildschirm_holzbrett.webp::CompressedTexture2D::7355119715321098624::1737877868::1738962354::1::::<><>::
-Pausenbildschirm_rahmen.webp::CompressedTexture2D::3114227898288872894::1737877868::1738962354::1::::<><>::
-Pausenbildschrim_schrift.webp::CompressedTexture2D::4405626758693095328::1738968384::1738973010::1::::<><>::
-::res://Assets/Art/Finished/UI/Pfeile/::1737877866
-IMG_2146(1).png::CompressedTexture2D::3371625842178153530::1737877868::1738962354::1::::<><>::
-IMG_2146.PNG::CompressedTexture2D::3621525291085593690::1737877868::1738962354::1::::<><>::
-IMG_2147.PNG::CompressedTexture2D::8662003445980333012::1737877868::1738962354::1::::<><>::
-IMG_2148.PNG::CompressedTexture2D::1576552951952999122::1737877868::1738962354::1::::<><>::
-IMG_2149.PNG::CompressedTexture2D::8541963774628445312::1737877868::1738962354::1::::<><>::
-Pfeil_links.webp::CompressedTexture2D::8118332631222530587::1737877868::1738962354::1::::<><>::
-Pfeil_oben.webp::CompressedTexture2D::5856223642715856084::1737877868::1738962354::1::::<><>::
-Pfeil_rechts.webp::CompressedTexture2D::7207246965243855443::1737877868::1738962354::1::::<><>::
-Pfeil_unten.webp::CompressedTexture2D::4671579362402132085::1737877868::1738962354::1::::<><>::
-::res://Assets/Art/Finished/UI/Pfeile/new/::1738962834
-Pfeil_links_neu.PNG::CompressedTexture2D::1367589648500611700::1738962840::1738962842::1::::<><>::
-Pfeil_oben_neu.PNG::CompressedTexture2D::5730643870170905990::1738962840::1738962842::1::::<><>::
-Pfeil_rechts_neu.PNG::CompressedTexture2D::1623925507972060233::1738962840::1738962842::1::::<><>::
-Pfeil_unten_neu.PNG::CompressedTexture2D::8683524091214119242::1738962840::1738962842::1::::<><>::
-::res://Assets/Art/Finished/UI/Schreibtischschloss/::1737877866
-Schreibtischschloss_Fertig.png::CompressedTexture2D::3872688698699212418::1737877868::1738962354::1::::<><>::
-Schreibtischschloss_Pfeile_Fertig.png::CompressedTexture2D::7823311789370494746::1737877868::1738979676::1::::<><>::
-::res://Assets/Art/Finished/UI/Startbildschirm/::1737877866
-Startbildschirm_Fertig.png::CompressedTexture2D::2713150457740150990::1737877868::1738962354::1::::<><>::
-::res://Assets/Art/Placeholder/::1732993616
-::res://Assets/Art/Placeholder/Experiment/::1736948878
-Captainsroomschlüssel_Experiment.png::CompressedTexture2D::8791029772405100571::1736950730::1736950838::1::::<><>::
-Portraitschnipsel_Experiment.png::CompressedTexture2D::6468183502815458586::1736950730::1736950832::1::::<><>::
-Schrankschlüssel_Experiment.png::CompressedTexture2D::4116302289711078134::1736950730::1736950816::1::::<><>::
-TomDokument_Experiment.png::CompressedTexture2D::4627752355117599783::1736950730::1736950808::1::::<><>::
-Wal_Experiment.png::CompressedTexture2D::19226086764126306::1736950730::1736950736::1::::<><>::
-::res://Assets/Art/Placeholder/Puzzle/::1733777929
-::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/::1733777967
-::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/::1734356982
-01_puzzelteilQuadrat_sm.fbx::PackedScene::1855264207585106299::1734448374::1735414344::1::::<><>::uid://mpr2r1vbhbsb::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/01_puzzelteilQuadrat_sm_0.png
-01_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::874313129297371729::1734448378::1735414338::1::::<><>::
-02_puzzelteilQuadrat_sm.fbx::PackedScene::3522330722002115444::1734448374::1735414344::1::::<><>::uid://dfyu578vx7frs::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/02_puzzelteilQuadrat_sm_0.png
-02_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::7561020981751269944::1734448380::1735414338::1::::<><>::
-03_puzzelteilQuadrat_sm.fbx::PackedScene::3087667160303135807::1734448374::1735414344::1::::<><>::uid://cspbj8nb8orag::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/03_puzzelteilQuadrat_sm_0.png
-03_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::6067284761762708778::1734448382::1735414338::1::::<><>::
-04_puzzelteilQuadrat_sm.fbx::PackedScene::6303690780221327624::1734448374::1735414344::1::::<><>::uid://ce1hub41tnks7::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/04_puzzelteilQuadrat_sm_0.png
-04_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::5107731396901261764::1734448384::1735414338::1::::<><>::
-05_puzzelteilQuadrat_sm.fbx::PackedScene::5832373721778448322::1734448374::1735414344::1::::<><>::uid://cjllhxgnbmglv::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/05_puzzelteilQuadrat_sm_0.png
-05_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::5427930720799272115::1734448386::1735414338::1::::<><>::
-06_puzzelteilQuadrat_sm.fbx::PackedScene::2654046669473329233::1734448374::1735414344::1::::<><>::uid://dfmd3jdu8yrbw::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/06_puzzelteilQuadrat_sm_0.png
-06_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::7535211433824153996::1734448388::1735414338::1::::<><>::
-07_puzzelteilQuadrat_sm.fbx::PackedScene::7410040996005935619::1734448374::1735414346::1::::<><>::uid://o14dmt63isj2::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/07_puzzelteilQuadrat_sm_0.png
-07_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::1038084443787686453::1734448390::1735414338::1::::<><>::
-08_puzzelteilQuadrat_sm.fbx::PackedScene::6413958059217980186::1734448374::1735414346::1::::<><>::uid://c5bw4aftttpkn::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/08_puzzelteilQuadrat_sm_0.png
-08_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::6881958624758787589::1734448376::1735414338::1::::<><>::
-::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/::1733777976
-00.png::CompressedTexture2D::6963243411890640060::1733777978::1735414338::1::::<><>::
-01.png::CompressedTexture2D::5231925767589889687::1733777978::1735414338::1::::<><>::
-02.png::CompressedTexture2D::4971377921264438087::1733777978::1735414338::1::::<><>::
-10.png::CompressedTexture2D::7336760543725005405::1733777978::1735414338::1::::<><>::
-11.png::CompressedTexture2D::720914840099039894::1733777978::1735414338::1::::<><>::
-12.png::CompressedTexture2D::5546750816723863075::1733777978::1735414338::1::::<><>::
-20.png::CompressedTexture2D::8983711609700896263::1733777978::1735414338::1::::<><>::
-21.png::CompressedTexture2D::96559079828021430::1733777978::1735414338::1::::<><>::
-22.png::CompressedTexture2D::7985137789481865739::1733777978::1735414338::1::::<><>::
-::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/::1734111908
-00.png::CompressedTexture2D::8920098098163846045::1734111926::1735414338::1::::<><>::
-01.png::CompressedTexture2D::6271048640767068630::1734111926::1735414338::1::::<><>::
-02.png::CompressedTexture2D::1201665238692344282::1734111926::1735414338::1::::<><>::
-03.png::CompressedTexture2D::7615519825445931023::1734111926::1735414338::1::::<><>::
-04.png::CompressedTexture2D::474498946999622076::1734111926::1735414336::1::::<><>::
-05.png::CompressedTexture2D::7082530916996676282::1734111926::1735414336::1::::<><>::
-06.png::CompressedTexture2D::3887921404889984902::1734111926::1735414336::1::::<><>::
-07.png::CompressedTexture2D::9059512958611160185::1734111926::1735414336::1::::<><>::
-08.png::CompressedTexture2D::4936693540111408396::1734111926::1735414336::1::::<><>::
-::res://Assets/Art/Placeholder/Scenes/::1732993616
-::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/::1732993616
-main.png::CompressedTexture2D::2567905473719608573::1732993618::1735414336::1::::<><>::
-::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/Interaction/::1732993616
-globusOpen.png::CompressedTexture2D::3470411204478124823::1732993618::1735414336::1::::<><>::
-globusZoom.png::CompressedTexture2D::8104772085513175877::1732993618::1735414336::1::::<><>::
-wardrobeOpen.png::CompressedTexture2D::1393165404208022750::1732993618::1735414334::1::::<><>::
-::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/::1732993616
-left0.png::CompressedTexture2D::9212159230363199624::1732993618::1735414336::1::::<><>::
-left.png::CompressedTexture2D::9071964734349521732::1734296524::1735414336::1::::<><>::
-::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/Interaction/::1732993616
-left0.png::CompressedTexture2D::84391372319782308::1732993618::1735414336::1::::<><>::
-notebookCode.png::CompressedTexture2D::6601509912482372692::1732993618::1735414334::1::::<><>::
-notebookCodeOpen.png::CompressedTexture2D::7093318963499095755::1732993618::1735414334::1::::<><>::
-pillowMove.png::CompressedTexture2D::8467289620800944736::1734296600::1735414336::1::::<><>::
-windowZoom0.png::CompressedTexture2D::908884511611884433::1732993618::1735414334::1::::<><>::
-windowZoom.png::CompressedTexture2D::1963175146566695612::1734296664::1735414336::1::::<><>::
-::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/right/::1732993616
-right0.png::CompressedTexture2D::7888374637251896122::1732993618::1735414336::1::::<><>::
-right.png::CompressedTexture2D::3616505164366262412::1734296376::1735414336::1::::<><>::
-::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/right/Interaction/::1732993616
-exitDoorZoom0.png::CompressedTexture2D::2903086261955768577::1732993618::1735414334::1::::<><>::
-exitDoorZoom.png::CompressedTexture2D::5058598869645901427::1734296450::1735414336::1::::<><>::
-exitDoorZoomKey0.png::CompressedTexture2D::2111290872804823919::1732993618::1735414334::1::::<><>::
-exitDoorZoomKey.png::CompressedTexture2D::4463801204090327783::1734296478::1735414336::1::::<><>::
-::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/::1732993616
-topLeft.png::CompressedTexture2D::7165488011594927823::1732993618::1735414336::1::::<><>::
-::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/Interaction/::1732993616
-bookZoom.png::CompressedTexture2D::8735394190972854470::1732993618::1735414336::1::::<><>::
-drawer.png::CompressedTexture2D::4545129561792334488::1732993618::1735414336::1::::<><>::
-mapZoom.png::CompressedTexture2D::2650122479236042246::1732993618::1735414336::1::::<><>::
-officeOpenDrawer.png::CompressedTexture2D::5318823157796705808::1732993618::1735414336::1::::<><>::
-radioZoom.png::CompressedTexture2D::2677808180887719716::1732993618::1735414336::1::::<><>::
-::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topRight/::1732993617
-topRight.png::CompressedTexture2D::9219237542425254159::1732993618::1735414336::1::::<><>::
-::res://Assets/Art/Placeholder/Scenes/DiningRoom/::1737493112
-DiningHall01.png::CompressedTexture2D::6950661778031766975::1736441960::1737493866::1::::<><>::
-DiningHall02.png::CompressedTexture2D::4061457551497493516::1736441976::1737493866::1::::<><>::
-DiningHall03.png::CompressedTexture2D::5223961863150932553::1736442126::1737510236::1::::<><>::
-DiningHall04.png::CompressedTexture2D::3577834305166959284::1736442140::1737510358::1::::<><>::
-DiningHall05.png::CompressedTexture2D::7946690442541073983::1736442152::1737511822::1::::<><>::
-DiningHall031.png::CompressedTexture2D::8115870656590883469::1736442120::1737677494::1::::<><>::
-DiningHall041.png::CompressedTexture2D::1315530485319973167::1736442134::1737677478::1::::<><>::
-DiningHall051.png::CompressedTexture2D::8558113843638586408::1736442166::1737677488::1::::<><>::
-::res://Assets/Art/Placeholder/Scenes/Hallway/::1737493116
-Hallway01.png::CompressedTexture2D::6549855290667069108::1736442406::1737493832::1::::<><>::
-Hallway02.1.png::CompressedTexture2D::5501824579080820452::1736442438::1737493832::1::::<><>::
-Hallway02.png::CompressedTexture2D::7645612508234137760::1736442442::1737493832::1::::<><>::
-Hallway03.png::CompressedTexture2D::4163064168134048448::1736442450::1737493832::1::::<><>::
-Hallway04.png::CompressedTexture2D::1389833528359949408::1736442458::1737493832::1::::<><>::
-::res://Assets/Art/Placeholder/UI/::1732990139
-icon.svg::CompressedTexture2D::5577185240438568749::1732993458::1735414336::1::::<><>::
-Key.png::CompressedTexture2D::6990393216353826035::1733357270::1735414336::1::::<><>::
-Note.png::CompressedTexture2D::3963193321399038036::1733871182::1735414336::1::::<><>::
-Notebook.png::CompressedTexture2D::3469237162201576904::1733357316::1735414336::1::::<><>::
-pin.png::CompressedTexture2D::5535602434245431375::1734052562::1735414336::1::::<><>::
-Pinhole.png::CompressedTexture2D::6069360837283710840::1734115374::1735414336::1::::<><>::
-Plush.png::CompressedTexture2D::8061931604138094536::1733357378::1735414336::1::::<><>::
-PortraitPart.png::CompressedTexture2D::7301093753989224691::1733871182::1735414336::1::::<><>::
-::res://Assets/Audio/::1732039766
-::res://Assets/Audio/BGM/::1737753028
- dining hall.wav::AudioStreamWAV::6729855447316425603::1738008968::1738982038::1::::<><>::
-captains room.wav::AudioStreamWAV::5660693866422270653::1738008966::1738009838::1::::<><>::
-Hallway.wav::AudioStreamWAV::337250804884147676::1738008966::1738010160::1::::<><>::
-main theme.wav::AudioStreamWAV::4569930591867471212::1738008966::1738010166::1::::<><>::
-::res://Assets/Audio/BGM/Music/::1738008935
-chillBeats.mp3::AudioStreamMP3::8989440000033981222::1737753028::1738008946::1::::<><>::
-muladara.mp3::AudioStreamMP3::7330613862618422925::1737753030::1738008946::1::::<><>::
-::res://Assets/Audio/SFX/::1732039766
-buch öffnen und blättern.wav::AudioStreamWAV::8057302724454945004::1737045470::1737045472::1::::<><>::
-buch öffnen.wav::AudioStreamWAV::6961648168647916107::1737045470::1737046498::1::::<><>::
-click-234708.mp3::AudioStreamMP3::6167724243897709997::1736728036::1737044666::1::::<><>::
-Kopfkissen rücken.wav::AudioStreamWAV::4103320198873853863::1737045470::1737045472::1::::<><>::
-light-switch-sound-228104.mp3::AudioStreamMP3::3293425714207317397::1736728036::1737044666::1::::<><>::
-notizbuch aufheben.wav::AudioStreamWAV::3504362330084845356::1736728022::1737044666::1::::<><>::
-Schieben.wav::AudioStreamWAV::995293858576323890::1736728036::1737044666::1::::<><>::
-schlüssel aufheben.wav::AudioStreamWAV::9143463177088522534::1736728022::1737044666::1::::<><>::
-Schlüssel ins Schloss stecken + tür öffnen.wav::AudioStreamWAV::5655045738557687995::1737045470::1737045472::1::::<><>::
-Schrank öffnen.wav::AudioStreamWAV::7495417287889487774::1737045470::1737045472::1::::<><>::
-schublade öffnen richtig.wav::AudioStreamWAV::3288890492212212335::1737045470::1737045472::1::::<><>::
-telefon.mp3::AudioStreamMP3::1948725088986717192::1736728036::1737044666::1::::<><>::
-Tür schliessen.wav::AudioStreamWAV::5528337806806024672::1737045470::1737045472::1::::<><>::
-Tür öffnen.wav::AudioStreamWAV::329278576809063621::1736728036::1737044666::1::::<><>::
-::res://Assets/Audio/SFX/AnimalSounds/::1736728035
-eagle-squawking-type-3-235996.mp3::AudioStreamMP3::3971725789261597876::1736728036::1737048612::1::::<><>::
-möve.wav::AudioStreamWAV::6188954715413338139::1737045470::1737048614::1::::<><>::
-wolf-howling-140235.mp3::AudioStreamMP3::3748757941027390388::1736728036::1737048612::1::::<><>::
-::res://Assets/Audio/SFX/enviroment/::1736951419
-atmospheric-ambient-texture-114236.mp3::AudioStreamMP3::5239845879820535362::1736728036::1736951428::1::::<><>::
-creakingnoise-35017.mp3::AudioStreamMP3::6319439175847729203::1736728036::1736951440::1::::<><>::
-gramophone-starts-plays-and-stops-27493.mp3::AudioStreamMP3::3609952397037979738::1736728036::1736951456::1::::<><>::
-Holzboden.wav::AudioStreamWAV::8076552615313417244::1736728022::1736951484::1::::<><>::
-kraschendes Bett.wav::AudioStreamWAV::3156640199947955342::1736728036::1736951518::1::::<><>::
-lit-fireplace-6307.mp3::AudioStreamMP3::3073905128181978214::1736728036::1736953088::1::::<><>::
-new-signal-27310.mp3::AudioStreamMP3::4557110240242877744::1736728036::1736953102::1::::<><>::
-Regen.mp3::AudioStreamMP3::3200197636644015912::1736728036::1736951528::1::::<><>::
-Sturm.mp3::AudioStreamMP3::759613714852524099::1736728036::1736951638::1::::<><>::
-wellen1.mp3::AudioStreamMP3::4875766840655188426::1736728036::1736951726::1::::<><>::
-wellen.mp3::AudioStreamMP3::2864536365101690930::1736728036::1736951726::1::::<><>::
-::res://Assets/Audio/SFX/Klaviernoten/::1736728034
-do-80236.mp3::AudioStreamMP3::360603332731693577::1736728036::1736728038::1::::<><>::
-fa-78409.mp3::AudioStreamMP3::1622658009357429816::1736728036::1736728038::1::::<><>::
-la-80237.mp3::AudioStreamMP3::6232834489535578021::1736728036::1736728038::1::::<><>::
-mi-80239.mp3::AudioStreamMP3::6385824139524281653::1736728036::1736728038::1::::<><>::
-re-78500.mp3::AudioStreamMP3::5876399410743663477::1736728036::1736728038::1::::<><>::
-si-80238.mp3::AudioStreamMP3::1856872497948995185::1736728036::1736728038::1::::<><>::
-sol-101774.mp3::AudioStreamMP3::2294039451448337236::1736728036::1736728038::1::::<><>::
-::res://Assets/Audio/SFX/safeLater/::1737048600
-Kerzenleuchter.wav::AudioStreamWAV::2440456400729230826::1737045470::1737048634::1::::<><>::
-::res://Assets/Audio/Voices/::1732993587
-::res://Assets/Audio/Voices/Enitys Voice/::1737299771
-Enity´s Voice.wav::AudioStreamWAV::3023064754992156771::1737299772::1737299774::1::::<><>::
-Riddle Voice.wav::AudioStreamWAV::1650244545593563778::1737299768::1737647716::1::::<><>::
-::res://Assets/Audio/Voices/Kyra/::1732993587
-Kyra (Dilara)-01.wav::AudioStreamWAV::6967875797481667957::1737299668::1737299670::1::::<><>::
-Kyra (Dilara)-02.wav::AudioStreamWAV::2494798288910270196::1737299668::1737299670::1::::<><>::
-Kyra (Dilara)-03.wav::AudioStreamWAV::2094739705983899967::1737299668::1737299670::1::::<><>::
-Kyra (Dilara)-04.wav::AudioStreamWAV::6053227253120169706::1737299668::1737299668::1::::<><>::
-Kyra (Dilara)-05.wav::AudioStreamWAV::8172768002118729161::1737299668::1737299670::1::::<><>::
-Kyra (Dilara)-06.wav::AudioStreamWAV::4856290504523971522::1737299668::1737299670::1::::<><>::
-Kyra (Dilara)-07.wav::AudioStreamWAV::346999996213350683::1737299668::1737299670::1::::<><>::
-Kyra (Dilara)-08.wav::AudioStreamWAV::6288098242138724708::1737299668::1737299668::1::::<><>::
-Kyra (Dilara)-09.wav::AudioStreamWAV::5356127835882938567::1737299668::1737299668::1::::<><>::
-Kyra (Dilara)-10.wav::AudioStreamWAV::5302642140327409809::1737299668::1737299668::1::::<><>::
-Kyra (Dilara)-11.wav::AudioStreamWAV::5197701207909168425::1737299668::1737300152::1::::<><>::
-Kyra (Dilara)-12.wav::AudioStreamWAV::4151700744571888175::1737299668::1737300172::1::::<><>::
-Kyra (Dilara)-13.wav::AudioStreamWAV::1522882759788866724::1737299668::1737300298::1::::<><>::
-Kyra (Dilara)-14.wav::AudioStreamWAV::627452003020492373::1737299668::1737300326::1::::<><>::
-Kyra (Dilara)-15.wav::AudioStreamWAV::3632309817609240398::1737299668::1737300368::1::::<><>::
-Kyra (Dilara)-16.wav::AudioStreamWAV::6909639908919364784::1737299668::1737300404::1::::<><>::
-Kyra (Dilara)-17.wav::AudioStreamWAV::3768765938455490487::1737299668::1737300452::1::::<><>::
-Kyra (Dilara)-18.wav::AudioStreamWAV::8552803903792262207::1737299668::1737300578::1::::<><>::
-Kyra (Dilara)-19.wav::AudioStreamWAV::3942629531429101093::1737299668::1737300584::1::::<><>::
-Kyra (Dilara)-20.wav::AudioStreamWAV::6313656071112867419::1737299668::1737300590::1::::<><>::
-Kyra (Dilara)-21.wav::AudioStreamWAV::2071658843913756890::1737299668::1737300674::1::::<><>::
-Kyra (Dilara)-22.wav::AudioStreamWAV::2166096759619436024::1737299668::1737300680::1::::<><>::
-Kyra (Dilara)-23.wav::AudioStreamWAV::4230750090719942868::1737299668::1737300684::1::::<><>::
-Kyra (Dilara)-24.wav::AudioStreamWAV::496155190702511910::1737299668::1737300688::1::::<><>::
-Kyra (Dilara)-25.wav::AudioStreamWAV::6047434134263549161::1737299668::1737300694::1::::<><>::
-Kyra (Dilara)-26.wav::AudioStreamWAV::7670093340250287693::1737299668::1737300698::1::::<><>::
-Kyra (Dilara)-27.wav::AudioStreamWAV::1343169535026244316::1737299668::1737300704::1::::<><>::
-Kyra (Dilara)-28.wav::AudioStreamWAV::2973964325284700525::1737299668::1737300710::1::::<><>::
-Kyra (Dilara)-29.wav::AudioStreamWAV::1652282558864841418::1737299668::1737300720::1::::<><>::
-Kyra (Dilara)-30.wav::AudioStreamWAV::2581255879598797057::1737630742::1737630742::1::::<><>::
-Kyra (Dilara)-31.wav::AudioStreamWAV::4956548837925383792::1737630742::1737630742::1::::<><>::
-Kyra (Dilara)-32.wav::AudioStreamWAV::2796181670150275124::1737630742::1737630742::1::::<><>::
-Kyra (Dilara)-33.wav::AudioStreamWAV::3728987379458892278::1737630742::1737630742::1::::<><>::
-Kyra (Dilara)-34.wav::AudioStreamWAV::7966389832117300839::1737630742::1737630742::1::::<><>::
-Kyra (Dilara)-35.wav::AudioStreamWAV::2547194894698815433::1737648006::1737648006::1::::<><>::
-Kyra (Dilara)-36.wav::AudioStreamWAV::3949016967598657012::1737648006::1737648006::1::::<><>::
-Kyra (Dilara)-37.wav::AudioStreamWAV::764206564499115772::1737648006::1737648006::1::::<><>::
-Kyra (Dilara)-38.wav::AudioStreamWAV::3362002100011756634::1737630742::1737632464::1::::<><>::
-Kyra (Dilara)-39.wav::AudioStreamWAV::1335189688494184052::1737630742::1737632456::1::::<><>::
-Kyra (Dilara)-40.wav::AudioStreamWAV::106645960618538161::1737630742::1737632448::1::::<><>::
-Kyra (Dilara)-41.wav::AudioStreamWAV::7372106673271703227::1737630742::1737632444::1::::<><>::
-Kyra (Dilara)-42.wav::AudioStreamWAV::5275105315104447000::1737630742::1737632436::1::::<><>::
-Kyra (Dilara)-43.wav::AudioStreamWAV::4126149701140087458::1737630742::1737632430::1::::<><>::
-Kyra (Dilara)-44.wav::AudioStreamWAV::6922305095635017798::1737630742::1737632426::1::::<><>::
-Kyra (Dilara)-45.wav::AudioStreamWAV::3513522625021947774::1737630742::1737632420::1::::<><>::
-Kyra (Dilara)-46.wav::AudioStreamWAV::4104743475330077964::1737630742::1737632416::1::::<><>::
-Kyra (Dilara)-47.wav::AudioStreamWAV::8461169374986123337::1737630742::1737632410::1::::<><>::
-Kyra (Dilara)-48.wav::AudioStreamWAV::4286554136087000687::1737630742::1737632404::1::::<><>::
-Kyra (Dilara)-49.wav::AudioStreamWAV::8257639340804638283::1737630742::1737632398::1::::<><>::
-Kyra (Dilara)-50.wav::AudioStreamWAV::2017904433109958910::1737630742::1737632390::1::::<><>::
-Kyra (Dilara)-51.wav::AudioStreamWAV::5064345839853506345::1737630742::1737632384::1::::<><>::
-Kyra (Dilara)-52.wav::AudioStreamWAV::4911828895395058203::1737630742::1737632378::1::::<><>::
-Kyra (Dilara)-53.wav::AudioStreamWAV::3434548392966396277::1737630742::1737632374::1::::<><>::
-Kyra (Dilara)-54.wav::AudioStreamWAV::5050270199627229684::1737630742::1737632366::1::::<><>::
-Kyra (Dilara)-55.wav::AudioStreamWAV::2765357817845592398::1737630742::1737632356::1::::<><>::
-Kyra (Dilara)-56.wav::AudioStreamWAV::3815064863036582077::1737630742::1737632350::1::::<><>::
-Kyra (Dilara)-57.wav::AudioStreamWAV::3755167160472123044::1737630742::1737632342::1::::<><>::
-Kyra (Dilara)-58.wav::AudioStreamWAV::6777092357150813361::1737630742::1737632336::1::::<><>::
-Kyra (Dilara)-59.wav::AudioStreamWAV::3311740287182604856::1737630742::1737632328::1::::<><>::
-Kyra (Dilara)-60.wav::AudioStreamWAV::6011396930386839271::1737630742::1737632320::1::::<><>::
-Kyra (Dilara)-61.wav::AudioStreamWAV::8852319653833154181::1737630742::1737632314::1::::<><>::
-Kyra (Dilara)-62.wav::AudioStreamWAV::3426518109423262926::1737630742::1737632306::1::::<><>::
-Kyra (Dilara)-63.wav::AudioStreamWAV::6835240927034682228::1737630742::1737632298::1::::<><>::
-::res://Assets/Audio/Voices/Meredith/::1737630723
-Meredith 01.wav::AudioStreamWAV::3062631301350553181::1737630724::1737630724::1::::<><>::
-Meredith 02.wav::AudioStreamWAV::7786533078519875251::1737630724::1737630724::1::::<><>::
-Meredith 03.wav::AudioStreamWAV::7557090051185212804::1737630724::1737630724::1::::<><>::
-Meredith 04.wav::AudioStreamWAV::8273556774601083598::1737630724::1737630724::1::::<><>::
-Meredith 05.wav::AudioStreamWAV::72899494367213644::1737630724::1737630724::1::::<><>::
-Meredith 06.wav::AudioStreamWAV::7989110052581479921::1737630724::1737630724::1::::<><>::
-Meredith 07.wav::AudioStreamWAV::2272834723643858739::1737630724::1737630724::1::::<><>::
-Meredith 08.wav::AudioStreamWAV::5262445276880692974::1737630724::1737630724::1::::<><>::
-Meredith 09.wav::AudioStreamWAV::3950961885848293405::1737630724::1737630724::1::::<><>::
-Meredith 10.wav::AudioStreamWAV::662146079710615581::1737630724::1737630724::1::::<><>::
-Meredith 11.wav::AudioStreamWAV::7676914879163253520::1737630724::1737630724::1::::<><>::
-Meredith 12.wav::AudioStreamWAV::7001340254974753194::1737630724::1737630724::1::::<><>::
-Meredith 13.wav::AudioStreamWAV::4611450868390616771::1737630724::1737630724::1::::<><>::
-Meredith 14.wav::AudioStreamWAV::4744758674135055601::1737630724::1737630724::1::::<><>::
-Meredith 15.wav::AudioStreamWAV::441008321938725631::1737630724::1737630724::1::::<><>::
-::res://Assets/Audio/Voices/Radio Voice/::1737299762
-Radio Voice.wav::AudioStreamWAV::3139981441294791391::1737299764::1737299764::1::::<><>::
-::res://Assets/Audio/Voices/Riddle Voice/::1737299767
-::res://Assets/Audio/Voices/Sam/::1737630723
-Crazy Guy 01.wav::AudioStreamWAV::5852228405913894756::1737630724::1737646894::1::::<><>::
-Crazy Guy 02.wav::AudioStreamWAV::6035720363987626386::1737630724::1737646894::1::::<><>::
-Crazy Guy 03.wav::AudioStreamWAV::5816979984294072677::1737630724::1737646894::1::::<><>::
-Crazy Guy 04.wav::AudioStreamWAV::8628628810388441101::1737630724::1737646894::1::::<><>::
-Crazy Guy 05.wav::AudioStreamWAV::1097950702488902108::1738010516::1738010540::1::::<><>::
-Crazy Guy 06.wav::AudioStreamWAV::1386874850252516106::1738010522::1738010532::1::::<><>::
-::res://Assets/Audio/Voices/Tom/::1737630723
-Tom 01.wav::AudioStreamWAV::4887346703374888233::1737630724::1737630724::1::::<><>::
-Tom 02.wav::AudioStreamWAV::3666857238535386642::1737630724::1737630724::1::::<><>::
-Tom 03.wav::AudioStreamWAV::8386832722667609252::1737630724::1737630724::1::::<><>::
-Tom 04.wav::AudioStreamWAV::3405225066756904750::1737630724::1737630724::1::::<><>::
-::res://Assets/JSON/::1734559294
-CrazyGuy.json::JSON::-1::1737522044::0::1::::<><>::
-dialogues.json::JSON::-1::1734636088::0::1::::<><>::
-MeridithTest.json::JSON::-1::1737521228::0::1::::<><>::
-::res://Assets/JSON/choice/::1734567916
-forest.json::JSON::-1::1734569538::0::1::::<><>::
-house.json::JSON::-1::1734571038::0::1::::<><>::
-tree.json::JSON::-1::1734569560::0::1::::<><>::
-village.json::JSON::-1::1734568552::0::1::::<><>::
-::res://Assets/JSON/Dialogues/::1735414470
-::res://Assets/JSON/Dialogues/Scene1/::1735414507
-CaptainsJournalUnderPillow.json::JSON::-1::1737880592::0::1::::<><>::
-GlobeWithPin.json::JSON::-1::1737880628::0::1::::<><>::
-MapOnDesk.json::JSON::-1::1737880668::0::1::::<><>::
-PortraitCaptain.json::JSON::-1::1737880694::0::1::::<><>::
-RadioWhisper.json::JSON::-1::1737882116::0::1::::<><>::
-TheCaptainsRoom.json::JSON::-1::1737880450::0::1::::<><>::
-::res://Assets/JSON/Dialogues/Scene3/::1737627925
-MeredithDiningHall.json::JSON::-1::1737880892::0::1::::<><>::
-::res://Assets/JSON/Dialogues/Scene4/::1737632856
-AnimalStatueFirstEncounter.json::JSON::-1::1737646066::0::1::::<><>::
-BookshelfFirstEncounter.json::JSON::-1::1737880942::0::1::::<><>::
-BruningCandle.json::JSON::-1::1737880952::0::1::::<><>::
-DisplayCasePlaceStatue.json::JSON::-1::1737880982::0::1::::<><>::
-OpenedShelf.json::JSON::-1::1737880996::0::1::::<><>::
-OrganizedBooks.json::JSON::-1::1737881054::0::1::::<><>::
-SamAltar.json::JSON::-1::1738010562::0::1::::<><>::
-::res://Assets/JSON/Dialogues/Scene5/::1737642432
-FileCandleInteraction.json::JSON::-1::1737881268::0::1::::<><>::
-MeredithMemories.json::JSON::-1::1737881400::0::1::::<><>::
-::res://Assets/JSON/Dialogues/Scene6/::1737643744
-ReturnCaptainRoom.json::JSON::-1::1737881602::0::1::::<><>::
-::res://scenes/::1732039766
-3DViewport.tscn::PackedScene::1435262317156502667::1733777948::0::1::::<><>::res://scripts/3DViewport.gd<>uid://bct6a7lt8dc6p::::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/main.png<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
-Background.tscn::PackedScene::2202417917244361780::1738981018::0::1::::<><>::res://scripts/Background.gd<>uid://do2qe48y36k57::::res://Assets/Art/Finished/2DAssets/Scenes/captain room/CaptainsRoom_Shot_1.0.png
-BookRiddle.tscn::PackedScene::264333835136207322::1738975876::0::1::::<><>::res://scripts/BookRiddle.gd<>uid://bm6mif3hvd470::::res://Assets/Audio/SFX/light-switch-sound-228104.mp3<>res://scripts/Book.gd<>uid://bm4fstb2tg0al::::res://Assets/Audio/SFX/schublade öffnen richtig.wav
-CodeRiddle.tscn::PackedScene::127311198557834061::1738981018::0::1::::<><>::res://scripts/CodeRiddle.gd<>res://scripts/CodeColumn.gd<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://djpw2jkrxjs8y::::res://Assets/Art/Finished/UI/Schreibtischschloss/Schreibtischschloss_Pfeile_Fertig.png
-crate.tscn::PackedScene::2331090909585695710::1732039768::0::1::::<><>::uid://cd3rxu61epd3p::::res://Assets/Art/Crate/Crate.fbx<>uid://ca35bl2yx3jn4::::res://Assets/Art/Crate/Textures/Crate_albedo.png<>uid://816rdp5aecy8::::res://Assets/Art/Crate/Textures/Crate_ao.png<>uid://d1jdwqb83g3ef::::res://Assets/Art/Crate/Textures/Crate_normal.png<>uid://bp1auupcnyvxd::::res://Assets/Audio/SFX/Möven.mp3
-DialogueInteraction.tscn::PackedScene::9201240278525191122::1738978154::0::1::::<><>::res://scripts/dialogueInteraction.gd
-DialogueSystem.tscn::PackedScene::3294395130157583743::1738971676::0::1::::<><>::res://scripts/DialogueSystem.gd<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://tiwahhsisfnq::::res://Assets/Art/Dialoge/Left_Dialogue_styleboxtexture.tres<>uid://76yck1s642pp::::res://Assets/Art/Finished/UI/Dialoge/Dialogbalken_next.PNG
-Dininghall01Nav.tscn::PackedScene::8910602140757986096::1738976618::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>res://scenes/NavigaionManager.gd<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG<>uid://tqqab77njwae::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG<>uid://cmwc2h5h70t3r::::res://Assets/Audio/BGM/captains room.wav
-Dininghall02Nav.tscn::PackedScene::6058269089528109879::1738980180::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
-Dininghall03Nav.tscn::PackedScene::300955577455500941::1738980190::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://tqqab77njwae::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG
-Dininghall04Nav.tscn::PackedScene::6736340945792016877::1738980230::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
-Dininghall05Nav.tscn::PackedScene::2243419271281489863::1738977920::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
-Dininghall031Nav.tscn::PackedScene::7314327871968288025::1738980206::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://tqqab77njwae::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG
-Dininghall041Nav.tscn::PackedScene::5349313731423837089::1738980240::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
-Dininghall051Nav.tscn::PackedScene::6094925680458635941::1738977982::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
-Gameplay.tscn::PackedScene::8686923993699394072::1733777948::0::1::::<><>::uid://b51vq3wsky7ww::::res://scenes/PickupItem3D.tscn<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
-GlobusPinRiddle.tscn::PackedScene::1271616286089990655::1738979282::0::1::::<><>::res://scripts/GlobusMap.gd<>uid://bm6mif3hvd470::::res://Assets/Audio/SFX/light-switch-sound-228104.mp3<>uid://csqbqsdnfq7u7::::res://Assets/Art/Placeholder/UI/Pinhole.png<>uid://cmtl1olg0f5lv::::res://Assets/Audio/SFX/Schlüssel ins Schloss stecken + tür öffnen.wav<>uid://ck4qtfhew5l16::::res://Assets/Art/Placeholder/UI/pin.png<>res://scripts/Pin.gd
-InventorySystem.tscn::PackedScene::6909865805741537462::1738971676::0::1::::<><>::res://scripts/InventorySystem.gd<>uid://bp6sln60kxlyy::::res://Assets/Audio/SFX/notizbuch aufheben.wav
-LeftNav.tscn::PackedScene::9104518148809185961::1738974144::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://bypxc4klh8a7p::::res://Assets/Audio/SFX/Kopfkissen rücken.wav
-LeftNotebookCodeNav.tscn::PackedScene::8930632418147173459::1738980042::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://bp6sln60kxlyy::::res://Assets/Audio/SFX/notizbuch aufheben.wav<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
-LeftNotebookCodeOpenNav.tscn::PackedScene::229291845976363928::1733441162::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn
-LeftWindowNav.tscn::PackedScene::4312214013618733935::1738980050::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://bm6mif3hvd470::::res://Assets/Audio/SFX/light-switch-sound-228104.mp3<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
-Main.tscn::PackedScene::4249296749994118019::1738981490::0::1::::<><>::uid://6m4rbr4uqs3u::::res://scenes/Background.tscn<>res://scenes/mainSceneHandle.gd<>uid://cwj6bpg3u3b8w::::res://scenes/MainNav.tscn<>uid://p5ahydkjisqy::::res://scenes/TopLeftRadioNav.tscn<>uid://yxu6nudywmn5::::res://scenes/TopLeftMapNav.tscn<>uid://dn4l1mgm34vg7::::res://scenes/RightDoorNav.tscn<>uid://cetnyk2nihqe8::::res://scenes/RightNav.tscn<>uid://b3nlrfc4y8aml::::res://scenes/TopRightGlobusNav.tscn<>uid://bxbos0gxepw15::::res://scenes/TopLeftBookNav.tscn<>uid://b2o4sghcmtr32::::res://scenes/LeftWindowNav.tscn<>uid://d2ykc31xty202::::res://scenes/LeftNav.tscn<>uid://o2s547vsoxmj::::res://scenes/TopRightNav.tscn<>uid://bg3ruliyhrcr5::::res://scenes/TopLeftNav.tscn<>uid://cf7xqrrdhc6yi::::res://scenes/TopRightGlobusOpenNav.tscn<>uid://d0ichgc34176v::::res://scenes/LeftNotebookCodeNav.tscn<>uid://c3x8vutkwn5vy::::res://scenes/TopLeftDrawerNav.tscn<>uid://btrvd3iljyob2::::res://scenes/RightDoorOpenNav.tscn<>uid://dy7mkyuun44lo::::res://scenes/Dininghall01Nav.tscn<>uid://b51vq3wsky7ww::::res://scenes/PickupItem3D.tscn<>uid://bm63haxmbj0d4::::res://scenes/DialogueSystem.tscn<>uid://dbu0l40uitgwg::::res://scenes/MainUI.tscn<>uid://cskw2ovxuw2q2::::res://scenes/Dininghall02Nav.tscn<>uid://c5pgqlg128lek::::res://scenes/InventorySystem.tscn<>uid://ej1xuylcigfl::::res://scenes/Dininghall03Nav.tscn<>uid://dchd58uigxf8l::::res://scenes/Dininghall031Nav.tscn<>uid://c28es0f18kvur::::res://scenes/Dininghall04Nav.tscn<>uid://cihioephk7sp2::::res://scenes/Dininghall041Nav.tscn<>uid://bp6sln60kxlyy::::res://Assets/Audio/SFX/notizbuch aufheben.wav<>uid://jkwemu8d667::::res://Assets/Art/Placeholder/Experiment/Wal_Experiment.png<>uid://67y11ra13xbj::::res://scenes/Dininghall05Nav.tscn<>uid://bypxc4klh8a7p::::res://Assets/Audio/SFX/Kopfkissen rücken.wav<>uid://b2w2de81naqf::::res://scenes/CodeRiddle.tscn<>uid://cs3oshanxh6kn::::res://scenes/Dininghall051Nav.tscn<>uid://d4dfc3a7qahje::::res://scenes/DialogueInteraction.tscn<>uid://d3jfrdcfia2xm::::res://Assets/Audio/SFX/schlüssel aufheben.wav<>uid://bbtd20fe3jpp1::::res://scenes/SlidePuzzle.tscn<>uid://dxio8ghmqqne6::::res://Assets/Art/Placeholder/Experiment/Captainsroomschlüssel_Experiment.png<>uid://nkrjlfcm4m2v::::res://Assets/Art/Finished/2DAssets/Character Idols/Meredith_InGame.png<>uid://cok7fcpgq4h4h::::res://Assets/Art/Finished/2DAssets/Character Idols/Crazy_guy_ingame.PNG<>uid://kqapphbx3lk6::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary/Diary_onbed.png<>uid://wwpg1sb4025v::::res://Assets/Art/Finished/2DAssets/Item pngs/TomDokument_Placeholder.png<>uid://c6dfehecfwycu::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Portrait_piece.png<>uid://py4uxl4nducx::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Drawer_key.png<>uid://ccbjx7mjscmhj::::res://Assets/Art/Finished/2DAssets/Item pngs/Holzbein_Placeholder.png<>uid://b6c4on3mscb4m::::res://Assets/Art/Finished/2DAssets/Item pngs/Messer_Placeholder.png<>uid://c2mlwdyrxdwcw::::res://scenes/PianoRiddle.tscn<>uid://82u1eou8fcb1::::res://Assets/Art/Finished/2DAssets/Item pngs/Seehund_Placeholder.png<>uid://bafqx5p03hpru::::res://scenes/Menus/PauseMenu.tscn<>uid://dfxt40qo2ecuu::::res://Assets/Art/Finished/2DAssets/Item pngs/Delphin_Placeholder.png<>uid://cblfnjueu21xu::::res://Assets/Art/Finished/2DAssets/Item pngs/Kerze_Placeholder.png<>uid://cmwc2h5h70t3r::::res://Assets/Audio/BGM/captains room.wav
-MainNav.tscn::PackedScene::6337460138198217884::1738971676::0::1::::<><>::res://scenes/NavigaionManager.gd<>uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
-mainSceneHandle.gd::GDScript::-1::1737874768::0::1::::<>Control<>::
-MainUI.tscn::PackedScene::7272277581068064738::1738971676::0::1::::<><>::res://scripts/MainUI.gd<>uid://b1ltyk1vqp6cu::::res://Assets/Art/Finished/UI/Inventar/Inventar_fertig.webp
-NavigaionManager.gd::GDScript::-1::1738009330::0::1::::<>Control<>::
-Notebook3D.tscn::PackedScene::8469139343881746870::1733261276::0::1::::<><>::
-PianoRiddle.tscn::PackedScene::6693420048496770394::1738981450::0::1::::<><>::res://scripts/pianoRiddle.gd<>res://scripts/note.gd<>uid://bm4fstb2tg0al::::res://Assets/Audio/SFX/schublade öffnen richtig.wav<>uid://fexc4lus2x42::::res://Assets/Audio/SFX/Klaviernoten/do-80236.mp3<>uid://cpyto7lvns3jt::::res://Assets/Audio/SFX/Klaviernoten/re-78500.mp3<>uid://cw8lucy3spurl::::res://Assets/Audio/SFX/Klaviernoten/mi-80239.mp3<>uid://xea68bfjvexc::::res://Assets/Audio/SFX/Klaviernoten/fa-78409.mp3<>uid://7xiq203pndmy::::res://Assets/Audio/SFX/Klaviernoten/sol-101774.mp3<>uid://cu2h4xww0ttdl::::res://Assets/Audio/SFX/Klaviernoten/la-80237.mp3<>uid://1pqoicrbeqkn::::res://Assets/Audio/SFX/Klaviernoten/si-80238.mp3
-PickupItem2D.tscn::PackedScene::7783466821998762829::1733777948::0::1::::<><>::res://scripts/PickupItem2D.gd<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
-PickupItem3D.tscn::PackedScene::4547064949461884066::1738978652::0::1::::<><>::res://scripts/PickupItem3D.gd<>res://scripts/RotateItemAnimationj.gd
-RightDoorNav.tscn::PackedScene::8132298930936251112::1738976356::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://cmtl1olg0f5lv::::res://Assets/Audio/SFX/Schlüssel ins Schloss stecken + tür öffnen.wav
-RightDoorOpenNav.tscn::PackedScene::3756385032389558565::1738980158::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://exrf1tynuho4::::res://Assets/Audio/SFX/Tür öffnen.wav<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://tqqab77njwae::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG<>uid://c2480a1xmsxhj::::res://Assets/Audio/BGM/ dining hall.wav
-RightNav.tscn::PackedScene::5093652666770014593::1738980136::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://tqqab77njwae::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG
-SlidePuzzle.tscn::PackedScene::2496064393099307164::1738017194::0::1::::<><>::res://scripts/Piece.gd<>res://scripts/SlidePuzzle.gd<>uid://exrf1tynuho4::::res://Assets/Audio/SFX/Tür öffnen.wav<>uid://1ox6vucnbuat::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/01_puzzelteilQuadrat_sm.fbx<>uid://bqgiji4lcg413::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/02_puzzelteilQuadrat_sm.fbx<>uid://bj8xorvpmbsxb::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/03_puzzelteilQuadrat_sm.fbx<>uid://cv2s4pj6qky3a::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/04_puzzelteilQuadrat_sm.fbx<>uid://ogelyfy5nnla::::res://Assets/Audio/SFX/Schieben.wav<>uid://cpdilwukph0wk::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/05_puzzelteilQuadrat_sm.fbx<>uid://bd2v04t3huyxt::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/06_puzzelteilQuadrat_sm.fbx<>uid://ddtqj7hydr0ix::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/07_puzzelteilQuadrat_sm.fbx<>uid://cxm77mxcy5gek::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/08_puzzelteilQuadrat_sm.fbx
-SwapScene.tscn::PackedScene::6581734433531554397::1738977962::0::1::::<><>::res://scripts/SwapScene.gd<>uid://xev20eqfxvk0::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_rechts_neu.PNG
-testAlphabet.tscn::PackedScene::7776987970679469077::1737625566::0::1::::<><>::uid://b2w2de81naqf::::res://scenes/CodeRiddle.tscn
-TopLeftBookNav.tscn::PackedScene::4003711970714480386::1738980116::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://d1bsl3hdb04e::::res://scenes/BookRiddle.tscn<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
-TopLeftDrawerNav.tscn::PackedScene::6787651920330366626::1738981018::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://b2w2de81naqf::::res://scenes/CodeRiddle.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://bm4fstb2tg0al::::res://Assets/Audio/SFX/schublade öffnen richtig.wav<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG<>uid://exrf1tynuho4::::res://Assets/Audio/SFX/Tür öffnen.wav
-TopLeftMapNav.tscn::PackedScene::1733283348991430680::1738980126::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
-TopLeftNav.tscn::PackedScene::2866424818605859424::1738980076::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
-TopLeftRadioNav.tscn::PackedScene::1114777753411147088::1738980104::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
-TopRightGlobusNav.tscn::PackedScene::4379243728834955595::1738981018::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://sd8lmvc2x1x8::::res://scenes/GlobusPinRiddle.tscn<>uid://exrf1tynuho4::::res://Assets/Audio/SFX/Tür öffnen.wav<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
-TopRightGlobusOpenNav.tscn::PackedScene::5191271656546787284::1738981018::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
-TopRightNav.tscn::PackedScene::1039530063568681261::1738972418::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://de13osl4hgcl7::::res://Assets/Audio/SFX/Schrank öffnen.wav
-::res://scenes/JSON/::1733164408
-gameScenes.json::JSON::-1::1737880096::0::1::::<><>::
-::res://scenes/Menus/::1737781407
-EndMenu.tscn::PackedScene::8343304317358490935::1738017194::0::1::::<><>::res://scripts/Menus/EndMenu.gd<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg<>res://Assets/Art/Finished/Menu_Intro/OVG/loop_Render_Final.ogv<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://b6dydbc3443js::::res://Assets/Audio/BGM/main theme.wav
-MainMenu.tscn::PackedScene::8206362530617527680::1738968864::0::1::::<><>::res://scripts/Menus/MainMenu.gd<>uid://bewjgrsldbg2i::::res://Assets/Art/Finished/UI/Startbildschirm/Startbildschirm_Fertig.png<>res://Assets/Art/Finished/Menu_Intro/OVG/Intro_Render_Final.ogv<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>res://Assets/Art/Finished/Menu_Intro/OVG/loop_Render_Final.ogv<>uid://b6dydbc3443js::::res://Assets/Audio/BGM/main theme.wav
-OptionMenu.tscn::PackedScene::4351391897530304468::1738968864::0::1::::<><>::res://scripts/Menus/OptionsMenu.gd<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://lcqektc3sfpy::::res://Assets/Art/Finished/UI/Einstellungen (Credits noch in progress)/UI_Einstellungen_Hintergrund_Fertig.png<>uid://btel43gq0gtg5::::res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-33.wav<>uid://b6dydbc3443js::::res://Assets/Audio/BGM/main theme.wav
-PauseMenu.tscn::PackedScene::2397756717653642602::1738968864::0::1::::<><>::res://scripts/Menus/PauseMenu.gd<>uid://b283124h4t7vc::::res://scenes/Menus/OptionMenu.tscn<>res://scripts/Menus/pauseNode.gd<>uid://dc140nwusiat1::::res://Assets/Art/Finished/UI/Pausenbildschirm/Pausenbildschirm_holzbrett.webp
-::res://scripts/::1727804414
-3DViewport.gd::GDScript::-1::1734568552::0::1::::<>TextureRect<>::
-Background.gd::GDScript::-1::1737874218::0::1::::BackgroundTexture<>Control<>::
-Book.gd::GDScript::-1::1734568552::0::1::::Book<>Area3D<>::
-BookRiddle.gd::GDScript::-1::1737057212::0::1::::BookRiddle<>Node3D<>::
-CodeColumn.gd::GDScript::-1::1737790868::0::1::::<>Node3D<>::
-CodeRiddle.gd::GDScript::-1::1737065612::0::1::::CodeRiddle<>Node3D<>::
-dialogueInteraction.gd::GDScript::-1::1738002696::0::1::::DialogueInteration<>Control<>::
-DialogueSystem.gd::GDScript::-1::1737876374::0::1::::DialogueSystem<>Control<>::
-GlobusMap.gd::GDScript::-1::1738981516::0::1::::GlobusMap<>Control<>::
-InventorySystem.gd::GDScript::-1::1737790574::0::1::::InventorySystem<>Control<>::
-MainUI.gd::GDScript::-1::1733362724::0::1::::<>Control<>::
-note.gd::GDScript::-1::1737775444::0::1::::Note<>Area3D<>::
-pianoRiddle.gd::GDScript::-1::1737781110::0::1::::PianoRiddle<>Node3D<>::
-PickupItem2D.gd::GDScript::-1::1733362754::0::1::::<>Control<>::
-PickupItem3D.gd::GDScript::-1::1738978224::0::1::::PickupItem3D<>Node3D<>::
-Piece.gd::GDScript::-1::1734568554::0::1::::<>Area3D<>::
-Pin.gd::GDScript::-1::1734568554::0::1::::<>TextureButton<>::
-RotateItemAnimationj.gd::GDScript::-1::1733362838::0::1::::<>MeshInstance3D<>::
-SlidePuzzle.gd::GDScript::-1::1738008432::0::1::::SlidePuzzleRiddle<>Node3D<>::
-SwapScene.gd::GDScript::-1::1738010140::0::1::::SwapScene<>Control<>::
-::res://scripts/Manager/::1737789797
-GameManager.gd::GDScript::-1::1738962332::0::1::::<>Node<>::
-SceneManager.gd::GDScript::-1::1738005978::0::1::::<>Node<>::
-::res://scripts/Menus/::1737781426
-EndMenu.gd::GDScript::-1::1737782270::0::1::::<>Control<>::
-MainMenu.gd::GDScript::-1::1737933572::0::1::::<>Control<>::
-OptionsMenu.gd::GDScript::-1::1738004624::0::1::::OptionMenu<>Control<>::
-PauseMenu.gd::GDScript::-1::1737782116::0::1::::PauseMenu<>Control<>::
-pauseNode.gd::GDScript::-1::1737753038::0::1::::<>Node<>::
+::res://::1739128719
+default_bus_layout.tres::AudioBusLayout::895420128603570091::1739107808::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1739107808::0::1::::<><>::
+README.md::TextFile::-1::1731938671::0::1::::<><>::
+::res://Assets/::1739107808
+::res://Assets/Art/::1739110804
+::res://Assets/Art/Books/::1739109277
+book_A.fbx::PackedScene::859551302719324830::1739108556::1739108558::1::::<><>::
+book_E.fbx::PackedScene::8517063827465786101::1739108778::1739108779::1::::<><>::
+book_H.fbx::PackedScene::874947421587268910::1739109275::1739109277::1::::<><>::
+book_L.fbx::PackedScene::5313849575197331911::1739109275::1739109277::1::::<><>::
+book_W.fbx::PackedScene::1214782864694372550::1739109275::1739109277::1::::<><>::
+T_Books_BC.png::CompressedTexture2D::3465976112559790608::1739108556::1739108577::1::::<><>::
+::res://Assets/Art/CharacterIdols/::1739107805
+::res://Assets/Art/CharacterIdols/Kyra/::1739108131
+KyraGrey_01.png::CompressedTexture2D::3581950554345362566::1739107805::1739108131::1::::<><>::
+KyraGrey_02.png::CompressedTexture2D::8516296665644171414::1739107805::1739108131::1::::<><>::
+Kyra_01.png::CompressedTexture2D::1576116266099901541::1739107805::1739108131::1::::<><>::
+Kyra_02.png::CompressedTexture2D::2806826040075959471::1739107805::1739108131::1::::<><>::
+::res://Assets/Art/CharacterIdols/Meredith/::1739108132
+Meredith_01.png::CompressedTexture2D::4387551268216540825::1739107805::1739108132::1::::<><>::
+Meredith_01_grey.png::CompressedTexture2D::3935761609415096932::1739107805::1739108132::1::::<><>::
+::res://Assets/Art/CharacterIdols/Tom/::1739108133
+Tom_01.png::CompressedTexture2D::8780004987672479398::1739107805::1739108133::1::::<><>::
+Tom_01_grey.png::CompressedTexture2D::1594936209850771715::1739107805::1739108132::1::::<><>::
+::res://Assets/Art/Crate/::1739108141
+Crate.fbx::PackedScene::5042284837094015627::1731938671::1739108141::1::::<><>::
+::res://Assets/Art/Crate/Textures/::1739108132
+Crate_albedo.png::CompressedTexture2D::4832467860665642763::1731938671::1739108131::1::::<><>::
+Crate_ao.png::CompressedTexture2D::2371818429038106233::1731938671::1739108132::1::::<><>::
+Crate_normal.png::CompressedTexture2D::9002973667354351693::1731938671::1739108131::1::::<><>::
+::res://Assets/Art/Dialoge/::1739108132
+Dialogbalken links.png::CompressedTexture2D::3459729125507229425::1739107805::1739108132::1::::<><>::
+dialogbalken mitte.png::CompressedTexture2D::4564893529981738118::1739107805::1739108132::1::::<><>::
+Dialogbalken rechts.png::CompressedTexture2D::8044193930472954891::1739107805::1739108132::1::::<><>::
+Left_Dialogue_styleboxtexture.tres::StyleBoxTexture::1351439204302279662::1739107805::0::1::::<><>::uid://g8olr2siwa31::::res://Assets/Art/Finished/UI/Dialoge/Dialogbalken rechts.png
+Middle_Dialogue_styleboxtexture.tres::StyleBoxTexture::5655851450202458541::1739107805::0::1::::<><>::uid://b6bjenx34bo6y::::res://Assets/Art/Dialoge/dialogbalken mitte.png
+Right_Dialogue_styleboxtexture.tres::StyleBoxTexture::4245030436470401975::1739107805::0::1::::<><>::uid://bpj6h6uwdmgh2::::res://Assets/Art/Dialoge/Dialogbalken links.png
+::res://Assets/Art/Finished/::1739107806
+::res://Assets/Art/Finished/2DAssets/::1739108448
+::res://Assets/Art/Finished/2DAssets/Character Idols/::1739108134
+CrazyGuyGrey_01.png::CompressedTexture2D::2987848331856400746::1739107805::1739108132::1::::<><>::
+CrazyGuy_01.png::CompressedTexture2D::2748543940396540715::1739107805::1739108132::1::::<><>::
+Crazy_guy_ingame.PNG::CompressedTexture2D::5778080957111213925::1739107805::1739108132::1::::<><>::
+KyraGrey_01.png::CompressedTexture2D::226606095908436943::1739107805::1739108132::1::::<><>::
+KyraGrey_02.png::CompressedTexture2D::3193535570547431653::1739107805::1739108132::1::::<><>::
+Kyra_01.png::CompressedTexture2D::1230692103435203999::1739107805::1739108133::1::::<><>::
+Kyra_02.png::CompressedTexture2D::3789479319821678583::1739107805::1739108133::1::::<><>::
+Meredith_01.png::CompressedTexture2D::5816626116046664027::1739107805::1739108134::1::::<><>::
+Meredith_01_grey.png::CompressedTexture2D::7846697161354807034::1739107805::1739108133::1::::<><>::
+Meredith_02.png::CompressedTexture2D::2680235789282644562::1739107805::1739108134::1::::<><>::
+Meredith_02_grey.png::CompressedTexture2D::3585588551246683114::1739107805::1739108133::1::::<><>::
+Meredith_InGame.png::CompressedTexture2D::934147591446127875::1739107805::1739108133::1::::<><>::
+Tom_01.png::CompressedTexture2D::1728779545133845689::1739107805::1739108134::1::::<><>::
+Tom_01_grey.png::CompressedTexture2D::8742018049272068235::1739107805::1739108133::1::::<><>::
+Tom_02.png::CompressedTexture2D::2904014500328043990::1739107805::1739108134::1::::<><>::
+Tom_02_grey.png::CompressedTexture2D::2799498705521686052::1739107805::1739108133::1::::<><>::
+Tom_InGame.png::CompressedTexture2D::1219873011604849875::1739107805::1739108133::1::::<><>::
+::res://Assets/Art/Finished/2DAssets/Item pngs/::1739128752
+Delphin_Placeholder.png::CompressedTexture2D::7558893706971606228::1739107805::1739108131::1::::<><>::
+Holzbein_Placeholder.png::CompressedTexture2D::4915872658328960631::1739107805::1739108131::1::::<><>::
+Kerze_Placeholder.png::CompressedTexture2D::4866065670419288098::1739107805::1739108130::1::::<><>::
+Messer_Placeholder.png::CompressedTexture2D::4568190112512555930::1739107805::1739108131::1::::<><>::
+Seehund_Placeholder.png::CompressedTexture2D::2373231042585208060::1739107805::1739108131::1::::<><>::
+TomDokument_Placeholder.png::CompressedTexture2D::1590493733779741109::1739107805::1739108130::1::::<><>::
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/::1739115090
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_closed/::1739115450
+Diary_closed.png::CompressedTexture2D::797210088919911340::1739107805::1739114614::1::::<><>::
+Diary_closed_MeshInstance.tscn::PackedScene::5468818028901760867::1739114644::0::1::::<><>::uid://lmf60l1o8vou::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_closed/Diary_closed.png
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_onbed/::1739115454
+Diary_onbed.png::CompressedTexture2D::734946066095021519::1739107805::1739114688::1::::<><>::
+Diary_onbed_MeshInstance.tscn::PackedScene::4955465964847545602::1739114786::0::1::::<><>::uid://kqapphbx3lk6::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_onbed/Diary_onbed.png
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_open/::1739115464
+Diary_open.png::CompressedTexture2D::7344732099261338200::1739107805::1739114747::1::::<><>::
+Diary_open_MeshInstance.tscn::PackedScene::3023011001479974509::1739114753::0::1::::<><>::uid://dcv3wujjvddlo::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_open/Diary_open.png
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Drawer_Key/::1739115467
+Drawer_key.png::CompressedTexture2D::1104175455701288435::1739107805::1739110238::1::::<><>::
+Drawer_Key_MeshInstance.tscn::PackedScene::6592217555782126446::1739114296::0::1::::<><>::uid://py4uxl4nducx::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Drawer_Key/Drawer_key.png
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_left/::1739115470
+Pin_left.png::CompressedTexture2D::4958051729726895623::1739115085::1739115256::1::::<><>::
+Pin_left_MeshInstance.tscn::PackedScene::4480759435481427492::1739115269::0::1::::<><>::uid://ccvyngcs07bbr::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_left/Pin_left.png
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_middle/::1739115473
+Pin_middle.png::CompressedTexture2D::7673623581940338045::1739115097::1739115288::1::::<><>::
+Pin_middle_MeshInstance.tscn::PackedScene::3291688378146529718::1739115302::0::1::::<><>::uid://dhlfpu56gcm1j::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_middle/Pin_middle.png
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_right/::1739115476
+Pin_right.png::CompressedTexture2D::4808795963552740100::1739115103::1739115328::1::::<><>::
+Pin_right_MeshInstance.tscn::PackedScene::944131540024767570::1739115343::0::1::::<><>::uid://carofw8vyuny7::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_right/Pin_right.png
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Portrait_piece/::1739115480
+Portrait_piece.png::CompressedTexture2D::6955199755507950968::1739107805::1739114355::1::::<><>::
+Portrait_piece_MeshInstance.tscn::PackedScene::5408239451329254251::1739114459::0::1::::<><>::uid://c6dfehecfwycu::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Portrait_piece/Portrait_piece.png
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Schreibtisch_Zettel/::1739114880
+Schreibtisch_Zettel.PNG::CompressedTexture2D::6552139790951610622::1739107805::1739114861::1::::<><>::
+Schreibtisch_zettel_MeshInstance.tscn::PackedScene::1873009766591872601::1739114880::0::1::::<><>::uid://c0l51xsxfe4fq::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Schreibtisch_Zettel/Schreibtisch_Zettel.PNG
+::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Wardrobe_Whale/::1739115486
+Wardrobe_whale.png::CompressedTexture2D::4585991574613081757::1739107805::1739114478::1::::<><>::
+Wardrobe_whale_MeshInstance.tscn::PackedScene::334343914817183446::1739114591::0::1::::<><>::uid://b6lqu1tc0732h::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Wardrobe_Whale/Wardrobe_whale.png
+::res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/::1739128767
+Diary_closed_64.png::CompressedTexture2D::6792682374743223369::1739128767::1739128768::1::::<><>::
+Diary_onbed_64.png::CompressedTexture2D::2363831797646452202::1739128767::1739128768::1::::<><>::
+Diary_open_64.png::CompressedTexture2D::4070715878115177684::1739128767::1739128768::1::::<><>::
+Drawer_key_64.png::CompressedTexture2D::583621706795783536::1739128767::1739128768::1::::<><>::
+Pin_left_64.png::CompressedTexture2D::4733881879087632054::1739128767::1739128768::1::::<><>::
+Pin_middle_64.png::CompressedTexture2D::767606485294851607::1739128767::1739128768::1::::<><>::
+Pin_right_64.png::CompressedTexture2D::6901846959794742974::1739128767::1739128768::1::::<><>::
+Portrait_piece_64.png::CompressedTexture2D::4840604103085709743::1739128767::1739128768::1::::<><>::
+Schreibtisch_Zettel_64.png::CompressedTexture2D::3532115963950819982::1739128767::1739128768::1::::<><>::
+Wardrobe_whale_64.png::CompressedTexture2D::8740507265202633680::1739128767::1739128768::1::::<><>::
+::res://Assets/Art/Finished/2DAssets/Scenes/::1739107805
+::res://Assets/Art/Finished/2DAssets/Scenes/captain room/::1739108137
+CaptainsRoom_Shot_1.0.1.1_noPins.png::CompressedTexture2D::908833109334999569::1739107805::1739108130::1::::<><>::
+CaptainsRoom_Shot_1.0.1.1_PuzzleSolved.png::CompressedTexture2D::2990852699380420772::1739107805::1739108130::1::::<><>::
+CaptainsRoom_Shot_1.0.1.1_withPins.png::CompressedTexture2D::7308952562907439763::1739107805::1739108130::1::::<><>::
+CaptainsRoom_Shot_1.0.1.2_noNote.png::CompressedTexture2D::7643009989647751881::1739107805::1739108130::1::::<><>::
+CaptainsRoom_Shot_1.0.1.2_withNote.png::CompressedTexture2D::2087438568967358559::1739107805::1739108131::1::::<><>::
+CaptainsRoom_Shot_1.0.1_noKey.png::CompressedTexture2D::8730119747479576186::1739107805::1739108131::1::::<><>::
+CaptainsRoom_Shot_1.0.1_withKey.png::CompressedTexture2D::8406852422987847026::1739107805::1739108131::1::::<><>::
+CaptainsRoom_Shot_1.0.2.1_MapCloseup.png::CompressedTexture2D::6839570918610509485::1739107805::1739108131::1::::<><>::
+CaptainsRoom_Shot_1.0.2.2_Radiocloseup.png::CompressedTexture2D::7113010944661495383::1739107805::1739108131::1::::<><>::
+CaptainsRoom_Shot_1.0.2.3_BookpuzzleSolved.png::CompressedTexture2D::8396583678795890957::1739107805::1739108131::1::::<><>::
+CaptainsRoom_Shot_1.0.2.3_BooksCloseup.png::CompressedTexture2D::6501713461397222185::1739107805::1739108131::1::::<><>::
+CaptainsRoom_Shot_1.0.2.4.png::CompressedTexture2D::872183424129237176::1739107805::1739108137::1::::<><>::
+CaptainsRoom_Shot_1.0.2.png::CompressedTexture2D::6537804711246397220::1739107805::1739108136::1::::<><>::
+CaptainsRoom_Shot_1.0.3_noKey.png::CompressedTexture2D::4182972114195334074::1739107805::1739108136::1::::<><>::
+CaptainsRoom_Shot_1.0.3_withKey.png::CompressedTexture2D::1736166427997823852::1739107805::1739108135::1::::<><>::
+CaptainsRoom_Shot_1.0.4_noStatue.png::CompressedTexture2D::7254086250290890546::1739107805::1739108135::1::::<><>::
+CaptainsRoom_Shot_1.0.4_withStatue.png::CompressedTexture2D::6579584325105077460::1739107805::1739108135::1::::<><>::
+CaptainsRoom_Shot_1.0.png::CompressedTexture2D::8198624251716052028::1739107805::1739108135::1::::<><>::
+CaptainsRoom_Shot_1.1.1_afterpuzzle.png::CompressedTexture2D::559208315809578401::1739107805::1739108135::1::::<><>::
+CaptainsRoom_Shot_1.1.1_beforepuzzle.png::CompressedTexture2D::8181047215620865977::1739107805::1739108135::1::::<><>::
+CaptainsRoom_Shot_1.1.2.png::CompressedTexture2D::8872561013452100863::1739107805::1739108135::1::::<><>::
+CaptainsRoom_Shot_1.1.3.png::CompressedTexture2D::7745789563766972832::1739107805::1739108135::1::::<><>::
+CaptainsRoom_Shot_1.1.png::CompressedTexture2D::4151293449824027187::1739107805::1739108136::1::::<><>::
+CaptainsRoom_Shot_1.2.png::CompressedTexture2D::8937712212972750172::1739107805::1739108136::1::::<><>::
+CaptainsRoom_Shot_1.3.png::CompressedTexture2D::9014371258365164510::1739107805::1739108136::1::::<><>::
+CaptainsRoom_Shot_1.4.png::CompressedTexture2D::6438920746583825007::1739107805::1739108136::1::::<><>::
+CaptainsRoom_Shot_1.5_noDiary.png::CompressedTexture2D::7689649882306969875::1739107805::1739108136::1::::<><>::
+CaptainsRoom_Shot_1.5_withDiary.png::CompressedTexture2D::6605973504614750333::1739107805::1739108136::1::::<><>::
+::res://Assets/Art/Finished/2DAssets/Scenes/dining hall/::1739108137
+DiningHall_01.jpeg::CompressedTexture2D::5951123936946623882::1739107805::1739108136::1::::<><>::
+DiningHall_02.jpeg::CompressedTexture2D::8228691603877138780::1739107805::1739108136::1::::<><>::
+DiningHall_03.jpeg::CompressedTexture2D::3388999207508261877::1739107805::1739108136::1::::<><>::
+DiningHall_04.jpeg::CompressedTexture2D::1390698141189737501::1739107805::1739108136::1::::<><>::
+DiningHall_05.jpeg::CompressedTexture2D::8485387756927217298::1739107805::1739108137::1::::<><>::
+::res://Assets/Art/Finished/Menu_Intro/::1739107806
+Intro_Render_Final.ogv::VideoStreamTheora::-1::1739107805::0::1::::<><>::
+LoopIntro_Render_Final.ogv::VideoStreamTheora::-1::1739107806::0::1::::<><>::
+loop_Render_Final.ogv::VideoStreamTheora::-1::1739107806::0::1::::<><>::
+::res://Assets/Art/Finished/Menu_Intro/OVG/::1739107806
+Intro_Render_Final.ogv::VideoStreamTheora::-1::1739107806::0::1::::<><>::
+loop_Render_Final.ogv::VideoStreamTheora::-1::1739107806::0::1::::<><>::
+::res://Assets/Art/Finished/Navigation/::1739108136
+Pfeil_links.webp::CompressedTexture2D::5247951001965295064::1739107806::1739108136::1::::<><>::
+Pfeil_oben.webp::CompressedTexture2D::816969877400142100::1739107806::1739108136::1::::<><>::
+Pfeil_rechts.webp::CompressedTexture2D::6811795395802130405::1739107806::1739108136::1::::<><>::
+Pfeil_unten.webp::CompressedTexture2D::6651834204583041442::1739107806::1739108136::1::::<><>::
+::res://Assets/Art/Finished/UI/::1739107806
+::res://Assets/Art/Finished/UI/Dialoge/::1739108137
+Dialogbalken links.png::CompressedTexture2D::7323202507426360959::1739107806::1739108137::1::::<><>::
+dialogbalken mitte.png::CompressedTexture2D::380715078081827627::1739107806::1739108134::1::::<><>::
+Dialogbalken rechts.png::CompressedTexture2D::490128144779916930::1739107806::1739108134::1::::<><>::
+Dialogbalken_next.PNG::CompressedTexture2D::2311500052465946129::1739107806::1739108135::1::::<><>::
+::res://Assets/Art/Finished/UI/Einstellungen (Credits noch in progress)/::1739108134
+UI_Einstellungen_Accessibility_Fertig.png::CompressedTexture2D::1366410419887618201::1739107806::1739108134::1::::<><>::
+UI_Einstellungen_Audio_Fertig.png::CompressedTexture2D::6500574997325826685::1739107806::1739108134::1::::<><>::
+UI_Einstellungen_Controls_Fertig.png::CompressedTexture2D::218430373055135250::1739107806::1739108134::1::::<><>::
+UI_Einstellungen_Fertig.png::CompressedTexture2D::4794306704016084146::1739107806::1739108134::1::::<><>::
+UI_Einstellungen_Hintergrund_Fertig.png::CompressedTexture2D::777185205300146170::1739107806::1739108134::1::::<><>::
+UI_Einstellungen_Regler.png::CompressedTexture2D::8491975819701260492::1739107806::1739108134::1::::<><>::
+UI_Einstellungen_Video_Fertig.png::CompressedTexture2D::1715365659712172856::1739107806::1739108134::1::::<><>::
+UI_Einstellungen_X.png::CompressedTexture2D::7495847821493222394::1739107806::1739108134::1::::<><>::
+::res://Assets/Art/Finished/UI/Inventar/::1739108136
+Inventar_fertig.webp::CompressedTexture2D::4235235821867447916::1739107806::1739108134::1::::<><>::
+Inventar_Kompass.webp::CompressedTexture2D::2395981625032976756::1739107806::1739108134::1::::<><>::
+Inventar_nadel.webp::CompressedTexture2D::959632600127101667::1739107806::1739108134::1::::<><>::
+Inventar_neu.PNG::CompressedTexture2D::4614162530387694022::1739107806::1739108136::1::::<><>::
+::res://Assets/Art/Finished/UI/Pausenbildschirm/::1739108134
+Pausenbildschirm_fertig.webp::CompressedTexture2D::5537483621521004286::1739107806::1739108134::1::::<><>::
+Pausenbildschirm_holzbrett.webp::CompressedTexture2D::7355119715321098624::1739107806::1739108134::1::::<><>::
+Pausenbildschirm_rahmen.webp::CompressedTexture2D::3114227898288872894::1739107806::1739108134::1::::<><>::
+Pausenbildschrim_schrift.webp::CompressedTexture2D::4405626758693095328::1739107806::1739108134::1::::<><>::
+::res://Assets/Art/Finished/UI/Pfeile/::1739108134
+IMG_2146(1).png::CompressedTexture2D::3371625842178153530::1739107806::1739108134::1::::<><>::
+IMG_2146.PNG::CompressedTexture2D::3621525291085593690::1739107806::1739108134::1::::<><>::
+IMG_2147.PNG::CompressedTexture2D::8662003445980333012::1739107806::1739108134::1::::<><>::
+IMG_2148.PNG::CompressedTexture2D::1576552951952999122::1739107806::1739108134::1::::<><>::
+IMG_2149.PNG::CompressedTexture2D::8541963774628445312::1739107806::1739108127::1::::<><>::
+Pfeil_links.webp::CompressedTexture2D::8118332631222530587::1739107806::1739108127::1::::<><>::
+Pfeil_oben.webp::CompressedTexture2D::5856223642715856084::1739107806::1739108127::1::::<><>::
+Pfeil_rechts.webp::CompressedTexture2D::7207246965243855443::1739107806::1739108127::1::::<><>::
+Pfeil_unten.webp::CompressedTexture2D::4671579362402132085::1739107806::1739108127::1::::<><>::
+::res://Assets/Art/Finished/UI/Pfeile/new/::1739108134
+Pfeil_links_neu.PNG::CompressedTexture2D::1367589648500611700::1739107806::1739108134::1::::<><>::
+Pfeil_oben_neu.PNG::CompressedTexture2D::5730643870170905990::1739107806::1739108134::1::::<><>::
+Pfeil_rechts_neu.PNG::CompressedTexture2D::1623925507972060233::1739107806::1739108134::1::::<><>::
+Pfeil_unten_neu.PNG::CompressedTexture2D::8683524091214119242::1739107806::1739108134::1::::<><>::
+::res://Assets/Art/Finished/UI/Schreibtischschloss/::1739108127
+Schreibtischschloss_Fertig.png::CompressedTexture2D::3872688698699212418::1739107806::1739108127::1::::<><>::
+Schreibtischschloss_Pfeile_Fertig.png::CompressedTexture2D::7823311789370494746::1739107806::1739108127::1::::<><>::
+::res://Assets/Art/Finished/UI/Startbildschirm/::1739108127
+Startbildschirm_Fertig.png::CompressedTexture2D::2713150457740150990::1739107806::1739108127::1::::<><>::
+::res://Assets/Art/Placeholder/::1739107806
+::res://Assets/Art/Placeholder/Experiment/::1739108127
+Captainsroomschlüssel_Experiment.png::CompressedTexture2D::8791029772405100571::1739107806::1739108127::1::::<><>::
+Portraitschnipsel_Experiment.png::CompressedTexture2D::6468183502815458586::1739107806::1739108127::1::::<><>::
+Schrankschlüssel_Experiment.png::CompressedTexture2D::4116302289711078134::1739107806::1739108127::1::::<><>::
+TomDokument_Experiment.png::CompressedTexture2D::4627752355117599783::1739107806::1739108127::1::::<><>::
+Wal_Experiment.png::CompressedTexture2D::19226086764126306::1739107806::1739108127::1::::<><>::
+::res://Assets/Art/Placeholder/Puzzle/::1739107806
+::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/::1739107806
+::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/::1739108143
+01_puzzelteilQuadrat_sm.fbx::PackedScene::1855264207585106299::1739107806::1739108141::1::::<><>::uid://mpr2r1vbhbsb::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/01_puzzelteilQuadrat_sm_0.png
+01_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::874313129297371729::1739107806::1739108127::1::::<><>::
+02_puzzelteilQuadrat_sm.fbx::PackedScene::3522330722002115444::1739107806::1739108141::1::::<><>::uid://dfyu578vx7frs::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/02_puzzelteilQuadrat_sm_0.png
+02_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::7561020981751269944::1739107806::1739108127::1::::<><>::
+03_puzzelteilQuadrat_sm.fbx::PackedScene::3087667160303135807::1739107806::1739108142::1::::<><>::uid://cspbj8nb8orag::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/03_puzzelteilQuadrat_sm_0.png
+03_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::6067284761762708778::1739107806::1739108127::1::::<><>::
+04_puzzelteilQuadrat_sm.fbx::PackedScene::6303690780221327624::1739107806::1739108142::1::::<><>::uid://ce1hub41tnks7::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/04_puzzelteilQuadrat_sm_0.png
+04_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::5107731396901261764::1739107806::1739108128::1::::<><>::
+05_puzzelteilQuadrat_sm.fbx::PackedScene::5832373721778448322::1739107806::1739108142::1::::<><>::uid://cjllhxgnbmglv::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/05_puzzelteilQuadrat_sm_0.png
+05_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::5427930720799272115::1739107806::1739108128::1::::<><>::
+06_puzzelteilQuadrat_sm.fbx::PackedScene::2654046669473329233::1739107806::1739108142::1::::<><>::uid://dfmd3jdu8yrbw::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/06_puzzelteilQuadrat_sm_0.png
+06_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::7535211433824153996::1739107806::1739108127::1::::<><>::
+07_puzzelteilQuadrat_sm.fbx::PackedScene::7410040996005935619::1739107806::1739108142::1::::<><>::uid://o14dmt63isj2::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/07_puzzelteilQuadrat_sm_0.png
+07_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::1038084443787686453::1739107806::1739108127::1::::<><>::
+08_puzzelteilQuadrat_sm.fbx::PackedScene::6413958059217980186::1739107806::1739108143::1::::<><>::uid://c5bw4aftttpkn::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/08_puzzelteilQuadrat_sm_0.png
+08_puzzelteilQuadrat_sm_0.png::CompressedTexture2D::6881958624758787589::1739107806::1739108127::1::::<><>::
+::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Amogus/::1739108127
+00.png::CompressedTexture2D::6963243411890640060::1739107806::1739108127::1::::<><>::
+01.png::CompressedTexture2D::5231925767589889687::1739107806::1739108127::1::::<><>::
+02.png::CompressedTexture2D::4971377921264438087::1739107806::1739108127::1::::<><>::
+10.png::CompressedTexture2D::7336760543725005405::1739107806::1739108127::1::::<><>::
+11.png::CompressedTexture2D::720914840099039894::1739107806::1739108127::1::::<><>::
+12.png::CompressedTexture2D::5546750816723863075::1739107806::1739108127::1::::<><>::
+20.png::CompressedTexture2D::8983711609700896263::1739107806::1739108127::1::::<><>::
+21.png::CompressedTexture2D::96559079828021430::1739107806::1739108127::1::::<><>::
+22.png::CompressedTexture2D::7985137789481865739::1739107806::1739108127::1::::<><>::
+::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/Portrait/::1739108128
+00.png::CompressedTexture2D::8920098098163846045::1739107806::1739108127::1::::<><>::
+01.png::CompressedTexture2D::6271048640767068630::1739107806::1739108127::1::::<><>::
+02.png::CompressedTexture2D::1201665238692344282::1739107806::1739108127::1::::<><>::
+03.png::CompressedTexture2D::7615519825445931023::1739107806::1739108127::1::::<><>::
+04.png::CompressedTexture2D::474498946999622076::1739107806::1739108127::1::::<><>::
+05.png::CompressedTexture2D::7082530916996676282::1739107806::1739108127::1::::<><>::
+06.png::CompressedTexture2D::3887921404889984902::1739107806::1739108127::1::::<><>::
+07.png::CompressedTexture2D::9059512958611160185::1739107806::1739108127::1::::<><>::
+08.png::CompressedTexture2D::4936693540111408396::1739107806::1739108128::1::::<><>::
+::res://Assets/Art/Placeholder/Scenes/::1739107806
+::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/::1739108128
+main.png::CompressedTexture2D::2567905473719608573::1739107806::1739108128::1::::<><>::
+::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/Interaction/::1739108128
+globusOpen.png::CompressedTexture2D::3470411204478124823::1739107806::1739108128::1::::<><>::
+globusZoom.png::CompressedTexture2D::8104772085513175877::1739107806::1739108128::1::::<><>::
+wardrobeOpen.png::CompressedTexture2D::1393165404208022750::1739107806::1739108128::1::::<><>::
+::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/::1739108128
+left0.png::CompressedTexture2D::9212159230363199624::1739107806::1739108128::1::::<><>::
+left.png::CompressedTexture2D::9071964734349521732::1739107806::1739108128::1::::<><>::
+::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/left/Interaction/::1739108129
+left0.png::CompressedTexture2D::84391372319782308::1739107806::1739108128::1::::<><>::
+notebookCode.png::CompressedTexture2D::6601509912482372692::1739107806::1739108128::1::::<><>::
+notebookCodeOpen.png::CompressedTexture2D::7093318963499095755::1739107806::1739108128::1::::<><>::
+pillowMove.png::CompressedTexture2D::8467289620800944736::1739107806::1739108128::1::::<><>::
+windowZoom0.png::CompressedTexture2D::908884511611884433::1739107806::1739108128::1::::<><>::
+windowZoom.png::CompressedTexture2D::1963175146566695612::1739107806::1739108129::1::::<><>::
+::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/right/::1739108128
+right0.png::CompressedTexture2D::7888374637251896122::1739107806::1739108128::1::::<><>::
+right.png::CompressedTexture2D::3616505164366262412::1739107806::1739108128::1::::<><>::
+::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/right/Interaction/::1739108128
+exitDoorZoom0.png::CompressedTexture2D::2903086261955768577::1739107806::1739108128::1::::<><>::
+exitDoorZoom.png::CompressedTexture2D::5058598869645901427::1739107806::1739108128::1::::<><>::
+exitDoorZoomKey0.png::CompressedTexture2D::2111290872804823919::1739107806::1739108128::1::::<><>::
+exitDoorZoomKey.png::CompressedTexture2D::4463801204090327783::1739107806::1739108128::1::::<><>::
+::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/::1739108129
+topLeft.png::CompressedTexture2D::7165488011594927823::1739107806::1739108128::1::::<><>::
+::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topLeft/Interaction/::1739108129
+bookZoom.png::CompressedTexture2D::8735394190972854470::1739107806::1739108128::1::::<><>::
+drawer.png::CompressedTexture2D::4545129561792334488::1739107806::1739108129::1::::<><>::
+mapZoom.png::CompressedTexture2D::2650122479236042246::1739107806::1739108128::1::::<><>::
+officeOpenDrawer.png::CompressedTexture2D::5318823157796705808::1739107806::1739108129::1::::<><>::
+radioZoom.png::CompressedTexture2D::2677808180887719716::1739107806::1739108129::1::::<><>::
+::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/topRight/::1739108128
+topRight.png::CompressedTexture2D::9219237542425254159::1739107806::1739108128::1::::<><>::
+::res://Assets/Art/Placeholder/Scenes/DiningRoom/::1739108128
+DiningHall01.png::CompressedTexture2D::6950661778031766975::1739107806::1739108128::1::::<><>::
+DiningHall02.png::CompressedTexture2D::4061457551497493516::1739107806::1739108128::1::::<><>::
+DiningHall03.png::CompressedTexture2D::5223961863150932553::1739107806::1739108128::1::::<><>::
+DiningHall04.png::CompressedTexture2D::3577834305166959284::1739107806::1739108128::1::::<><>::
+DiningHall05.png::CompressedTexture2D::7946690442541073983::1739107806::1739108128::1::::<><>::
+DiningHall031.png::CompressedTexture2D::8115870656590883469::1739107806::1739108128::1::::<><>::
+DiningHall041.png::CompressedTexture2D::1315530485319973167::1739107806::1739108128::1::::<><>::
+DiningHall051.png::CompressedTexture2D::8558113843638586408::1739107806::1739108128::1::::<><>::
+::res://Assets/Art/Placeholder/Scenes/Hallway/::1739108128
+Hallway01.png::CompressedTexture2D::6549855290667069108::1739107806::1739108128::1::::<><>::
+Hallway02.1.png::CompressedTexture2D::5501824579080820452::1739107806::1739108128::1::::<><>::
+Hallway02.png::CompressedTexture2D::7645612508234137760::1739107806::1739108128::1::::<><>::
+Hallway03.png::CompressedTexture2D::4163064168134048448::1739107806::1739108128::1::::<><>::
+Hallway04.png::CompressedTexture2D::1389833528359949408::1739107806::1739108128::1::::<><>::
+::res://Assets/Art/Placeholder/UI/::1739108128
+icon.svg::CompressedTexture2D::5577185240438568749::1739107806::1739108128::1::::<><>::
+Key.png::CompressedTexture2D::6990393216353826035::1739107806::1739108128::1::::<><>::
+Note.png::CompressedTexture2D::3963193321399038036::1739107806::1739108128::1::::<><>::
+Notebook.png::CompressedTexture2D::3469237162201576904::1739107806::1739108128::1::::<><>::
+pin.png::CompressedTexture2D::5535602434245431375::1739107806::1739108128::1::::<><>::
+Pinhole.png::CompressedTexture2D::6069360837283710840::1739107806::1739108128::1::::<><>::
+Plush.png::CompressedTexture2D::8061931604138094536::1739107806::1739108128::1::::<><>::
+PortraitPart.png::CompressedTexture2D::7301093753989224691::1739107806::1739108128::1::::<><>::
+::res://Assets/Audio/::1739107807
+::res://Assets/Audio/BGM/::1739128754
+ dining hall.wav::AudioStreamWAV::6729855447316425603::1739107806::1739128754::1::::<><>::
+captains room.wav::AudioStreamWAV::5660693866422270653::1739107806::1739108139::1::::<><>::
+Hallway.wav::AudioStreamWAV::337250804884147676::1739107806::1739108139::1::::<><>::
+main theme.wav::AudioStreamWAV::4569930591867471212::1739107807::1739108141::1::::<><>::
+::res://Assets/Audio/BGM/Music/::1739108127
+chillBeats.mp3::AudioStreamMP3::8989440000033981222::1739107806::1739108127::1::::<><>::
+muladara.mp3::AudioStreamMP3::7330613862618422925::1739107806::1739108127::1::::<><>::
+::res://Assets/Audio/SFX/::1739108138
+buch öffnen und blättern.wav::AudioStreamWAV::8057302724454945004::1739107807::1739108138::1::::<><>::
+buch öffnen.wav::AudioStreamWAV::6961648168647916107::1739107807::1739108138::1::::<><>::
+click-234708.mp3::AudioStreamMP3::6167724243897709997::1739107807::1739108127::1::::<><>::
+Kopfkissen rücken.wav::AudioStreamWAV::4103320198873853863::1739107807::1739108138::1::::<><>::
+light-switch-sound-228104.mp3::AudioStreamMP3::3293425714207317397::1739107807::1739108127::1::::<><>::
+notizbuch aufheben.wav::AudioStreamWAV::3504362330084845356::1739107807::1739108138::1::::<><>::
+Schieben.wav::AudioStreamWAV::995293858576323890::1739107807::1739108138::1::::<><>::
+schlüssel aufheben.wav::AudioStreamWAV::9143463177088522534::1739107807::1739108138::1::::<><>::
+Schlüssel ins Schloss stecken + tür öffnen.wav::AudioStreamWAV::5655045738557687995::1739107807::1739108138::1::::<><>::
+Schrank öffnen.wav::AudioStreamWAV::7495417287889487774::1739107807::1739108138::1::::<><>::
+schublade öffnen richtig.wav::AudioStreamWAV::3288890492212212335::1739107807::1739108138::1::::<><>::
+telefon.mp3::AudioStreamMP3::1948725088986717192::1739107807::1739108127::1::::<><>::
+Tür schliessen.wav::AudioStreamWAV::5528337806806024672::1739107807::1739108138::1::::<><>::
+Tür öffnen.wav::AudioStreamWAV::329278576809063621::1739107807::1739108138::1::::<><>::
+::res://Assets/Audio/SFX/AnimalSounds/::1739108138
+eagle-squawking-type-3-235996.mp3::AudioStreamMP3::3971725789261597876::1739107807::1739108127::1::::<><>::
+möve.wav::AudioStreamWAV::6188954715413338139::1739107807::1739108138::1::::<><>::
+wolf-howling-140235.mp3::AudioStreamMP3::3748757941027390388::1739107807::1739108127::1::::<><>::
+::res://Assets/Audio/SFX/enviroment/::1739108139
+atmospheric-ambient-texture-114236.mp3::AudioStreamMP3::5239845879820535362::1739107807::1739108127::1::::<><>::
+creakingnoise-35017.mp3::AudioStreamMP3::6319439175847729203::1739107807::1739108127::1::::<><>::
+gramophone-starts-plays-and-stops-27493.mp3::AudioStreamMP3::3609952397037979738::1739107807::1739108127::1::::<><>::
+Holzboden.wav::AudioStreamWAV::8076552615313417244::1739107807::1739108139::1::::<><>::
+kraschendes Bett.wav::AudioStreamWAV::3156640199947955342::1739107807::1739108138::1::::<><>::
+lit-fireplace-6307.mp3::AudioStreamMP3::3073905128181978214::1739107807::1739108127::1::::<><>::
+new-signal-27310.mp3::AudioStreamMP3::4557110240242877744::1739107807::1739108127::1::::<><>::
+Regen.mp3::AudioStreamMP3::3200197636644015912::1739107807::1739108127::1::::<><>::
+Sturm.mp3::AudioStreamMP3::759613714852524099::1739107807::1739108127::1::::<><>::
+wellen1.mp3::AudioStreamMP3::4875766840655188426::1739107807::1739108127::1::::<><>::
+wellen.mp3::AudioStreamMP3::2864536365101690930::1739107807::1739108127::1::::<><>::
+::res://Assets/Audio/SFX/Klaviernoten/::1739108127
+do-80236.mp3::AudioStreamMP3::360603332731693577::1739107807::1739108127::1::::<><>::
+fa-78409.mp3::AudioStreamMP3::1622658009357429816::1739107807::1739108127::1::::<><>::
+la-80237.mp3::AudioStreamMP3::6232834489535578021::1739107807::1739108127::1::::<><>::
+mi-80239.mp3::AudioStreamMP3::6385824139524281653::1739107807::1739108127::1::::<><>::
+re-78500.mp3::AudioStreamMP3::5876399410743663477::1739107807::1739108127::1::::<><>::
+si-80238.mp3::AudioStreamMP3::1856872497948995185::1739107807::1739108127::1::::<><>::
+sol-101774.mp3::AudioStreamMP3::2294039451448337236::1739107807::1739108127::1::::<><>::
+::res://Assets/Audio/SFX/safeLater/::1739108138
+Kerzenleuchter.wav::AudioStreamWAV::2440456400729230826::1739107807::1739108138::1::::<><>::
+::res://Assets/Audio/Voices/::1739107808
+::res://Assets/Audio/Voices/Enitys Voice/::1739108138
+Enity´s Voice.wav::AudioStreamWAV::3023064754992156771::1739107807::1739108138::1::::<><>::
+Riddle Voice.wav::AudioStreamWAV::1650244545593563778::1739107807::1739108138::1::::<><>::
+::res://Assets/Audio/Voices/Kyra/::1739108139
+Kyra (Dilara)-01.wav::AudioStreamWAV::6967875797481667957::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-02.wav::AudioStreamWAV::2494798288910270196::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-03.wav::AudioStreamWAV::2094739705983899967::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-04.wav::AudioStreamWAV::6053227253120169706::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-05.wav::AudioStreamWAV::8172768002118729161::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-06.wav::AudioStreamWAV::4856290504523971522::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-07.wav::AudioStreamWAV::346999996213350683::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-08.wav::AudioStreamWAV::6288098242138724708::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-09.wav::AudioStreamWAV::5356127835882938567::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-10.wav::AudioStreamWAV::5302642140327409809::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-11.wav::AudioStreamWAV::5197701207909168425::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-12.wav::AudioStreamWAV::4151700744571888175::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-13.wav::AudioStreamWAV::1522882759788866724::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-14.wav::AudioStreamWAV::627452003020492373::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-15.wav::AudioStreamWAV::3632309817609240398::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-16.wav::AudioStreamWAV::6909639908919364784::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-17.wav::AudioStreamWAV::3768765938455490487::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-18.wav::AudioStreamWAV::8552803903792262207::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-19.wav::AudioStreamWAV::3942629531429101093::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-20.wav::AudioStreamWAV::6313656071112867419::1739107807::1739108139::1::::<><>::
+Kyra (Dilara)-21.wav::AudioStreamWAV::2071658843913756890::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-22.wav::AudioStreamWAV::2166096759619436024::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-23.wav::AudioStreamWAV::4230750090719942868::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-24.wav::AudioStreamWAV::496155190702511910::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-25.wav::AudioStreamWAV::6047434134263549161::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-26.wav::AudioStreamWAV::7670093340250287693::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-27.wav::AudioStreamWAV::1343169535026244316::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-28.wav::AudioStreamWAV::2973964325284700525::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-29.wav::AudioStreamWAV::1652282558864841418::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-30.wav::AudioStreamWAV::2581255879598797057::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-31.wav::AudioStreamWAV::4956548837925383792::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-32.wav::AudioStreamWAV::2796181670150275124::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-33.wav::AudioStreamWAV::3728987379458892278::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-34.wav::AudioStreamWAV::7966389832117300839::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-35.wav::AudioStreamWAV::2547194894698815433::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-36.wav::AudioStreamWAV::3949016967598657012::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-37.wav::AudioStreamWAV::764206564499115772::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-38.wav::AudioStreamWAV::3362002100011756634::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-39.wav::AudioStreamWAV::1335189688494184052::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-40.wav::AudioStreamWAV::106645960618538161::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-41.wav::AudioStreamWAV::7372106673271703227::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-42.wav::AudioStreamWAV::5275105315104447000::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-43.wav::AudioStreamWAV::4126149701140087458::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-44.wav::AudioStreamWAV::6922305095635017798::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-45.wav::AudioStreamWAV::3513522625021947774::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-46.wav::AudioStreamWAV::4104743475330077964::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-47.wav::AudioStreamWAV::8461169374986123337::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-48.wav::AudioStreamWAV::4286554136087000687::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-49.wav::AudioStreamWAV::8257639340804638283::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-50.wav::AudioStreamWAV::2017904433109958910::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-51.wav::AudioStreamWAV::5064345839853506345::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-52.wav::AudioStreamWAV::4911828895395058203::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-53.wav::AudioStreamWAV::3434548392966396277::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-54.wav::AudioStreamWAV::5050270199627229684::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-55.wav::AudioStreamWAV::2765357817845592398::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-56.wav::AudioStreamWAV::3815064863036582077::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-57.wav::AudioStreamWAV::3755167160472123044::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-58.wav::AudioStreamWAV::6777092357150813361::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-59.wav::AudioStreamWAV::3311740287182604856::1739107807::1739108137::1::::<><>::
+Kyra (Dilara)-60.wav::AudioStreamWAV::6011396930386839271::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-61.wav::AudioStreamWAV::8852319653833154181::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-62.wav::AudioStreamWAV::3426518109423262926::1739107807::1739108138::1::::<><>::
+Kyra (Dilara)-63.wav::AudioStreamWAV::6835240927034682228::1739107807::1739108138::1::::<><>::
+::res://Assets/Audio/Voices/Meredith/::1739108138
+Meredith 01.wav::AudioStreamWAV::3062631301350553181::1739107807::1739108138::1::::<><>::
+Meredith 02.wav::AudioStreamWAV::7786533078519875251::1739107807::1739108138::1::::<><>::
+Meredith 03.wav::AudioStreamWAV::7557090051185212804::1739107807::1739108138::1::::<><>::
+Meredith 04.wav::AudioStreamWAV::8273556774601083598::1739107807::1739108138::1::::<><>::
+Meredith 05.wav::AudioStreamWAV::72899494367213644::1739107807::1739108138::1::::<><>::
+Meredith 06.wav::AudioStreamWAV::7989110052581479921::1739107807::1739108138::1::::<><>::
+Meredith 07.wav::AudioStreamWAV::2272834723643858739::1739107807::1739108138::1::::<><>::
+Meredith 08.wav::AudioStreamWAV::5262445276880692974::1739107807::1739108138::1::::<><>::
+Meredith 09.wav::AudioStreamWAV::3950961885848293405::1739107807::1739108137::1::::<><>::
+Meredith 10.wav::AudioStreamWAV::662146079710615581::1739107807::1739108137::1::::<><>::
+Meredith 11.wav::AudioStreamWAV::7676914879163253520::1739107807::1739108137::1::::<><>::
+Meredith 12.wav::AudioStreamWAV::7001340254974753194::1739107807::1739108137::1::::<><>::
+Meredith 13.wav::AudioStreamWAV::4611450868390616771::1739107807::1739108137::1::::<><>::
+Meredith 14.wav::AudioStreamWAV::4744758674135055601::1739107807::1739108137::1::::<><>::
+Meredith 15.wav::AudioStreamWAV::441008321938725631::1739107807::1739108137::1::::<><>::
+::res://Assets/Audio/Voices/Radio Voice/::1739108137
+Radio Voice.wav::AudioStreamWAV::3139981441294791391::1739107808::1739108137::1::::<><>::
+::res://Assets/Audio/Voices/Sam/::1739108137
+Crazy Guy 01.wav::AudioStreamWAV::5852228405913894756::1739107808::1739108137::1::::<><>::
+Crazy Guy 02.wav::AudioStreamWAV::6035720363987626386::1739107808::1739108137::1::::<><>::
+Crazy Guy 03.wav::AudioStreamWAV::5816979984294072677::1739107808::1739108137::1::::<><>::
+Crazy Guy 04.wav::AudioStreamWAV::8628628810388441101::1739107808::1739108137::1::::<><>::
+Crazy Guy 05.wav::AudioStreamWAV::1097950702488902108::1739107808::1739108137::1::::<><>::
+Crazy Guy 06.wav::AudioStreamWAV::1386874850252516106::1739107808::1739108137::1::::<><>::
+::res://Assets/Audio/Voices/Tom/::1739108137
+Tom 01.wav::AudioStreamWAV::4887346703374888233::1739107808::1739108137::1::::<><>::
+Tom 02.wav::AudioStreamWAV::3666857238535386642::1739107808::1739108137::1::::<><>::
+Tom 03.wav::AudioStreamWAV::8386832722667609252::1739107808::1739108137::1::::<><>::
+Tom 04.wav::AudioStreamWAV::3405225066756904750::1739107808::1739108137::1::::<><>::
+::res://Assets/JSON/::1739107808
+CrazyGuy.json::JSON::-1::1739107808::0::1::::<><>::
+dialogues.json::JSON::-1::1739107808::0::1::::<><>::
+MeridithTest.json::JSON::-1::1739107808::0::1::::<><>::
+::res://Assets/JSON/choice/::1739107808
+forest.json::JSON::-1::1739107808::0::1::::<><>::
+house.json::JSON::-1::1739107808::0::1::::<><>::
+tree.json::JSON::-1::1739107808::0::1::::<><>::
+village.json::JSON::-1::1739107808::0::1::::<><>::
+::res://Assets/JSON/Dialogues/::1739107808
+::res://Assets/JSON/Dialogues/Scene1/::1739107808
+CaptainsJournalUnderPillow.json::JSON::-1::1739107808::0::1::::<><>::
+GlobeWithPin.json::JSON::-1::1739107808::0::1::::<><>::
+MapOnDesk.json::JSON::-1::1739107808::0::1::::<><>::
+PortraitCaptain.json::JSON::-1::1739107808::0::1::::<><>::
+RadioWhisper.json::JSON::-1::1739107808::0::1::::<><>::
+TheCaptainsRoom.json::JSON::-1::1739107808::0::1::::<><>::
+::res://Assets/JSON/Dialogues/Scene3/::1739107808
+MeredithDiningHall.json::JSON::-1::1739107808::0::1::::<><>::
+::res://Assets/JSON/Dialogues/Scene4/::1739107808
+AnimalStatueFirstEncounter.json::JSON::-1::1739107808::0::1::::<><>::
+BookshelfFirstEncounter.json::JSON::-1::1739107808::0::1::::<><>::
+BruningCandle.json::JSON::-1::1739107808::0::1::::<><>::
+DisplayCasePlaceStatue.json::JSON::-1::1739107808::0::1::::<><>::
+OpenedShelf.json::JSON::-1::1739107808::0::1::::<><>::
+OrganizedBooks.json::JSON::-1::1739107808::0::1::::<><>::
+SamAltar.json::JSON::-1::1739107808::0::1::::<><>::
+::res://Assets/JSON/Dialogues/Scene5/::1739107808
+FileCandleInteraction.json::JSON::-1::1739107808::0::1::::<><>::
+MeredithMemories.json::JSON::-1::1739107808::0::1::::<><>::
+::res://Assets/JSON/Dialogues/Scene6/::1739107808
+ReturnCaptainRoom.json::JSON::-1::1739107808::0::1::::<><>::
+::res://scenes/::1739114546
+3DViewport.tscn::PackedScene::1435262317156502667::1739107808::0::1::::<><>::res://scripts/3DViewport.gd<>uid://bct6a7lt8dc6p::::res://Assets/Art/Placeholder/Scenes/CaptainsRoom/main.png<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
+Background.tscn::PackedScene::2202417917244361780::1739107808::0::1::::<><>::res://scripts/Background.gd<>uid://do2qe48y36k57::::res://Assets/Art/Finished/2DAssets/Scenes/captain room/CaptainsRoom_Shot_1.0.png
+BookRiddle.tscn::PackedScene::264333835136207322::1739107808::0::1::::<><>::res://scripts/BookRiddle.gd<>uid://bm6mif3hvd470::::res://Assets/Audio/SFX/light-switch-sound-228104.mp3<>res://scripts/Book.gd<>uid://bm4fstb2tg0al::::res://Assets/Audio/SFX/schublade öffnen richtig.wav
+CodeRiddle.tscn::PackedScene::127311198557834061::1739107808::0::1::::<><>::res://scripts/CodeRiddle.gd<>res://scripts/CodeColumn.gd<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://djpw2jkrxjs8y::::res://Assets/Art/Finished/UI/Schreibtischschloss/Schreibtischschloss_Pfeile_Fertig.png
+crate.tscn::PackedScene::2331090909585695710::1731938671::0::1::::<><>::uid://cd3rxu61epd3p::::res://Assets/Art/Crate/Crate.fbx<>uid://ca35bl2yx3jn4::::res://Assets/Art/Crate/Textures/Crate_albedo.png<>uid://816rdp5aecy8::::res://Assets/Art/Crate/Textures/Crate_ao.png<>uid://d1jdwqb83g3ef::::res://Assets/Art/Crate/Textures/Crate_normal.png<>uid://bp1auupcnyvxd::::res://Assets/Audio/SFX/Möven.mp3
+DialogueInteraction.tscn::PackedScene::9201240278525191122::1739107808::0::1::::<><>::res://scripts/dialogueInteraction.gd
+DialogueSystem.tscn::PackedScene::3294395130157583743::1739107808::0::1::::<><>::res://scripts/DialogueSystem.gd<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://tiwahhsisfnq::::res://Assets/Art/Dialoge/Left_Dialogue_styleboxtexture.tres<>uid://76yck1s642pp::::res://Assets/Art/Finished/UI/Dialoge/Dialogbalken_next.PNG
+Dininghall01Nav.tscn::PackedScene::8910602140757986096::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>res://scenes/NavigaionManager.gd<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG<>uid://tqqab77njwae::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG<>uid://cmwc2h5h70t3r::::res://Assets/Audio/BGM/captains room.wav
+Dininghall02Nav.tscn::PackedScene::6058269089528109879::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
+Dininghall03Nav.tscn::PackedScene::300955577455500941::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://tqqab77njwae::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG
+Dininghall04Nav.tscn::PackedScene::6736340945792016877::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
+Dininghall05Nav.tscn::PackedScene::2243419271281489863::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
+Dininghall031Nav.tscn::PackedScene::7314327871968288025::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://tqqab77njwae::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG
+Dininghall041Nav.tscn::PackedScene::5349313731423837089::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
+Dininghall051Nav.tscn::PackedScene::6094925680458635941::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
+Gameplay.tscn::PackedScene::8686923993699394072::1739107808::0::1::::<><>::uid://b51vq3wsky7ww::::res://scenes/PickupItem3D.tscn<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
+GlobusPinRiddle.tscn::PackedScene::1271616286089990655::1739107808::0::1::::<><>::res://scripts/GlobusMap.gd<>uid://bm6mif3hvd470::::res://Assets/Audio/SFX/light-switch-sound-228104.mp3<>uid://csqbqsdnfq7u7::::res://Assets/Art/Placeholder/UI/Pinhole.png<>uid://cmtl1olg0f5lv::::res://Assets/Audio/SFX/Schlüssel ins Schloss stecken + tür öffnen.wav<>uid://ck4qtfhew5l16::::res://Assets/Art/Placeholder/UI/pin.png<>res://scripts/Pin.gd
+InventorySystem.tscn::PackedScene::6909865805741537462::1739107808::0::1::::<><>::res://scripts/InventorySystem.gd<>uid://bp6sln60kxlyy::::res://Assets/Audio/SFX/notizbuch aufheben.wav
+LeftNav.tscn::PackedScene::9104518148809185961::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://bypxc4klh8a7p::::res://Assets/Audio/SFX/Kopfkissen rücken.wav
+LeftNotebookCodeNav.tscn::PackedScene::8930632418147173459::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://bp6sln60kxlyy::::res://Assets/Audio/SFX/notizbuch aufheben.wav<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
+LeftNotebookCodeOpenNav.tscn::PackedScene::229291845976363928::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn
+LeftWindowNav.tscn::PackedScene::4312214013618733935::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://bm6mif3hvd470::::res://Assets/Audio/SFX/light-switch-sound-228104.mp3<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
+Main.tscn::PackedScene::4249296749994118019::1739114546::0::1::::<><>::uid://6m4rbr4uqs3u::::res://scenes/Background.tscn<>res://scenes/mainSceneHandle.gd<>uid://cwj6bpg3u3b8w::::res://scenes/MainNav.tscn<>uid://p5ahydkjisqy::::res://scenes/TopLeftRadioNav.tscn<>uid://yxu6nudywmn5::::res://scenes/TopLeftMapNav.tscn<>uid://dn4l1mgm34vg7::::res://scenes/RightDoorNav.tscn<>uid://cetnyk2nihqe8::::res://scenes/RightNav.tscn<>uid://b3nlrfc4y8aml::::res://scenes/TopRightGlobusNav.tscn<>uid://bxbos0gxepw15::::res://scenes/TopLeftBookNav.tscn<>uid://b2o4sghcmtr32::::res://scenes/LeftWindowNav.tscn<>uid://d2ykc31xty202::::res://scenes/LeftNav.tscn<>uid://o2s547vsoxmj::::res://scenes/TopRightNav.tscn<>uid://bg3ruliyhrcr5::::res://scenes/TopLeftNav.tscn<>uid://cf7xqrrdhc6yi::::res://scenes/TopRightGlobusOpenNav.tscn<>uid://d0ichgc34176v::::res://scenes/LeftNotebookCodeNav.tscn<>uid://c3x8vutkwn5vy::::res://scenes/TopLeftDrawerNav.tscn<>uid://btrvd3iljyob2::::res://scenes/RightDoorOpenNav.tscn<>uid://dy7mkyuun44lo::::res://scenes/Dininghall01Nav.tscn<>uid://b51vq3wsky7ww::::res://scenes/PickupItem3D.tscn<>uid://bm63haxmbj0d4::::res://scenes/DialogueSystem.tscn<>uid://dbu0l40uitgwg::::res://scenes/MainUI.tscn<>uid://cskw2ovxuw2q2::::res://scenes/Dininghall02Nav.tscn<>uid://c5pgqlg128lek::::res://scenes/InventorySystem.tscn<>uid://ej1xuylcigfl::::res://scenes/Dininghall03Nav.tscn<>uid://dchd58uigxf8l::::res://scenes/Dininghall031Nav.tscn<>uid://c28es0f18kvur::::res://scenes/Dininghall04Nav.tscn<>uid://cihioephk7sp2::::res://scenes/Dininghall041Nav.tscn<>uid://bp6sln60kxlyy::::res://Assets/Audio/SFX/notizbuch aufheben.wav<>uid://jkwemu8d667::::res://Assets/Art/Placeholder/Experiment/Wal_Experiment.png<>uid://67y11ra13xbj::::res://scenes/Dininghall05Nav.tscn<>uid://bypxc4klh8a7p::::res://Assets/Audio/SFX/Kopfkissen rücken.wav<>uid://b2w2de81naqf::::res://scenes/CodeRiddle.tscn<>uid://cs3oshanxh6kn::::res://scenes/Dininghall051Nav.tscn<>uid://d4dfc3a7qahje::::res://scenes/DialogueInteraction.tscn<>uid://d3jfrdcfia2xm::::res://Assets/Audio/SFX/schlüssel aufheben.wav<>uid://bbtd20fe3jpp1::::res://scenes/SlidePuzzle.tscn<>uid://dxio8ghmqqne6::::res://Assets/Art/Placeholder/Experiment/Captainsroomschlüssel_Experiment.png<>uid://nkrjlfcm4m2v::::res://Assets/Art/Finished/2DAssets/Character Idols/Meredith_InGame.png<>uid://cok7fcpgq4h4h::::res://Assets/Art/Finished/2DAssets/Character Idols/Crazy_guy_ingame.PNG<>uid://kqapphbx3lk6::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_onbed/Diary_onbed.png<>uid://wwpg1sb4025v::::res://Assets/Art/Finished/2DAssets/Item pngs/TomDokument_Placeholder.png<>uid://c6dfehecfwycu::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Portrait_piece/Portrait_piece.png<>uid://py4uxl4nducx::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Drawer_Key/Drawer_key.png<>uid://ccbjx7mjscmhj::::res://Assets/Art/Finished/2DAssets/Item pngs/Holzbein_Placeholder.png<>uid://b6c4on3mscb4m::::res://Assets/Art/Finished/2DAssets/Item pngs/Messer_Placeholder.png<>uid://c2mlwdyrxdwcw::::res://scenes/PianoRiddle.tscn<>uid://82u1eou8fcb1::::res://Assets/Art/Finished/2DAssets/Item pngs/Seehund_Placeholder.png<>uid://bafqx5p03hpru::::res://scenes/Menus/PauseMenu.tscn<>uid://dfxt40qo2ecuu::::res://Assets/Art/Finished/2DAssets/Item pngs/Delphin_Placeholder.png<>uid://cblfnjueu21xu::::res://Assets/Art/Finished/2DAssets/Item pngs/Kerze_Placeholder.png<>uid://cmwc2h5h70t3r::::res://Assets/Audio/BGM/captains room.wav
+MainNav.tscn::PackedScene::6337460138198217884::1739107808::0::1::::<><>::res://scenes/NavigaionManager.gd<>uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
+mainSceneHandle.gd::GDScript::-1::1739107808::0::1::::<>Control<>::
+MainUI.tscn::PackedScene::7272277581068064738::1739107808::0::1::::<><>::res://scripts/MainUI.gd<>uid://b1ltyk1vqp6cu::::res://Assets/Art/Finished/UI/Inventar/Inventar_fertig.webp
+NavigaionManager.gd::GDScript::-1::1739107808::0::1::::<>Control<>::
+Notebook3D.tscn::PackedScene::8469139343881746870::1739107808::0::1::::<><>::
+PianoRiddle.tscn::PackedScene::6693420048496770394::1739107808::0::1::::<><>::res://scripts/pianoRiddle.gd<>res://scripts/note.gd<>uid://bm4fstb2tg0al::::res://Assets/Audio/SFX/schublade öffnen richtig.wav<>uid://fexc4lus2x42::::res://Assets/Audio/SFX/Klaviernoten/do-80236.mp3<>uid://cpyto7lvns3jt::::res://Assets/Audio/SFX/Klaviernoten/re-78500.mp3<>uid://cw8lucy3spurl::::res://Assets/Audio/SFX/Klaviernoten/mi-80239.mp3<>uid://xea68bfjvexc::::res://Assets/Audio/SFX/Klaviernoten/fa-78409.mp3<>uid://7xiq203pndmy::::res://Assets/Audio/SFX/Klaviernoten/sol-101774.mp3<>uid://cu2h4xww0ttdl::::res://Assets/Audio/SFX/Klaviernoten/la-80237.mp3<>uid://1pqoicrbeqkn::::res://Assets/Audio/SFX/Klaviernoten/si-80238.mp3
+PickupItem2D.tscn::PackedScene::7783466821998762829::1739107808::0::1::::<><>::res://scripts/PickupItem2D.gd<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg
+PickupItem3D.tscn::PackedScene::4547064949461884066::1739107808::0::1::::<><>::res://scripts/PickupItem3D.gd<>res://scripts/RotateItemAnimationj.gd
+RightDoorNav.tscn::PackedScene::8132298930936251112::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://cmtl1olg0f5lv::::res://Assets/Audio/SFX/Schlüssel ins Schloss stecken + tür öffnen.wav
+RightDoorOpenNav.tscn::PackedScene::3756385032389558565::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://exrf1tynuho4::::res://Assets/Audio/SFX/Tür öffnen.wav<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://tqqab77njwae::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG<>uid://c2480a1xmsxhj::::res://Assets/Audio/BGM/ dining hall.wav
+RightNav.tscn::PackedScene::5093652666770014593::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://tqqab77njwae::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG
+SlidePuzzle.tscn::PackedScene::2496064393099307164::1739107808::0::1::::<><>::res://scripts/Piece.gd<>res://scripts/SlidePuzzle.gd<>uid://exrf1tynuho4::::res://Assets/Audio/SFX/Tür öffnen.wav<>uid://1ox6vucnbuat::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/01_puzzelteilQuadrat_sm.fbx<>uid://bqgiji4lcg413::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/02_puzzelteilQuadrat_sm.fbx<>uid://bj8xorvpmbsxb::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/03_puzzelteilQuadrat_sm.fbx<>uid://cv2s4pj6qky3a::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/04_puzzelteilQuadrat_sm.fbx<>uid://ogelyfy5nnla::::res://Assets/Audio/SFX/Schieben.wav<>uid://cpdilwukph0wk::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/05_puzzelteilQuadrat_sm.fbx<>uid://bd2v04t3huyxt::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/06_puzzelteilQuadrat_sm.fbx<>uid://ddtqj7hydr0ix::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/07_puzzelteilQuadrat_sm.fbx<>uid://cxm77mxcy5gek::::res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/08_puzzelteilQuadrat_sm.fbx
+SwapScene.tscn::PackedScene::6581734433531554397::1739107808::0::1::::<><>::res://scripts/SwapScene.gd<>uid://xev20eqfxvk0::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_rechts_neu.PNG
+testAlphabet.tscn::PackedScene::7776987970679469077::1739107808::0::1::::<><>::uid://b2w2de81naqf::::res://scenes/CodeRiddle.tscn
+TopLeftBookNav.tscn::PackedScene::4003711970714480386::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://d1bsl3hdb04e::::res://scenes/BookRiddle.tscn<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
+TopLeftDrawerNav.tscn::PackedScene::6787651920330366626::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://b2w2de81naqf::::res://scenes/CodeRiddle.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://bm4fstb2tg0al::::res://Assets/Audio/SFX/schublade öffnen richtig.wav<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG<>uid://exrf1tynuho4::::res://Assets/Audio/SFX/Tür öffnen.wav
+TopLeftMapNav.tscn::PackedScene::1733283348991430680::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
+TopLeftNav.tscn::PackedScene::2866424818605859424::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3
+TopLeftRadioNav.tscn::PackedScene::1114777753411147088::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
+TopRightGlobusNav.tscn::PackedScene::4379243728834955595::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://sd8lmvc2x1x8::::res://scenes/GlobusPinRiddle.tscn<>uid://exrf1tynuho4::::res://Assets/Audio/SFX/Tür öffnen.wav<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
+TopRightGlobusOpenNav.tscn::PackedScene::5191271656546787284::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://dvymmxkpx7tx7::::res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG
+TopRightNav.tscn::PackedScene::1039530063568681261::1739107808::0::1::::<><>::uid://c01ig7olg4lw4::::res://scenes/SwapScene.tscn<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://de13osl4hgcl7::::res://Assets/Audio/SFX/Schrank öffnen.wav
+::res://scenes/Books/::1739109461
+book_a.tscn::PackedScene::5565261383518041292::1739109313::0::1::::<><>::uid://mimxjevkosqg::::res://Assets/Art/Books/book_A.fbx<>uid://bpm7ec65dqb73::::res://Assets/Art/Books/T_Books_BC.png
+book_e.tscn::PackedScene::5395226783706030265::1739109395::0::1::::<><>::uid://dtly2dgtd6evt::::res://Assets/Art/Books/book_E.fbx<>uid://bpm7ec65dqb73::::res://Assets/Art/Books/T_Books_BC.png
+book_h.tscn::PackedScene::3777319234113795334::1739109409::0::1::::<><>::uid://mp3iyf1ee40i::::res://Assets/Art/Books/book_H.fbx<>uid://bpm7ec65dqb73::::res://Assets/Art/Books/T_Books_BC.png
+book_l.tscn::PackedScene::1581960352921989950::1739109423::0::1::::<><>::uid://chycldavdt2k6::::res://Assets/Art/Books/book_L.fbx<>uid://bpm7ec65dqb73::::res://Assets/Art/Books/T_Books_BC.png
+book_w.tscn::PackedScene::4887727228550161612::1739109461::0::1::::<><>::uid://rkpkcr0yi1yo::::res://Assets/Art/Books/book_W.fbx<>uid://bpm7ec65dqb73::::res://Assets/Art/Books/T_Books_BC.png
+::res://scenes/Captains_Room/::1739115371
+Diary_closed_MeshInstance.tscn::PackedScene::421332383643343513::1739114910::0::1::::<><>::uid://lmf60l1o8vou::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_closed/Diary_closed.png
+Diary_onbed_MeshInstance.tscn::PackedScene::7809899653850734105::1739114927::0::1::::<><>::uid://kqapphbx3lk6::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_onbed/Diary_onbed.png
+Diary_open_MeshInstance.tscn::PackedScene::8244657020866618119::1739114936::0::1::::<><>::uid://dcv3wujjvddlo::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_open/Diary_open.png
+Drawer_Key_MeshInstance.tscn::PackedScene::741097158715635616::1739114946::0::1::::<><>::uid://py4uxl4nducx::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Drawer_Key/Drawer_key.png
+Pin_left_MeshInstance.tscn::PackedScene::5604422346538955476::1739115353::0::1::::<><>::uid://ccvyngcs07bbr::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_left/Pin_left.png
+Pin_middle_MeshInstance.tscn::PackedScene::1649952371456302408::1739115362::0::1::::<><>::uid://dhlfpu56gcm1j::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_middle/Pin_middle.png
+Pin_right_MeshInstance.tscn::PackedScene::5558045838322739527::1739115371::0::1::::<><>::uid://carofw8vyuny7::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_right/Pin_right.png
+Portrait_piece_MeshInstance.tscn::PackedScene::9215244953311787476::1739114957::0::1::::<><>::uid://c6dfehecfwycu::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Portrait_piece/Portrait_piece.png
+Schreibtisch_zettel_MeshInstance.tscn::PackedScene::6979762574573345296::1739114968::0::1::::<><>::uid://c0l51xsxfe4fq::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Schreibtisch_Zettel/Schreibtisch_Zettel.PNG
+Wardrobe_whale_MeshInstance.tscn::PackedScene::1848278418207079815::1739114977::0::1::::<><>::uid://b6lqu1tc0732h::::res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Wardrobe_Whale/Wardrobe_whale.png
+::res://scenes/JSON/::1739107808
+gameScenes.json::JSON::-1::1739107808::0::1::::<><>::
+::res://scenes/Menus/::1739126671
+EndMenu.tscn::PackedScene::8343304317358490935::1739107808::0::1::::<><>::res://scripts/Menus/EndMenu.gd<>uid://clpvoqsm1htw4::::res://Assets/Art/Placeholder/UI/icon.svg<>res://Assets/Art/Finished/Menu_Intro/OVG/loop_Render_Final.ogv<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://b6dydbc3443js::::res://Assets/Audio/BGM/main theme.wav
+MainMenu.tscn::PackedScene::8206362530617527680::1739126671::0::1::::<><>::res://scripts/Menus/MainMenu.gd<>uid://bewjgrsldbg2i::::res://Assets/Art/Finished/UI/Startbildschirm/Startbildschirm_Fertig.png<>res://Assets/Art/Finished/Menu_Intro/OVG/Intro_Render_Final.ogv<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>res://Assets/Art/Finished/Menu_Intro/OVG/loop_Render_Final.ogv<>uid://b6dydbc3443js::::res://Assets/Audio/BGM/main theme.wav
+OptionMenu.tscn::PackedScene::4351391897530304468::1739107808::0::1::::<><>::res://scripts/Menus/OptionsMenu.gd<>uid://ct4xrt4j4mtgf::::res://Assets/Audio/SFX/click-234708.mp3<>uid://lcqektc3sfpy::::res://Assets/Art/Finished/UI/Einstellungen (Credits noch in progress)/UI_Einstellungen_Hintergrund_Fertig.png<>uid://btel43gq0gtg5::::res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-33.wav<>uid://b6dydbc3443js::::res://Assets/Audio/BGM/main theme.wav
+PauseMenu.tscn::PackedScene::2397756717653642602::1739107808::0::1::::<><>::res://scripts/Menus/PauseMenu.gd<>uid://b283124h4t7vc::::res://scenes/Menus/OptionMenu.tscn<>res://scripts/Menus/pauseNode.gd<>uid://dc140nwusiat1::::res://Assets/Art/Finished/UI/Pausenbildschirm/Pausenbildschirm_holzbrett.webp
+::res://scripts/::1739107808
+3DViewport.gd::GDScript::-1::1739107808::0::1::::<>TextureRect<>::
+Background.gd::GDScript::-1::1739107808::0::1::::BackgroundTexture<>Control<>::
+Book.gd::GDScript::-1::1739107808::0::1::::Book<>Area3D<>::
+BookRiddle.gd::GDScript::-1::1739107808::0::1::::BookRiddle<>Node3D<>::
+CodeColumn.gd::GDScript::-1::1739107808::0::1::::<>Node3D<>::
+CodeRiddle.gd::GDScript::-1::1739107808::0::1::::CodeRiddle<>Node3D<>::
+dialogueInteraction.gd::GDScript::-1::1739107808::0::1::::DialogueInteration<>Control<>::
+DialogueSystem.gd::GDScript::-1::1739107808::0::1::::DialogueSystem<>Control<>::
+GlobusMap.gd::GDScript::-1::1739107808::0::1::::GlobusMap<>Control<>::
+InventorySystem.gd::GDScript::-1::1739107808::0::1::::InventorySystem<>Control<>::
+MainUI.gd::GDScript::-1::1739107808::0::1::::<>Control<>::
+note.gd::GDScript::-1::1739107808::0::1::::Note<>Area3D<>::
+pianoRiddle.gd::GDScript::-1::1739107808::0::1::::PianoRiddle<>Node3D<>::
+PickupItem2D.gd::GDScript::-1::1739107808::0::1::::<>Control<>::
+PickupItem3D.gd::GDScript::-1::1739107808::0::1::::PickupItem3D<>Node3D<>::
+Piece.gd::GDScript::-1::1739107808::0::1::::<>Area3D<>::
+Pin.gd::GDScript::-1::1739107808::0::1::::<>TextureButton<>::
+RotateItemAnimationj.gd::GDScript::-1::1739107808::0::1::::<>MeshInstance3D<>::
+SlidePuzzle.gd::GDScript::-1::1739107808::0::1::::SlidePuzzleRiddle<>Node3D<>::
+SwapScene.gd::GDScript::-1::1739107808::0::1::::SwapScene<>Control<>::
+::res://scripts/Manager/::1739107808
+GameManager.gd::GDScript::-1::1739107808::0::1::::<>Node<>::
+SceneManager.gd::GDScript::-1::1739107808::0::1::::<>Node<>::
+::res://scripts/Menus/::1739107808
+EndMenu.gd::GDScript::-1::1739107808::0::1::::<>Control<>::
+MainMenu.gd::GDScript::-1::1739107808::0::1::::<>Control<>::
+OptionsMenu.gd::GDScript::-1::1739107808::0::1::::OptionMenu<>Control<>::
+PauseMenu.gd::GDScript::-1::1739107808::0::1::::PauseMenu<>Control<>::
+pauseNode.gd::GDScript::-1::1739107808::0::1::::<>Node<>::

@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://djjf52vtuhawv"]
+
+[ext_resource type="Texture2D" uid="uid://kqapphbx3lk6" path="res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Diary_onbed/Diary_onbed.png" id="1_jg5ie"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dw1o4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wt7cg"]
+transparency = 1
+albedo_texture = ExtResource("1_jg5ie")
+
+[node name="MeshInstance3D" type="MeshInstance3D"]
+transform = Transform3D(0.999673, 0.0217991, -0.0133913, -0.0216386, 0.999694, 0.0120119, 0.0136491, -0.0117182, 0.999838, 0, 0, 0)
+mesh = SubResource("PlaneMesh_dw1o4")
+surface_material_override/0 = SubResource("StandardMaterial3D_wt7cg")
