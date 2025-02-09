@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://b51vq3wsky7ww"]
+
+[ext_resource type="Script" path="res://scripts/PickupItem3D.gd" id="1_vkhxp"]
+[ext_resource type="Script" path="res://scripts/RotateItemAnimationj.gd" id="2_sqt26"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6vptb"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_is0at"]
+
+[sub_resource type="Skin" id="Skin_ggd4g"]
+
+[node name="PickupItem3D" type="Node3D" node_paths=PackedStringArray("audioStreamPlayer")]
+script = ExtResource("1_vkhxp")
+audioStreamPlayer = NodePath("AudioStreamPlayer")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("BoxShape3D_6vptb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D/CollisionShape3D"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+mesh = SubResource("BoxMesh_is0at")
+skin = SubResource("Skin_ggd4g")
+skeleton = NodePath("../..")
+script = ExtResource("2_sqt26")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="input_event" from="Area3D" to="." method="_on_area_3d_input_event"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

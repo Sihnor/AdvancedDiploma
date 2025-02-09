@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cmtl1olg0f5lv"
+path="res://.godot/imported/Schlüssel ins Schloss stecken + tür öffnen.wav-5a5309e33ef183f7f998230df2f02410.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/SFX/Schlüssel ins Schloss stecken + tür öffnen.wav"
+dest_files=["res://.godot/imported/Schlüssel ins Schloss stecken + tür öffnen.wav-5a5309e33ef183f7f998230df2f02410.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

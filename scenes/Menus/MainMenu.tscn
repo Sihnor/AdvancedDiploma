@@ -1,0 +1,248 @@
+[gd_scene load_steps=16 format=3 uid="uid://do6hueiu6mk1u"]
+
+[ext_resource type="Script" path="res://scripts/Menus/MainMenu.gd" id="1_f3ekp"]
+[ext_resource type="Texture2D" uid="uid://bewjgrsldbg2i" path="res://Assets/Art/Finished/UI/Startbildschirm/Startbildschirm_Fertig.png" id="2_2cx71"]
+[ext_resource type="VideoStream" path="res://Assets/Art/Finished/Menu_Intro/OVG/Intro_Render_Final.ogv" id="2_21upe"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_wgdiv"]
+[ext_resource type="VideoStream" path="res://Assets/Art/Finished/Menu_Intro/OVG/loop_Render_Final.ogv" id="3_rijen"]
+[ext_resource type="AudioStream" uid="uid://b6dydbc3443js" path="res://Assets/Audio/BGM/main theme.wav" id="6_r0xc4"]
+
+[sub_resource type="FontFile" id="FontFile_ohqef"]
+cache/0/64/0/ascent = 0.0
+cache/0/64/0/descent = 0.0
+cache/0/64/0/underline_position = 0.0
+cache/0/64/0/underline_thickness = 0.0
+cache/0/64/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/65/0/ascent = 0.0
+cache/0/65/0/descent = 0.0
+cache/0/65/0/underline_position = 0.0
+cache/0/65/0/underline_thickness = 0.0
+cache/0/65/0/scale = 1.0
+cache/0/63/0/ascent = 0.0
+cache/0/63/0/descent = 0.0
+cache/0/63/0/underline_position = 0.0
+cache/0/63/0/underline_thickness = 0.0
+cache/0/63/0/scale = 1.0
+cache/0/62/0/ascent = 0.0
+cache/0/62/0/descent = 0.0
+cache/0/62/0/underline_position = 0.0
+cache/0/62/0/underline_thickness = 0.0
+cache/0/62/0/scale = 1.0
+cache/0/61/0/ascent = 0.0
+cache/0/61/0/descent = 0.0
+cache/0/61/0/underline_position = 0.0
+cache/0/61/0/underline_thickness = 0.0
+cache/0/61/0/scale = 1.0
+cache/0/60/0/ascent = 0.0
+cache/0/60/0/descent = 0.0
+cache/0/60/0/underline_position = 0.0
+cache/0/60/0/underline_thickness = 0.0
+cache/0/60/0/scale = 1.0
+cache/0/59/0/ascent = 0.0
+cache/0/59/0/descent = 0.0
+cache/0/59/0/underline_position = 0.0
+cache/0/59/0/underline_thickness = 0.0
+cache/0/59/0/scale = 1.0
+cache/0/58/0/ascent = 0.0
+cache/0/58/0/descent = 0.0
+cache/0/58/0/underline_position = 0.0
+cache/0/58/0/underline_thickness = 0.0
+cache/0/58/0/scale = 1.0
+cache/0/57/0/ascent = 0.0
+cache/0/57/0/descent = 0.0
+cache/0/57/0/underline_position = 0.0
+cache/0/57/0/underline_thickness = 0.0
+cache/0/57/0/scale = 1.0
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4l00q"]
+texture = ExtResource("2_2cx71")
+region_rect = Rect2(61, 17, 1159, 256)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s1g8p"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cyqbs"]
+texture = ExtResource("2_2cx71")
+region_rect = Rect2(468, 333, 348, 104)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sgql2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y0e0o"]
+texture = ExtResource("2_2cx71")
+region_rect = Rect2(468, 450, 348, 104)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ja8ua"]
+texture = ExtResource("2_2cx71")
+region_rect = Rect2(468, 566, 348, 104)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vycnj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0klyu"]
+texture = ExtResource("2_2cx71")
+region_rect = Rect2(468, 681, 348, 104)
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_f3ekp")
+introCutscene = ExtResource("2_21upe")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("3_rijen")
+autoplay = true
+expand = true
+loop = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titel" type="Label" parent="Panel"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0473958
+anchor_top = 0.012037
+anchor_right = 0.953646
+anchor_bottom = 0.360185
+grow_horizontal = 2
+theme_override_fonts/font = SubResource("FontFile_ohqef")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_4l00q")
+text = "Armatheus"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+custom_minimum_size = Vector2(0, 327)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.364323
+anchor_top = 0.408796
+anchor_right = 0.63776
+anchor_bottom = 0.975463
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="StartGame" type="Button" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(475, 140)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_s1g8p")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_s1g8p")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_cyqbs")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_cyqbs")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_cyqbs")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_cyqbs")
+theme_override_styles/hover = SubResource("StyleBoxTexture_cyqbs")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_cyqbs")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cyqbs")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_cyqbs")
+theme_override_styles/normal = SubResource("StyleBoxTexture_cyqbs")
+text = "Start Game"
+
+[node name="Options" type="Button" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(475, 140)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sgql2")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_sgql2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_y0e0o")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_y0e0o")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_y0e0o")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_y0e0o")
+theme_override_styles/hover = SubResource("StyleBoxTexture_y0e0o")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_y0e0o")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_y0e0o")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_y0e0o")
+theme_override_styles/normal = SubResource("StyleBoxTexture_y0e0o")
+text = "Settings"
+
+[node name="Credits" type="Button" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(475, 140)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxTexture_ja8ua")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxTexture_ja8ua")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ja8ua")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_ja8ua")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_ja8ua")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_ja8ua")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ja8ua")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_ja8ua")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ja8ua")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_ja8ua")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ja8ua")
+text = "Credits"
+
+[node name="Quit" type="Button" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(475, 140)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vycnj")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_vycnj")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_0klyu")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_0klyu")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_0klyu")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_0klyu")
+theme_override_styles/hover = SubResource("StyleBoxTexture_0klyu")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_0klyu")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0klyu")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_0klyu")
+theme_override_styles/normal = SubResource("StyleBoxTexture_0klyu")
+text = "Quit"
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_wgdiv")
+bus = &"SFX"
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_r0xc4")
+volume_db = -10.0
+autoplay = true
+bus = &"BGM"
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]
+[connection signal="pressed" from="Panel/VBoxContainer/StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Options" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

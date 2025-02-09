@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://cs3oshanxh6kn"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_suv53"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_0m01f"]
+[ext_resource type="Texture2D" uid="uid://dvymmxkpx7tx7" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG" id="3_ba7e8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_47dhh"]
+
+[node name="Dininghall051Nav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_47dhh")
+
+[node name="Exit" parent="Panel" instance=ExtResource("1_suv53")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0868056
+anchor_top = 0.810185
+anchor_right = 0.169271
+anchor_bottom = 0.96142
+offset_right = -58.3336
+offset_bottom = -63.3338
+grow_vertical = 0
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "dininghall02"
+sceneID = 25
+sound = ExtResource("2_0m01f")
+buttonIcon = ExtResource("3_ba7e8")
+metadata/_edit_use_anchors_ = true

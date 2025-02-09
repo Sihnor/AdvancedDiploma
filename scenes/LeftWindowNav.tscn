@@ -1,0 +1,75 @@
+[gd_scene load_steps=7 format=3 uid="uid://b2o4sghcmtr32"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_damfn"]
+[ext_resource type="AudioStream" uid="uid://bm6mif3hvd470" path="res://Assets/Audio/SFX/light-switch-sound-228104.mp3" id="2_d2pcv"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="3_ur0nk"]
+[ext_resource type="Texture2D" uid="uid://dvymmxkpx7tx7" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG" id="3_uso57"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_r5g0p"]
+
+[node name="LeftWindowNav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bgdep")
+
+[node name="Back" parent="Panel" instance=ExtResource("1_damfn")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -264.0
+offset_top = -178.0
+offset_right = -164.0
+offset_bottom = -77.9999
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_left"
+sceneID = 4
+sound = ExtResource("3_ur0nk")
+buttonIcon = ExtResource("3_uso57")
+
+[node name="ApplyPuzzle" parent="Panel" instance=ExtResource("1_damfn")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1060.0
+offset_top = -405.0
+offset_right = -960.0
+offset_bottom = -305.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(4, 2)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_left_interaction_windowZoom"
+sceneID = 8
+selfDestroy = true
+isSlidePuzzle = true
+sound = ExtResource("2_d2pcv")
+buttonIcon = SubResource("CompressedTexture2D_r5g0p")

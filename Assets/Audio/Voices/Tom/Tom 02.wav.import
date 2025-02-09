@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bsiiurbxnvwba"
+path="res://.godot/imported/Tom 02.wav-a420e38319bf1f998de7bba2a63494a9.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Voices/Tom/Tom 02.wav"
+dest_files=["res://.godot/imported/Tom 02.wav-a420e38319bf1f998de7bba2a63494a9.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

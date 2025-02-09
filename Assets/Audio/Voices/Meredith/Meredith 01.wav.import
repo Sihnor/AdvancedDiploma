@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bjvtdcenoiwyv"
+path="res://.godot/imported/Meredith 01.wav-d98ebee1d0d1fa7821d4e80d67d4f4b6.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Voices/Meredith/Meredith 01.wav"
+dest_files=["res://.godot/imported/Meredith 01.wav-d98ebee1d0d1fa7821d4e80d67d4f4b6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://dn4l1mgm34vg7"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_wjaol"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_ce37a"]
+[ext_resource type="AudioStream" uid="uid://cmtl1olg0f5lv" path="res://Assets/Audio/SFX/Schlüssel ins Schloss stecken + tür öffnen.wav" id="3_nwnlq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7cl5c"]
+
+[node name="RightDoorNav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bgdep")
+
+[node name="Back" parent="Panel" instance=ExtResource("1_wjaol")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -217.0
+offset_top = -9.0
+offset_right = -117.0
+offset_bottom = 91.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_right"
+sceneID = 9
+sound = ExtResource("2_ce37a")
+
+[node name="OpenDoor" parent="Panel" instance=ExtResource("1_wjaol")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -945.0
+offset_top = -47.0
+offset_right = -845.0
+offset_bottom = 53.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(3, 3)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_right_interaction_exitDoorZoomKey"
+sceneID = 11
+sound = ExtResource("3_nwnlq")
+buttonIcon = SubResource("CompressedTexture2D_7cl5c")

@@ -1,0 +1,23 @@
+[
+	{
+		"name": "Kyra",
+		"text": "oh.. those statutes have… letters on them",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-51.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "Tom. I’ve seen this name so many times.. on the diary",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-52.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": ".. and.. on the crew files information..",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
+		"profileR": "",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-53.wav"
+	}
+]

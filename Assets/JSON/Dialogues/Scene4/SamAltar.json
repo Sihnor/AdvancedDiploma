@@ -1,0 +1,87 @@
+[
+	{
+		"name": "Narrator",
+		"text": "In a dim corner, Kyra finds a hunched figure muttering to himself, hands clasped tightly around a small dolphin statue as if in prayer.",
+		"profileL": "",
+		"profileR": "",
+		"audio": ""
+	},
+	{
+		"name": "Sam",
+		"text": "You can’t escape… no one escapes…",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuy_01.png",
+		"audio": "res://Assets/Audio/Voices/Sam/Crazy Guy 05.wav"
+	},
+	{
+		"name": "Sam",
+		"text": "We are chosen ones… we’re all bound.",
+		"audio": "res://Assets/Audio/Voices/Sam/Crazy Guy 06.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "Why… why are you praying to that statue?",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_02.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuyGrey_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-44.wav"
+	},
+	{
+		"name": "Sam",
+		"text": "Because it listens! It hears us, it knows… it knows what we did…",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/KyraGrey_02.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuy_01.png",
+		"audio": "res://Assets/Audio/Voices/Sam/Crazy Guy 04.wav"
+	},
+	{
+		"name": "Sam",
+		"text": "Our intentions, dreams, nightmares.. it knows.. all of us..",
+		"audio": "res://Assets/Audio/Voices/Sam/Crazy Guy 01.wav"
+	},
+	{
+		"name": "Sam",
+		"text": "and even if your life depended on it, you cannot overcome it..",
+		"audio": "res://Assets/Audio/Voices/Sam/Crazy Guy 02.wav"
+	},
+	{
+		"name": "Narrator",
+		"text": "her eyes wide open from the fear, feels a chill run down her spine",
+		"profileL": "",
+		"profileR": "",
+		"audio": ""
+	},
+	{
+		"name": "Kyra",
+		"text": "I am really sorry for.. whatever drove you to this state.. but..",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_02.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuyGrey_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-45.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "I really… really need that statue… once I get it…",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-46.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "I will be able to go furter on my investigation of getting the hell out of here and save further victims.",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-47.wav"
+	},
+	{
+		"name": "Sam",
+		"text": "Dolphins give me a state of comfort.. a comfort out of this immortal nightmare..",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/KyraGrey_02.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuy_01.png",
+		"audio": "res://Assets/Audio/Voices/Sam/Crazy Guy 03.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "if having a dolphin gives him a sense of comfort.",
+		"profileL": "res://Assets/Art/Finished/2DAssets/Character Idols/Kyra_01.png",
+		"profileR": "res://Assets/Art/Finished/2DAssets/Character Idols/CrazyGuyGrey_01.png",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-48.wav"
+	},
+	{
+		"name": "Kyra",
+		"text": "I suppose I can put my sculpturing skills into practice, especially for a demonic occasion like this one.",
+		"audio": "res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-49.wav"
+	}
+]

@@ -1,0 +1,115 @@
+[gd_scene load_steps=14 format=3 uid="uid://bbtd20fe3jpp1"]
+
+[ext_resource type="Script" path="res://scripts/Piece.gd" id="1_81s26"]
+[ext_resource type="Script" path="res://scripts/SlidePuzzle.gd" id="1_fgl5l"]
+[ext_resource type="AudioStream" uid="uid://exrf1tynuho4" path="res://Assets/Audio/SFX/Tür öffnen.wav" id="2_n6vhp"]
+[ext_resource type="PackedScene" uid="uid://1ox6vucnbuat" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/01_puzzelteilQuadrat_sm.fbx" id="3_32av6"]
+[ext_resource type="PackedScene" uid="uid://bqgiji4lcg413" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/02_puzzelteilQuadrat_sm.fbx" id="5_gtvlw"]
+[ext_resource type="PackedScene" uid="uid://bj8xorvpmbsxb" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/03_puzzelteilQuadrat_sm.fbx" id="8_1b236"]
+[ext_resource type="PackedScene" uid="uid://cv2s4pj6qky3a" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/04_puzzelteilQuadrat_sm.fbx" id="10_l5cj3"]
+[ext_resource type="AudioStream" uid="uid://ogelyfy5nnla" path="res://Assets/Audio/SFX/Schieben.wav" id="11_lddyh"]
+[ext_resource type="PackedScene" uid="uid://cpdilwukph0wk" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/05_puzzelteilQuadrat_sm.fbx" id="12_ym75m"]
+[ext_resource type="PackedScene" uid="uid://bd2v04t3huyxt" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/06_puzzelteilQuadrat_sm.fbx" id="14_f05o1"]
+[ext_resource type="PackedScene" uid="uid://ddtqj7hydr0ix" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/07_puzzelteilQuadrat_sm.fbx" id="16_kexht"]
+[ext_resource type="PackedScene" uid="uid://cxm77mxcy5gek" path="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/08_puzzelteilQuadrat_sm.fbx" id="17_n4ayw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0t5a5"]
+
+[node name="PuzzleRoot" type="Node3D"]
+script = ExtResource("1_fgl5l")
+sound = ExtResource("2_n6vhp")
+
+[node name="Piece1" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece1"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="01_puzzelteilQuadrat_sm" parent="Piece1/CollisionShape3D" instance=ExtResource("3_32av6")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Piece2" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece2"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="02_puzzelteilQuadrat_sm" parent="Piece2/CollisionShape3D" instance=ExtResource("5_gtvlw")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Piece3" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(2, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece3"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="03_puzzelteilQuadrat_sm" parent="Piece3/CollisionShape3D" instance=ExtResource("8_1b236")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Piece4" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(0, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece4"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="04_puzzelteilQuadrat_sm" parent="Piece4/CollisionShape3D" instance=ExtResource("10_l5cj3")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Piece5" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(1, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece5"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="05_puzzelteilQuadrat_sm" parent="Piece5/CollisionShape3D" instance=ExtResource("12_ym75m")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Piece6" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(2, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece6"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="06_puzzelteilQuadrat_sm" parent="Piece6/CollisionShape3D" instance=ExtResource("14_f05o1")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Piece7" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(0, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece7"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="07_puzzelteilQuadrat_sm" parent="Piece7/CollisionShape3D" instance=ExtResource("16_kexht")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Piece8" type="Area3D" parent="."]
+script = ExtResource("1_81s26")
+gridPosition = Vector2(1, 2)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Piece8"]
+shape = SubResource("BoxShape3D_0t5a5")
+
+[node name="08_puzzelteilQuadrat_sm" parent="Piece8/CollisionShape3D" instance=ExtResource("17_n4ayw")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_lddyh")
+bus = &"SFX"
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="input_event" from="Piece1" to="Piece1" method="_on_input_event"]
+[connection signal="input_event" from="Piece2" to="Piece2" method="_on_input_event"]
+[connection signal="input_event" from="Piece3" to="Piece3" method="_on_input_event"]
+[connection signal="input_event" from="Piece4" to="Piece4" method="_on_input_event"]
+[connection signal="input_event" from="Piece5" to="Piece5" method="_on_input_event"]
+[connection signal="input_event" from="Piece6" to="Piece6" method="_on_input_event"]
+[connection signal="input_event" from="Piece7" to="Piece7" method="_on_input_event"]
+[connection signal="input_event" from="Piece8" to="Piece8" method="_on_input_event"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

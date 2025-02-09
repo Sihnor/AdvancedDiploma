@@ -1,0 +1,93 @@
+[gd_scene load_steps=8 format=3 uid="uid://dy7mkyuun44lo"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_kk3b5"]
+[ext_resource type="Script" path="res://scenes/NavigaionManager.gd" id="1_t1st3"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_7qs5b"]
+[ext_resource type="Texture2D" uid="uid://dvymmxkpx7tx7" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG" id="4_kaud3"]
+[ext_resource type="Texture2D" uid="uid://tqqab77njwae" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG" id="6_76l73"]
+[ext_resource type="AudioStream" uid="uid://cmwc2h5h70t3r" path="res://Assets/Audio/BGM/captains room.wav" id="6_xyk3x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ddl0"]
+
+[node name="Dininghall01Nav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_t1st3")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_2ddl0")
+
+[node name="Exit" parent="Panel" instance=ExtResource("1_kk3b5")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -167.0
+offset_right = 80.0
+offset_bottom = -67.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_right_interaction_exitDoorZoomKey"
+sceneID = 11
+sound = ExtResource("2_7qs5b")
+buttonIcon = ExtResource("4_kaud3")
+music = ExtResource("6_xyk3x")
+
+[node name="Right" parent="Panel" instance=ExtResource("1_kk3b5")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -252.0
+offset_top = 126.0
+offset_right = -152.0
+offset_bottom = 226.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "dininghall03"
+sceneID = 26
+sound = ExtResource("2_7qs5b")
+
+[node name="Left" parent="Panel" instance=ExtResource("1_kk3b5")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 183.0
+offset_top = 17.0
+offset_right = 283.0
+offset_bottom = 117.0
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "dininghall02"
+sceneID = 25
+sound = ExtResource("2_7qs5b")
+buttonIcon = ExtResource("6_76l73")

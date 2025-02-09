@@ -1,0 +1,93 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2ykc31xty202"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_72ioy"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_ui5qd"]
+[ext_resource type="AudioStream" uid="uid://bypxc4klh8a7p" path="res://Assets/Audio/SFX/Kopfkissen rücken.wav" id="2_wurff"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t5s2u"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1n5kq"]
+
+[node name="LeftNav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bgdep")
+
+[node name="Back" parent="Panel" instance=ExtResource("1_72ioy")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -227.0
+offset_top = -89.0
+offset_right = -127.0
+offset_bottom = 11.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_main"
+sound = ExtResource("2_ui5qd")
+
+[node name="Window" parent="Panel" instance=ExtResource("1_72ioy")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 150.0
+offset_top = -435.0
+offset_right = 250.0
+offset_bottom = -335.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.0349066
+scale = Vector2(3.25, 4)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_left_interaction_windowZoom"
+sceneID = 8
+sound = ExtResource("2_ui5qd")
+buttonIcon = SubResource("CompressedTexture2D_t5s2u")
+
+[node name="PillowMove" parent="Panel" instance=ExtResource("1_72ioy")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 432.0
+offset_top = -127.0
+offset_right = 532.0
+offset_bottom = -27.0
+grow_vertical = 2
+scale = Vector2(4, 2)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+sceneName = "captain_left_interaction_pillowMove"
+sceneID = 7
+sound = ExtResource("2_wurff")
+buttonIcon = SubResource("CompressedTexture2D_1n5kq")

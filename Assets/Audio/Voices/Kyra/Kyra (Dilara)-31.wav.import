@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ccu8vuj5lp1r5"
+path="res://.godot/imported/Kyra (Dilara)-31.wav-45a0002e596c581f47b6303f01cbea94.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Voices/Kyra/Kyra (Dilara)-31.wav"
+dest_files=["res://.godot/imported/Kyra (Dilara)-31.wav-45a0002e596c581f47b6303f01cbea94.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

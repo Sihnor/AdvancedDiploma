@@ -1,0 +1,150 @@
+[gd_scene load_steps=20 format=3 uid="uid://c2mlwdyrxdwcw"]
+
+[ext_resource type="Script" path="res://scripts/pianoRiddle.gd" id="1_4ndln"]
+[ext_resource type="Script" path="res://scripts/note.gd" id="2_hnalr"]
+[ext_resource type="AudioStream" uid="uid://bm4fstb2tg0al" path="res://Assets/Audio/SFX/schublade öffnen richtig.wav" id="3_dvh7s"]
+[ext_resource type="AudioStream" uid="uid://fexc4lus2x42" path="res://Assets/Audio/SFX/Klaviernoten/do-80236.mp3" id="3_yp11p"]
+[ext_resource type="AudioStream" uid="uid://cpyto7lvns3jt" path="res://Assets/Audio/SFX/Klaviernoten/re-78500.mp3" id="4_vbscl"]
+[ext_resource type="AudioStream" uid="uid://cw8lucy3spurl" path="res://Assets/Audio/SFX/Klaviernoten/mi-80239.mp3" id="5_qdw7i"]
+[ext_resource type="AudioStream" uid="uid://xea68bfjvexc" path="res://Assets/Audio/SFX/Klaviernoten/fa-78409.mp3" id="6_o8v3h"]
+[ext_resource type="AudioStream" uid="uid://7xiq203pndmy" path="res://Assets/Audio/SFX/Klaviernoten/sol-101774.mp3" id="7_aj8bq"]
+[ext_resource type="AudioStream" uid="uid://cu2h4xww0ttdl" path="res://Assets/Audio/SFX/Klaviernoten/la-80237.mp3" id="8_wuj1w"]
+[ext_resource type="AudioStream" uid="uid://1pqoicrbeqkn" path="res://Assets/Audio/SFX/Klaviernoten/si-80238.mp3" id="9_tp8ky"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uhjjs"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_p0yq0"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_dxtl6"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w0d3f"]
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_84xl7"]
+albedo_color = Color(0, 0, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mxu3h"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1ti2a"]
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i5p60"]
+albedo_color = Color(1, 0, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j0ehe"]
+
+[node name="PianoRiddle" type="Node3D"]
+script = ExtResource("1_4ndln")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.31712, 0)
+text = "EFECD"
+font_size = 64
+
+[node name="Note1" type="Area3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0)
+script = ExtResource("2_hnalr")
+noteID = "C"
+sound = ExtResource("3_yp11p")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Note1"]
+shape = SubResource("BoxShape3D_uhjjs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Note1/CollisionShape3D"]
+mesh = SubResource("BoxMesh_p0yq0")
+surface_material_override/0 = SubResource("ORMMaterial3D_dxtl6")
+
+[node name="Note2" type="Area3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+script = ExtResource("2_hnalr")
+noteID = "D"
+sound = ExtResource("4_vbscl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Note2"]
+shape = SubResource("BoxShape3D_uhjjs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Note2/CollisionShape3D"]
+mesh = SubResource("BoxMesh_p0yq0")
+surface_material_override/0 = SubResource("StandardMaterial3D_w0d3f")
+
+[node name="Note3" type="Area3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
+script = ExtResource("2_hnalr")
+noteID = "E"
+sound = ExtResource("5_qdw7i")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Note3"]
+shape = SubResource("BoxShape3D_uhjjs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Note3/CollisionShape3D"]
+mesh = SubResource("BoxMesh_p0yq0")
+surface_material_override/0 = SubResource("StandardMaterial3D_84xl7")
+
+[node name="Note4" type="Area3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("2_hnalr")
+noteID = "F"
+sound = ExtResource("6_o8v3h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Note4"]
+shape = SubResource("BoxShape3D_uhjjs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Note4/CollisionShape3D"]
+mesh = SubResource("BoxMesh_p0yq0")
+surface_material_override/0 = SubResource("StandardMaterial3D_mxu3h")
+
+[node name="Note5" type="Area3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
+script = ExtResource("2_hnalr")
+noteID = "G"
+sound = ExtResource("7_aj8bq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Note5"]
+shape = SubResource("BoxShape3D_uhjjs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Note5/CollisionShape3D"]
+mesh = SubResource("BoxMesh_p0yq0")
+surface_material_override/0 = SubResource("StandardMaterial3D_1ti2a")
+
+[node name="Note6" type="Area3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+script = ExtResource("2_hnalr")
+noteID = "A"
+sound = ExtResource("8_wuj1w")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Note6"]
+shape = SubResource("BoxShape3D_uhjjs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Note6/CollisionShape3D"]
+mesh = SubResource("BoxMesh_p0yq0")
+surface_material_override/0 = SubResource("StandardMaterial3D_i5p60")
+
+[node name="Note7" type="Area3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0)
+script = ExtResource("2_hnalr")
+noteID = "B"
+sound = ExtResource("9_tp8ky")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Note7"]
+shape = SubResource("BoxShape3D_uhjjs")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Note7/CollisionShape3D"]
+mesh = SubResource("BoxMesh_p0yq0")
+surface_material_override/0 = SubResource("StandardMaterial3D_j0ehe")
+
+[node name="NotePlayer" type="AudioStreamPlayer" parent="."]
+bus = &"SFX"
+
+[node name="sfxPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_dvh7s")
+bus = &"SFX"
+
+[connection signal="input_event" from="Note1" to="Note1" method="_on_input_event"]
+[connection signal="input_event" from="Note2" to="Note2" method="_on_input_event"]
+[connection signal="input_event" from="Note3" to="Note3" method="_on_input_event"]
+[connection signal="input_event" from="Note4" to="Note4" method="_on_input_event"]
+[connection signal="input_event" from="Note5" to="Note5" method="_on_input_event"]
+[connection signal="input_event" from="Note6" to="Note6" method="_on_input_event"]
+[connection signal="input_event" from="Note7" to="Note7" method="_on_input_event"]

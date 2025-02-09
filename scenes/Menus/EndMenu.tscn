@@ -1,0 +1,375 @@
+[gd_scene load_steps=18 format=3 uid="uid://dq4tadvhirufv"]
+
+[ext_resource type="Script" path="res://scripts/Menus/EndMenu.gd" id="1_mbnre"]
+[ext_resource type="Texture2D" uid="uid://clpvoqsm1htw4" path="res://Assets/Art/Placeholder/UI/icon.svg" id="1_pr5oe"]
+[ext_resource type="VideoStream" path="res://Assets/Art/Finished/Menu_Intro/OVG/loop_Render_Final.ogv" id="2_jfllj"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_t8j0x"]
+[ext_resource type="AudioStream" uid="uid://b6dydbc3443js" path="res://Assets/Audio/BGM/main theme.wav" id="4_nb8c7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_630wb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l8vrq"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i2h8s"]
+
+[sub_resource type="Animation" id="Animation_jxyob"]
+length = 25.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/ThanksForPlaying:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel/HBoxContainer:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -1300)]
+}
+
+[sub_resource type="Animation" id="Animation_njvbo"]
+resource_name = "creditsScroll"
+length = 5.0
+step = 0.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/HBoxContainer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 650), Vector2(0, -1500)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oykt7"]
+_data = {
+"RESET": SubResource("Animation_jxyob"),
+"creditsScroll": SubResource("Animation_njvbo")
+}
+
+[sub_resource type="Animation" id="Animation_4njgh"]
+length = 25.0
+
+[sub_resource type="Animation" id="Animation_6yuid"]
+resource_name = "fadeIn"
+length = 30.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/ThanksForPlaying:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(25, 26.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tj3qo"]
+_data = {
+"RESET": SubResource("Animation_4njgh"),
+"fadeIn": SubResource("Animation_6yuid")
+}
+
+[sub_resource type="Animation" id="Animation_uum7v"]
+resource_name = "CreditTitleFadeOut"
+length = 25.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/Credits Panel/CreditsTitle:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(24, 24.75),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_vb1hp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/Credits Panel/CreditsTitle:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mw6ys"]
+_data = {
+"CreditTitleFadeOut": SubResource("Animation_uum7v"),
+"RESET": SubResource("Animation_vb1hp")
+}
+
+[node name="EndMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mbnre")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+stream = ExtResource("2_jfllj")
+autoplay = true
+expand = true
+loop = true
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+visible = false
+light_mask = 2
+visibility_layer = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_pr5oe")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.00309
+anchor_right = 1.0
+anchor_bottom = 2.99691
+offset_top = -0.0420532
+offset_bottom = -0.0375977
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Credits" type="Label" parent="Panel/HBoxContainer"]
+custom_minimum_size = Vector2(302, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 24
+text = "Art Direction
+
+
+2D Artists
+
+
+
+UI Artists
+
+
+3D Artists
+
+
+
+
+
+
+
+Texturing Artists
+
+
+
+
+
+Programming
+
+Audio Production
+
+
+Writer
+
+Voice Actors
+
+
+
+"
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Credits2" type="Label" parent="Panel/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Kiana Diederich
+ Inci Bozatzi
+
+Kiana Diederich
+Inci Bozatzi
+Oana Popa
+
+Ash Klassen
+Lou Vollmari
+
+Vic Suelmann
+Oana Popa
+Lucy Skirlo
+Lou Vollmari
+David Miesner
+Kiana Diederich
+Inci Bozatzi
+
+Dominik Fourmont
+Oana Popa
+David Miesner
+Kiana Diederich
+Inci Bozatzi
+
+Izmir Rexhepi
+
+Felix Mersch
+Jacob Martinez
+
+Alami Laroussi Akhriff
+
+Lamar Verspay
+Jonas Nicolas
+Kristina Deric
+Dilara Yurdadönen"
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Credits Panel" type="Panel" parent="Panel"]
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 153.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_630wb")
+
+[node name="CreditsTitle" type="Label" parent="Panel/Credits Panel"]
+visible = false
+light_mask = 2
+visibility_layer = 2
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 88.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l8vrq")
+text = "Credits:"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="BackPanel" type="Panel" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.848765
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_i2h8s")
+metadata/_edit_use_anchors_ = true
+
+[node name="Back" type="Button" parent="Panel/BackPanel"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.456597
+anchor_top = 0.341837
+anchor_right = 0.543403
+anchor_bottom = 0.658163
+offset_bottom = 3.05176e-05
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Back"
+metadata/_edit_use_anchors_ = true
+
+[node name="ThanksForPlaying" type="Label" parent="Panel"]
+z_index = 100
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.196615
+anchor_top = 0.361883
+anchor_right = 0.803385
+anchor_bottom = 0.638117
+offset_left = -0.000473022
+offset_right = 0.000488281
+offset_bottom = -3.05176e-05
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0)
+theme_override_font_sizes/font_size = 64
+text = "thanks for playing!"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+metadata/_edit_use_anchors_ = true
+
+[node name="CreditsScroll" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_oykt7")
+}
+autoplay = "creditsScroll"
+speed_scale = 0.085
+
+[node name="ThanksFadeIn" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_tj3qo")
+}
+autoplay = "fadeIn"
+speed_scale = 0.4
+
+[node name="CreditTitleFadeOut" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_mw6ys")
+}
+autoplay = "CreditTitleFadeOut"
+speed_scale = 0.4
+
+[node name="SFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_t8j0x")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_nb8c7")
+autoplay = true
+bus = &"BGM"
+
+[connection signal="pressed" from="Panel/BackPanel/Back" to="." method="_on_back_pressed"]

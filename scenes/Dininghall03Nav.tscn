@@ -1,0 +1,70 @@
+[gd_scene load_steps=6 format=3 uid="uid://ej1xuylcigfl"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_g82xp"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_6l1r1"]
+[ext_resource type="Texture2D" uid="uid://tqqab77njwae" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_links_neu.PNG" id="3_l4njv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jgton"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u58o0"]
+
+[node name="Dininghall03Nav" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_jgton")
+
+[node name="Exit" parent="Panel" instance=ExtResource("1_g82xp")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 50.0
+offset_top = -20.0
+offset_right = 150.0
+offset_bottom = 80.0
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "dininghall01"
+sceneID = 24
+sound = ExtResource("2_6l1r1")
+buttonIcon = ExtResource("3_l4njv")
+
+[node name="ApplyWoodDolphine" parent="Panel" instance=ExtResource("1_g82xp")]
+visible = false
+layout_direction = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.329688
+anchor_top = 0.307407
+anchor_right = 0.433854
+anchor_bottom = 0.492593
+offset_right = -100.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "dininghall031"
+sceneID = 27
+selfDestroy = true
+sound = ExtResource("2_6l1r1")
+buttonIcon = SubResource("CompressedTexture2D_u58o0")
+metadata/_edit_use_anchors_ = true

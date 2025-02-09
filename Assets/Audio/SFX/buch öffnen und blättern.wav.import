@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dm2aumcyp6o3u"
+path="res://.godot/imported/buch öffnen und blättern.wav-21396cd79a09a4a98371c5c7cf496b66.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/SFX/buch öffnen und blättern.wav"
+dest_files=["res://.godot/imported/buch öffnen und blättern.wav-21396cd79a09a4a98371c5c7cf496b66.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

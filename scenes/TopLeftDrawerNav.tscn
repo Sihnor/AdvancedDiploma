@@ -1,0 +1,85 @@
+[gd_scene load_steps=9 format=3 uid="uid://c3x8vutkwn5vy"]
+
+[ext_resource type="PackedScene" uid="uid://c01ig7olg4lw4" path="res://scenes/SwapScene.tscn" id="1_yuyyt"]
+[ext_resource type="PackedScene" uid="uid://b2w2de81naqf" path="res://scenes/CodeRiddle.tscn" id="2_fv7l1"]
+[ext_resource type="AudioStream" uid="uid://ct4xrt4j4mtgf" path="res://Assets/Audio/SFX/click-234708.mp3" id="2_xblrw"]
+[ext_resource type="AudioStream" uid="uid://bm4fstb2tg0al" path="res://Assets/Audio/SFX/schublade öffnen richtig.wav" id="3_466p3"]
+[ext_resource type="Texture2D" uid="uid://dvymmxkpx7tx7" path="res://Assets/Art/Finished/UI/Pfeile/new/Pfeil_unten_neu.PNG" id="3_hhdv5"]
+[ext_resource type="AudioStream" uid="uid://exrf1tynuho4" path="res://Assets/Audio/SFX/Tür öffnen.wav" id="5_hqb6v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgdep"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_53cgl"]
+
+[node name="TopLeftDrawerNav" type="Control"]
+show_behind_parent = true
+top_level = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bgdep")
+
+[node name="Back" parent="Panel" instance=ExtResource("1_yuyyt")]
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -165.0
+offset_right = -100.0
+offset_bottom = -65.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_topLeft"
+sceneID = 12
+sound = ExtResource("2_xblrw")
+buttonIcon = ExtResource("3_hhdv5")
+
+[node name="OpenDrawer" parent="Panel" instance=ExtResource("1_yuyyt")]
+visible = false
+layout_direction = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -455.0
+offset_top = -340.0
+offset_right = -355.0
+offset_bottom = -240.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(10, 7)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+sceneName = "captain_topLeft_interaction_officeOpenDrawer"
+sceneID = 16
+sound = ExtResource("3_466p3")
+buttonIcon = SubResource("CompressedTexture2D_53cgl")
+
+[node name="LetterRiddle" parent="Panel" node_paths=PackedStringArray("rewardItem") instance=ExtResource("2_fv7l1")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, -0.5)
+rewardItem = NodePath("../OpenDrawer")
+code = ["W", "H", "A", "L", "E"]
+selectOptions = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+rewardSound = ExtResource("5_hqb6v")
