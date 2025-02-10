@@ -1,3 +1,4 @@
+res://scenes/Menus/Menu_Shader
 res://Assets/Art/Finished/UI
 res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_right
 res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Pin_middle
@@ -19,4 +20,3 @@ res://scripts/Manager
 res://scripts
 res://assets/audio/SFX
 res://Assets/Art/Placeholder/UI
-res://scripts/Menus

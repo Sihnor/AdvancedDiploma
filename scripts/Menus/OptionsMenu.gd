@@ -107,6 +107,10 @@ func stopOptionMusic():
 	bgmAudioStream.stop()
 
 func loadSettings():
+	# Set default master volume to (-12 dB) if not already set
+	if AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master")) == 0:
+		AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), -12)
+	
 	# Load current settings
 	masterSlider.value = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master"))
 	bgmSlider.value = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("BGM"))
