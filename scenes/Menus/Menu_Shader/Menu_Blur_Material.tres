@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://kp071jhuhiod"]
+
+[ext_resource type="Shader" uid="uid://v346vuy808a0" path="res://scenes/Menus/Menu_Shader/Menu_Blur_Shader.tres" id="1_25wa1"]
+
+[resource]
+shader = ExtResource("1_25wa1")
+shader_parameter/BlurAmount = 2.0
+shader_parameter/MixColor = null
+shader_parameter/MixAmount = 0.5

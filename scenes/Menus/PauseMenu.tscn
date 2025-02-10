@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bafqx5p03hpru"]
+[gd_scene load_steps=10 format=3 uid="uid://bafqx5p03hpru"]
 
 [ext_resource type="Script" path="res://scripts/Menus/PauseMenu.gd" id="1_aeg3o"]
 [ext_resource type="PackedScene" uid="uid://b283124h4t7vc" path="res://scenes/Menus/OptionMenu.tscn" id="2_hrj0n"]
 [ext_resource type="Texture2D" uid="uid://dil5w7fb50yly" path="res://Assets/Art/Finished/UI/Pausenbildschirm/panel_gross.png" id="2_ijpo2"]
 [ext_resource type="Script" path="res://scripts/Menus/pauseNode.gd" id="2_kimyk"]
+[ext_resource type="Material" uid="uid://kp071jhuhiod" path="res://scenes/Menus/Menu_Shader/Menu_Blur_Material.tres" id="2_tl605"]
 [ext_resource type="Texture2D" uid="uid://u00jor7wh12" path="res://Assets/Art/Finished/UI/Pausenbildschirm/options.png" id="3_0854x"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_45ert"]
@@ -30,9 +31,9 @@ script = ExtResource("1_aeg3o")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 3
-visible = false
 
 [node name="Panel" type="Panel" parent="CanvasLayer"]
+material = ExtResource("2_tl605")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
