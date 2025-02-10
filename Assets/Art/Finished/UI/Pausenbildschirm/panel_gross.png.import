@@ -2,27 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wwpg1sb4025v"
-path.s3tc="res://.godot/imported/TomDokument_Placeholder.png-1f116934d1d6a9b743a0d69dca92f460.s3tc.ctex"
+uid="uid://dil5w7fb50yly"
+path="res://.godot/imported/panel_gross.png-81c6ab788863ad04c89ca86ac7b91577.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Finished/2DAssets/Item pngs/TomDokument_Placeholder.png"
-dest_files=["res://.godot/imported/TomDokument_Placeholder.png-1f116934d1d6a9b743a0d69dca92f460.s3tc.ctex"]
+source_file="res://Assets/Art/Finished/UI/Pausenbildschirm/panel_gross.png"
+dest_files=["res://.godot/imported/panel_gross.png-81c6ab788863ad04c89ca86ac7b91577.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -32,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
