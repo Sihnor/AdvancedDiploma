@@ -27,6 +27,8 @@ window/size/viewport_height=1080
 window/size/mode=4
 window/stretch/mode="canvas_items"
 window/stretch/aspect="ignore"
+mouse_cursor/custom_image="res://Assets/Art/Finished/UI/mausezeiger.png"
+mouse_cursor/custom_image_hotspot=Vector2(16, 16)
 window/tighter_shadow_caster_culling=true
 
 [input]

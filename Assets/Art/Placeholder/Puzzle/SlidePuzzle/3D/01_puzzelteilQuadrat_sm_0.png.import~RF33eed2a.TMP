@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wwpg1sb4025v"
-path.s3tc="res://.godot/imported/TomDokument_Placeholder.png-1f116934d1d6a9b743a0d69dca92f460.s3tc.ctex"
+uid="uid://mpr2r1vbhbsb"
+path.s3tc="res://.godot/imported/01_puzzelteilQuadrat_sm_0.png-75a1442f3aba848c0646c75b1e10e3cf.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "06a7c5877ef5cf9fb940a4408c6aff46"
+}
 
 [deps]
 
-source_file="res://Assets/Art/Finished/2DAssets/Item pngs/TomDokument_Placeholder.png"
-dest_files=["res://.godot/imported/TomDokument_Placeholder.png-1f116934d1d6a9b743a0d69dca92f460.s3tc.ctex"]
+source_file="res://Assets/Art/Placeholder/Puzzle/SlidePuzzle/3D/01_puzzelteilQuadrat_sm_0.png"
+dest_files=["res://.godot/imported/01_puzzelteilQuadrat_sm_0.png-75a1442f3aba848c0646c75b1e10e3cf.s3tc.ctex"]
 
 [params]
 

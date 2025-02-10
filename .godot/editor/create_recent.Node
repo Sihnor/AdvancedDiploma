@@ -1,3 +1,5 @@
+WorldEnvironment
+Camera3D
 MeshInstance3D
 MeshInstance2D
 Sprite2D
@@ -11,4 +13,3 @@ AudioListener2D
 AudioStreamPlayer
 VideoStreamPlayer
 Label3D
-Node

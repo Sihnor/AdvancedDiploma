@@ -46,5 +46,5 @@ sound = ExtResource("2_ln0mi")
 buttonIcon = ExtResource("3_8v35m")
 
 [node name="BookRiddle" parent="." instance=ExtResource("2_y5swd")]
-transform = Transform3D(0.0871558, 0, 0.996195, 0, 1, 0, -0.996195, 0, 0.0871558, 1, 1.75, -1)
+transform = Transform3D(0.340379, -0.0338292, 0.93968, 0.113202, 0.993558, -0.00523597, -0.933449, 0.108156, 0.342016, 2.4, 0.7, 0)
 visible = false
