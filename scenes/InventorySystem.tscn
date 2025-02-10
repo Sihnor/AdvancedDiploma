@@ -30,9 +30,13 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_o8c4q")
 
 [node name="ItemSlots" type="GridContainer" parent="Background"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchor_right = 3.2
+anchor_bottom = 3.2
+offset_right = -64.0
+offset_bottom = -64.0
+scale = Vector2(2, 2)
 columns = 5
+metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="Background/ItemSlots"]
 layout_mode = 2
@@ -48,6 +52,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_7t2fp")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_7t2fp")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_7t2fp")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ry5nl")
+icon_alignment = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 bus = &"SFX"

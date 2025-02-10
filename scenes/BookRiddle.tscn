@@ -1,9 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://d1bsl3hdb04e"]
+[gd_scene load_steps=17 format=3 uid="uid://d1bsl3hdb04e"]
 
 [ext_resource type="Script" path="res://scripts/BookRiddle.gd" id="1_bdoln"]
 [ext_resource type="AudioStream" uid="uid://bm6mif3hvd470" path="res://Assets/Audio/SFX/light-switch-sound-228104.mp3" id="2_fy6fg"]
 [ext_resource type="Script" path="res://scripts/Book.gd" id="2_sctbl"]
 [ext_resource type="AudioStream" uid="uid://bm4fstb2tg0al" path="res://Assets/Audio/SFX/schublade öffnen richtig.wav" id="4_c7eam"]
+[ext_resource type="PackedScene" uid="uid://clj4boormfmem" path="res://scenes/Books/book_a.tscn" id="4_cuq7x"]
+[ext_resource type="PackedScene" uid="uid://cbvwfhjg5wxoe" path="res://scenes/Books/book_w.tscn" id="4_hp5kg"]
+[ext_resource type="PackedScene" uid="uid://bt205pw7jgjmk" path="res://scenes/Books/book_h.tscn" id="5_82m4k"]
+[ext_resource type="PackedScene" uid="uid://wskwkg6f3sda" path="res://scenes/Books/book_l.tscn" id="7_e56rx"]
+[ext_resource type="PackedScene" uid="uid://ci4quj8t0co3j" path="res://scenes/Books/book_e.tscn" id="8_3mtwk"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_uhjjs"]
 
@@ -39,8 +44,12 @@ bookID = "W"
 shape = SubResource("BoxShape3D_uhjjs")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Book1/CollisionShape3D"]
+visible = false
 mesh = SubResource("BoxMesh_p0yq0")
 surface_material_override/0 = SubResource("ORMMaterial3D_dxtl6")
+
+[node name="book_W" parent="Book1/CollisionShape3D" instance=ExtResource("4_hp5kg")]
+transform = Transform3D(-25, 0, 1.05697e-06, 0, 7, 0, -3.7749e-06, 0, -7, -0.492133, -0.5, -0.5)
 
 [node name="Book2" type="Area3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0)
@@ -51,8 +60,12 @@ bookID = "H"
 shape = SubResource("BoxShape3D_uhjjs")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Book2/CollisionShape3D"]
+visible = false
 mesh = SubResource("BoxMesh_p0yq0")
 surface_material_override/0 = SubResource("ORMMaterial3D_ol5fr")
+
+[node name="book_H" parent="Book2/CollisionShape3D" instance=ExtResource("5_82m4k")]
+transform = Transform3D(-25, 0, -6.11959e-07, 0, 7, 0, 2.18557e-06, 0, -7, -0.465075, -0.5, -0.5)
 
 [node name="Book3" type="Area3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
@@ -60,11 +73,16 @@ script = ExtResource("2_sctbl")
 bookID = "A"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Book3"]
+transform = Transform3D(1, 0, 0, 0, 0.971711, 0, 0, 0, 1, 0, 0, 0)
 shape = SubResource("BoxShape3D_uhjjs")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Book3/CollisionShape3D"]
+visible = false
 mesh = SubResource("BoxMesh_p0yq0")
 surface_material_override/0 = SubResource("ORMMaterial3D_ai4ht")
+
+[node name="book_A" parent="Book3/CollisionShape3D" instance=ExtResource("4_cuq7x")]
+transform = Transform3D(-20, 0, 1.05697e-06, 0, 7.20379, 0, -3.01992e-06, 0, -7, -0.433884, -0.514556, -0.5)
 
 [node name="Book4" type="Area3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0)
@@ -74,7 +92,11 @@ bookID = "L"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Book4"]
 shape = SubResource("BoxShape3D_uhjjs")
 
+[node name="book_L" parent="Book4/CollisionShape3D" instance=ExtResource("7_e56rx")]
+transform = Transform3D(-25, 0, 6.11959e-07, 0, 6.80197, 0, -2.18557e-06, 0, -7, -0.25648, -0.485855, -0.5)
+
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Book4/CollisionShape3D"]
+visible = false
 mesh = SubResource("BoxMesh_p0yq0")
 surface_material_override/0 = SubResource("ORMMaterial3D_2klt3")
 
@@ -87,8 +109,12 @@ bookID = "E"
 shape = SubResource("BoxShape3D_uhjjs")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Book5/CollisionShape3D"]
+visible = false
 mesh = SubResource("BoxMesh_p0yq0")
 surface_material_override/0 = SubResource("ORMMaterial3D_f4uw8")
+
+[node name="book_E" parent="Book5/CollisionShape3D" instance=ExtResource("8_3mtwk")]
+transform = Transform3D(-20, 0, -6.11959e-07, 0, 7, 0, 1.74846e-06, 0, -7, -0.241062, -0.5, -0.5)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_c7eam")

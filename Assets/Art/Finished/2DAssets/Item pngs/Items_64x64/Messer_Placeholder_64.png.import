@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wwpg1sb4025v"
-path.s3tc="res://.godot/imported/TomDokument_Placeholder.png-1f116934d1d6a9b743a0d69dca92f460.s3tc.ctex"
+uid="uid://ddxobmp3dxhdu"
+path.s3tc="res://.godot/imported/Messer_Placeholder_64.png-c28481a35bca4a0badaad8f588ee0829.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Art/Finished/2DAssets/Item pngs/TomDokument_Placeholder.png"
-dest_files=["res://.godot/imported/TomDokument_Placeholder.png-1f116934d1d6a9b743a0d69dca92f460.s3tc.ctex"]
+source_file="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Messer_Placeholder_64.png"
+dest_files=["res://.godot/imported/Messer_Placeholder_64.png-c28481a35bca4a0badaad8f588ee0829.s3tc.ctex"]
 
 [params]
 
