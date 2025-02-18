@@ -40,21 +40,21 @@
 [ext_resource type="Texture2D" uid="uid://cok7fcpgq4h4h" path="res://Assets/Art/Finished/2DAssets/Character Idols/Crazy_guy_ingame.PNG" id="28_gh0pp"]
 [ext_resource type="Texture2D" uid="uid://8xb711xy5a55" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Diary_onbed_64.png" id="33_15spd"]
 [ext_resource type="PackedScene" uid="uid://djjf52vtuhawv" path="res://scenes/Captains_Room/Diary_onbed_MeshInstance.tscn" id="33_wcwhy"]
-[ext_resource type="Texture2D" uid="uid://bvma7gngjhqv2" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/TomDokument_Placeholder_64.png" id="35_63whb"]
+[ext_resource type="Texture2D" uid="uid://btj3k8vah1ll5" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Dokument_blank_64.png" id="36_fhc7x"]
 [ext_resource type="Texture2D" uid="uid://ca73bo712ewyx" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Portrait_piece_64.png" id="36_mvqr1"]
 [ext_resource type="Texture2D" uid="uid://ikyft4np8urg" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Drawer_key_64.png" id="37_08qp4"]
 [ext_resource type="PackedScene" uid="uid://d4j60dfatedyi" path="res://scenes/Captains_Room/Portrait_piece_MeshInstance.tscn" id="37_g6pki"]
 [ext_resource type="PackedScene" uid="uid://c06k4if1tu4x3" path="res://Assets/Art/Finished/2DAssets/Item pngs/findet man in kapitänskajüte/Drawer_Key/Drawer_Key_MeshInstance.tscn" id="39_wcrgi"]
-[ext_resource type="Texture2D" uid="uid://cev3le24f2e1g" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Holzbein_Placeholder_64.png" id="40_cmh24"]
-[ext_resource type="Texture2D" uid="uid://ddxobmp3dxhdu" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Messer_Placeholder_64.png" id="41_atyly"]
 [ext_resource type="PackedScene" uid="uid://c2mlwdyrxdwcw" path="res://scenes/PianoRiddle.tscn" id="42_ft0xb"]
 [ext_resource type="Texture2D" uid="uid://dwr743tkmja7i" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Wardrobe_whale_64.png" id="42_h8fxj"]
+[ext_resource type="Texture2D" uid="uid://cemcnludy17iy" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Stuhlbein_64.png" id="43_ma5sw"]
+[ext_resource type="Texture2D" uid="uid://cxkai5jcmyepu" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Messer_64.png" id="44_bpkcd"]
 [ext_resource type="PackedScene" uid="uid://bafqx5p03hpru" path="res://scenes/Menus/PauseMenu.tscn" id="44_ktcvb"]
-[ext_resource type="Texture2D" uid="uid://bg2uiqvq8lo8s" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Seehund_Placeholder_64.png" id="44_xxn8q"]
 [ext_resource type="PackedScene" uid="uid://1lk41dc5e8ln" path="res://scenes/Captains_Room/Wardrobe_whale_MeshInstance.tscn" id="45_283md"]
-[ext_resource type="Texture2D" uid="uid://co1jnsgce44ay" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Delphin_Placeholder_64.png" id="45_nx0pw"]
-[ext_resource type="Texture2D" uid="uid://bgp7akmnof0mo" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Kerze_Placeholder_64.png" id="46_t26ud"]
 [ext_resource type="AudioStream" uid="uid://cmwc2h5h70t3r" path="res://Assets/Audio/BGM/captains room.wav" id="47_psw4p"]
+[ext_resource type="Texture2D" uid="uid://d4bdiup6oqm52" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Robbe_64.png" id="48_y674d"]
+[ext_resource type="Texture2D" uid="uid://c7nfnil81g3uk" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Delfin_64.png" id="49_lklmf"]
+[ext_resource type="Texture2D" uid="uid://cll4q4dmuhalc" path="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/KerzeAmAltar_64.png" id="50_wpipm"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xdr3c"]
 
@@ -257,7 +257,7 @@ sound = ExtResource("22_lj2cc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, -6, -9.5)
 visible = false
 item_name = "Personal File"
-item_icon = ExtResource("35_63whb")
+item_icon = ExtResource("36_fhc7x")
 inventorySystem = NodePath("../InventorySystem")
 nodeDependedSubpath = "a"
 sound = ExtResource("22_lj2cc")
@@ -295,7 +295,7 @@ sound = ExtResource("25_c12nf")
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -5, -4.25, -1.5)
 visible = false
 item_name = "Chair Piece"
-item_icon = ExtResource("40_cmh24")
+item_icon = ExtResource("43_ma5sw")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("25_c12nf")
 
@@ -303,7 +303,7 @@ sound = ExtResource("25_c12nf")
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -2, -2.25, 3.75)
 visible = false
 item_name = "Knife"
-item_icon = ExtResource("41_atyly")
+item_icon = ExtResource("44_bpkcd")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("25_c12nf")
 
@@ -321,7 +321,7 @@ sound = ExtResource("24_0ypa0")
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 0, 3.35, 1)
 visible = false
 item_name = "Seahound Statue"
-item_icon = ExtResource("44_xxn8q")
+item_icon = ExtResource("48_y674d")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("24_0ypa0")
 
@@ -329,7 +329,7 @@ sound = ExtResource("24_0ypa0")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, -0.2)
 visible = false
 item_name = "Dolphine Statue"
-item_icon = ExtResource("45_nx0pw")
+item_icon = ExtResource("49_lklmf")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("24_0ypa0")
 
@@ -337,7 +337,7 @@ sound = ExtResource("24_0ypa0")
 transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, 0, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, -4, 3.33, 6.155)
 visible = false
 item_name = "Candle"
-item_icon = ExtResource("46_t26ud")
+item_icon = ExtResource("50_wpipm")
 inventorySystem = NodePath("../InventorySystem")
 sound = ExtResource("24_0ypa0")
 

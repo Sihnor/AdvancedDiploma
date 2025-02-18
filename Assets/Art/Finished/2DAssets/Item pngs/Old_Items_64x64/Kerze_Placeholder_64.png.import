@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cev3le24f2e1g"
-path.s3tc="res://.godot/imported/Holzbein_Placeholder_64.png-c5e1bfd64ffcd22c988ede0ef3ec398f.s3tc.ctex"
+uid="uid://bgp7akmnof0mo"
+path.s3tc="res://.godot/imported/Kerze_Placeholder_64.png-e1c49b704df005c59f51ae72be3be0db.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Holzbein_Placeholder_64.png"
-dest_files=["res://.godot/imported/Holzbein_Placeholder_64.png-c5e1bfd64ffcd22c988ede0ef3ec398f.s3tc.ctex"]
+source_file="res://Assets/Art/Finished/2DAssets/Item pngs/Old_Items_64x64/Kerze_Placeholder_64.png"
+dest_files=["res://.godot/imported/Kerze_Placeholder_64.png-e1c49b704df005c59f51ae72be3be0db.s3tc.ctex"]
 
 [params]
 
