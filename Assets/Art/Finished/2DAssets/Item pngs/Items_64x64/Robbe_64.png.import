@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://co1jnsgce44ay"
-path="res://.godot/imported/Delphin_Placeholder_64.png-5d5c757709e86fcc014280334e4d85d4.ctex"
+uid="uid://d4bdiup6oqm52"
+path="res://.godot/imported/Robbe_64.png-28a5fb1bafd76e6cb6f4694c5d844ab1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Delphin_Placeholder_64.png"
-dest_files=["res://.godot/imported/Delphin_Placeholder_64.png-5d5c757709e86fcc014280334e4d85d4.ctex"]
+source_file="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Robbe_64.png"
+dest_files=["res://.godot/imported/Robbe_64.png-28a5fb1bafd76e6cb6f4694c5d844ab1.ctex"]
 
 [params]
 

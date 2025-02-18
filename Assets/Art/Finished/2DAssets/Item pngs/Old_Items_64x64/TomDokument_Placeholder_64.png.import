@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg2uiqvq8lo8s"
-path.s3tc="res://.godot/imported/Seehund_Placeholder_64.png-d89ed09b3d61b75f19fdc0b968a813dd.s3tc.ctex"
+uid="uid://bvma7gngjhqv2"
+path.s3tc="res://.godot/imported/TomDokument_Placeholder_64.png-b1ff0d8fda2096da66a858068c957413.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Seehund_Placeholder_64.png"
-dest_files=["res://.godot/imported/Seehund_Placeholder_64.png-d89ed09b3d61b75f19fdc0b968a813dd.s3tc.ctex"]
+source_file="res://Assets/Art/Finished/2DAssets/Item pngs/Old_Items_64x64/TomDokument_Placeholder_64.png"
+dest_files=["res://.godot/imported/TomDokument_Placeholder_64.png-b1ff0d8fda2096da66a858068c957413.s3tc.ctex"]
 
 [params]
 

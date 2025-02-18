@@ -58,7 +58,7 @@ func _on_item_picked_up(itemName: String, itemIcon: Texture2D):
 		var new_texture = load("res://Assets/Art/Placeholder/UI/icon.svg") as Texture2D
 		removeItem("Chair Piece", new_texture)
 		removeItem("Knife", new_texture)
-		itemIcon = ResourceLoader.load("res://Assets/Art/Placeholder/UI/Plush.png")
+		itemIcon = ResourceLoader.load("res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Holzdelphin_64.png")
 		addItem("Wood Dolphine Statue", itemIcon)
 		
 

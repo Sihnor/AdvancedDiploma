@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpibl34al8tp1"
-path="res://.godot/imported/DiningHall_02.jpeg-0f55580a47ac7fd72ec4e320ec078365.ctex"
+uid="uid://dh0na5y7tebi6"
+path="res://.godot/imported/Robbe_ampiano_64.png-45937182b90dd881dfc53805819bff40.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Finished/2DAssets/Scenes/dining hall/DiningHall_02.jpeg"
-dest_files=["res://.godot/imported/DiningHall_02.jpeg-0f55580a47ac7fd72ec4e320ec078365.ctex"]
+source_file="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Robbe_ampiano_64.png"
+dest_files=["res://.godot/imported/Robbe_ampiano_64.png-45937182b90dd881dfc53805819bff40.ctex"]
 
 [params]
 

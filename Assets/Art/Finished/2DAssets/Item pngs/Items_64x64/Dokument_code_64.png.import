@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://t2wuib2wuas0"
-path="res://.godot/imported/DiningHall_04.jpeg-edfd118ce4ac9779ae2dbee8503c65ac.ctex"
+uid="uid://6hbrr5pne44c"
+path="res://.godot/imported/Dokument_code_64.png-0228cd784e87c54ad7de9143a7319328.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Finished/2DAssets/Scenes/dining hall/DiningHall_04.jpeg"
-dest_files=["res://.godot/imported/DiningHall_04.jpeg-edfd118ce4ac9779ae2dbee8503c65ac.ctex"]
+source_file="res://Assets/Art/Finished/2DAssets/Item pngs/Items_64x64/Dokument_code_64.png"
+dest_files=["res://.godot/imported/Dokument_code_64.png-0228cd784e87c54ad7de9143a7319328.ctex"]
 
 [params]
 
